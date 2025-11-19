@@ -11,10 +11,11 @@ finetuning_type: full                # full 그대로 유지
 freeze_vision_tower: true
 freeze_multi_modal_projector: true
 freeze_language_model: false
+deepspeed: examples/deepspeed/ds_z3_config.json
 
 # Thinking 모델 옵션
-enable_thinking: false               # 일반 SFT면 false 권장
-# enable_thinking: true              # 정말 reasoning 토큰까지 학습하고 싶을 때
+enable_thinking: true        
+        
 
 ### dataset
 dataset: test_mllm_video_demo_hf
@@ -24,8 +25,8 @@ max_samples: 1000
 overwrite_cache: true
 preprocessing_num_workers: 16
 dataloader_num_workers: 4
-dataset_dir: /home/seohyun/vid_understanding/LLaMA-Factory/data
-media_dir: /home/seohyun/vid_understanding/LLaMA-Factory/data
+dataset_dir: /home/seohyun/video_retrieval/LLaMA-Factory/data
+media_dir: /home/seohyun/video_retrieval/LLaMA-Factory/data
 
 ### output
 output_dir: /hub_data2/seohyun/saves/qwen3vl-2b-thinking/full/sft

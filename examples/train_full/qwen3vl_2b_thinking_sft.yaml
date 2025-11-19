@@ -1,0 +1,54 @@
+### model
+model_name_or_path: Qwen/Qwen3-VL-2B-Thinking
+image_max_pixels: 8000000            # Qwen3-VL 권장 (필요시 더 낮춰도 됨)
+video_max_pixels: 16384              # 영상 안 쓰면 그냥 둬도 됨
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full                # full 그대로 유지
+freeze_vision_tower: true
+freeze_multi_modal_projector: true
+freeze_language_model: false
+
+# Thinking 모델 옵션
+enable_thinking: false               # 일반 SFT면 false 권장
+# enable_thinking: true              # 정말 reasoning 토큰까지 학습하고 싶을 때
+
+### dataset
+dataset: test_mllm_video_demo_hf
+template: qwen3_vl              
+cutoff_len: 2048
+max_samples: 1000
+overwrite_cache: true
+preprocessing_num_workers: 16
+dataloader_num_workers: 4
+dataset_dir: /home/seohyun/vid_understanding/LLaMA-Factory/data
+media_dir: /home/seohyun/vid_understanding/LLaMA-Factory/data
+
+### output
+output_dir: /hub_data2/seohyun/saves/qwen3vl-2b-thinking/full/sft
+logging_steps: 10
+save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: false
+report_to: none
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 2
+learning_rate: 1.0e-5
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null
+
+### eval
+# val_size: 0.1
+# per_device_eval_batch_size: 1
+# eval_strategy: steps
+# eval_steps: 500

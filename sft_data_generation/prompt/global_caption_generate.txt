@@ -1,0 +1,17 @@
+You are given timestamp-based captions for a video. 
+Using all provided captions, generate ONE global caption that summarizes the entire video.
+
+Guidelines:
+- The captions are in chronological order.
+- Create a 1 sentence global caption of the whole video.
+- Focus on the main activities and overall theme.
+- Avoid overly specific timestamps or brief, minor actions.
+- Use natural, fluent English.
+
+Input:
+<INSERT CAPTION ARRAY HERE>
+
+Output:
+Only output the global caption wrapped exactly in the following XML tag:
+
+<global_caption></global_caption>

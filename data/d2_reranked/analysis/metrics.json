@@ -1,0 +1,12 @@
+{
+  "metrics": {
+    "recall@1": 0.6153846153846154,
+    "recall@5": 0.9120879120879121,
+    "recall@10": 0.978021978021978,
+    "mean_rank": 1.6593406593406594,
+    "median_rank": 0.0,
+    "max_rank": 55
+  },
+  "histogram": "/home/seohyun/video_retrieval/data/d2_reranked/analysis/rank_histogram.png",
+  "heatmap": "/home/seohyun/video_retrieval/data/d2_reranked/analysis/similarity_heatmap.png"
+}

@@ -75,6 +75,7 @@ if $add_existing_arg; then
 fi
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-PYTHON_SCRIPT="$SCRIPT_DIR/download_videos_from_json.py"
+ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
+PYTHON_SCRIPT="${PYTHON_SCRIPT:-${ROOT_DIR}/SFT/LLaMA-Factory/util/download_videos_from_json.py}"
 
-python3 "$PYTHON_SCRIPT" "$JSON_PATH" "$DEST_DIR" "${EXTRA_ARGS[@]}"
+python3 "${PYTHON_SCRIPT}" "$JSON_PATH" "$DEST_DIR" "${EXTRA_ARGS[@]}"

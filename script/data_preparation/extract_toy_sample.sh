@@ -55,6 +55,7 @@ fi
 EXTRA_ARGS=("$@")
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-PYTHON_SCRIPT="$SCRIPT_DIR/extract_toy_sample.py"
+ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
+PYTHON_SCRIPT="${PYTHON_SCRIPT:-${ROOT_DIR}/SFT/LLaMA-Factory/util/extract_toy_sample.py}"
 
-python3 "$PYTHON_SCRIPT" "$SOURCE_JSON" "$OUTPUT_JSON" --count "$COUNT_VALUE" "${EXTRA_ARGS[@]}"
+python3 "${PYTHON_SCRIPT}" "$SOURCE_JSON" "$OUTPUT_JSON" --count "$COUNT_VALUE" "${EXTRA_ARGS[@]}"

@@ -1,18 +1,25 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Default values; edit here or override via CLI arguments.
-SOURCE_JSON_DEFAULT="/hub_data1/seohyun/hub_data/anet_ret_train.json"
-COUNT_DEFAULT=100
-OUTPUT_JSON_DEFAULT="/home/seohyun/video_retrieval/toy.json"
+# Default values; edit here or override via env/CLI.
+: "${SOURCE_JSON_DEFAULT:=/home/seohyun/vid_understanding/video_retrieval/data/anet_ret_train.json}"
+: "${COUNT_DEFAULT:=1000}"
+: "${OUTPUT_JSON_DEFAULT:=/home/seohyun/vid_understanding/video_retrieval/data/anet_sampled.json}"
+
+# Random sampling controls (env-overridable)
+# Set RANDOM_SAMPLE=true to randomly sample entries (default: true)
+# Optionally set SEED to fix randomness (e.g., SEED=42)
+RANDOM_SAMPLE=${RANDOM_SAMPLE:-true}
+SEED=${SEED:-}
 
 usage() {
   cat <<'EOF' >&2
 Usage:
   extract_toy_sample.sh [source_json] [count] [output_json] [extra python args...]
 
-Defaults are defined at the top of this script. Additional arguments are passed
-through to extract_toy_sample.py (e.g., --shuffle --seed 42).
+Defaults are defined at the top of this script.
+Random sampling: set env RANDOM_SAMPLE=true (default true). Optionally SEED=42.
+Additional arguments are passed through to extract_toy_sample.py (e.g., --indent 2).
 EOF
 }
 
@@ -53,6 +60,14 @@ if ! [[ "$COUNT_VALUE" =~ ^[0-9]+$ ]]; then
 fi
 
 EXTRA_ARGS=("$@")
+
+# Inject random sampling flags for the Python script if enabled
+if [[ "${RANDOM_SAMPLE}" == "true" ]]; then
+  EXTRA_ARGS=(--shuffle "${EXTRA_ARGS[@]}")
+  if [[ -n "${SEED}" ]]; then
+    EXTRA_ARGS=(--seed "${SEED}" "${EXTRA_ARGS[@]}")
+  fi
+fi
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"

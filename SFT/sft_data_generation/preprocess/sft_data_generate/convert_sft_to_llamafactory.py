@@ -17,7 +17,7 @@ def load_sft_data(path: str):
 def create_user_content(system_prompt: str, query: str, num_candidates: int = 5) -> str:
     user_content = f'{system_prompt}\n\nQuery: "{query}"\n\nCandidates:\n'
     for idx in range(1, num_candidates + 1):
-        user_content += f"[{idx}] video: <|vision_start|><video><|vision_end|>\n"
+        user_content += f"[{idx}] video:<video>\n"
     return user_content
 
 

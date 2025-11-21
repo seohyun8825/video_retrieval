@@ -14,6 +14,7 @@ from typing import List, Dict, Any, Tuple
 import cv2
 import numpy as np
 from openai import OpenAI
+import threading
 
 
 def load_prompt(prompt_path: str) -> str:
@@ -134,6 +135,11 @@ def main():
     parser.add_argument("--debug", action="store_true", help="Print detailed progress logs.")
     parser.add_argument("--max_workers", type=int, default=1, help="Number of parallel workers when using batch mode.")
     parser.add_argument("--use_batch_api", action="store_true", help="Enable simple concurrent processing.")
+    # Streaming/Checkpoint options
+    parser.add_argument("--stream", dest="stream", action="store_true", help="Append per-sample results to JSONL as they complete.")
+    parser.add_argument("--no-stream", dest="stream", action="store_false")
+    parser.set_defaults(stream=True)
+    parser.add_argument("--truncate_stream", action="store_true", help="Truncate existing JSONL streams at start.")
     parser.add_argument("--base_name", default="sft", help="Base name prefix for output files.")
     args = parser.parse_args()
 
@@ -227,6 +233,27 @@ def main():
 
     results_buffer = [None] * len(samples)
 
+    # Prepare streaming JSONL outputs
+    base = os.path.join(args.output_dir, args.base_name)
+    stream_all = f"{base}_sft_training_data_all.jsonl"
+    stream_kept = f"{base}_sft_training_data_kept.jsonl"
+    stream_discarded = f"{base}_sft_training_data_discarded.jsonl"
+    append_lock = threading.Lock()
+
+    def _append_jsonl(path: str, obj: Dict[str, Any]):
+        payload = json.dumps(obj, ensure_ascii=False)
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(payload + "\n")
+
+    if args.stream and args.truncate_stream:
+        # Clear existing stream files
+        for p in (stream_all, stream_kept, stream_discarded):
+            try:
+                with open(p, "w", encoding="utf-8") as f:
+                    pass
+            except Exception:
+                pass
+
     if args.use_batch_api and args.max_workers > 1:
         dbg(f"[INFO] Running in parallel with {args.max_workers} workers")
         with ThreadPoolExecutor(max_workers=args.max_workers) as executor:
@@ -236,11 +263,24 @@ def main():
             for fut in as_completed(futures):
                 idx, res = fut.result()
                 results_buffer[idx] = res
+                if args.stream:
+                    with append_lock:
+                        _append_jsonl(stream_all, res)
+                        if res["evaluation"].get("keep"):
+                            _append_jsonl(stream_kept, res)
+                        else:
+                            _append_jsonl(stream_discarded, res)
     else:
         dbg("[INFO] Running sequentially")
         for idx, sample in enumerate(samples):
             _, res = handle_sample(idx, sample, client)
             results_buffer[idx] = res
+            if args.stream:
+                _append_jsonl(stream_all, res)
+                if res["evaluation"].get("keep"):
+                    _append_jsonl(stream_kept, res)
+                else:
+                    _append_jsonl(stream_discarded, res)
             if idx < len(samples) - 1:
                 dbg(f"  - waiting {args.wait_sec}s before next sample")
                 time.sleep(args.wait_sec)

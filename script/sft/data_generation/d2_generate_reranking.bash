@@ -42,10 +42,29 @@ echo "Input JSON     : ${INPUT_JSON}"
 echo "Video base path: ${VIDEO_BASE}"
 echo "Output dir     : ${OUTPUT_DIR}"
 
-python "${PREPROCESS_DIR}/video_colbert_generate_reranking.py" \
-  --input_json "${INPUT_JSON}" \
-  --video_base "${VIDEO_BASE}" \
+# Performance knobs
+NUM_FRAMES="${NUM_FRAMES:-12}"    
+FRAME_SIZE="${FRAME_SIZE:-224}"    
+CHUNK_SIZE="${CHUNK_SIZE:-16}"       
+LIMIT_COUNT="${LIMIT_COUNT:-0}"      
+SEED="${SEED:-42}"
+
+CMD=(
+  python "${PREPROCESS_DIR}/video_colbert_generate_reranking.py"
+  --input_json "${INPUT_JSON}"
+  --video_base "${VIDEO_BASE}"
   --output_dir "${OUTPUT_DIR}"
+  --num_frames "${NUM_FRAMES}"
+  --frame_size "${FRAME_SIZE}"
+  --chunk_size "${CHUNK_SIZE}"
+  --seed "${SEED}"
+)
+
+if [[ -n "${LIMIT_COUNT}" && "${LIMIT_COUNT}" -gt 0 ]]; then
+  CMD+=(--limit "${LIMIT_COUNT}")
+fi
+
+"${CMD[@]}"
 
 echo "Generated files:"
 ls -1 "${OUTPUT_DIR}"/reranking_train_*.json

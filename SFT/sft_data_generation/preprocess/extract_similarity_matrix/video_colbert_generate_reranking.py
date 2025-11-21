@@ -43,6 +43,7 @@ def compute_features(
     video_base: str,
     num_frames: int,
     device: torch.device,
+    frame_size: int,
 ) -> Tuple[List[torch.Tensor], List[torch.Tensor], List[torch.Tensor], List[dict], List[dict]]:
     """Return (query_features_list, frame_features_list, video_features_list, video_data, text_data)."""
     model.eval()
@@ -60,12 +61,16 @@ def compute_features(
         if not os.path.exists(video_path):
             raise FileNotFoundError(f"Video file not found: {video_path}")
 
-        frames = load_video_frames(video_path, num_frames=num_frames).to(device)
-        with torch.no_grad():
-            query_feat = model.get_query_representation(caption).detach().cpu()
-            frame_feat, vid_feat = model.get_video_representations(frames)
-            frame_feat = frame_feat.detach().cpu()
-            vid_feat = vid_feat.detach().cpu()
+        try:
+            frames = load_video_frames(video_path, num_frames=num_frames, frame_size=frame_size).to(device)
+            with torch.no_grad():
+                query_feat = model.get_query_representation(caption).detach().cpu()
+                frame_feat, vid_feat = model.get_video_representations(frames)
+                frame_feat = frame_feat.detach().cpu()
+                vid_feat = vid_feat.detach().cpu()
+        except Exception as e:
+            print(f"[warn] Skipping video due to frame load/encode failure: {video_path} -> {e}")
+            continue
 
         query_features_list.append(query_feat)
         frame_features_list.append(frame_feat)
@@ -289,6 +294,9 @@ def main():
     parser.add_argument("--video_base", required=True, help="Base directory that stores video files.")
     parser.add_argument("--output_dir", required=True, help="Directory to save outputs.")
     parser.add_argument("--num_frames", type=int, default=12, help="Frames to sample per video.")
+    parser.add_argument("--frame_size", type=int, default=224, help="Frame resolution for CLIP input (default: 224).")
+    parser.add_argument("--chunk_size", type=int, default=16, help="Batch size when building similarity matrix (default: 16).")
+    parser.add_argument("--limit", type=int, default=0, help="If >0, limit number of items processed (for speed/debug).")
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
 
@@ -297,6 +305,8 @@ def main():
     torch.manual_seed(args.seed)
 
     items = load_items(args.input_json)
+    if args.limit and args.limit > 0:
+        items = items[: args.limit]
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     model = VideoColBERT(backbone_name="ViT-B/32").to(device)
@@ -306,9 +316,9 @@ def main():
         video_features_list,
         video_data,
         text_data,
-    ) = compute_features(model, items, args.video_base, args.num_frames, device)
+    ) = compute_features(model, items, args.video_base, args.num_frames, device, args.frame_size)
     sim_matrix = compute_similarity_matrix(
-        query_features_list, frame_features_list, video_features_list, model, device
+        query_features_list, frame_features_list, video_features_list, model, device, chunk_size=args.chunk_size
     )
 
     os.makedirs(args.output_dir, exist_ok=True)

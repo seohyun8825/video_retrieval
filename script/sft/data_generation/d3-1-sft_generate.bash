@@ -36,7 +36,7 @@ fi
 VIDEO_BASE="${VIDEO_BASE:-/hub_data1/seohyun/hub_data}"
 PROMPT_FILE="${SFT_DIR}/prompt/sft_ranking_generate.txt"
 API_KEY_FILE="${ROOT_DIR}/openai"
-NUM_SAMPLES="${NUM_SAMPLES:-16}"
+NUM_SAMPLES="${NUM_SAMPLES:-1000}"
 NUM_FRAMES="${NUM_FRAMES:-12}"
 MODEL_NAME="${MODEL_NAME:-gpt-4o}"
 SAVE_FRAMES="${SAVE_FRAMES:-false}"
@@ -44,6 +44,9 @@ VERBOSE="${VERBOSE:-true}"
 DEBUG_DETAIL="${DEBUG_DETAIL:-true}"
 MAX_WORKERS="${MAX_WORKERS:-10}"
 USE_BATCH_API="${USE_BATCH_API:-true}"
+# Streaming options: write per-sample to JSONL
+STREAM_JSONL="${STREAM_JSONL:-true}"
+TRUNCATE_STREAM="${TRUNCATE_STREAM:-true}"
 
 mkdir -p "${DATA_DIR}/d3"
 OUTPUT_DIR="${DATA_DIR}/d3"
@@ -76,6 +79,15 @@ fi
 
 if [[ "${USE_BATCH_API,,}" == "true" ]]; then
   CMD+=(--use_batch_api)
+fi
+
+if [[ "${STREAM_JSONL,,}" == "true" ]]; then
+  CMD+=(--stream)
+  if [[ "${TRUNCATE_STREAM,,}" == "true" ]]; then
+    CMD+=(--truncate_stream)
+  fi
+else
+  CMD+=(--no-stream)
 fi
 
 "${CMD[@]}"

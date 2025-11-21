@@ -7,6 +7,10 @@ ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 SFT_DIR="${ROOT_DIR}/sft_data_generation"
 PREPROCESS_DIR="${SFT_DIR}/preprocess/extract_similarity_matrix"
 
+if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "video-colbert" ]]; then
+  source "$(conda info --base)/etc/profile.d/conda.sh"
+  conda activate video-colbert
+fi
 DATA_DIR="${DATA_DIR:-${ROOT_DIR}/data}"
 if [[ -z "${SIMILARITY_PKL:-}" ]]; then
   mapfile -t __pkl_files < <(find "${DATA_DIR}/d2_reranked" -maxdepth 2 -type f -name "similarity_matrix.pkl" | sort)

@@ -7,6 +7,10 @@ ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 SFT_DIR="${ROOT_DIR}/sft_data_generation"
 PREPROCESS_DIR="${SFT_DIR}/preprocess/sft_data_generate"
 
+if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "video-colbert" ]]; then
+  source "$(conda info --base)/etc/profile.d/conda.sh"
+  conda activate video-colbert
+fi
 DATA_DIR="${DATA_DIR:-${ROOT_DIR}/data}"
 RERANK_DIR="${DATA_DIR}/d2_reranked"
 

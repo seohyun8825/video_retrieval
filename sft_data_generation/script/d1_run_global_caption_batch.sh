@@ -5,18 +5,22 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 DATA_DIR="${DATA_DIR:-${REPO_ROOT}/data}"
 
+if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "video-colbert" ]]; then
+  source "$(conda info --base)/etc/profile.d/conda.sh"
+  conda activate video-colbert
+fi
 if [[ ! -d "${DATA_DIR}" ]]; then
-  echo "❌ DATA_DIR does not exist: ${DATA_DIR}" >&2
+  echo " DATA_DIR does not exist: ${DATA_DIR}" >&2
   exit 1
 fi
 
 if [[ -z "${INPUT_JSON:-}" ]]; then
   mapfile -t __json_files < <(find "${DATA_DIR}" -maxdepth 1 -type f -name "*.json" | sort)
   if [[ ${#__json_files[@]} -eq 0 ]]; then
-    echo "❌ No .json files found in ${DATA_DIR}" >&2
+    echo "No .json files found in ${DATA_DIR}" >&2
     exit 1
   elif [[ ${#__json_files[@]} -gt 1 ]]; then
-    echo "❌ Multiple .json files found in ${DATA_DIR}. Set INPUT_JSON explicitly." >&2
+    echo "Multiple .json files found in ${DATA_DIR}. Set INPUT_JSON explicitly." >&2
     printf '  %s\n' "${__json_files[@]}"
     exit 1
   fi

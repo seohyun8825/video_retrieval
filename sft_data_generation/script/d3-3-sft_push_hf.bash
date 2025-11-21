@@ -5,6 +5,11 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 
+if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "video-colbert" ]]; then
+  source "$(conda info --base)/etc/profile.d/conda.sh"
+  conda activate video-colbert
+fi
+
 DATA_DIR="${DATA_DIR:-${ROOT_DIR}/data}"
 
 if [[ -z "${BASE_NAME:-}" ]]; then

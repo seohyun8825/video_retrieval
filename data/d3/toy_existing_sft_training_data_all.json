@@ -2,117 +2,60 @@
   "metadata": {
     "model": "gpt-4o",
     "total_samples": 16,
-    "kept_samples": 8,
-    "discarded_samples": 8,
-    "generation_time": "2025-11-21 10:13:13"
+    "kept_samples": 3,
+    "discarded_samples": 13,
+    "generation_time": "2025-11-21 10:43:25"
   },
   "samples": [
     {
       "sample_index": 0,
-      "text": "A young woman performs a dance around a room, expressing herself through movement before finishing by lying down on the floor.",
+      "text": "A young woman dances expressively around a room before finishing by lying on the floor.",
       "videos": [
         {
           "video_id": "v_ZKP5J7OKEvI",
           "video_path": "/hub_data1/seohyun/hub_data/v_ZKP5J7OKEvI.mp4",
-          "similarity_score": 0.3515200912952423,
+          "similarity_score": 0.3575064539909363,
           "is_correct": false
         },
         {
           "video_id": "v_QOlSCBRmfWY",
           "video_path": "/hub_data1/seohyun/hub_data/v_QOlSCBRmfWY.mp4",
-          "similarity_score": 0.3983527421951294,
+          "similarity_score": 0.40509018301963806,
           "is_correct": true
-        },
-        {
-          "video_id": "v_37pwbUp8t1I",
-          "video_path": "/hub_data1/seohyun/hub_data/v_37pwbUp8t1I.mp4",
-          "similarity_score": 0.36463066935539246,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_mnqSG5o84NE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
-          "similarity_score": 0.3417988717556,
-          "is_correct": false
         },
         {
           "video_id": "v_y7WO-8cQfO0",
           "video_path": "/hub_data1/seohyun/hub_data/v_y7WO-8cQfO0.mp4",
-          "similarity_score": 0.38248130679130554,
+          "similarity_score": 0.3668176531791687,
           "is_correct": false
-        }
-      ],
-      "answer": "<think>\n<content>\n[1] This video shows a couple dancing in a large room with wooden floors, focused more on partner interaction rather than solo expression. There is no young woman performing a dance alone and ending by lying down on the floor.\n\n[2] A young woman is seen dancing solo in a room with wooden walls and floors. Her movements express individual interpretation of dance, and she finishes by lying down on the floor, aligning perfectly with the query.\n\n[3] The video highlights a breakdancing competition with several participants showcasing various dynamic moves. There is no sequence of a young woman dancing solo and lying down.\n\n[4] This video captures a martial arts training session with an instructor and children practicing various moves. It is unrelated to the dance theme in the query.\n\n[5] A man is practicing jump rope tricks in an indoor space. The focus is on skill with the rope, not a dance performance or ending by lying down on the floor.\n</content>\n\n<contrast>\n- [2] matches because it shows a solo dance performance by a young woman who ends by lying down, whereas [1] shows partner dancing.\n- [2] fits the query well due to the solo dance expression and ending, whereas [3] shows breakdancing in a competition setting.\n- [2] aligns with the theme of individual dance expression, whereas [4] is entirely unrelated, focusing on martial arts.\n- [2] features a woman dancing alone and lying down, making it relevant compared to [5], which involves jump rope tricks.\n</contrast>\n\n<summary>\n1st=[2] (captures a solo dance performance with expressive movement and a clear ending by lying down)\n2nd=[1] (focuses on dancing but involves partner interaction, not solo)\n3rd=[3] (involves dance but in a competitive, breakdancing manner)\n4th=[5] (features a skills display with jump rope, not a dance)\n5th=[4] (unrelated due to martial arts training content)\n</summary>\n</think>\n<answer> [2] > [1] > [3] > [5] > [4] </answer>",
-      "pred_order": [
-        2,
-        1,
-        3,
-        5,
-        4
-      ],
-      "gt_order": [
-        2,
-        5,
-        3,
-        1,
-        4
-      ],
-      "evaluation": {
-        "keep": true,
-        "reason": "ok",
-        "pos_diff": 2,
-        "top1": true
-      }
-    },
-    {
-      "sample_index": 1,
-      "text": "A man and woman demonstrate and guide viewers through a series of exercises in a living room setting.",
-      "videos": [
+        },
         {
-          "video_id": "v_74EoyLUbtgI",
-          "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
-          "similarity_score": 0.42960840463638306,
+          "video_id": "v_pizl41xmw7k",
+          "video_path": "/hub_data1/seohyun/hub_data/v_pizl41xmw7k.mp4",
+          "similarity_score": 0.34481188654899597,
           "is_correct": false
         },
         {
           "video_id": "v_epqnpUCVLK8",
           "video_path": "/hub_data1/seohyun/hub_data/v_epqnpUCVLK8.mp4",
-          "similarity_score": 0.3751471936702728,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_ehGHCYKzyZ8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_ehGHCYKzyZ8.mp4",
-          "similarity_score": 0.3850831389427185,
-          "is_correct": true
-        },
-        {
-          "video_id": "v_QOlSCBRmfWY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_QOlSCBRmfWY.mp4",
-          "similarity_score": 0.3684583604335785,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_rBaR5xF8orE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_rBaR5xF8orE.mp4",
-          "similarity_score": 0.3629264235496521,
+          "similarity_score": 0.3846910893917084,
           "is_correct": false
         }
       ],
-      "answer": "<think>\n<content>\n[1] The video shows a group of people in an indoor setting engaging in tasks related to shoe polishing. There is no evidence of exercise or workout instruction.\n[2] A child plays with an exercise ball in a living room setting, engaging in playful movements. There's no structured exercise guidance present.\n[3] A man and woman dressed in workout attire demonstrate exercises on an exercise mat in a living room setting, providing guidance on abdominal workouts.\n[4] A woman performs a solo dance routine in a wooden-floored room. There is no evidence of duo exercise instruction.\n[5] The setting is a gymnasium with an audience. The video shows performances involving flying kites. There is no exercise or guidance involved.\n</content>\n\n<contrast>\n- [3] shows a man and woman demonstrating exercises in a living room, fitting the query, whereas [1] is about shoe polishing.\n- [3] features structured exercise demonstration, whereas [2] shows a child playing without instructional content.\n- [3] has a guided duo exercise setup fitting the query, whereas [4] involves a solo dance performance.\n- [3] has a relevant setting and activity, whereas [5] involves performances unrelated to exercise guidance.\n</contrast>\n\n<summary>\n1st=[3] (fits the query with duo exercise demonstration and guidance)\n2nd=[2] (in a living room setting, but lacks structured exercise guidance)\n3rd=[4] (physical activity present, but it's a solo dance routine)\n4th=[1] (in an indoor setting, but focused on shoe polishing)\n5th=[5] (unrelated gymnasium performance with no exercise guidance)\n</summary>\n</think>\n<answer> [3] > [2] > [4] > [1] > [5] </answer>",
+      "answer": "<think>\n<content>\n[1] The sequence shows a couple dancing in a ballroom setting. The focus is on partnered dancing rather than a solo expressive dance by a woman.\n\n[2] A young woman is shown dancing expressively by herself in a room. She moves freely around the space, performing varied movements, and ends by lying on the floor, which matches the query precisely.\n\n[3] The clip features a man performing tricks and moves with a jump rope in an indoor setting. Although there are dynamic movements, it does not involve a young woman dancing or lying on the floor.\n\n[4] This sequence involves a child playing with a mop in a hallway, which is not related to dancing or a young woman's expressive movements.\n\n[5] A child is seen rolling around and playing with a ball in a playroom. This involves playful movements but does not relate to dancing or a young woman.\n</content>\n\n<contrast>\n- [2] is a perfect match because the young woman dances expressively around a room and finishes by lying on the floor, whereas [1] and [3] focus on different subjects and actions.\n- [1] involves partnered ballroom dancing, whereas [2] involves a solo young woman dancing expressively.\n- [3] involves jump rope tricks by a man, whereas [2] includes expressive dance by a woman.\n- [4] and [5] both focus on children's activities and do not feature expressive dancing or a young woman.\n</contrast>\n\n<summary>\n1st=[2] (Shows a young woman dancing expressively and finishing by lying on the floor)\n2nd=[1] (Involves dance but is focused on partnered dancing)\n3rd=[3] (Features dynamic movements but unrelated to the query)\n4th=[4] (Unrelated child activity without dance)\n5th=[5] (Unrelated playful activity without dance)\n</summary>\n</think>\n<answer> [2] > [1] > [3] > [4] > [5] </answer>",
       "pred_order": [
-        3,
         2,
-        4,
         1,
+        3,
+        4,
         5
       ],
       "gt_order": [
+        2,
+        5,
         3,
         1,
-        2,
-        4,
-        5
+        4
       ],
       "evaluation": {
         "keep": false,
@@ -122,47 +65,104 @@
       }
     },
     {
-      "sample_index": 2,
-      "text": "Two people bustle around a kitchen, multitasking between daily activities and waxing a ski indoors.",
+      "sample_index": 1,
+      "text": "A man and woman demonstrate and explain a series of floor exercises in a living room setting, highlighting proper technique and movement.",
       "videos": [
-        {
-          "video_id": "v_fN2DiOswmOA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_fN2DiOswmOA.mp4",
-          "similarity_score": 0.4126508831977844,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_5lre5zbUV1Q",
-          "video_path": "/hub_data1/seohyun/hub_data/v_5lre5zbUV1Q.mp4",
-          "similarity_score": 0.396731436252594,
-          "is_correct": false
-        },
         {
           "video_id": "v_74EoyLUbtgI",
           "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
-          "similarity_score": 0.39679867029190063,
+          "similarity_score": 0.40751951932907104,
           "is_correct": false
         },
         {
-          "video_id": "v_Kp7pUEKrb8Q",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Kp7pUEKrb8Q.mp4",
-          "similarity_score": 0.4026464521884918,
+          "video_id": "v_mnqSG5o84NE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
+          "similarity_score": 0.3657797574996948,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_ehGHCYKzyZ8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ehGHCYKzyZ8.mp4",
+          "similarity_score": 0.3652998208999634,
+          "is_correct": true
+        },
+        {
+          "video_id": "v_WvxwmaDFGqk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_WvxwmaDFGqk.mp4",
+          "similarity_score": 0.3516619801521301,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_rBaR5xF8orE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_rBaR5xF8orE.mp4",
+          "similarity_score": 0.3457389771938324,
+          "is_correct": false
+        }
+      ],
+      "answer": "<think>\n<content>\n[1] This grid shows a shoe-shining activity in a gallery setting. A woman is shining a man's shoes with various tools, such as a cloth and a brush. The setting involves an audience and artwork displayed on the walls, which is not aligned with a demonstration of floor exercises in a living room.\n\n[2] This grid involves a martial arts training session with an instructor and children in a gym-like environment. The focus is on combat techniques using gloves and pads, unrelated to floor exercises or a living room setting.\n\n[3] The grid features a man and woman in a living room setting. They are demonstrating a series of exercises, such as sit-ups, with visible emphasis on technique and movement. This closely matches the query's description of floor exercises in a living room.\n\n[4] A man performs a sequence of exercises in what appears to be a gym or studio setting. The exercises are demonstrated clearly, focused on technique and movement, but the setting is not a living room.\n\n[5] This grid displays a large event in a gymnasium setting, with an audience observing activities like paper plane throwing. This is unrelated to floor exercises or a living room environment.\n</content>\n\n<contrast>\n- [3] beats other candidates because it features a man and woman demonstrating floor exercises in a living room, matching the query well, whereas [4] has exercise demonstrations in a non-living room setting.\n- [4] is better than [2] because it shows exercise techniques even if the setting differs, whereas [2] is focused on martial arts.\n- [2] is higher than [5] because it involves physical training, albeit of a different type, whereas [5] lacks relevance to exercises.\n- [1] and [5] are not exercise-related; however, [1] involves an intentional action with a focus on an audience, while [5] is more about general entertainment.\n</contrast>\n\n<summary>\n1st=[3] (matches living room exercises with a man and woman)\n2nd=[4] (exercise technique shown but not in a living room)\n3rd=[2] (training session without a living room setting)\n4th=[1] (action-focused but not on exercises)\n5th=[5] (event-focused with no exercise relevance)\n</summary>\n</think>\n<answer> [3] > [4] > [2] > [1] > [5] </answer>",
+      "pred_order": [
+        3,
+        4,
+        2,
+        1,
+        5
+      ],
+      "gt_order": [
+        3,
+        1,
+        2,
+        4,
+        5
+      ],
+      "evaluation": {
+        "keep": true,
+        "reason": "ok",
+        "pos_diff": 2,
+        "top1": true
+      }
+    },
+    {
+      "sample_index": 2,
+      "text": "Two people bustle around a kitchen completing tasks, including waxing a ski, before sitting down together.",
+      "videos": [
+        {
+          "video_id": "v_ehGHCYKzyZ8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ehGHCYKzyZ8.mp4",
+          "similarity_score": 0.4145626425743103,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_zzz_3yWpTXo",
+          "video_path": "/hub_data1/seohyun/hub_data/v_zzz_3yWpTXo.mp4",
+          "similarity_score": 0.4054315984249115,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_zihMznAYlV0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_zihMznAYlV0.mp4",
+          "similarity_score": 0.40605926513671875,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_oP77DgsbhKQ",
+          "video_path": "/hub_data1/seohyun/hub_data/v_oP77DgsbhKQ.mp4",
+          "similarity_score": 0.40745559334754944,
           "is_correct": false
         },
         {
           "video_id": "v_nwznKOuZM7w",
           "video_path": "/hub_data1/seohyun/hub_data/v_nwznKOuZM7w.mp4",
-          "similarity_score": 0.4117429852485657,
+          "similarity_score": 0.4197251796722412,
           "is_correct": true
         }
       ],
-      "answer": "<think>\n<content>\n[1] Displays food preparation, possibly related to marine cuisine, featuring algae. The sequence involves discussion and tasting with multiple people involved.\n\n[2] A child is playing at a kitchen sink, exploring the water flow and tap. This involves no multitasking or ski waxing activities.\n\n[3] Displays an indoor setup with someone polishing shoes. There are interactions, but no kitchen context or ski waxing.\n\n[4] Step-by-step preparation of a lime drink, with detailed instructions. No multitasking or ski waxing is involved.\n\n[5] Two people are in a kitchen with blurred movement suggesting multitasking. A ski appears in the latter frames, indicating indoor waxing activity.\n</content>\n\n<contrast>\n- [5] matches the query with two people multitasking in a kitchen, including waxing a ski; whereas [1] focuses on food preparation and [4] is a drink-making tutorial.\n- [3] involves shoe polishing unrelated to the kitchen or ski activities described.\n- [2] only involves a child at a kitchen sink, not multitasking or ski waxing.\n</contrast>\n\n<summary>\n1st=[5] (features two people multitasking in a kitchen and waxing a ski)\n2nd=[1] (involves multiple people and kitchen activity, but no skiing)\n3rd=[4] (clear step-by-step kitchen activity, no multitasking or ski)\n4th=[3] (indoor activity, no kitchen or ski-related actions)\n5th=[2] (child at a sink, no multitasking or ski waxing)\n</summary>\n</think>\n<answer> [5] > [1] > [4] > [3] > [2] </answer>",
+      "answer": "<think>\n<content>\n[1] The sequence depicts two individuals in workout attire performing exercises. They assist each other in a space that resembles a living room with a carpeted floor, involving mat exercises and sitting together at the end.\n[2] This sequence shows a single person in a kitchen environment washing dishes in a detailed view. There are no visible scenes indicating a second person or tasks like waxing a ski.\n[3] This is an outdoor video showing individuals skiing and snowboarding in a snow-covered environment. There is no kitchen setting or indoor tasks visible.\n[4] Depicts a person working on tile installation indoors. The sequence involves preparing and laying tiles on a floor and does not include a kitchen scene or ski-related tasks.\n[5] Displays two people in a kitchen setting performing tasks and specifically includes waxing a ski. This matches the query of bustling around a kitchen and completing the waxing task, followed by sitting together.\n\n</content>\n\n<contrast>\n- [5] is ranked higher than [1] because it features both a kitchen setting and the specific task of waxing a ski.\n- [1] shows two people, but the activities are mostly workouts, missing the kitchen setting and ski waxing, whereas [5] matches the kitchen task description.\n- [2] involves a kitchen but lacks the depiction of two people and ski waxing, whereas [5] matches both the setting and tasks.\n- [3] and [4] are unrelated to the query's theme of kitchen tasks and ski waxing, unlike [5].\n- [3]'s outdoor winter activities are less relevant than [2]'s indoor kitchen scene but still lack the other query specifics.\n- [4] involves indoor work, but it is unrelated to the kitchen task context of the query.\n\n</contrast>\n\n<summary>\n1st=[5] (Specific match of kitchen setting, ski waxing, and two people bustling around)\n2nd=[1] (Involves two people working together, lacks kitchen and ski waxing)\n3rd=[2] (Kitchen scene present, but only one person and no ski waxing)\n4th=[4] (Shows a task being performed but unrelated to kitchen or ski activities)\n5th=[3] (Outdoor setting unrelated to kitchen or waxing tasks)\n\n</summary>\n</think>\n<answer> [5] > [1] > [2] > [4] > [3] </answer>",
       "pred_order": [
         5,
         1,
+        2,
         4,
-        3,
-        2
+        3
       ],
       "gt_order": [
         5,
@@ -172,54 +172,54 @@
         2
       ],
       "evaluation": {
-        "keep": true,
-        "reason": "ok",
-        "pos_diff": 0,
+        "keep": false,
+        "reason": "pos_diff",
+        "pos_diff": 3,
         "top1": true
       }
     },
     {
       "sample_index": 3,
-      "text": "A dog wearing socks cautiously walks across a wooden hallway while being filmed by a woman before returning to the other room.",
+      "text": "A dog wearing socks cautiously walks onto a wooden floor while being filmed, then turns around and heads back to another room.",
       "videos": [
         {
-          "video_id": "v_44BfVJnhBgc",
-          "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
-          "similarity_score": 0.48549532890319824,
+          "video_id": "v_pizl41xmw7k",
+          "video_path": "/hub_data1/seohyun/hub_data/v_pizl41xmw7k.mp4",
+          "similarity_score": 0.44017377495765686,
           "is_correct": false
         },
         {
           "video_id": "v_ogQozSI5V8U",
           "video_path": "/hub_data1/seohyun/hub_data/v_ogQozSI5V8U.mp4",
-          "similarity_score": 0.4828413128852844,
+          "similarity_score": 0.4395284652709961,
           "is_correct": true
         },
         {
-          "video_id": "v_mnqSG5o84NE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
-          "similarity_score": 0.4335756301879883,
+          "video_id": "v_y7WO-8cQfO0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_y7WO-8cQfO0.mp4",
+          "similarity_score": 0.4045236110687256,
           "is_correct": false
         },
         {
-          "video_id": "v_O-zE1-Yw3w0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
-          "similarity_score": 0.40353530645370483,
+          "video_id": "v_g0XO-rWHmzs",
+          "video_path": "/hub_data1/seohyun/hub_data/v_g0XO-rWHmzs.mp4",
+          "similarity_score": 0.38525018095970154,
           "is_correct": false
         },
         {
-          "video_id": "v_pizl41xmw7k",
-          "video_path": "/hub_data1/seohyun/hub_data/v_pizl41xmw7k.mp4",
-          "similarity_score": 0.4876376986503601,
+          "video_id": "v_Zd22n1caVgM",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
+          "similarity_score": 0.4534749984741211,
           "is_correct": false
         }
       ],
-      "answer": "<think>\n<content>\n[1] This sequence involves a man with a prosthetic leg testing his running abilities. It includes indoor and outdoor scenes demonstrating the runner's speed and functionality of the prosthetic.\n\n[2] A dog wearing socks is seen cautiously walking down a wooden hallway, with a woman filming from behind, matching the query. The dog slowly makes its way to the end before returning, showing a clear back and forth movement.\n\n[3] The frames depict a martial arts training session with children practicing kicks and punches with an instructor. The setting and activities are unrelated to the query.\n\n[4] Small children are seen playing with a roll of paper or plastic. The sequence shows kids interacting and wrapping themselves, unrelated to the query.\n\n[5] A child is seen interacting with a mop in a hallway. It appears to be an example of a child playfully pretending to clean, unrelated to the query of a dog in socks.\n</content>\n\n<contrast>\n- [2] beats [1] because it directly matches the query with a dog wearing socks in a hallway, whereas [1] is about a prosthetic-running demonstration.\n- [2] beats [3] because it features a dog matching the query, whereas [3] involves a martial arts session with no dogs.\n- [2] beats [4] because it features the correct subject matter related to a dog in a hallway, whereas [4] involves children playing with rolls of material.\n- [2] beats [5] because of its relevance to the query, while [5] involves a child with a mop instead of a dog.\n- [5] is preferred over [1] because it involves a hallway and casual activity like the query but lacks a dog in socks.\n- [5] is preferred over [3] because it is closer to the domestic setting of a dog and hallway compared to a martial arts studio.\n- [5] is preferred over [4] as it involves a hallway setting, unlike playful activities on the floor.\n- [1] beats [3] due to the hallway setting aspect, albeit not involving a dog.\n- [1] beats [4] because it includes individuals in motion, similar to the dog walking.\n- [3] beats [4] as it involves movement practices, albeit unrelated, whereas [4] is static play unrelated to a dog.\n</contrast>\n\n<summary>\n1st=[2] (Dog in socks in a hallway; matches query exactly)\n2nd=[5] (Involves a hallway and walking, lacks a dog)\n3rd=[1] (Hallway and motion seen, lacks a dog)\n4th=[3] (Martial arts scene, no relevance)\n5th=[4] (Children playing with material, no relevance)\n</summary>\n</think>\n<answer> [2] > [5] > [1] > [3] > [4] </answer>",
+      "answer": "<think>\n<content>\n[1] A child is shown playing with a mop in a hallway with wooden flooring, moving around energetically. The camera captures the child from various angles, sometimes close-up, indicating a playful and exploratory scene.\n\n[2] This sequence features a dog wearing socks as it steps onto a wooden floor in a hallway. The dog appears cautious, hesitates, then turns around and heads back, fitting the query description closely.\n\n[3] A man is exercising or performing a jump rope routine in an empty room with wooden flooring. The focus is on the person jumping rope, not on a dog.\n\n[4] Dogs are shown outdoors walking with a person on a leash. The setting is outside and involves multiple dogs, not focusing on a dog wearing socks on a wooden floor.\n\n[5] A child dances playfully in a living room area. The sequence focuses on the child's movement indoors on carpeted flooring, without involving a dog or socks.\n\n</content>\n<contrast>\n- [2] is the most relevant because it shows a dog wearing socks on a wooden floor, matching the query perfectly, whereas [1] features a child playing with a mop on a wooden floor, unrelated to a dog.\n- [4] involves dogs but takes place outdoors, which diverges from the indoor setting described, whereas [3] is an entirely unrelated exercise video.\n- [5] captures a child indoors without any presence of a dog or relevant activities related to the query.\n</contrast>\n<summary>\n1st=[2] (dog with socks on wooden floor as described)\n2nd=[1] (indoor scene with wooden floor, albeit wrong focus)\n3rd=[4] (includes dogs, but not on topic and outdoors)\n4th=[5] (indoor activity, focus on child, unrelated)\n5th=[3] (exercise video, unrelated content)\n</summary>\n</think>\n<answer> [2] > [1] > [4] > [5] > [3] </answer>",
       "pred_order": [
         2,
-        5,
         1,
-        3,
-        4
+        4,
+        5,
+        3
       ],
       "gt_order": [
         2,
@@ -229,48 +229,48 @@
         4
       ],
       "evaluation": {
-        "keep": true,
-        "reason": "ok",
-        "pos_diff": 0,
+        "keep": false,
+        "reason": "pos_diff",
+        "pos_diff": 4,
         "top1": true
       }
     },
     {
       "sample_index": 4,
-      "text": "A young girl gets her ears pierced by a person who then applies lotion to the new piercings.",
+      "text": "A young girl gets her ears pierced by an adult, who applies lotion to the piercings afterwards.",
       "videos": [
         {
-          "video_id": "v_JgHQCKz_DRc",
-          "video_path": "/hub_data1/seohyun/hub_data/v_JgHQCKz_DRc.mp4",
-          "similarity_score": 0.3100734353065491,
+          "video_id": "v_uFMDSiHu7g4",
+          "video_path": "/hub_data1/seohyun/hub_data/v_uFMDSiHu7g4.mp4",
+          "similarity_score": 0.31108471751213074,
           "is_correct": false
         },
         {
-          "video_id": "v_kNkYgYnJTXk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_kNkYgYnJTXk.mp4",
-          "similarity_score": 0.3105711042881012,
+          "video_id": "v_D9rHZpZoeRA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_D9rHZpZoeRA.mp4",
+          "similarity_score": 0.31344759464263916,
           "is_correct": false
         },
         {
           "video_id": "v_f0CViWbj3V4",
           "video_path": "/hub_data1/seohyun/hub_data/v_f0CViWbj3V4.mp4",
-          "similarity_score": 0.3621426224708557,
+          "similarity_score": 0.36213576793670654,
           "is_correct": false
         },
         {
           "video_id": "v_69IsHpmRyfk",
           "video_path": "/hub_data1/seohyun/hub_data/v_69IsHpmRyfk.mp4",
-          "similarity_score": 0.43240708112716675,
+          "similarity_score": 0.43883395195007324,
           "is_correct": true
         },
         {
-          "video_id": "v_p9iE8iemCMs",
-          "video_path": "/hub_data1/seohyun/hub_data/v_p9iE8iemCMs.mp4",
-          "similarity_score": 0.32564184069633484,
+          "video_id": "v_kNkYgYnJTXk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_kNkYgYnJTXk.mp4",
+          "similarity_score": 0.3192109763622284,
           "is_correct": false
         }
       ],
-      "answer": "<think>\n<content>\n[1] This sequence takes place in a barbershop where a man is having his hair cut. The progression shows him in a chair, with various hairstyles being worked on.\n\n[2] This video shows someone in a canoe on a lake, demonstrating paddling techniques. There is no element related to ear piercing or lotion application.\n\n[3] A group of people is playing drums in what looks like a casual indoor setting. There's no relevance to ear piercing or lotion.\n\n[4] This sequence is the most relevant to the query. It shows a young girl getting her ears pierced by someone wearing gloves, and then the application of a substance, likely lotion, to the pierced ears.\n\n[5] This series displays a flute tutorial, featuring a person demonstrating finger positions and playing techniques. It is not related to ear piercing or lotion.\n</content>\n\n<contrast>\n- [4] is highly relevant as it directly shows ear piercing and the application of lotion, matching the query, whereas [1], [2], [3], and [5] do not.\n- [1] shows a haircut, which is unrelated to ear piercing, whereas [4] contains the process described in the query.\n- [2] demonstrates canoeing techniques, whereas [4] shows the complete process of ear piercing and aftercare.\n- [3] involves music with drums, having no connection to the ear-piercing process shown in [4].\n- [5] displays a musical instrument tutorial, which doesn't relate to the query's focus on ear piercing and lotion application as [4] does.\n</contrast>\n\n<summary>\n1st=[4] (directly matches the query with complete coverage of ear piercing and lotion application)\n2nd=[1] (displays a personal care setting but only involves hair cutting)\n3rd=[3] (shows a group activity unrelated to ear piercing)\n4th=[2] (focus on outdoor activity, canoeing, with no relevance)\n5th=[5] (tutorial on playing the flute, not related to ear piercing)\n</summary>\n</think>\n<answer> [4] > [1] > [3] > [2] > [5] </answer>",
+      "answer": "<think>\n<content>\n[1] A group of people are dancing outdoors, with individuals moving energetically. There is no indication of ear piercing or lotion application.\n\n[2] A sequence showing a person changing the tire of a white car. The focus is on tools and steps involved in the tire change, not related to ear piercing or lotion.\n\n[3] Several people are playing drums indoors. The focus is on music-making and instruments without any ear piercing activity.\n\n[4] A young girl is getting her ears pierced by an adult. The procedure appears to be taking place in a controlled setting. After the piercing, the adult applies a substance to the piercings, consistent with lotion.\n\n[5] A person is paddling a canoe on a lake. The sequence includes various angles of the canoe movement. There are no activities related to ear piercing or lotion application.\n</content>\n\n<contrast>\n- [4] is directly relevant because it shows a girl having her ears pierced and lotion applied afterward, matching the entire query sequence, whereas [2], [5], [3], and [1] do not depict any ear piercing or lotion application activities.\n- [2] and [5] are both irrelevant because they depict activities related to cars and canoeing, respectively, whereas [1] and [3] are completely different scenes of dancing and drumming, with no correlation to the query.\n</contrast>\n\n<summary>\n1st=[4] (matches both ear piercing and lotion application in sequence)\n2nd=[1] (irrelevant dancing but higher energy)\n3rd=[3] (irrelevant drumming)\n4th=[2] (irrelevant tire changing activity)\n5th=[5] (completely unrelated canoeing)\n</summary>\n</think>\n<answer> [4] > [1] > [3] > [2] > [5] </answer>",
       "pred_order": [
         4,
         1,
@@ -294,40 +294,40 @@
     },
     {
       "sample_index": 5,
-      "text": "A woman enjoys a camel ride past the pyramids in Egypt, capturing glimpses of the journey and the scenery.",
+      "text": "A woman rides a camel past the pyramids in Egypt, capturing her journey and surroundings on camera.",
       "videos": [
         {
-          "video_id": "v_oP77DgsbhKQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_oP77DgsbhKQ.mp4",
-          "similarity_score": 0.24592635035514832,
+          "video_id": "v_6lYTHj9vImo",
+          "video_path": "/hub_data1/seohyun/hub_data/v_6lYTHj9vImo.mp4",
+          "similarity_score": 0.26994889974594116,
           "is_correct": false
         },
         {
-          "video_id": "v_ehGHCYKzyZ8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_ehGHCYKzyZ8.mp4",
-          "similarity_score": 0.23831872642040253,
+          "video_id": "v_pYb8jzB5vs0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_pYb8jzB5vs0.mp4",
+          "similarity_score": 0.26312172412872314,
           "is_correct": false
         },
         {
-          "video_id": "v_S6t9Lq1xKJk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_S6t9Lq1xKJk.mp4",
-          "similarity_score": 0.2608420252799988,
+          "video_id": "v_aJbl1eVBzk0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_aJbl1eVBzk0.mp4",
+          "similarity_score": 0.30045652389526367,
           "is_correct": false
         },
         {
-          "video_id": "v_9rW35YTKYq8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_9rW35YTKYq8.mp4",
-          "similarity_score": 0.2413153052330017,
+          "video_id": "v_BB2vrBWgXkU",
+          "video_path": "/hub_data1/seohyun/hub_data/v_BB2vrBWgXkU.mp4",
+          "similarity_score": 0.2651187777519226,
           "is_correct": false
         },
         {
           "video_id": "v_D18b2IZpxk0",
           "video_path": "/hub_data1/seohyun/hub_data/v_D18b2IZpxk0.mp4",
-          "similarity_score": 0.3969845175743103,
+          "similarity_score": 0.45546793937683105,
           "is_correct": true
         }
       ],
-      "answer": "<think>\n<content>\n[1] This video shows a man involved in laying floor tiles inside a room. There are various steps related to mixing, cutting, and setting tiles, but it does not match the query about a camel ride in Egypt.\n[2] The sequence depicts a couple performing fitness exercises indoors, with a focus on personal training and workout steps. There is no relevance to a camel ride in Egypt.\n[3] A chef is seen cooking and preparing food at a kitchen counter with a window showing an external view. This content bears no relation to camel riding or the pyramids.\n[4] This contains scenes of a person passionately playing the violin in an outdoor setting, possibly near a building. There is no connection to the query about a camel ride past the pyramids.\n[5] The video shows a woman riding a camel in a desert landscape with pyramids visible in the background. This matches the query perfectly, depicting the journey and scenery associated with Egypt.\n</content>\n\n<contrast>\n- [5] is a perfect match because it shows a camel ride past pyramids, whereas [1], [2], [3], and [4] do not.\n- [1] involves tile fitting, which differs from the outdoor camel ride scene.\n- [2] captures indoor fitness training and lacks any connection to Egypt or a camel ride.\n- [3] is focused on cooking and indoor activities, unrelated to the outdoor journey described in the query.\n- [4] shows a violin performance in a non-desert setting, irrelevant to the query's outdoor Egyptian context.\n</contrast>\n\n<summary>\n1st=[5] (captures the woman on a camel ride with pyramids, directly matching the query)\n2nd=[1] (although unrelated, it depicts a complete action sequence, unlike others)\n3rd=[2] (shows a coherent sequence of fitness activities indoors)\n4th=[3] (involves cooking, providing more action detail than [4])\n5th=[4] (involves a violin performance without relevance to Egyptian scenery)\n</summary>\n</think>\n<answer> [5] > [1] > [2] > [3] > [4] </answer>",
+      "answer": "<think>\n<content>\n[1] A beach setting with children building sandcastles and playing with buckets and shovels. It focuses on playful outdoor activities rather than travel or camels.\n\n[2] Scenes of scuba diving in a pool with instructors and students performing underwater skills. No outdoor or desert context is present.\n\n[3] A workshop or garage setting where a person is working on a bicycle. It involves tools and mechanical work, nothing related to a travel journey or camels.\n\n[4] A tutorial or product review about nail care. The focus is on hands and cosmetic products, entirely unrelated to travel or outdoor scenes.\n\n[5] A woman rides a camel through a desert landscape with pyramids visible in the background. This aligns with the query involving Egypt, a camel ride, and capturing the journey.\n\n</content>\n\n<contrast>\n- [5] matches the query by showing a woman on a camel near pyramids in Egypt, whereas [1] shows children at a beach. \n- [5] provides a clear depiction of the Egyptian setting with pyramids and desert visible, whereas [2] features indoor scuba diving with no travel themes.\n- [5] includes outdoor travel scenes, whereas [3] is centered on bicycle maintenance in a workshop, lacking any travel context.\n- [5] aligns with the travel and camel theme, whereas [4] focuses on nail care tutorials, unrelated to the outdoor journey mentioned in the query.\n</contrast>\n\n<summary>\n1st=[5] (Matches the travel theme with camel riding near pyramids)\n2nd=[1] (Outdoor setting, but unrelated to the specific travel theme)\n3rd=[2] (Outdoor activity within an indoor pool, not related to travel)\n4th=[3] (Indoor mechanical work, no travel or outdoor connection)\n5th=[4] (Indoor cosmetic tutorial, unrelated to travel or outdoors)\n</summary>\n</think>\n<answer> [5] > [1] > [2] > [3] > [4] </answer>",
       "pred_order": [
         5,
         1,
@@ -351,46 +351,46 @@
     },
     {
       "sample_index": 6,
-      "text": "A child cleans the floors in her house and takes a break to play with a family member before continuing to mop.",
+      "text": "A child cleans the house by mopping the floors and takes breaks to play with a family member.",
       "videos": [
         {
           "video_id": "v_6lYTHj9vImo",
           "video_path": "/hub_data1/seohyun/hub_data/v_6lYTHj9vImo.mp4",
-          "similarity_score": 0.3745976686477661,
+          "similarity_score": 0.3881010115146637,
           "is_correct": false
         },
         {
-          "video_id": "v_rBaR5xF8orE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_rBaR5xF8orE.mp4",
-          "similarity_score": 0.3372857868671417,
+          "video_id": "v_IoiDAHNryTk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_IoiDAHNryTk.mp4",
+          "similarity_score": 0.34906989336013794,
           "is_correct": false
         },
         {
-          "video_id": "v_69IsHpmRyfk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_69IsHpmRyfk.mp4",
-          "similarity_score": 0.339079350233078,
+          "video_id": "v_ehGHCYKzyZ8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ehGHCYKzyZ8.mp4",
+          "similarity_score": 0.3504636883735657,
           "is_correct": false
         },
         {
-          "video_id": "v_mnqSG5o84NE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
-          "similarity_score": 0.3388490080833435,
+          "video_id": "v_74EoyLUbtgI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
+          "similarity_score": 0.34967315196990967,
           "is_correct": false
         },
         {
           "video_id": "v_pizl41xmw7k",
           "video_path": "/hub_data1/seohyun/hub_data/v_pizl41xmw7k.mp4",
-          "similarity_score": 0.39906418323516846,
+          "similarity_score": 0.4177025854587555,
           "is_correct": true
         }
       ],
-      "answer": "<think>\n<content>\n[1] Shows children playing on a beach, building sandcastles, without any cleaning or interaction with family members that matches the query.\n\n[2] Involves people in a gymnasium with a crowd watching a performance, no cleaning or interaction fitting the query description.\n\n[3] Displays a close-up sequence of a child getting an ear piercing, no elements of cleaning or playing with family members are present.\n\n[4] Features children practicing martial arts in a gym-like setting, which doesn't involve cleaning or the described interactions with family members.\n\n[5] Clearly shows a child mopping a floor, interacting briefly with someone (possibly a family member), and continuing to mop, closely matching the query.\n</content>\n\n<contrast>\n- [5] is a clear match with a child mopping and interacting with someone before continuing, whereas [1] only shows beach play.\n- [5] involves mopping and interaction fitting the query, whereas [2] involves a performance, unrelated to the query.\n- [5] matches the child cleaning and interacting, whereas [3] only involves an ear piercing, unrelated.\n- [5] has the child cleaning and interacting, whereas [4] shows martial arts without the query-relevant actions.\n</contrast>\n\n<summary>\n1st=[5] (shows a child mopping, interacting with a person, continuing to mop)\n2nd=[1] (displays children playing, unrelated but least distant)\n3rd=[4] (children and family context, but martial arts, not cleaning-related)\n4th=[2] (performance setting, totally unrelated action)\n5th=[3] (close-up piercing, entirely unrelated actions)\n</summary>\n</think>\n<answer> [5] > [1] > [4] > [2] > [3] </answer>",
+      "answer": "<think>\n<content>\n[1] The video shows children building sandcastles and playing on a beach. There is no evidence of a child cleaning a house or interacting with a family member in a domestic setting.\n\n[2] The video depicts a child playing on a playground slide, climbing, and having fun outdoors. There is no evidence of cleaning or breaks with family members visible.\n\n[3] The video is of an exercise session with two adults, showing a workout routine. There is no child involved in cleaning or playing with family members.\n\n[4] This video captures a shoe-shining activity, where an adult polishes shoes. There is no child cleaning or interacting with family members.\n\n[5] The video shows a child mopping a floor in a hallway. There are scenes of a close-up view of the child and interactions that suggest playing or breaks, possibly fitting the query of cleaning and playing with a family member.\n</content>\n\n<contrast>\n- [5] fits the query as it shows a child mopping and potentially interacting with a family member, whereas [1] involves beach play unrelated to the query.\n- [2] involves outdoor play unrelated to cleaning, whereas [5] matches cleaning in an indoor setting.\n- [3] contains adults exercising, which doesn't involve children cleaning or playing.\n- [4] features shoe shining with no children, contrasting with [5] where a child is cleaning.\n</contrast>\n\n<summary>\n1st=[5] (Fits the query: child mopping and possibly playing)\n2nd=[2] (Child involved, but no cleaning or family interaction)\n3rd=[1] (Children playing, not a domestic setting)\n4th=[3] (Adult exercise, no child activity)\n5th=[4] (Adult shoe polishing, no child involvement)\n</summary>\n</think>\n<answer> [5] > [2] > [1] > [3] > [4] </answer>",
       "pred_order": [
         5,
-        1,
-        4,
         2,
-        3
+        1,
+        3,
+        4
       ],
       "gt_order": [
         5,
@@ -402,52 +402,52 @@
       "evaluation": {
         "keep": false,
         "reason": "pos_diff",
-        "pos_diff": 3,
+        "pos_diff": 4,
         "top1": true
       }
     },
     {
       "sample_index": 7,
-      "text": "A man demonstrates how to mix materials and lay tiles on the floor while explaining the process to the camera.",
+      "text": "A man demonstrates how to lay tiles on a floor step-by-step, explaining the process and speaking to the camera throughout.",
       "videos": [
         {
           "video_id": "v_oP77DgsbhKQ",
           "video_path": "/hub_data1/seohyun/hub_data/v_oP77DgsbhKQ.mp4",
-          "similarity_score": 0.465755432844162,
+          "similarity_score": 0.4685453772544861,
           "is_correct": true
         },
         {
-          "video_id": "v_pizl41xmw7k",
-          "video_path": "/hub_data1/seohyun/hub_data/v_pizl41xmw7k.mp4",
-          "similarity_score": 0.3642943203449249,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_LNKdVrX_0Fg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
-          "similarity_score": 0.3916773498058319,
+          "video_id": "v_0_xap_BBDrw",
+          "video_path": "/hub_data1/seohyun/hub_data/v_0_xap_BBDrw.mp4",
+          "similarity_score": 0.3636217713356018,
           "is_correct": false
         },
         {
           "video_id": "v_FeKEqUxiReA",
           "video_path": "/hub_data1/seohyun/hub_data/v_FeKEqUxiReA.mp4",
-          "similarity_score": 0.3691170811653137,
+          "similarity_score": 0.3785807192325592,
           "is_correct": false
         },
         {
-          "video_id": "v_HxJnPUqF9i8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.36509186029434204,
+          "video_id": "v_y7WO-8cQfO0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_y7WO-8cQfO0.mp4",
+          "similarity_score": 0.3775797486305237,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_LNKdVrX_0Fg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
+          "similarity_score": 0.37041205167770386,
           "is_correct": false
         }
       ],
-      "answer": "<think>\n<content>\n[1] The video features a man who appears to be mixing materials in a bucket and preparing to lay tiles on the floor. He is also seen kneeling on the floor, arranging tiles, and smoothing a surface with a tool, indicating an instructional process on tile laying.\n[2] A child is mopping a wooden floor hallway. The activity is more playful than instructional, with no visible demonstration of mixing materials or laying tiles.\n[3] A person is engaging in wrapping gifts. There's a box and decorative paper, suggesting a crafting or gift-wrapping tutorial, not related to tile laying.\n[4] This video shows a person skipping rope in what appears to be a gym or sports hall, unrelated to tile laying or material mixing.\n[5] Various clips of people performing javelin throws in different settings. There’s no connection to mixing materials or laying tiles.\n\n</content>\n\n<contrast>\n- [1] shows a man actively engaged in mixing materials and laying tiles, matching the query's focus on a demonstration; whereas [2] involves a child playing with a mop, unrelated to the task.\n- [1] involves a man demonstrating floor work, while [3] focuses on crafts with no relation to tile laying.\n- [1] features relevant activities (mixing and tile laying) compared to [4]'s unrelated sports activity (skipping rope).\n- [1] illustrates a coherent tile and material demonstration, whereas [5] depicts various sports activities involving javelin, lacking relevance.\n\n</contrast>\n\n<summary>\n1st=[1] (direct demonstration of mixing materials and laying tiles)\n2nd=[3] (clear instructional activity, though unrelated to tiles)\n3rd=[4] (unrelated action of rope skipping)\n4th=[5] (javelin throws without connection to query)\n5th=[2] (playful mopping, unrelated)\n\n</summary>\n</think>\n<answer> [1] > [3] > [4] > [5] > [2] </answer>",
+      "answer": "<think>\n<content>\n[1] The video demonstrates a man showing how to lay tiles on a floor. The sequence starts with preparing materials and continues with applying adhesive, cutting tiles, and finally laying them on the floor. The man appears to be speaking to the camera, possibly explaining the process step-by-step.\n\n[2] This video shows a person playing basketball inside a court. The sequence includes dribbling, practicing shots, and some close-up shots of the person with the basketball. There is no demonstration of any step-by-step process related to tile laying.\n\n[3] The video shows a person exercising in a gym setting under bright lights. It appears to be more performance-focused, with movements like jumping or dancing, rather than a demonstration or instructional video on tile laying.\n\n[4] This video illustrates a person performing a jump rope routine in a studio setting. The sequence shows various rope skipping tricks and exercises without any relation to floor tiling.\n\n[5] The video displays a person demonstrating how to wrap a gift. The step-by-step process shows cutting wrapping paper, folding it over a boxed gift, and finishing with tape, which involves speaking to the camera possibly to explain the process.\n</content>\n\n<contrast>\n- [1] shows the process of laying floor tiles with instructions, whereas [3], [4], and [5] involve exercise or gift wrapping, unrelated to floor tiles.\n- [1] involves a direct demonstration with a step-by-step explanation, whereas [2] lacks this element and focuses on basketball.\n- [5] is a demonstration video but involves gift wrapping instead of tile laying.\n</contrast>\n\n<summary>\n1st=[1] (Shows tile laying with step-by-step explanation)\n2nd=[5] (Demonstrates a process step-by-step, but for gift wrapping)\n3rd=[2] (Demonstrates basketball, unrelated to tile laying)\n4th=[3] (Shows exercise/dance movements, unrelated to tile laying)\n5th=[4] (Involves jump rope tricks without instructional context for tile laying)\n</summary>\n</think>\n<answer> [1] > [5] > [2] > [3] > [4] </answer>",
       "pred_order": [
         1,
-        3,
-        4,
         5,
-        2
+        2,
+        3,
+        4
       ],
       "gt_order": [
         1,
@@ -457,54 +457,54 @@
         2
       ],
       "evaluation": {
-        "keep": true,
-        "reason": "ok",
-        "pos_diff": 0,
+        "keep": false,
+        "reason": "pos_diff",
+        "pos_diff": 4,
         "top1": true
       }
     },
     {
       "sample_index": 8,
-      "text": "A woman demonstrates to the camera how to wrap a toy with wrapping paper.",
+      "text": "A woman demonstrates how to wrap a toy with wrapping paper, explaining each step to the camera.",
       "videos": [
         {
           "video_id": "v_LNKdVrX_0Fg",
           "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
-          "similarity_score": 0.48273026943206787,
+          "similarity_score": 0.49086615443229675,
           "is_correct": true
         },
         {
-          "video_id": "v_LFeoVokXAFY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_LFeoVokXAFY.mp4",
-          "similarity_score": 0.3280385136604309,
+          "video_id": "v_pizl41xmw7k",
+          "video_path": "/hub_data1/seohyun/hub_data/v_pizl41xmw7k.mp4",
+          "similarity_score": 0.3162168860435486,
           "is_correct": false
         },
         {
-          "video_id": "v_f0CViWbj3V4",
-          "video_path": "/hub_data1/seohyun/hub_data/v_f0CViWbj3V4.mp4",
-          "similarity_score": 0.3381039798259735,
+          "video_id": "v_8ikOQRbeQL8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_8ikOQRbeQL8.mp4",
+          "similarity_score": 0.3212316036224365,
           "is_correct": false
         },
         {
           "video_id": "v_AGgJVF3nT6I",
           "video_path": "/hub_data1/seohyun/hub_data/v_AGgJVF3nT6I.mp4",
-          "similarity_score": 0.36030372977256775,
+          "similarity_score": 0.3609403967857361,
           "is_correct": false
         },
         {
-          "video_id": "v_UYHgieL5IKM",
-          "video_path": "/hub_data1/seohyun/hub_data/v_UYHgieL5IKM.mp4",
-          "similarity_score": 0.3541668951511383,
+          "video_id": "v_O-zE1-Yw3w0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
+          "similarity_score": 0.34640049934387207,
           "is_correct": false
         }
       ],
-      "answer": "<think>\n<content>\n[1] The video shows a woman demonstrating how to wrap a toy with wrapping paper. It begins with her explaining the process and then proceeds to show step-by-step instructions, including cutting the paper, folding it around the toy, and securing it with tape.\n[2] This video depicts a backyard setting where a person is hitting a piñata with a bat. It involves several people and takes place outdoors.\n[3] The video features a group of people playing drums in an indoor setting. It highlights the communal nature of playing music together.\n[4] The video is of children playing on a slide in an indoor play area. The focus is on playful activity rather than any form of instruction or demonstration.\n[5] This video shows an individual outdoors explaining and demonstrating how to use a knife, possibly for preparing or carving an object, but not related to wrapping presents.\n\n</content>\n<contrast>\n- [1] beats [2] because it aligns directly with the query of wrapping a toy, whereas [2] involves hitting a piñata.\n- [1] beats [3] because it directly shows the process of wrapping, while [3] is focused on a musical activity.\n- [1] beats [4] because it provides a demonstration related to the query, whereas [4] is about children playing.\n- [1] beats [5] because it directly demonstrates the wrapping process related to the query, while [5] is about using a knife.\n- [2], [3], [4], and [5] all fail to show wrapping a toy and are unrelated to the query, but [2] is more structured with an activity involving a toy.\n- [3] ranks after [2] because it is not demonstrative of the query focus.\n- [4] follows [3] as it is unrelated to the toy wrapping demonstration.\n- [5] ranks lowest as it shows an instructional video on knife usage, which is least related to the query.\n\n</contrast>\n<summary>\n1st=[1] (direct demonstration of wrapping a toy)\n2nd=[2] (involves a toy but unrelated to wrapping)\n3rd=[3] (unrelated musical activity)\n4th=[4] (children playing without demonstration)\n5th=[5] (unrelated knife demonstration)\n</summary>\n</think>\n<answer> [1] > [2] > [3] > [4] > [5] </answer>",
+      "answer": "<think>\n<content>\n[1] The video shows a woman demonstrating how to wrap a toy with wrapping paper. She is explaining each step, as evidenced by the mid-action frames where she is gesturing. The sequence covers placing the toy on the paper, cutting the paper, folding, and securing it, aligning well with the query.\n\n[2] A child is seen playing with a mop in a hallway. The sequence depicts movement along the hallway, but it is unrelated to wrapping a toy, focusing more on play rather than demonstration or explanation of wrapping steps.\n\n[3] This video involves a woman demonstrating a skill with a stick. The frames show her holding a long object and performing actions, possibly martial arts-related, but it does not involve wrapping or explaining steps related to toy wrapping.\n\n[4] Children playing on a slide indoors is the central theme. The frames show no elements of wrapping paper, toys, or any form of instructional demonstration, making it irrelevant to the query.\n\n[5] Children appear to be engaging with a long piece of material, likely bubble wrap. There isn't a demonstration of wrapping a toy; the focus seems to be on playing with the material.\n</content>\n\n<contrast>\n- [1] is most relevant because it clearly depicts the wrapping process with explanation, matching the query.\n- [2] is unrelated as it focuses on a child playing with a mop.\n- [3] is unrelated as it involves a skill demonstration with a stick, not wrapping a toy.\n- [4] is unrelated, showing children playing on a slide.\n- [5] involves activity with material but does not match the demonstration aspect of wrapping a toy.\n</contrast>\n\n<summary>\n1st=[1] (Clearly shows a woman demonstrating how to wrap a toy with wrapping paper, explaining steps)\n2nd=[5] (Involves material interaction, but not a wrapping demonstration)\n3rd=[3] (Has demonstration aspect but unrelated to toy wrapping)\n4th=[2] (Unrelated child play activity)\n5th=[4] (Unrelated play without any wrapping or demonstration)\n</summary>\n</think>\n<answer> [1] > [5] > [3] > [2] > [4] </answer>",
       "pred_order": [
         1,
-        2,
+        5,
         3,
-        4,
-        5
+        2,
+        4
       ],
       "gt_order": [
         1,
@@ -522,44 +522,44 @@
     },
     {
       "sample_index": 9,
-      "text": "A man in a suit watches as people play lacrosse on a grassy field, with a player in a yellow uniform acting as the goalie.",
+      "text": "A man in a suit watches and discusses a lacrosse game where players compete on the field and a goalie defends the net.",
       "videos": [
         {
           "video_id": "v_t0ajvfx6dgA",
           "video_path": "/hub_data1/seohyun/hub_data/v_t0ajvfx6dgA.mp4",
-          "similarity_score": 0.3216463625431061,
+          "similarity_score": 0.4047315716743469,
           "is_correct": true
+        },
+        {
+          "video_id": "v_CmEQjszPDrg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_CmEQjszPDrg.mp4",
+          "similarity_score": 0.38069725036621094,
+          "is_correct": false
         },
         {
           "video_id": "v_9rW35YTKYq8",
           "video_path": "/hub_data1/seohyun/hub_data/v_9rW35YTKYq8.mp4",
-          "similarity_score": 0.3249223530292511,
+          "similarity_score": 0.347713828086853,
           "is_correct": false
         },
         {
-          "video_id": "v_pYb8jzB5vs0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_pYb8jzB5vs0.mp4",
-          "similarity_score": 0.295894593000412,
+          "video_id": "v_BB2vrBWgXkU",
+          "video_path": "/hub_data1/seohyun/hub_data/v_BB2vrBWgXkU.mp4",
+          "similarity_score": 0.34850579500198364,
           "is_correct": false
         },
         {
-          "video_id": "v_kNkYgYnJTXk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_kNkYgYnJTXk.mp4",
-          "similarity_score": 0.2959020733833313,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_dsVvnFkGAn0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_dsVvnFkGAn0.mp4",
-          "similarity_score": 0.2967361509799957,
+          "video_id": "v_FeKEqUxiReA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_FeKEqUxiReA.mp4",
+          "similarity_score": 0.3487609028816223,
           "is_correct": false
         }
       ],
-      "answer": "<think>\n<content>\n[1] This video is a news segment titled \"Game Changer\" covering women's field hockey. There are players in uniforms, a gathering on a grassy field, and a goalie dressed in a yellow outfit is visible. However, there's no man in a suit watching.\n\n[2] The video consists of a man playing the violin outdoors. There are no people playing lacrosse, no grassy field, and no goalie in a yellow uniform.\n\n[3] This video features a scuba diving session in a pool, showing various diving skills. It does not involve lacrosse, grassy fields, or goalies.\n\n[4] The video shows a person canoeing on a lake, with instruction on paddling techniques. There is no lacrosse or goalie.\n\n[5] This video showcases a woman playing the violin indoors. There's no lacrosse game, grassy field, or goalie.\n</content>\n\n<contrast>\n- [1] is related due to the presence of a sports field, players, and goalie in a yellow uniform, whereas [2], [3], [4], and [5] lack these key elements.\n- [2] features violin playing, which is unrelated to the lacrosse query.\n- [3] involves scuba diving, which is entirely different from the lacrosse setting.\n- [4] focuses on canoeing, not aligning with the lacrosse or sports context.\n- [5] is another indoor violin performance, devoid of any sports action.\n</contrast>\n\n<summary>\n1st=[1] Most relevant due to sports setting and presence of a goalie in yellow. \n2nd=[2] Violin playing, unrelated to query.\n3rd=[5] Indoor violin playing, equally unrelated but close-up and clear.\n4th=[3] Scuba diving, also unrelated but has action scenes.\n5th=[4] Canoeing, least relevant as water sport is furthest from query context.\n</summary>\n</think>\n<answer> [1] > [2] > [5] > [3] > [4] </answer>",
+      "answer": "<think>\n<content>\n[1] The video features a sports segment with a person in a suit, likely a news anchor, discussing an event referred to as \"Game Changer.\" It includes footage of female players in a sports field setting, likely discussing a game strategy. There's a goalie visible in some frames, indicating some form of field sport is being discussed.\n\n[2] The video shows large groups of people participating in a running event or marathon, with no visible link to lacrosse or a suited man discussing a game.\n\n[3] The video depicts a person playing the violin outdoors, focusing on musical performance with no relation to sports or a lacrosse game.\n\n[4] The video is a tutorial or demonstration related to nail care or cosmetics, with no scenes related to sports, specifically a lacrosse game or a suited man.\n\n[5] The video appears to be a training session or practice routine, possibly boxing or martial arts, in an indoor gym. There is no connection to a lacrosse game or any discussions by a suited man.\n</content>\n\n<contrast>\n- Candidate [1] closely aligns with the query as it involves a suited man discussing a sports event with an active game environment.\n- Candidate [2] lacks any elements of a suited man or a lacrosse game, focusing instead on a running event.\n- Candidate [3] is unrelated, focusing on playing the violin, without any sports reference.\n- Candidate [4] is unrelated, focusing on a nail care demonstration, without sports context.\n- Candidate [5] depicts indoor training, not a lacrosse game or interaction involving a suited man.\n</contrast>\n\n<summary>\n1st=[1] (features a suited man discussing a sports event with game footage)\n2nd=[5] (shows a training session but no lacrosse or discussions by a suited man)\n3rd=[2] (features a sports event atmosphere but unrelated to lacrosse or the suited man)\n4th=[3] (focuses on a musical performance, unrelated to the query)\n5th=[4] (focuses on a nail care tutorial, completely unrelated)\n</summary>\n</think>\n<answer> [1] > [5] > [2] > [3] > [4] </answer>",
       "pred_order": [
         1,
-        2,
         5,
+        2,
         3,
         4
       ],
@@ -571,54 +571,54 @@
         3
       ],
       "evaluation": {
-        "keep": true,
-        "reason": "ok",
-        "pos_diff": 2,
+        "keep": false,
+        "reason": "pos_diff",
+        "pos_diff": 4,
         "top1": true
       }
     },
     {
       "sample_index": 10,
-      "text": "A girl climbs and plays on monkey bars, waving to the camera and confidently jumping down partway through.",
+      "text": "A girl climbs and plays on monkey bars, engaging with the camera as she enjoys her activity.",
       "videos": [
         {
-          "video_id": "v_LFeoVokXAFY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_LFeoVokXAFY.mp4",
-          "similarity_score": 0.4208986759185791,
+          "video_id": "v_AGgJVF3nT6I",
+          "video_path": "/hub_data1/seohyun/hub_data/v_AGgJVF3nT6I.mp4",
+          "similarity_score": 0.3964782953262329,
           "is_correct": false
         },
         {
-          "video_id": "v_XnUi1SG9jxA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_XnUi1SG9jxA.mp4",
-          "similarity_score": 0.4021657109260559,
+          "video_id": "v_HxJnPUqF9i8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
+          "similarity_score": 0.3659914433956146,
           "is_correct": false
         },
         {
-          "video_id": "v_p9iE8iemCMs",
-          "video_path": "/hub_data1/seohyun/hub_data/v_p9iE8iemCMs.mp4",
-          "similarity_score": 0.3877153992652893,
+          "video_id": "v_FeKEqUxiReA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_FeKEqUxiReA.mp4",
+          "similarity_score": 0.35398703813552856,
           "is_correct": false
         },
         {
-          "video_id": "v_fny1HWXezlE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_fny1HWXezlE.mp4",
-          "similarity_score": 0.42842644453048706,
+          "video_id": "v_Vjsd6Ec6eKA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Vjsd6Ec6eKA.mp4",
+          "similarity_score": 0.40537112951278687,
           "is_correct": false
         },
         {
           "video_id": "v_IoiDAHNryTk",
           "video_path": "/hub_data1/seohyun/hub_data/v_IoiDAHNryTk.mp4",
-          "similarity_score": 0.550972580909729,
+          "similarity_score": 0.5102912187576294,
           "is_correct": true
         }
       ],
-      "answer": "<think>\n<content>\n[1] A person hits a piñata with a bat in a backyard setting. The action is repetitive, focusing on striking the piñata.\n[2] An athlete participates in a high jump event. The sequence shows running, jumping, and clearing the bar.\n[3] A tutorial on playing the flute. The frames show close-ups of hand positioning and sheet music.\n[4] A camel ride in a park setting, with people mounting and the camel walking.\n[5] A girl climbs and plays on monkey bars, waves, and jumps down partway through. The sequence matches the query description closely.\n</content>\n\n<contrast>\n- [5] matches the query perfectly, depicting a girl playing on monkey bars and jumping down, fulfilling all the query actions.\n- [1] focuses on hitting a piñata, whereas [5] involves playing on playground equipment.\n- [2] features a high jump, with no connection to playground activities or monkey bars.\n- [3] is a music tutorial, irrelevant to the physical activity described.\n- [4] involves a camel ride, not related to climbing or monkey bars.\n</contrast>\n\n<summary>\n1st=[5] (depicts a girl on monkey bars, waving and jumping down, perfectly matching the query)\n2nd=[1] (though unrelated to monkey bars, involves active outdoor play)\n3rd=[2] (athletic action, but unrelated to the query's specifics)\n4th=[4] (unrelated setting and activity)\n5th=[3] (musical tutorial with no relevance to the described physical activity)\n</summary>\n</think>\n<answer> [5] > [1] > [2] > [4] > [3] </answer>",
+      "answer": "<think>\n<content>\n[1] The video shows a child playing on an indoor playground slide, not monkey bars. There is no engagement with a camera during the activity.\n[2] The video depicts various scenes of people practicing or competing in javelin throwing. It does not involve playground activities or monkey bars.\n[3] The video features a person jogging or skipping rope indoors, with some filming crew present. There is no playground or monkey bars involved.\n[4] The video shows what appears to be a cheerleading practice with people lifting a girl, set outdoors. It's unrelated to monkey bars or playground activities.\n[5] The video portrays a girl playing on monkey bars at an outdoor playground. She climbs and plays on the equipment but no direct camera engagement is visible.\n</content>\n\n<contrast>\n- [5] is the most relevant as it shows a girl on monkey bars, the main focus of the query, whereas others do not feature this activity.\n- [1] involves playground play but lacks monkey bars, whereas [5] directly involves them.\n- [4] showcases outdoor activity but is focused on cheerleading rather than playground equipment, unlike [5].\n- [3] involves an athletic activity but not relevant to monkey bars or playgrounds, unlike [5].\n- [2] is entirely unrelated to playground activities, focusing solely on javelin throwing, making it less relevant than [5].\n</contrast>\n\n<summary>\n1st=[5] (features monkey bars, direct match to query)\n2nd=[1] (involves playground activity, lacks monkey bars)\n3rd=[4] (outdoor activity, unrelated to monkey bars)\n4th=[3] (athletic activity, no playground or monkey bars)\n5th=[2] (completely unrelated to the query scenario)\n</summary>\n</think>\n<answer> [5] > [1] > [4] > [3] > [2] </answer>",
       "pred_order": [
         5,
         1,
-        2,
         4,
-        3
+        3,
+        2
       ],
       "gt_order": [
         5,
@@ -630,46 +630,46 @@
       "evaluation": {
         "keep": false,
         "reason": "pos_diff",
-        "pos_diff": 3,
+        "pos_diff": 4,
         "top1": true
       }
     },
     {
       "sample_index": 11,
-      "text": "A man snowboards down a snowy mountain, capturing his ride on camera before turning it off.",
+      "text": "A man snowboards down a snowy mountain, capturing his ride on camera until he turns it off.",
       "videos": [
         {
           "video_id": "v__Af_9cK5x4E",
           "video_path": "/hub_data1/seohyun/hub_data/v__Af_9cK5x4E.mp4",
-          "similarity_score": 0.37480634450912476,
+          "similarity_score": 0.3824734687805176,
           "is_correct": false
         },
         {
           "video_id": "v__yWADgOFxP0",
           "video_path": "/hub_data1/seohyun/hub_data/v__yWADgOFxP0.mp4",
-          "similarity_score": 0.4829059839248657,
+          "similarity_score": 0.48363611102104187,
           "is_correct": true
         },
         {
           "video_id": "v_QdmUojrWdmE",
           "video_path": "/hub_data1/seohyun/hub_data/v_QdmUojrWdmE.mp4",
-          "similarity_score": 0.37253186106681824,
+          "similarity_score": 0.3753064274787903,
           "is_correct": false
         },
         {
-          "video_id": "v_O-zE1-Yw3w0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
-          "similarity_score": 0.34632396697998047,
+          "video_id": "v_S6t9Lq1xKJk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_S6t9Lq1xKJk.mp4",
+          "similarity_score": 0.35409513115882874,
           "is_correct": false
         },
         {
           "video_id": "v_Y_dtU10XIsg",
           "video_path": "/hub_data1/seohyun/hub_data/v_Y_dtU10XIsg.mp4",
-          "similarity_score": 0.4255271553993225,
+          "similarity_score": 0.4280262887477875,
           "is_correct": false
         }
       ],
-      "answer": "<think>\n<content>\n[1] The video shows various scenes of motocross biking. It includes stunts, jumps, and racing on dirt tracks. There is no snowboarding or mountain scenes visible.\n[2] This video depicts a man snowboarding down a snowy mountain. The frames show the snowboarder, captured from a first-person perspective and capturing the ride.\n[3] The video displays multiple surfing scenes with surfers riding waves. There are no snowy mountains or snowboarding activities.\n[4] The video consists of indoor activities involving children playing, possibly with bubble wrap. There is no relation to snowboarding or outdoor snow activities.\n[5] This video shows a person shoveling snow while a dog is present. It takes place in a snowy environment but does not involve snowboarding down a mountain.\n</content>\n\n<contrast>\n- [2] features snowboarding and a snowy mountain environment, directly matching the query, whereas [1], [3], [4], and [5] do not.\n- [5] includes snow and some outdoor activity, which is closer to the snowboarding theme than [1], [3], and [4].\n- [3] and [1] depict water and dirt biking sports, respectively, with no snow, making them less relevant to the query compared to [5].\n- [4] involves indoor play activities, making it the least relevant to outdoor snowboarding.\n</contrast>\n\n<summary>\n1st=[2] (Directly matches snowboarding; includes snowy mountain and first-person capture)\n2nd=[5] (Includes snowy environment; some outdoor action)\n3rd=[1] (Outdoor action sports but unrelated to snowboarding)\n4th=[3] (Water sports; unrelated to snowboarding)\n5th=[4] (Indoor play; unrelated to snowboarding or outdoor action)\n</summary>\n</think>\n<answer> [2] > [5] > [1] > [3] > [4] </answer>",
+      "answer": "<think>\n<content>\n[1] The images depict people riding motorcycles on dirt tracks, performing jumps, and stunts, unrelated to snowboarding.\n\n[2] A man is seen snowboarding down a snowy mountain. The sequence includes views from a first-person perspective, showing him capturing his ride on camera, which fits the query.\n\n[3] A series of images show surfers riding waves in the ocean. The scene involves water and surfing, which does not match the snowboarding context.\n\n[4] A person is cooking indoors, showing culinary activities unrelated to snowboarding or outdoor sports.\n\n[5] A man is shoveling snow with a dog watching, involving snow but not snowboarding or capturing the activity on camera.\n</content>\n\n<contrast>\n- [2] depicts snowboarding from a first-person perspective, which matches the query of capturing a snowboarding ride on camera, whereas [1] involves motorcycles on dirt tracks.\n- [2] features the specific action of snowboarding, differentiating it from [3], which involves surfing, a different sport.\n- While [5] includes snow, it lacks the snowboarding and filming aspect present in [2].\n- [4] focuses on an indoor cooking scene, not related to outdoor sports like in [2].\n</contrast>\n\n<summary>\n1st=[2] (Snowboarding captured on camera, matches query)\n2nd=[5] (Involves snow, partially related)\n3rd=[1] (Involves action sports, but unrelated to snowboarding)\n4th=[3] (Different sport, unrelated to snowboarding)\n5th=[4] (Indoor cooking, unrelated activity)\n</summary>\n</think>\n<answer> [2] > [5] > [1] > [3] > [4] </answer>",
       "pred_order": [
         2,
         5,
@@ -693,45 +693,45 @@
     },
     {
       "sample_index": 12,
-      "text": "A young boy repeatedly slides down and climbs back up a slide in a playroom, enjoying himself throughout the activity.",
+      "text": "A young boy repeatedly climbs and slides down a slide in a playroom, enjoying himself each time.",
       "videos": [
         {
-          "video_id": "v_S6t9Lq1xKJk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_S6t9Lq1xKJk.mp4",
-          "similarity_score": 0.29869475960731506,
+          "video_id": "v_Y_dtU10XIsg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Y_dtU10XIsg.mp4",
+          "similarity_score": 0.31315237283706665,
           "is_correct": false
         },
         {
           "video_id": "v_AGgJVF3nT6I",
           "video_path": "/hub_data1/seohyun/hub_data/v_AGgJVF3nT6I.mp4",
-          "similarity_score": 0.47687584161758423,
+          "similarity_score": 0.5041301846504211,
           "is_correct": true
         },
         {
-          "video_id": "v_lZKrd84QElk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_lZKrd84QElk.mp4",
-          "similarity_score": 0.3085758090019226,
+          "video_id": "v_O-zE1-Yw3w0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
+          "similarity_score": 0.3234810531139374,
           "is_correct": false
         },
         {
           "video_id": "v_epqnpUCVLK8",
           "video_path": "/hub_data1/seohyun/hub_data/v_epqnpUCVLK8.mp4",
-          "similarity_score": 0.3756715655326843,
+          "similarity_score": 0.3963863253593445,
           "is_correct": false
         },
         {
-          "video_id": "v_Y_dtU10XIsg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Y_dtU10XIsg.mp4",
-          "similarity_score": 0.3127851188182831,
+          "video_id": "v_xmag8UI8iws",
+          "video_path": "/hub_data1/seohyun/hub_data/v_xmag8UI8iws.mp4",
+          "similarity_score": 0.3280365467071533,
           "is_correct": false
         }
       ],
-      "answer": "<think>\n<content>\n[1] Shows a person cooking at a station with various ingredients and equipment, not related to a young boy playing on a slide.\n[2] Displays a young boy sliding down and climbing back up a red slide multiple times in a playroom setting filled with toys, matching the query perfectly.\n[3] Features a formal outdoor event with speakers and an audience, which is unrelated to a playroom setting or a young boy playing on a slide.\n[4] Depicts a child playing with a large inflatable ball indoors, which is similar in setting but not involving a slide specifically.\n[5] Captures a person shoveling snow accompanied by a dog, unrelated to indoor play or a slide activity.\n</content>\n\n<contrast>\n- [2] matches the query exactly by showing the boy repeatedly sliding and climbing in a playroom, whereas [1], [3], [4], and [5] do not depict any slide or playroom activity.\n- [1] involves cooking, whereas [2] shows a play activity, which is why [2] is ranked higher.\n- [4] shows indoor play with a ball, providing some contextual relevance, but lacks the sliding action.\n- [3] is an entirely different context of a formal gathering, providing no relevance to the query.\n- [5] features outdoor snow activity, having no relation to indoor play or slides.\n</contrast>\n\n<summary>\n1st=[2] (directly matches query with repeated sliding and climbing by a young boy in a playroom)\n2nd=[4] (indoor play activity with a child, but no slide involved)\n3rd=[1] (unrelated cooking activity)\n4th=[3] (formal outdoor event, entirely unrelated to query)\n5th=[5] (outdoor snow activity, unrelated to query)\n</summary>\n</think>\n<answer> [2] > [4] > [1] > [3] > [5] </answer>",
+      "answer": "<think>\n<content>\n[1] The images depict a person shoveling snow outside and interacting with a dog. There is no young boy or slide involved.\n[2] This sequence clearly shows a young boy climbing up and sliding down repeatedly on a small slide within a playroom. The playroom setting is evident, matching the query.\n[3] The frames show a child in a dimly lit room, interacting with a long object, possibly bubble wrap. There's no slide or repeated climbing and sliding.\n[4] A child is playing with a large exercise ball indoors but does not involve a slide or repeated climbing and sliding activity.\n[5] This depicts leaves being blown outdoors, with no playroom, slide, or young boy visible.\n</content>\n\n<contrast>\n- [2] shows a young boy on a slide in a playroom, clearly matching the query's description, whereas [1], [3], [4], [5] do not involve a young boy climbing a slide.\n- The indoor setting and play equipment in [2] provide a precise context whereas [4] involves unrelated play with an exercise ball.\n- [5] focuses on a garden scene with leaves, irrelevant to the playroom scenario described in the query.\n</contrast>\n\n<summary>\n1st=[2] (directly matches the query as it shows a boy climbing and sliding in a playroom)\n2nd=[4] (features children playing indoors, though not with a slide)\n3rd=[3] (shows a child playing, but no slide or playroom)\n4th=[1] (features outdoor snow activity)\n5th=[5] (focuses on outdoor leaf blowing, unrelated scene)\n</summary>\n</think>\n<answer> [2] > [4] > [3] > [1] > [5] </answer>",
       "pred_order": [
         2,
         4,
-        1,
         3,
+        1,
         5
       ],
       "gt_order": [
@@ -742,53 +742,53 @@
         1
       ],
       "evaluation": {
-        "keep": true,
-        "reason": "ok",
-        "pos_diff": 2,
+        "keep": false,
+        "reason": "pos_diff",
+        "pos_diff": 3,
         "top1": true
       }
     },
     {
       "sample_index": 13,
-      "text": "A man and woman host a sports-themed discussion on a set with red couches, sharing highlights of a sand soccer game in an urban setting before discussing the clips together.",
+      "text": "A man and woman discuss and analyze a city soccer game played on sand, sharing commentary and highlights from their studio set.",
       "videos": [
         {
-          "video_id": "v_x4iCAIPRDVQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_x4iCAIPRDVQ.mp4",
-          "similarity_score": 0.3250725269317627,
+          "video_id": "v_BB2vrBWgXkU",
+          "video_path": "/hub_data1/seohyun/hub_data/v_BB2vrBWgXkU.mp4",
+          "similarity_score": 0.3210502862930298,
           "is_correct": false
         },
         {
-          "video_id": "v_lZKrd84QElk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_lZKrd84QElk.mp4",
-          "similarity_score": 0.39046037197113037,
+          "video_id": "v_74EoyLUbtgI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
+          "similarity_score": 0.3372598886489868,
           "is_correct": false
         },
         {
           "video_id": "v_XD3yFrJHiv8",
           "video_path": "/hub_data1/seohyun/hub_data/v_XD3yFrJHiv8.mp4",
-          "similarity_score": 0.49407958984375,
+          "similarity_score": 0.41657891869544983,
           "is_correct": true
         },
         {
-          "video_id": "v_JgHQCKz_DRc",
-          "video_path": "/hub_data1/seohyun/hub_data/v_JgHQCKz_DRc.mp4",
-          "similarity_score": 0.32311660051345825,
+          "video_id": "v_fN2DiOswmOA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_fN2DiOswmOA.mp4",
+          "similarity_score": 0.3201632499694824,
           "is_correct": false
         },
         {
-          "video_id": "v_oP77DgsbhKQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_oP77DgsbhKQ.mp4",
-          "similarity_score": 0.3664972484111786,
+          "video_id": "v_kNkYgYnJTXk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_kNkYgYnJTXk.mp4",
+          "similarity_score": 0.331769198179245,
           "is_correct": false
         }
       ],
-      "answer": "<think>\n<content>\n[1] The video shows people in a gymnasium doing indoor rowing. There are screens monitoring their performance, but there is no indication of a sports-themed talk show set. No highlights of a soccer game are visible.\n\n[2] The content displays a political event outdoors, with speeches and attendees in traditional attire. There are no indications of a sports-themed discussion or a soccer game.\n\n[3] The video showcases a man and woman sitting on red couches on a set with sports-themed decor. Clips of a sand soccer game in an urban setting are shown, followed by a discussion between the hosts. This matches the query.\n\n[4] This video depicts a man having a haircut in a salon. There is no element of a sports-themed discussion or highlights from a soccer game.\n\n[5] The video shows a person working on flooring, specifically laying tiles. There are no elements related to sports discussions or soccer games.\n\n</content>\n\n<contrast>\n- [3] matches the query as it includes a sports-themed set, discussion, and sand soccer game highlights, whereas [1], [2], [4], and [5] do not relate to the query at all.\n- [1] involves indoor rowing with no discussion set or soccer highlights, whereas [3] fits the theme perfectly.\n- [2] features a political event, not a sports talk show; [3] is focused on sports discussion.\n- [4] and [5] focus on non-sports activities (haircut and tiling), whereas [3] is directly relevant with sports highlights and discussion.\n</contrast>\n\n<summary>\n1st=[3] (It fits the query with a sports-themed discussion and sand soccer highlights)\n2nd=[1] (Minor relevance due to sports context, but no discussion set or soccer highlights)\n3rd=[2] (Unrelated political event, no sports theme)\n4th=[4] (Completely unrelated content about a haircut)\n5th=[5] (Unrelated to the query, focuses on tiling)\n</summary>\n</think>\n<answer> [3] > [1] > [2] > [4] > [5] </answer>",
+      "answer": "<think>\n<content>\n[1] This video shows a woman demonstrating nail care and makeup tutorials. There is a focus on manicure products and a closing screen with a subscription invite.\n[2] The video depicts an art installation where people are engaging in shoe polishing, with various tools and a projection art setup visible.\n[3] This video features a man and woman in a studio set discussing soccer, with shots of a soccer game played on sand. It aligns with the query about commentary and highlights from a studio.\n[4] The video involves a culinary exploration of Chilean cuisine, featuring preparation and tasting of dishes, particularly focusing on marine algae salad.\n[5] The video shows a person paddling a canoe across a lake, with instructional graphics about paddling techniques.\n\n</content>\n\n<contrast>\n- [3] fits the query well because it involves studio commentary and a soccer game on sand, whereas [1] focuses on a makeup tutorial.\n- [3] features relevant commentary and sports highlights, whereas [2] centers on an art installation unrelated to sports or studio discussions.\n- [3] precisely matches the theme of a studio set analyzing a city soccer game played on sand, whereas [4] does not involve sports commentary but culinary exploration.\n- [5] involves canoeing techniques, lacking the relevancy of a sports studio discussion shown in [3].\n\n</contrast>\n\n<summary>\n1st=[3] The video includes a man and woman discussing a city soccer game on sand, matching the query.\n2nd=[2] Though unrelated to the query, it involves a unique commentary setting with art installations.\n3rd=[4] Has commentary elements but focuses on cooking, contrasting with a sports theme.\n4th=[1] Involves commentary, but on a different subject: nail care.\n5th=[5] Pertains to outdoor activity, without any studio discussion or commentary.\n\n</summary>\n</think>\n<answer> [3] > [2] > [4] > [1] > [5] </answer>",
       "pred_order": [
         3,
-        1,
         2,
         4,
+        1,
         5
       ],
       "gt_order": [
@@ -799,48 +799,48 @@
         4
       ],
       "evaluation": {
-        "keep": false,
-        "reason": "pos_diff",
-        "pos_diff": 4,
+        "keep": true,
+        "reason": "ok",
+        "pos_diff": 2,
         "top1": true
       }
     },
     {
       "sample_index": 14,
-      "text": "The former president walks through a field with a large crowd, gives a speech amid cheers, greets supporters, and shares a beer with attendees.",
+      "text": "The former president interacts with a crowd, delivering a speech, greeting supporters, and sharing a drink in a lively outdoor gathering.",
       "videos": [
         {
-          "video_id": "v_fN2DiOswmOA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_fN2DiOswmOA.mp4",
-          "similarity_score": 0.31125837564468384,
+          "video_id": "v_LNKdVrX_0Fg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
+          "similarity_score": 0.2842634320259094,
           "is_correct": false
         },
         {
           "video_id": "v_lZKrd84QElk",
           "video_path": "/hub_data1/seohyun/hub_data/v_lZKrd84QElk.mp4",
-          "similarity_score": 0.4433968663215637,
+          "similarity_score": 0.3785756826400757,
           "is_correct": true
         },
         {
-          "video_id": "v_D9rHZpZoeRA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_D9rHZpZoeRA.mp4",
-          "similarity_score": 0.3356287479400635,
+          "video_id": "v_rAuz_Pf3lp8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_rAuz_Pf3lp8.mp4",
+          "similarity_score": 0.29568642377853394,
           "is_correct": false
         },
         {
-          "video_id": "v_aJbl1eVBzk0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_aJbl1eVBzk0.mp4",
-          "similarity_score": 0.3094436824321747,
+          "video_id": "v_W19-fYOO9sg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_W19-fYOO9sg.mp4",
+          "similarity_score": 0.27548080682754517,
           "is_correct": false
         },
         {
-          "video_id": "v_zihMznAYlV0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_zihMznAYlV0.mp4",
-          "similarity_score": 0.3191198408603668,
+          "video_id": "v_BB2vrBWgXkU",
+          "video_path": "/hub_data1/seohyun/hub_data/v_BB2vrBWgXkU.mp4",
+          "similarity_score": 0.2866772413253784,
           "is_correct": false
         }
       ],
-      "answer": "<think>\n<content>\n[1] Shows a cooking demonstration with marine algae salad and other food items, unrelated to a presidential event or public speech. \n\n[2] Features a former president arriving at an outdoor event, giving a speech with a crowd, and sitting at a table with a beer, highly matching the query about walking through a field, giving a speech, greeting supporters, and sharing a beer.\n\n[3] Depicts changing a car tire in an indoor setting, unrelated to a public event, speech, or interaction with a crowd.\n\n[4] Shows a person working on assembling a bicycle in a workshop, with no signs of a public event or speech.\n\n[5] Contains outdoor scenes of people skiing or snowboarding in costume, also unrelated to a presidential event.\n</content>\n\n<contrast>\n- Image [2] matches the query perfectly with scenes of a former president at a public event, giving a speech, and sharing a beer, whereas [1] focuses on a cooking demonstration without elements of a public speech or interaction.\n- Image [3] is focused on car maintenance, lacking any public event or speech, unlike [2]'s relevant content.\n- Image [4] involves bike assembly with no involvement of crowds or public speaking, differing from the presidential event in [2].\n- Image [5] shows recreational winter sports, offering no relevance to a presidential event, unlike [2]'s content.\n</contrast>\n\n<summary>\n1st=[2] (matches query, showing a former president at a public event, giving a speech, and sharing a beer)\n2nd=[1] (shows a public scene with people, though unrelated to a presidential event)\n3rd=[3] (no public event or crowd, focused on car maintenance)\n4th=[4] (involves a workshop setting, no public event)\n5th=[5] (recreational sports, no relevance to the query)\n</summary>\n</think>\n<answer> [2] > [1] > [3] > [4] > [5] </answer>",
+      "answer": "<think>\n<content>\n[1] This candidate shows a sequence of wrapping a box with gift paper. It contains close-ups of hands interacting with wrapping paper, bows, and scissors.\n\n[2] This grid showcases a former president interacting with a crowd in an outdoor setting. There is a speech being delivered, interaction with supporters, and sharing a drink, matching the query closely.\n\n[3] The frames depict people tubing on a river during a leisure activity. It is an outdoor scene but unrelated to the query involving a speech or interacting with a crowd.\n\n[4] A sequence displaying a bike wheel being repaired. It involves hands manipulating the tire and tools, not related to an outdoor gathering or speech.\n\n[5] The content involves a person doing a nail polish tutorial. It primarily focuses on cosmetic application, unrelated to the described query about a speech and outdoor activity.\n</content>\n\n<contrast>\n- Candidate [2] displays a former president interacting with a crowd, delivering a speech, and sharing a drink, matching the query about an outdoor political engagement.\n- Candidate [1] is about wrapping a gift, which does not relate to a speech or outdoor gathering.\n- Candidate [3] shows tubing on a river, unrelated to political engagements.\n- Candidate [4] involves repairing a bike wheel, not an outdoor gathering or speaking event.\n- Candidate [5] focuses on a nail tutorial, not involving an outdoor or political setting.\n</contrast>\n\n<summary>\n1st=[2] (It directly matches the description of a former president interacting with a crowd and delivering a speech.)\n2nd=[1] (Clear content interaction but unrelated to query, better production than others.)\n3rd=[3] (Outdoor setting but unrelated to a speech or political event.)\n4th=[4] (Totally unrelated setting or activity to query.)\n5th=[5] (Cosmetic focus with no thematic connection to a speech or outdoor interaction.)\n</summary>\n</think>\n<answer> [2] > [1] > [3] > [4] > [5] </answer>",
       "pred_order": [
         2,
         1,
@@ -864,46 +864,46 @@
     },
     {
       "sample_index": 15,
-      "text": "Four children enjoy building sandcastles and playing together on the beach, making trips to the water as they create and admire their sandy creations.",
+      "text": "Four children enjoy playing together on the beach, building sandcastles and fetching water while interacting with each other's creations.",
       "videos": [
         {
-          "video_id": "v_5lre5zbUV1Q",
-          "video_path": "/hub_data1/seohyun/hub_data/v_5lre5zbUV1Q.mp4",
-          "similarity_score": 0.29835015535354614,
+          "video_id": "v_Vjsd6Ec6eKA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Vjsd6Ec6eKA.mp4",
+          "similarity_score": 0.27983441948890686,
           "is_correct": false
         },
         {
           "video_id": "v_6lYTHj9vImo",
           "video_path": "/hub_data1/seohyun/hub_data/v_6lYTHj9vImo.mp4",
-          "similarity_score": 0.4596138000488281,
+          "similarity_score": 0.4533739686012268,
           "is_correct": true
         },
         {
-          "video_id": "v_f0CViWbj3V4",
-          "video_path": "/hub_data1/seohyun/hub_data/v_f0CViWbj3V4.mp4",
-          "similarity_score": 0.28492507338523865,
+          "video_id": "v_p9iE8iemCMs",
+          "video_path": "/hub_data1/seohyun/hub_data/v_p9iE8iemCMs.mp4",
+          "similarity_score": 0.27522534132003784,
           "is_correct": false
         },
         {
-          "video_id": "v_D9rHZpZoeRA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_D9rHZpZoeRA.mp4",
-          "similarity_score": 0.27059516310691833,
+          "video_id": "v__zHSfEhEqkU",
+          "video_path": "/hub_data1/seohyun/hub_data/v__zHSfEhEqkU.mp4",
+          "similarity_score": 0.26108038425445557,
           "is_correct": false
         },
         {
-          "video_id": "v_4x7HYKV8zkY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_4x7HYKV8zkY.mp4",
-          "similarity_score": 0.385831356048584,
+          "video_id": "v_fny1HWXezlE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_fny1HWXezlE.mp4",
+          "similarity_score": 0.3488085865974426,
           "is_correct": false
         }
       ],
-      "answer": "<think>\n<content>\n[1] A child is seen by a kitchen sink, playing with water. This does not involve the beach or building sandcastles.\n\n[2] Multiple children are actively engaged in building sandcastles on the beach. They use buckets and other tools, and the beach setting is clearly visible, matching the query perfectly.\n\n[3] Adults are seen playing hand drums indoors. This has no connection to children, beaches, or sandcastles.\n\n[4] The video shows a person changing a car tire indoors, which is not related to the beach or sandcastles.\n\n[5] Three children are performing gymnastics on a beach. While the setting is a beach, the activity is not related to building sandcastles or playing in the sand.\n\n</content>\n\n<contrast>\n- [2] is most relevant because it directly shows children building sandcastles on the beach, aligning perfectly with the query.\n- [5] shows children on a beach, but they are doing gymnastics, not building sandcastles, whereas [2] matches the specific activities mentioned.\n- [1] involves a child but not a beach, sandcastle building, or playing with sand, whereas [2] features all of these elements.\n- [3] and [4] do not show any relevant activities or settings; they involve adults playing drums and a car tire change, respectively, which are unrelated to the query.\n</contrast>\n\n<summary>\n1st=[2] (Shows children building sandcastles on a beach, perfectly matching the query)\n2nd=[5] (Children on a beach, but performing gymnastics, not sandcastle building)\n3rd=[1] (Child playing with water, no beach or sandcastle activity)\n4th=[3] (Adults playing drums, unrelated setting and activities)\n5th=[4] (Car tire change in an indoor setting, completely unrelated)\n</summary>\n</think>\n<answer> [2] > [5] > [1] > [3] > [4] </answer>",
+      "answer": "<think>\n<content>\n[1] This sequence features people engaging in a physical activity on grass. It appears to involve exercises or play, but it is not at a beach and there's no interaction with sand or water.\n\n[2] This sequence shows children at a beach building sandcastles and playing in the sand. They are using buckets and engaging with water, clearly aligning with the query.\n\n[3] This sequence involves a tutorial or demonstration of playing a flute. It focuses on music education, not related to beach activities or interactions among children.\n\n[4] This sequence depicts a person paddling a canoe on a lake. It involves water but not in the context of beach play or with children.\n\n[5] This sequence shows people riding a camel in a park setting. There is no beach, sandcastle building, or involved interactions among children.\n\n</content>\n\n<contrast>\n- [2] beats others as it directly matches the query with kids playing on a beach, building sandcastles, and interacting with water.\n- [1] is not relevant as it involves physical activities on grass, whereas [2] clearly shows the beach scene.\n- [3] is a music tutorial and is completely unrelated to the beach or children playing.\n- [4] involves water and outdoor activity but lacks child interaction or sandcastle building.\n- [5] involves an outdoor activity but is on camel rides in a park, not a beach setting.\n\n</contrast>\n\n<summary>\n1st=[2] (directly matches children playing on a beach building sandcastles)\n2nd=[4] (involves water but lacks the specific child interaction or sand setting)\n3rd=[1] (physical activities not related to a beach)\n4th=[5] (unrelated park camel ride)\n5th=[3] (music tutorial unrelated to a beach or play)\n</summary>\n</think>\n<answer> [2] > [4] > [1] > [5] > [3] </answer>",
       "pred_order": [
         2,
-        5,
+        4,
         1,
-        3,
-        4
+        5,
+        3
       ],
       "gt_order": [
         2,
@@ -913,9 +913,9 @@
         4
       ],
       "evaluation": {
-        "keep": true,
-        "reason": "ok",
-        "pos_diff": 0,
+        "keep": false,
+        "reason": "pos_diff",
+        "pos_diff": 3,
         "top1": true
       }
     }

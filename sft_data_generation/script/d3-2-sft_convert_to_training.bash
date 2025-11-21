@@ -7,6 +7,10 @@ ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 SFT_DIR="${ROOT_DIR}/sft_data_generation"
 CONVERT_SCRIPT="${SFT_DIR}/preprocess/sft_data_generate/convert_sft_to_llamafactory.py"
 
+if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "video-colbert" ]]; then
+  source "$(conda info --base)/etc/profile.d/conda.sh"
+  conda activate video-colbert
+fi
 DATA_DIR="${DATA_DIR:-${ROOT_DIR}/data}"
 if [[ -z "${SFT_JSON:-}" ]]; then
   mapfile -t __kept_files < <(find "${DATA_DIR}/d3" -maxdepth 1 -type f -name "*_sft_training_data_kept.json" | sort)

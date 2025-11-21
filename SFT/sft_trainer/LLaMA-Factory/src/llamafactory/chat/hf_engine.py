@@ -180,6 +180,9 @@ class HuggingfaceEngine(BaseEngine):
 
         mm_inputs = template.mm_plugin.get_mm_inputs(**mm_input_dict, batch_ids=[prompt_ids], processor=processor)
         for key, value in mm_inputs.items():
+            # Skip non-tensorical metadata objects (e.g., VideoMetadata) which cannot be converted to tensors
+            if key in ("video_metadata",):
+                continue
             if isinstance(value, list) and isinstance(value[0], torch.Tensor):  # for pixtral inputs
                 value = torch.stack(value)  # assume they have same sizes
             elif (
@@ -187,12 +190,16 @@ class HuggingfaceEngine(BaseEngine):
             ):  # for minicpmv inputs
                 value = torch.stack([torch.stack(v) for v in value])
             elif not isinstance(value, torch.Tensor):
-                value = torch.tensor(value)
+                try:
+                    value = torch.tensor(value)
+                except Exception:
+                    # As a safety net, skip values that cannot be tensorized
+                    continue
 
             if torch.is_floating_point(value):  # cast data dtype for paligemma
                 value = value.to(model.dtype)
 
-            if key == "second_per_grid_ts":  # qwen2.5vl special case
+            if key == "second_per_grid_ts":  # qwen2.5vl/qwen3vl special case
                 gen_kwargs[key] = value.tolist()
             else:
                 gen_kwargs[key] = value.to(model.device)

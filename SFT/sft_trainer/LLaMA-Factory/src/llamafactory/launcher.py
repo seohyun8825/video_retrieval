@@ -82,6 +82,13 @@ def launch():
             env["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
             env["TORCH_NCCL_AVOID_RECORD_STREAMS"] = "1"
 
+        # Ensure current Python env bin takes precedence (avoid picking system torchrun)
+        try:
+            _env_bin = os.path.dirname(sys.executable)
+            env["PATH"] = _env_bin + os.pathsep + env.get("PATH", "")
+        except Exception:
+            pass
+
         if rdzv_id is not None:
             # launch elastic job with fault tolerant support when possible
             # see also https://docs.pytorch.org/docs/stable/elastic/train_script.html
@@ -90,46 +97,21 @@ def launch():
             if min_nnodes is not None and max_nnodes is not None:
                 rdzv_nnodes = f"{min_nnodes}:{max_nnodes}"
 
-            process = subprocess.run(
-                (
-                    "torchrun --nnodes {rdzv_nnodes} --nproc-per-node {nproc_per_node} "
-                    "--rdzv-id {rdzv_id} --rdzv-backend c10d --rdzv-endpoint {master_addr}:{master_port} "
-                    "--max-restarts {max_restarts} {file_name} {args}"
-                )
-                .format(
-                    rdzv_nnodes=rdzv_nnodes,
-                    nproc_per_node=nproc_per_node,
-                    rdzv_id=rdzv_id,
-                    master_addr=master_addr,
-                    master_port=master_port,
-                    max_restarts=max_restarts,
-                    file_name=__file__,
-                    args=" ".join(sys.argv[1:]),
-                )
-                .split(),
-                env=env,
-                check=True,
-            )
+            cmd = (
+                f"{sys.executable} -m torch.distributed.run "
+                f"--nnodes {rdzv_nnodes} --nproc-per-node {nproc_per_node} "
+                f"--rdzv-id {rdzv_id} --rdzv-backend c10d --rdzv-endpoint {master_addr}:{master_port} "
+                f"--max-restarts {max_restarts} {__file__} {' '.join(sys.argv[1:])}"
+            ).split()
+            process = subprocess.run(cmd, env=env, check=True)
         else:
             # NOTE: DO NOT USE shell=True to avoid security risk
-            process = subprocess.run(
-                (
-                    "torchrun --nnodes {nnodes} --node_rank {node_rank} --nproc_per_node {nproc_per_node} "
-                    "--master_addr {master_addr} --master_port {master_port} {file_name} {args}"
-                )
-                .format(
-                    nnodes=nnodes,
-                    node_rank=node_rank,
-                    nproc_per_node=nproc_per_node,
-                    master_addr=master_addr,
-                    master_port=master_port,
-                    file_name=__file__,
-                    args=" ".join(sys.argv[1:]),
-                )
-                .split(),
-                env=env,
-                check=True,
-            )
+            cmd = (
+                f"{sys.executable} -m torch.distributed.run "
+                f"--nnodes {nnodes} --node_rank {node_rank} --nproc_per_node {nproc_per_node} "
+                f"--master_addr {master_addr} --master_port {master_port} {__file__} {' '.join(sys.argv[1:])}"
+            ).split()
+            process = subprocess.run(cmd, env=env, check=True)
 
         sys.exit(process.returncode)
 

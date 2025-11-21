@@ -9,7 +9,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
-LLAMA_DIR="${ROOT_DIR}/SFT/LLaMA-Factory"
+LLAMA_DIR="${ROOT_DIR}/SFT/sft_trainer/LLaMA-Factory"
 
 ENV_NAME="${ENV_NAME:-llama_factory}"
 

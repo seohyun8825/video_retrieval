@@ -3,8 +3,8 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
-PREPROCESS_DIR="${ROOT_DIR}/sft_data_generation/preprocess/extract_similarity_matrix"
+ROOT_DIR="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
+PREPROCESS_DIR="${ROOT_DIR}/SFT/sft_data_generation/preprocess/extract_similarity_matrix"
 
 echo "Working directory: ${PREPROCESS_DIR}"
 
@@ -29,4 +29,4 @@ pip install openai
 pip install matplotlib
 pip install opencv-python
 
-echo "Environment setup complete. Activate with: conda activate ${ENV_NAME}"
+echo "Environment setup complete. Activate later with: conda activate ${ENV_NAME}"

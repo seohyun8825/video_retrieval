@@ -3,8 +3,8 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
-SFT_DIR="${ROOT_DIR}/sft_data_generation"
+ROOT_DIR="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
+SFT_DIR="${ROOT_DIR}/SFT/sft_data_generation"
 PREPROCESS_DIR="${SFT_DIR}/preprocess/sft_data_generate"
 
 if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "video-colbert" ]]; then

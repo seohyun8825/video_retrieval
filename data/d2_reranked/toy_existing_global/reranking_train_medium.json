@@ -8,648 +8,648 @@
   "training_samples": [
     {
       "text_id": "v_QOlSCBRmfWY",
-      "caption": "A young woman dances expressively around a room before finishing by lying on the floor.",
+      "caption": "A young woman dances expressively around a room, showcasing her movements before finishing by lying on the floor.",
       "videos": [
         {
-          "video_id": "v_O-zE1-Yw3w0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
-          "similarity_score": 0.3886144459247589,
+          "video_id": "v_74EoyLUbtgI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
+          "similarity_score": 0.3802229166030884,
           "is_correct": false
         },
         {
           "video_id": "v_QOlSCBRmfWY",
           "video_path": "/hub_data1/seohyun/hub_data/v_QOlSCBRmfWY.mp4",
-          "similarity_score": 0.40509018301963806,
+          "similarity_score": 0.3940142095088959,
           "is_correct": true
         },
         {
           "video_id": "v_Zd22n1caVgM",
           "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
-          "similarity_score": 0.4069189727306366,
+          "similarity_score": 0.40406620502471924,
           "is_correct": false
         },
         {
-          "video_id": "v_XD3yFrJHiv8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_XD3yFrJHiv8.mp4",
-          "similarity_score": 0.2732004225254059,
+          "video_id": "v_zzz_3yWpTXo",
+          "video_path": "/hub_data1/seohyun/hub_data/v_zzz_3yWpTXo.mp4",
+          "similarity_score": 0.26803067326545715,
           "is_correct": false
         },
         {
-          "video_id": "v_y5j9TqTy9Xw",
-          "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
-          "similarity_score": 0.2468765676021576,
+          "video_id": "v__Af_9cK5x4E",
+          "video_path": "/hub_data1/seohyun/hub_data/v__Af_9cK5x4E.mp4",
+          "similarity_score": 0.23839733004570007,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_ehGHCYKzyZ8",
-      "caption": "A man and woman demonstrate and explain a series of floor exercises in a living room setting, highlighting proper technique and movement.",
+      "caption": "A man and a woman demonstrate and explain various exercises in a living room setting, with the woman performing movements as guided by the man.",
       "videos": [
         {
-          "video_id": "v_y7WO-8cQfO0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_y7WO-8cQfO0.mp4",
-          "similarity_score": 0.39548230171203613,
+          "video_id": "v_V_Nj_BhesEY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_V_Nj_BhesEY.mp4",
+          "similarity_score": 0.3735154867172241,
           "is_correct": false
         },
         {
-          "video_id": "v_Y_dtU10XIsg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Y_dtU10XIsg.mp4",
-          "similarity_score": 0.26101264357566833,
+          "video_id": "v_h8J08sJ2no0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_h8J08sJ2no0.mp4",
+          "similarity_score": 0.2664049565792084,
           "is_correct": false
         },
         {
           "video_id": "v_ehGHCYKzyZ8",
           "video_path": "/hub_data1/seohyun/hub_data/v_ehGHCYKzyZ8.mp4",
-          "similarity_score": 0.3652998208999634,
+          "similarity_score": 0.3874354958534241,
           "is_correct": true
         },
         {
-          "video_id": "v_pYb8jzB5vs0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_pYb8jzB5vs0.mp4",
-          "similarity_score": 0.290826678276062,
+          "video_id": "v_BB2vrBWgXkU",
+          "video_path": "/hub_data1/seohyun/hub_data/v_BB2vrBWgXkU.mp4",
+          "similarity_score": 0.28975778818130493,
           "is_correct": false
         },
         {
           "video_id": "v_74EoyLUbtgI",
           "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
-          "similarity_score": 0.40751951932907104,
+          "similarity_score": 0.39706361293792725,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_nwznKOuZM7w",
-      "caption": "Two people bustle around a kitchen completing tasks, including waxing a ski, before sitting down together.",
+      "caption": "Two people efficiently move around a kitchen, completing tasks and waxing a ski before sitting down together.",
       "videos": [
         {
           "video_id": "v_nwznKOuZM7w",
           "video_path": "/hub_data1/seohyun/hub_data/v_nwznKOuZM7w.mp4",
-          "similarity_score": 0.4197251796722412,
+          "similarity_score": 0.386388897895813,
           "is_correct": true
         },
         {
           "video_id": "v_ehGHCYKzyZ8",
           "video_path": "/hub_data1/seohyun/hub_data/v_ehGHCYKzyZ8.mp4",
-          "similarity_score": 0.4145626425743103,
+          "similarity_score": 0.4132665991783142,
           "is_correct": false
         },
         {
-          "video_id": "v_hoisfXCLJDQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
-          "similarity_score": 0.33201122283935547,
+          "video_id": "v_lZKrd84QElk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_lZKrd84QElk.mp4",
+          "similarity_score": 0.32605791091918945,
           "is_correct": false
         },
         {
-          "video_id": "v_NwfS7eZiMLg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_NwfS7eZiMLg.mp4",
-          "similarity_score": 0.3273440897464752,
+          "video_id": "v_JgHQCKz_DRc",
+          "video_path": "/hub_data1/seohyun/hub_data/v_JgHQCKz_DRc.mp4",
+          "similarity_score": 0.3176957964897156,
           "is_correct": false
         },
         {
-          "video_id": "v_74EoyLUbtgI",
-          "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
-          "similarity_score": 0.41392844915390015,
+          "video_id": "v_44BfVJnhBgc",
+          "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
+          "similarity_score": 0.4063951373100281,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_ogQozSI5V8U",
-      "caption": "A dog wearing socks cautiously walks onto a wooden floor while being filmed, then turns around and heads back to another room.",
+      "caption": "A lady films her dog wearing socks as it cautiously walks out onto a wooden hallway before returning to another room.",
       "videos": [
         {
-          "video_id": "v_cp52LdlmlUk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_cp52LdlmlUk.mp4",
-          "similarity_score": 0.3281038701534271,
+          "video_id": "v__yWADgOFxP0",
+          "video_path": "/hub_data1/seohyun/hub_data/v__yWADgOFxP0.mp4",
+          "similarity_score": 0.3045693039894104,
           "is_correct": false
         },
         {
           "video_id": "v_pizl41xmw7k",
           "video_path": "/hub_data1/seohyun/hub_data/v_pizl41xmw7k.mp4",
-          "similarity_score": 0.44017377495765686,
+          "similarity_score": 0.4554426670074463,
           "is_correct": false
         },
         {
           "video_id": "v_ogQozSI5V8U",
           "video_path": "/hub_data1/seohyun/hub_data/v_ogQozSI5V8U.mp4",
-          "similarity_score": 0.4395284652709961,
+          "similarity_score": 0.4715656042098999,
           "is_correct": true
         },
         {
-          "video_id": "v_Zd22n1caVgM",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
-          "similarity_score": 0.4534749984741211,
+          "video_id": "v_44BfVJnhBgc",
+          "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
+          "similarity_score": 0.46953803300857544,
           "is_correct": false
         },
         {
-          "video_id": "v_rAuz_Pf3lp8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_rAuz_Pf3lp8.mp4",
-          "similarity_score": 0.33309227228164673,
+          "video_id": "v_ZKP5J7OKEvI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ZKP5J7OKEvI.mp4",
+          "similarity_score": 0.3092779815196991,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_69IsHpmRyfk",
-      "caption": "A young girl gets her ears pierced by an adult, who applies lotion to the piercings afterwards.",
+      "caption": "A young girl has her ears pierced by an adult, who then applies lotion to the piercings.",
       "videos": [
         {
           "video_id": "v_69IsHpmRyfk",
           "video_path": "/hub_data1/seohyun/hub_data/v_69IsHpmRyfk.mp4",
-          "similarity_score": 0.43883395195007324,
+          "similarity_score": 0.4405568242073059,
           "is_correct": true
         },
         {
-          "video_id": "v_ogQozSI5V8U",
-          "video_path": "/hub_data1/seohyun/hub_data/v_ogQozSI5V8U.mp4",
-          "similarity_score": 0.23330174386501312,
+          "video_id": "v_V_Nj_BhesEY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_V_Nj_BhesEY.mp4",
+          "similarity_score": 0.23359712958335876,
           "is_correct": false
         },
         {
-          "video_id": "v_mnqSG5o84NE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
-          "similarity_score": 0.38234516978263855,
+          "video_id": "v_6lYTHj9vImo",
+          "video_path": "/hub_data1/seohyun/hub_data/v_6lYTHj9vImo.mp4",
+          "similarity_score": 0.38324999809265137,
           "is_correct": false
         },
         {
           "video_id": "v_WY9zvUkK_4Y",
           "video_path": "/hub_data1/seohyun/hub_data/v_WY9zvUkK_4Y.mp4",
-          "similarity_score": 0.43275707960128784,
+          "similarity_score": 0.4414235055446625,
           "is_correct": false
         },
         {
           "video_id": "v_L2oaUDyzWPA",
           "video_path": "/hub_data1/seohyun/hub_data/v_L2oaUDyzWPA.mp4",
-          "similarity_score": 0.2624105215072632,
+          "similarity_score": 0.27360326051712036,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_D18b2IZpxk0",
-      "caption": "A woman rides a camel past the pyramids in Egypt, capturing her journey and surroundings on camera.",
+      "caption": "A woman rides a camel past the pyramids in Egypt, capturing her journey and the experience on camera.",
       "videos": [
         {
           "video_id": "v_fny1HWXezlE",
           "video_path": "/hub_data1/seohyun/hub_data/v_fny1HWXezlE.mp4",
-          "similarity_score": 0.3016429841518402,
+          "similarity_score": 0.32516607642173767,
           "is_correct": false
         },
         {
           "video_id": "v_aJbl1eVBzk0",
           "video_path": "/hub_data1/seohyun/hub_data/v_aJbl1eVBzk0.mp4",
-          "similarity_score": 0.30045652389526367,
+          "similarity_score": 0.32042834162712097,
           "is_correct": false
         },
         {
           "video_id": "v_D18b2IZpxk0",
           "video_path": "/hub_data1/seohyun/hub_data/v_D18b2IZpxk0.mp4",
-          "similarity_score": 0.45546793937683105,
+          "similarity_score": 0.47626036405563354,
           "is_correct": true
         },
         {
           "video_id": "v_LFeoVokXAFY",
           "video_path": "/hub_data1/seohyun/hub_data/v_LFeoVokXAFY.mp4",
-          "similarity_score": 0.05820384994149208,
+          "similarity_score": 0.09047432243824005,
           "is_correct": false
         },
         {
-          "video_id": "v_0_xap_BBDrw",
-          "video_path": "/hub_data1/seohyun/hub_data/v_0_xap_BBDrw.mp4",
-          "similarity_score": 0.17570015788078308,
+          "video_id": "v_HxJnPUqF9i8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
+          "similarity_score": 0.2023153007030487,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_pizl41xmw7k",
-      "caption": "A child cleans the house by mopping the floors and takes breaks to play with a family member.",
+      "caption": "A child helps with cleaning the house by mopping the floors and enjoys playful moments with a family member.",
       "videos": [
         {
           "video_id": "v_pizl41xmw7k",
           "video_path": "/hub_data1/seohyun/hub_data/v_pizl41xmw7k.mp4",
-          "similarity_score": 0.4177025854587555,
+          "similarity_score": 0.4057319164276123,
           "is_correct": true
         },
         {
           "video_id": "v_5lre5zbUV1Q",
           "video_path": "/hub_data1/seohyun/hub_data/v_5lre5zbUV1Q.mp4",
-          "similarity_score": 0.40813249349594116,
+          "similarity_score": 0.40581804513931274,
           "is_correct": false
         },
         {
-          "video_id": "v_QdmUojrWdmE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_QdmUojrWdmE.mp4",
-          "similarity_score": 0.3068981468677521,
+          "video_id": "v_zihMznAYlV0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_zihMznAYlV0.mp4",
+          "similarity_score": 0.2773752212524414,
           "is_correct": false
         },
         {
           "video_id": "v_AGgJVF3nT6I",
           "video_path": "/hub_data1/seohyun/hub_data/v_AGgJVF3nT6I.mp4",
-          "similarity_score": 0.41319093108177185,
+          "similarity_score": 0.40749576687812805,
           "is_correct": false
         },
         {
-          "video_id": "v__zHSfEhEqkU",
-          "video_path": "/hub_data1/seohyun/hub_data/v__zHSfEhEqkU.mp4",
-          "similarity_score": 0.31879228353500366,
+          "video_id": "v_WvxwmaDFGqk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_WvxwmaDFGqk.mp4",
+          "similarity_score": 0.29542893171310425,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_oP77DgsbhKQ",
-      "caption": "A man demonstrates how to lay tiles on a floor step-by-step, explaining the process and speaking to the camera throughout.",
+      "caption": "A man explains and demonstrates how to lay tiles on a floor, including mixing materials, measuring, cutting, and installing the tiles while interacting with the camera.",
       "videos": [
         {
           "video_id": "v_oP77DgsbhKQ",
           "video_path": "/hub_data1/seohyun/hub_data/v_oP77DgsbhKQ.mp4",
-          "similarity_score": 0.4685453772544861,
+          "similarity_score": 0.46925050020217896,
           "is_correct": true
         },
         {
-          "video_id": "v_zihMznAYlV0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_zihMznAYlV0.mp4",
-          "similarity_score": 0.31388556957244873,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_74EoyLUbtgI",
-          "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
-          "similarity_score": 0.4252713918685913,
+          "video_id": "v_dAjhBWalWRM",
+          "video_path": "/hub_data1/seohyun/hub_data/v_dAjhBWalWRM.mp4",
+          "similarity_score": 0.30012112855911255,
           "is_correct": false
         },
         {
           "video_id": "v_BB2vrBWgXkU",
           "video_path": "/hub_data1/seohyun/hub_data/v_BB2vrBWgXkU.mp4",
-          "similarity_score": 0.4146486520767212,
+          "similarity_score": 0.404721736907959,
           "is_correct": false
         },
         {
-          "video_id": "v_m22TDwfa8go",
-          "video_path": "/hub_data1/seohyun/hub_data/v_m22TDwfa8go.mp4",
-          "similarity_score": 0.26862800121307373,
+          "video_id": "v_LNKdVrX_0Fg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
+          "similarity_score": 0.39767003059387207,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_y5j9TqTy9Xw",
+          "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
+          "similarity_score": 0.2543658912181854,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_LNKdVrX_0Fg",
-      "caption": "A woman demonstrates how to wrap a toy with wrapping paper, explaining each step to the camera.",
+      "caption": "A woman demonstrates how to wrap a toy with wrapping paper, explaining the process step by step to the camera.",
       "videos": [
         {
           "video_id": "v_LNKdVrX_0Fg",
           "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
-          "similarity_score": 0.49086615443229675,
+          "similarity_score": 0.48637956380844116,
           "is_correct": true
         },
         {
-          "video_id": "v_IoiDAHNryTk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_IoiDAHNryTk.mp4",
-          "similarity_score": 0.1950036883354187,
+          "video_id": "v_DEmArEKL8gc",
+          "video_path": "/hub_data1/seohyun/hub_data/v_DEmArEKL8gc.mp4",
+          "similarity_score": 0.17916961014270782,
           "is_correct": false
         },
         {
           "video_id": "v_74EoyLUbtgI",
           "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
-          "similarity_score": 0.4150245785713196,
+          "similarity_score": 0.3992467522621155,
           "is_correct": false
         },
         {
           "video_id": "v_BB2vrBWgXkU",
           "video_path": "/hub_data1/seohyun/hub_data/v_BB2vrBWgXkU.mp4",
-          "similarity_score": 0.370180606842041,
+          "similarity_score": 0.3772488236427307,
           "is_correct": false
         },
         {
-          "video_id": "v_N9LTq3gYmsI",
-          "video_path": "/hub_data1/seohyun/hub_data/v_N9LTq3gYmsI.mp4",
-          "similarity_score": 0.2857942581176758,
+          "video_id": "v_Y_dtU10XIsg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Y_dtU10XIsg.mp4",
+          "similarity_score": 0.2766798138618469,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_t0ajvfx6dgA",
-      "caption": "A man in a suit watches and discusses a lacrosse game where players compete on the field and a goalie defends the net.",
+      "caption": "A video transitions from a man in a suit sitting at a desk to scenes of people playing lacrosse on a grassy field, including a goalie blocking balls.",
       "videos": [
         {
-          "video_id": "v_y5j9TqTy9Xw",
-          "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
-          "similarity_score": 0.3122316300868988,
+          "video_id": "v_y7WO-8cQfO0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_y7WO-8cQfO0.mp4",
+          "similarity_score": 0.3354845941066742,
           "is_correct": false
         },
         {
-          "video_id": "v_aJbl1eVBzk0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_aJbl1eVBzk0.mp4",
-          "similarity_score": 0.32203537225723267,
+          "video_id": "v_UYHgieL5IKM",
+          "video_path": "/hub_data1/seohyun/hub_data/v_UYHgieL5IKM.mp4",
+          "similarity_score": 0.3459877073764801,
           "is_correct": false
         },
         {
           "video_id": "v_t0ajvfx6dgA",
           "video_path": "/hub_data1/seohyun/hub_data/v_t0ajvfx6dgA.mp4",
-          "similarity_score": 0.4047315716743469,
+          "similarity_score": 0.39873412251472473,
           "is_correct": true
         },
         {
           "video_id": "v_rBaR5xF8orE",
           "video_path": "/hub_data1/seohyun/hub_data/v_rBaR5xF8orE.mp4",
-          "similarity_score": 0.3905651867389679,
+          "similarity_score": 0.3952280580997467,
           "is_correct": false
         },
         {
-          "video_id": "v_VFOjLDa5VtA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_VFOjLDa5VtA.mp4",
-          "similarity_score": 0.40993016958236694,
+          "video_id": "v__Af_9cK5x4E",
+          "video_path": "/hub_data1/seohyun/hub_data/v__Af_9cK5x4E.mp4",
+          "similarity_score": 0.413590669631958,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_IoiDAHNryTk",
-      "caption": "A girl climbs and plays on monkey bars, engaging with the camera as she enjoys her activity.",
+      "caption": "A girl climbs across monkey bars, interacts with the camera, and then jumps down partway through her second attempt.",
       "videos": [
         {
           "video_id": "v_IoiDAHNryTk",
           "video_path": "/hub_data1/seohyun/hub_data/v_IoiDAHNryTk.mp4",
-          "similarity_score": 0.5102912187576294,
+          "similarity_score": 0.5356919765472412,
           "is_correct": true
         },
         {
           "video_id": "v_rAuz_Pf3lp8",
           "video_path": "/hub_data1/seohyun/hub_data/v_rAuz_Pf3lp8.mp4",
-          "similarity_score": 0.43789157271385193,
+          "similarity_score": 0.5089144706726074,
           "is_correct": false
         },
         {
-          "video_id": "v_D18b2IZpxk0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_D18b2IZpxk0.mp4",
-          "similarity_score": 0.30088141560554504,
+          "video_id": "v_0_xap_BBDrw",
+          "video_path": "/hub_data1/seohyun/hub_data/v_0_xap_BBDrw.mp4",
+          "similarity_score": 0.3731113076210022,
           "is_correct": false
         },
         {
-          "video_id": "v_fny1HWXezlE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_fny1HWXezlE.mp4",
-          "similarity_score": 0.41094133257865906,
+          "video_id": "v_HxJnPUqF9i8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
+          "similarity_score": 0.4778335690498352,
           "is_correct": false
         },
         {
-          "video_id": "v_5lre5zbUV1Q",
-          "video_path": "/hub_data1/seohyun/hub_data/v_5lre5zbUV1Q.mp4",
-          "similarity_score": 0.33183717727661133,
+          "video_id": "v_aJbl1eVBzk0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_aJbl1eVBzk0.mp4",
+          "similarity_score": 0.39731916785240173,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v__yWADgOFxP0",
-      "caption": "A man snowboards down a snowy mountain, capturing his ride on camera until he turns it off.",
+      "caption": "A man snowboards down a snowy mountain, capturing his ride with a camera until he turns it off.",
       "videos": [
         {
-          "video_id": "v_9rW35YTKYq8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_9rW35YTKYq8.mp4",
-          "similarity_score": 0.2962852716445923,
+          "video_id": "v_WY9zvUkK_4Y",
+          "video_path": "/hub_data1/seohyun/hub_data/v_WY9zvUkK_4Y.mp4",
+          "similarity_score": 0.2979109585285187,
           "is_correct": false
         },
         {
           "video_id": "v__yWADgOFxP0",
           "video_path": "/hub_data1/seohyun/hub_data/v__yWADgOFxP0.mp4",
-          "similarity_score": 0.48363611102104187,
+          "similarity_score": 0.4763762354850769,
           "is_correct": true
         },
         {
-          "video_id": "v_epqnpUCVLK8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_epqnpUCVLK8.mp4",
-          "similarity_score": 0.31960728764533997,
+          "video_id": "v_74EoyLUbtgI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
+          "similarity_score": 0.3215804696083069,
           "is_correct": false
         },
         {
           "video_id": "v_zihMznAYlV0",
           "video_path": "/hub_data1/seohyun/hub_data/v_zihMznAYlV0.mp4",
-          "similarity_score": 0.4705839157104492,
+          "similarity_score": 0.47248342633247375,
           "is_correct": false
         },
         {
           "video_id": "v_Y_dtU10XIsg",
           "video_path": "/hub_data1/seohyun/hub_data/v_Y_dtU10XIsg.mp4",
-          "similarity_score": 0.4280262887477875,
+          "similarity_score": 0.43415313959121704,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_AGgJVF3nT6I",
-      "caption": "A young boy repeatedly climbs and slides down a slide in a playroom, enjoying himself each time.",
+      "caption": "A young boy repeatedly slides down and climbs up a slide in a playroom, enjoying playful activity.",
       "videos": [
         {
           "video_id": "v_epqnpUCVLK8",
           "video_path": "/hub_data1/seohyun/hub_data/v_epqnpUCVLK8.mp4",
-          "similarity_score": 0.3963863253593445,
+          "similarity_score": 0.3708428740501404,
           "is_correct": false
         },
         {
           "video_id": "v_AGgJVF3nT6I",
           "video_path": "/hub_data1/seohyun/hub_data/v_AGgJVF3nT6I.mp4",
-          "similarity_score": 0.5041301846504211,
+          "similarity_score": 0.4845833480358124,
           "is_correct": true
         },
         {
           "video_id": "v_69IsHpmRyfk",
           "video_path": "/hub_data1/seohyun/hub_data/v_69IsHpmRyfk.mp4",
-          "similarity_score": 0.29194706678390503,
+          "similarity_score": 0.27095913887023926,
           "is_correct": false
         },
         {
           "video_id": "v_IoiDAHNryTk",
           "video_path": "/hub_data1/seohyun/hub_data/v_IoiDAHNryTk.mp4",
-          "similarity_score": 0.42608219385147095,
+          "similarity_score": 0.40839946269989014,
           "is_correct": false
         },
         {
-          "video_id": "v_D9rHZpZoeRA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_D9rHZpZoeRA.mp4",
-          "similarity_score": 0.2845866084098816,
+          "video_id": "v_ogQozSI5V8U",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ogQozSI5V8U.mp4",
+          "similarity_score": 0.2679365575313568,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_XD3yFrJHiv8",
-      "caption": "A man and woman discuss and analyze a city soccer game played on sand, sharing commentary and highlights from their studio set.",
+      "caption": "A man and woman host a sports-themed discussion on a set, sharing highlights of a city sand soccer game before commenting on the footage together.",
       "videos": [
         {
           "video_id": "v_XD3yFrJHiv8",
           "video_path": "/hub_data1/seohyun/hub_data/v_XD3yFrJHiv8.mp4",
-          "similarity_score": 0.41657891869544983,
+          "similarity_score": 0.536281168460846,
           "is_correct": true
         },
         {
-          "video_id": "v_y7WO-8cQfO0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_y7WO-8cQfO0.mp4",
-          "similarity_score": 0.3070331811904907,
+          "video_id": "v_V_Nj_BhesEY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_V_Nj_BhesEY.mp4",
+          "similarity_score": 0.31358784437179565,
           "is_correct": false
         },
         {
-          "video_id": "v_hoisfXCLJDQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
-          "similarity_score": 0.2565339207649231,
+          "video_id": "v_4x7HYKV8zkY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_4x7HYKV8zkY.mp4",
+          "similarity_score": 0.25292882323265076,
           "is_correct": false
         },
         {
-          "video_id": "v_6lYTHj9vImo",
-          "video_path": "/hub_data1/seohyun/hub_data/v_6lYTHj9vImo.mp4",
-          "similarity_score": 0.40794506669044495,
+          "video_id": "v_ehGHCYKzyZ8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ehGHCYKzyZ8.mp4",
+          "similarity_score": 0.4396989345550537,
           "is_correct": false
         },
         {
           "video_id": "v_t0ajvfx6dgA",
           "video_path": "/hub_data1/seohyun/hub_data/v_t0ajvfx6dgA.mp4",
-          "similarity_score": 0.36939501762390137,
+          "similarity_score": 0.41441550850868225,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_lZKrd84QElk",
-      "caption": "The former president interacts with a crowd, delivering a speech, greeting supporters, and sharing a drink in a lively outdoor gathering.",
+      "caption": "The former president attends a public event where he walks through a large crowd, delivers a speech, interacts with attendees, and socializes by sharing a beer.",
       "videos": [
         {
           "video_id": "v_lZKrd84QElk",
           "video_path": "/hub_data1/seohyun/hub_data/v_lZKrd84QElk.mp4",
-          "similarity_score": 0.3785756826400757,
+          "similarity_score": 0.4060817360877991,
           "is_correct": true
         },
         {
-          "video_id": "v_S6t9Lq1xKJk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_S6t9Lq1xKJk.mp4",
-          "similarity_score": 0.2504066526889801,
+          "video_id": "v_NwfS7eZiMLg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_NwfS7eZiMLg.mp4",
+          "similarity_score": 0.28294622898101807,
           "is_correct": false
         },
         {
           "video_id": "v_CmEQjszPDrg",
           "video_path": "/hub_data1/seohyun/hub_data/v_CmEQjszPDrg.mp4",
-          "similarity_score": 0.326759934425354,
+          "similarity_score": 0.3409135043621063,
           "is_correct": false
         },
         {
-          "video_id": "v_dsVvnFkGAn0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_dsVvnFkGAn0.mp4",
-          "similarity_score": 0.30746185779571533,
+          "video_id": "v_D9rHZpZoeRA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_D9rHZpZoeRA.mp4",
+          "similarity_score": 0.32626253366470337,
           "is_correct": false
         },
         {
-          "video_id": "v_Y_dtU10XIsg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Y_dtU10XIsg.mp4",
-          "similarity_score": 0.2367783784866333,
+          "video_id": "v_UYHgieL5IKM",
+          "video_path": "/hub_data1/seohyun/hub_data/v_UYHgieL5IKM.mp4",
+          "similarity_score": 0.2709461450576782,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_6lYTHj9vImo",
-      "caption": "Four children enjoy playing together on the beach, building sandcastles and fetching water while interacting with each other's creations.",
+      "caption": "Four kids enjoy building sandcastles and playing by the beach, with the girls gathering water and using floats as they create and admire their sandy creations.",
       "videos": [
         {
-          "video_id": "v_8ikOQRbeQL8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_8ikOQRbeQL8.mp4",
-          "similarity_score": 0.23491626977920532,
+          "video_id": "v_S6t9Lq1xKJk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_S6t9Lq1xKJk.mp4",
+          "similarity_score": 0.22241565585136414,
           "is_correct": false
         },
         {
-          "video_id": "v_4x7HYKV8zkY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_4x7HYKV8zkY.mp4",
-          "similarity_score": 0.34548237919807434,
+          "video_id": "v_fny1HWXezlE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_fny1HWXezlE.mp4",
+          "similarity_score": 0.32854369282722473,
           "is_correct": false
         },
         {
-          "video_id": "v_y5j9TqTy9Xw",
-          "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
-          "similarity_score": 0.17858698964118958,
+          "video_id": "v_74EoyLUbtgI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
+          "similarity_score": 0.17643962800502777,
           "is_correct": false
         },
         {
           "video_id": "v_6lYTHj9vImo",
           "video_path": "/hub_data1/seohyun/hub_data/v_6lYTHj9vImo.mp4",
-          "similarity_score": 0.4533739686012268,
+          "similarity_score": 0.4590075612068176,
           "is_correct": true
         },
         {
-          "video_id": "v_fny1HWXezlE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_fny1HWXezlE.mp4",
-          "similarity_score": 0.3488085865974426,
+          "video_id": "v_4x7HYKV8zkY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_4x7HYKV8zkY.mp4",
+          "similarity_score": 0.3871232271194458,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_iYxj8a1TPYk",
-      "caption": "A basketball player showcases his dribbling and shooting skills on camera, repeatedly making baskets and briefly addressing the audience.",
+      "caption": "A basketball player demonstrates his skills by dribbling, making numerous baskets, and speaking to the camera.",
       "videos": [
         {
           "video_id": "v_0_xap_BBDrw",
           "video_path": "/hub_data1/seohyun/hub_data/v_0_xap_BBDrw.mp4",
-          "similarity_score": 0.43799692392349243,
+          "similarity_score": 0.4475337862968445,
           "is_correct": false
         },
         {
           "video_id": "v_FeKEqUxiReA",
           "video_path": "/hub_data1/seohyun/hub_data/v_FeKEqUxiReA.mp4",
-          "similarity_score": 0.43041712045669556,
+          "similarity_score": 0.44493886828422546,
           "is_correct": false
         },
         {
           "video_id": "v_iYxj8a1TPYk",
           "video_path": "/hub_data1/seohyun/hub_data/v_iYxj8a1TPYk.mp4",
-          "similarity_score": 0.44708937406539917,
+          "similarity_score": 0.4727124571800232,
           "is_correct": true
         },
         {
-          "video_id": "v_LNKdVrX_0Fg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
-          "similarity_score": 0.31946519017219543,
+          "video_id": "v_D9rHZpZoeRA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_D9rHZpZoeRA.mp4",
+          "similarity_score": 0.34133219718933105,
           "is_correct": false
         },
         {
-          "video_id": "v_ehGHCYKzyZ8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_ehGHCYKzyZ8.mp4",
-          "similarity_score": 0.3311747908592224,
+          "video_id": "v_y5j9TqTy9Xw",
+          "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
+          "similarity_score": 0.3518625497817993,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_cp52LdlmlUk",
-      "caption": "A group of people are participating in a workout session involving step exercises in a room.",
+      "caption": "A group of people participate in a step workout session together in a room.",
       "videos": [
         {
           "video_id": "v_N-6-MdxRg50",
           "video_path": "/hub_data1/seohyun/hub_data/v_N-6-MdxRg50.mp4",
-          "similarity_score": 0.42312419414520264,
+          "similarity_score": 0.41995975375175476,
           "is_correct": false
         },
         {
           "video_id": "v_W19-fYOO9sg",
           "video_path": "/hub_data1/seohyun/hub_data/v_W19-fYOO9sg.mp4",
-          "similarity_score": 0.29865795373916626,
+          "similarity_score": 0.29257211089134216,
           "is_correct": false
         },
         {
           "video_id": "v_cp52LdlmlUk",
           "video_path": "/hub_data1/seohyun/hub_data/v_cp52LdlmlUk.mp4",
-          "similarity_score": 0.39766231179237366,
+          "similarity_score": 0.3864511549472809,
           "is_correct": true
         },
         {
-          "video_id": "v_x4iCAIPRDVQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_x4iCAIPRDVQ.mp4",
-          "similarity_score": 0.40183910727500916,
+          "video_id": "v_44BfVJnhBgc",
+          "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
+          "similarity_score": 0.38039588928222656,
           "is_correct": false
         },
         {
           "video_id": "v_69IsHpmRyfk",
           "video_path": "/hub_data1/seohyun/hub_data/v_69IsHpmRyfk.mp4",
-          "similarity_score": 0.2703145742416382,
+          "similarity_score": 0.26599642634391785,
           "is_correct": false
         }
       ]
@@ -692,828 +692,828 @@
     },
     {
       "text_id": "v__zHSfEhEqkU",
-      "caption": "A man demonstrates paddling and maneuvering techniques in a canoe on the water, captured from various camera angles.",
+      "caption": "A man demonstrates paddling techniques and maneuvering a canoe on the water, with the camera capturing various angles and turns.",
       "videos": [
         {
-          "video_id": "v_QOlSCBRmfWY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_QOlSCBRmfWY.mp4",
-          "similarity_score": 0.23402634263038635,
+          "video_id": "v_RgzbNJPchqc",
+          "video_path": "/hub_data1/seohyun/hub_data/v_RgzbNJPchqc.mp4",
+          "similarity_score": 0.23038947582244873,
           "is_correct": false
         },
         {
           "video_id": "v__zHSfEhEqkU",
           "video_path": "/hub_data1/seohyun/hub_data/v__zHSfEhEqkU.mp4",
-          "similarity_score": 0.42147505283355713,
+          "similarity_score": 0.41738075017929077,
           "is_correct": true
         },
         {
           "video_id": "v_kNkYgYnJTXk",
           "video_path": "/hub_data1/seohyun/hub_data/v_kNkYgYnJTXk.mp4",
-          "similarity_score": 0.4978019595146179,
+          "similarity_score": 0.49613645672798157,
           "is_correct": false
         },
         {
-          "video_id": "v_m22TDwfa8go",
-          "video_path": "/hub_data1/seohyun/hub_data/v_m22TDwfa8go.mp4",
-          "similarity_score": 0.282786101102829,
+          "video_id": "v_pizl41xmw7k",
+          "video_path": "/hub_data1/seohyun/hub_data/v_pizl41xmw7k.mp4",
+          "similarity_score": 0.2731049358844757,
           "is_correct": false
         },
         {
           "video_id": "v_hoisfXCLJDQ",
           "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
-          "similarity_score": 0.4026777446269989,
+          "similarity_score": 0.4026673138141632,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_dAjhBWalWRM",
-      "caption": "A group of people gather around a blackjack table as an attendant deals cards to begin the game.",
+      "caption": "A group of people participate in a game of blackjack as an attendant deals cards at the table.",
       "videos": [
         {
-          "video_id": "v_8ikOQRbeQL8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_8ikOQRbeQL8.mp4",
-          "similarity_score": 0.230378195643425,
+          "video_id": "v_N9LTq3gYmsI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_N9LTq3gYmsI.mp4",
+          "similarity_score": 0.21955040097236633,
           "is_correct": false
         },
         {
           "video_id": "v_Pu92wJ-7UTQ",
           "video_path": "/hub_data1/seohyun/hub_data/v_Pu92wJ-7UTQ.mp4",
-          "similarity_score": 0.10965976119041443,
+          "similarity_score": 0.10143827646970749,
           "is_correct": false
         },
         {
-          "video_id": "v_lZKrd84QElk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_lZKrd84QElk.mp4",
-          "similarity_score": 0.33942705392837524,
+          "video_id": "v_LNKdVrX_0Fg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
+          "similarity_score": 0.3200274407863617,
           "is_correct": false
         },
         {
           "video_id": "v_huFuRGoZt9I",
           "video_path": "/hub_data1/seohyun/hub_data/v_huFuRGoZt9I.mp4",
-          "similarity_score": 0.42138323187828064,
+          "similarity_score": 0.39472874999046326,
           "is_correct": false
         },
         {
           "video_id": "v_dAjhBWalWRM",
           "video_path": "/hub_data1/seohyun/hub_data/v_dAjhBWalWRM.mp4",
-          "similarity_score": 0.45078596472740173,
+          "similarity_score": 0.43970397114753723,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_zihMznAYlV0",
-      "caption": "Two men wearing padded sumo costumes perform playful and challenging stunts, jumps, and slides on a ski slope, showcasing humorous and skillful snowboarding and skiing antics.",
+      "caption": "Two men wearing padded sumo suits humorously perform snowboarding and skiing stunts, tricks, and jumps on a ski slope, interacting with each other and the camera.",
       "videos": [
         {
-          "video_id": "v_aJbl1eVBzk0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_aJbl1eVBzk0.mp4",
-          "similarity_score": 0.28680750727653503,
+          "video_id": "v_x4iCAIPRDVQ",
+          "video_path": "/hub_data1/seohyun/hub_data/v_x4iCAIPRDVQ.mp4",
+          "similarity_score": 0.31063705682754517,
           "is_correct": false
         },
         {
-          "video_id": "v_4hmJfJo6UI8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_4hmJfJo6UI8.mp4",
-          "similarity_score": 0.3640134930610657,
+          "video_id": "v__yWADgOFxP0",
+          "video_path": "/hub_data1/seohyun/hub_data/v__yWADgOFxP0.mp4",
+          "similarity_score": 0.378682017326355,
           "is_correct": false
         },
         {
-          "video_id": "v_O-zE1-Yw3w0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
-          "similarity_score": 0.20138055086135864,
+          "video_id": "v_dAjhBWalWRM",
+          "video_path": "/hub_data1/seohyun/hub_data/v_dAjhBWalWRM.mp4",
+          "similarity_score": 0.22303766012191772,
           "is_correct": false
         },
         {
           "video_id": "v_N9LTq3gYmsI",
           "video_path": "/hub_data1/seohyun/hub_data/v_N9LTq3gYmsI.mp4",
-          "similarity_score": 0.4295330047607422,
+          "similarity_score": 0.44798964262008667,
           "is_correct": false
         },
         {
           "video_id": "v_zihMznAYlV0",
           "video_path": "/hub_data1/seohyun/hub_data/v_zihMznAYlV0.mp4",
-          "similarity_score": 0.47974392771720886,
+          "similarity_score": 0.5354973077774048,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_---9CpRcKoU",
-      "caption": "A man sits in a room enjoying a bowl of noodles and broth.",
+      "caption": "A man sits in a room and enjoys eating and drinking from a bowl of noodles and broth.",
       "videos": [
         {
-          "video_id": "v_WvxwmaDFGqk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_WvxwmaDFGqk.mp4",
-          "similarity_score": 0.24420630931854248,
+          "video_id": "v_JgHQCKz_DRc",
+          "video_path": "/hub_data1/seohyun/hub_data/v_JgHQCKz_DRc.mp4",
+          "similarity_score": 0.240421324968338,
           "is_correct": false
         },
         {
           "video_id": "v_Zd22n1caVgM",
           "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
-          "similarity_score": 0.32303428649902344,
+          "similarity_score": 0.3185622990131378,
           "is_correct": false
         },
         {
-          "video_id": "v_huFuRGoZt9I",
-          "video_path": "/hub_data1/seohyun/hub_data/v_huFuRGoZt9I.mp4",
-          "similarity_score": 0.251447856426239,
+          "video_id": "v_ogQozSI5V8U",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ogQozSI5V8U.mp4",
+          "similarity_score": 0.24215327203273773,
           "is_correct": false
         },
         {
           "video_id": "v_---9CpRcKoU",
           "video_path": "/hub_data1/seohyun/hub_data/v_---9CpRcKoU.mp4",
-          "similarity_score": 0.36431971192359924,
+          "similarity_score": 0.3631514310836792,
           "is_correct": true
         },
         {
           "video_id": "v_oP77DgsbhKQ",
           "video_path": "/hub_data1/seohyun/hub_data/v_oP77DgsbhKQ.mp4",
-          "similarity_score": 0.3339962661266327,
+          "similarity_score": 0.3461851477622986,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_epqnpUCVLK8",
-      "caption": "A young boy repeatedly attempts to balance and play on an exercise ball, often falling off and getting back on in a playful sequence.",
+      "caption": "A little boy repeatedly tries to balance and sit on an exercise ball, often falling off but playfully continuing his efforts.",
       "videos": [
         {
           "video_id": "v_Zd22n1caVgM",
           "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
-          "similarity_score": 0.40002089738845825,
+          "similarity_score": 0.4126969277858734,
           "is_correct": false
         },
         {
-          "video_id": "v_D18b2IZpxk0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_D18b2IZpxk0.mp4",
-          "similarity_score": 0.2261258363723755,
+          "video_id": "v_bdC2YPVHGZM",
+          "video_path": "/hub_data1/seohyun/hub_data/v_bdC2YPVHGZM.mp4",
+          "similarity_score": 0.2165282666683197,
           "is_correct": false
         },
         {
           "video_id": "v_epqnpUCVLK8",
           "video_path": "/hub_data1/seohyun/hub_data/v_epqnpUCVLK8.mp4",
-          "similarity_score": 0.4636353850364685,
+          "similarity_score": 0.4703768789768219,
           "is_correct": true
         },
         {
           "video_id": "v_AGgJVF3nT6I",
           "video_path": "/hub_data1/seohyun/hub_data/v_AGgJVF3nT6I.mp4",
-          "similarity_score": 0.3843955397605896,
+          "similarity_score": 0.40557682514190674,
           "is_correct": false
         },
         {
-          "video_id": "v_XD3yFrJHiv8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_XD3yFrJHiv8.mp4",
-          "similarity_score": 0.2734518349170685,
+          "video_id": "v_4x7HYKV8zkY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_4x7HYKV8zkY.mp4",
+          "similarity_score": 0.2677575349807739,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_W19-fYOO9sg",
-      "caption": "A person demonstrates how to adjust and work on a bike tire using their hands and a tool.",
+      "caption": "A person demonstrates how to adjust and move a bike tire using their hands and a tool.",
       "videos": [
         {
           "video_id": "v_aJbl1eVBzk0",
           "video_path": "/hub_data1/seohyun/hub_data/v_aJbl1eVBzk0.mp4",
-          "similarity_score": 0.5133350491523743,
+          "similarity_score": 0.5008420348167419,
           "is_correct": false
         },
         {
-          "video_id": "v_y5j9TqTy9Xw",
-          "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
-          "similarity_score": 0.25226303935050964,
+          "video_id": "v_m22TDwfa8go",
+          "video_path": "/hub_data1/seohyun/hub_data/v_m22TDwfa8go.mp4",
+          "similarity_score": 0.2573899030685425,
           "is_correct": false
         },
         {
           "video_id": "v_W19-fYOO9sg",
           "video_path": "/hub_data1/seohyun/hub_data/v_W19-fYOO9sg.mp4",
-          "similarity_score": 0.5114352703094482,
+          "similarity_score": 0.4943200349807739,
           "is_correct": true
         },
         {
-          "video_id": "v_9rW35YTKYq8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_9rW35YTKYq8.mp4",
-          "similarity_score": 0.34068623185157776,
+          "video_id": "v_O-zE1-Yw3w0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
+          "similarity_score": 0.33564069867134094,
           "is_correct": false
         },
         {
           "video_id": "v_44BfVJnhBgc",
           "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
-          "similarity_score": 0.45143288373947144,
+          "similarity_score": 0.44733667373657227,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_m22TDwfa8go",
-      "caption": "A woman demonstrates how to prepare a mixed drink by presenting ingredients, preparing the glass, mixing the liquids, and serving the finished beverage while explaining the process to the camera.",
+      "caption": "A woman demonstrates how to prepare a mixed drink by explaining the process, assembling the ingredients, and serving the finished beverage.",
       "videos": [
         {
           "video_id": "v_zzz_3yWpTXo",
           "video_path": "/hub_data1/seohyun/hub_data/v_zzz_3yWpTXo.mp4",
-          "similarity_score": 0.4324181079864502,
+          "similarity_score": 0.43048083782196045,
           "is_correct": false
         },
         {
           "video_id": "v_m22TDwfa8go",
           "video_path": "/hub_data1/seohyun/hub_data/v_m22TDwfa8go.mp4",
-          "similarity_score": 0.4303024113178253,
+          "similarity_score": 0.4036273658275604,
           "is_correct": true
         },
         {
-          "video_id": "v_44BfVJnhBgc",
-          "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
-          "similarity_score": 0.2814320921897888,
+          "video_id": "v_AGgJVF3nT6I",
+          "video_path": "/hub_data1/seohyun/hub_data/v_AGgJVF3nT6I.mp4",
+          "similarity_score": 0.278492271900177,
           "is_correct": false
         },
         {
           "video_id": "v_Kp7pUEKrb8Q",
           "video_path": "/hub_data1/seohyun/hub_data/v_Kp7pUEKrb8Q.mp4",
-          "similarity_score": 0.4743872880935669,
+          "similarity_score": 0.4471732974052429,
           "is_correct": false
         },
         {
-          "video_id": "v_y5j9TqTy9Xw",
-          "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
-          "similarity_score": 0.28216078877449036,
+          "video_id": "v_x4iCAIPRDVQ",
+          "video_path": "/hub_data1/seohyun/hub_data/v_x4iCAIPRDVQ.mp4",
+          "similarity_score": 0.28734567761421204,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_V_Nj_BhesEY",
-      "caption": "A young boy performs a series of karate moves, including bows, cartwheels, and flips, for an audience gathered near a building.",
+      "caption": "A young boy performs a series of impressive karate moves, including bowing, cartwheels, and flips, before an audience gathered by a building.",
       "videos": [
         {
-          "video_id": "v_DEmArEKL8gc",
-          "video_path": "/hub_data1/seohyun/hub_data/v_DEmArEKL8gc.mp4",
-          "similarity_score": 0.22169728577136993,
+          "video_id": "v_ZKP5J7OKEvI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ZKP5J7OKEvI.mp4",
+          "similarity_score": 0.2353968620300293,
           "is_correct": false
         },
         {
-          "video_id": "v_4x7HYKV8zkY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_4x7HYKV8zkY.mp4",
-          "similarity_score": 0.2342965453863144,
+          "video_id": "v_BB2vrBWgXkU",
+          "video_path": "/hub_data1/seohyun/hub_data/v_BB2vrBWgXkU.mp4",
+          "similarity_score": 0.24004203081130981,
           "is_correct": false
         },
         {
           "video_id": "v_V_Nj_BhesEY",
           "video_path": "/hub_data1/seohyun/hub_data/v_V_Nj_BhesEY.mp4",
-          "similarity_score": 0.31027084589004517,
+          "similarity_score": 0.32388031482696533,
           "is_correct": true
-        },
-        {
-          "video_id": "v_HxJnPUqF9i8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.3264802396297455,
-          "is_correct": false
         },
         {
           "video_id": "v_mnqSG5o84NE",
           "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
-          "similarity_score": 0.3334677815437317,
+          "similarity_score": 0.35690420866012573,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_Zd22n1caVgM",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
+          "similarity_score": 0.3671783208847046,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_p9iE8iemCMs",
-      "caption": "A woman demonstrates and explains flute fingerings for different octaves to the camera.",
+      "caption": "A woman demonstrates and explains various flute fingerings for different octaves while addressing the camera.",
       "videos": [
         {
-          "video_id": "v_Zd22n1caVgM",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
-          "similarity_score": 0.3621041476726532,
+          "video_id": "v_N-6-MdxRg50",
+          "video_path": "/hub_data1/seohyun/hub_data/v_N-6-MdxRg50.mp4",
+          "similarity_score": 0.35341495275497437,
           "is_correct": false
         },
         {
           "video_id": "v_p9iE8iemCMs",
           "video_path": "/hub_data1/seohyun/hub_data/v_p9iE8iemCMs.mp4",
-          "similarity_score": 0.5708637237548828,
+          "similarity_score": 0.558489203453064,
           "is_correct": true
         },
         {
           "video_id": "v_dsVvnFkGAn0",
           "video_path": "/hub_data1/seohyun/hub_data/v_dsVvnFkGAn0.mp4",
-          "similarity_score": 0.4984748363494873,
+          "similarity_score": 0.4790482223033905,
           "is_correct": false
         },
         {
-          "video_id": "v_h8J08sJ2no0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_h8J08sJ2no0.mp4",
-          "similarity_score": 0.34538519382476807,
+          "video_id": "v_zzz_3yWpTXo",
+          "video_path": "/hub_data1/seohyun/hub_data/v_zzz_3yWpTXo.mp4",
+          "similarity_score": 0.3348983824253082,
           "is_correct": false
         },
         {
           "video_id": "v_8ikOQRbeQL8",
           "video_path": "/hub_data1/seohyun/hub_data/v_8ikOQRbeQL8.mp4",
-          "similarity_score": 0.43644046783447266,
+          "similarity_score": 0.42664939165115356,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_fN2DiOswmOA",
-      "caption": "The video follows Dr. Rachel Collin's visit to a Chilean food market, showcases the preparation of the traditional Hulte salad, and ends with a group enjoying the finished dish together.",
+      "caption": "The video demonstrates the preparation of a traditional Chilean hulte salad, featuring scenes from a market visit, the step-by-step making of the dish, and people enjoying the finished salad together.",
       "videos": [
         {
           "video_id": "v_fN2DiOswmOA",
           "video_path": "/hub_data1/seohyun/hub_data/v_fN2DiOswmOA.mp4",
-          "similarity_score": 0.4440603256225586,
+          "similarity_score": 0.4297964572906494,
           "is_correct": true
         },
         {
-          "video_id": "v_Zd22n1caVgM",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
-          "similarity_score": 0.20498758554458618,
+          "video_id": "v_V_Nj_BhesEY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_V_Nj_BhesEY.mp4",
+          "similarity_score": 0.17938445508480072,
           "is_correct": false
         },
         {
           "video_id": "v_Kp7pUEKrb8Q",
           "video_path": "/hub_data1/seohyun/hub_data/v_Kp7pUEKrb8Q.mp4",
-          "similarity_score": 0.4433564245700836,
+          "similarity_score": 0.3915483355522156,
           "is_correct": false
         },
         {
-          "video_id": "v_y5j9TqTy9Xw",
-          "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
-          "similarity_score": 0.2928917706012726,
+          "video_id": "v_AGgJVF3nT6I",
+          "video_path": "/hub_data1/seohyun/hub_data/v_AGgJVF3nT6I.mp4",
+          "similarity_score": 0.2731098234653473,
           "is_correct": false
         },
         {
-          "video_id": "v_S6t9Lq1xKJk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_S6t9Lq1xKJk.mp4",
-          "similarity_score": 0.3708772361278534,
+          "video_id": "v_D9rHZpZoeRA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_D9rHZpZoeRA.mp4",
+          "similarity_score": 0.32979118824005127,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_37pwbUp8t1I",
-      "caption": "A group of hiphop dancers energetically perform a synchronized routine in front of a crowd while having their photos taken.",
+      "caption": "A group of hiphop dancers perform a synchronized routine in front of a crowd while photos are taken of them.",
       "videos": [
         {
-          "video_id": "v_XnUi1SG9jxA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_XnUi1SG9jxA.mp4",
-          "similarity_score": 0.2788463234901428,
+          "video_id": "v_XD3yFrJHiv8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_XD3yFrJHiv8.mp4",
+          "similarity_score": 0.28710150718688965,
           "is_correct": false
         },
         {
           "video_id": "v_N-6-MdxRg50",
           "video_path": "/hub_data1/seohyun/hub_data/v_N-6-MdxRg50.mp4",
-          "similarity_score": 0.3792235553264618,
+          "similarity_score": 0.37566643953323364,
           "is_correct": false
         },
         {
           "video_id": "v_HxJnPUqF9i8",
           "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.43210411071777344,
+          "similarity_score": 0.42679494619369507,
           "is_correct": false
         },
         {
           "video_id": "v_37pwbUp8t1I",
           "video_path": "/hub_data1/seohyun/hub_data/v_37pwbUp8t1I.mp4",
-          "similarity_score": 0.4264810383319855,
+          "similarity_score": 0.4271043539047241,
           "is_correct": true
         },
         {
-          "video_id": "v_t0ajvfx6dgA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_t0ajvfx6dgA.mp4",
-          "similarity_score": 0.27241751551628113,
+          "video_id": "v_0_xap_BBDrw",
+          "video_path": "/hub_data1/seohyun/hub_data/v_0_xap_BBDrw.mp4",
+          "similarity_score": 0.28328806161880493,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_TmI9MxCDBMw",
-      "caption": "A group of people float down a murky river on intertubes, drifting past trees and navigating small rapids and falls.",
+      "caption": "A group of people float down a murky river on intertubes, peacefully drifting past trees before navigating some small rapids and falls.",
       "videos": [
         {
           "video_id": "v_hoisfXCLJDQ",
           "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
-          "similarity_score": 0.49498048424720764,
+          "similarity_score": 0.4895232021808624,
           "is_correct": false
         },
         {
           "video_id": "v_rAuz_Pf3lp8",
           "video_path": "/hub_data1/seohyun/hub_data/v_rAuz_Pf3lp8.mp4",
-          "similarity_score": 0.4662574231624603,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_m22TDwfa8go",
-          "video_path": "/hub_data1/seohyun/hub_data/v_m22TDwfa8go.mp4",
-          "similarity_score": 0.2981536388397217,
+          "similarity_score": 0.4466401934623718,
           "is_correct": false
         },
         {
           "video_id": "v_h8J08sJ2no0",
           "video_path": "/hub_data1/seohyun/hub_data/v_h8J08sJ2no0.mp4",
-          "similarity_score": 0.27532124519348145,
+          "similarity_score": 0.2771606147289276,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_mnqSG5o84NE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
+          "similarity_score": 0.24922260642051697,
           "is_correct": false
         },
         {
           "video_id": "v_TmI9MxCDBMw",
           "video_path": "/hub_data1/seohyun/hub_data/v_TmI9MxCDBMw.mp4",
-          "similarity_score": 0.48525378108024597,
+          "similarity_score": 0.43292713165283203,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_4x7HYKV8zkY",
-      "caption": "Three girls perform flips and stunts together while spending time on the beach.",
+      "caption": "Three girls enjoy performing acrobatic stunts and flips together while spending time on the beach.",
       "videos": [
         {
           "video_id": "v_ogQozSI5V8U",
           "video_path": "/hub_data1/seohyun/hub_data/v_ogQozSI5V8U.mp4",
-          "similarity_score": 0.2072349190711975,
+          "similarity_score": 0.21813400089740753,
           "is_correct": false
         },
         {
           "video_id": "v_6lYTHj9vImo",
           "video_path": "/hub_data1/seohyun/hub_data/v_6lYTHj9vImo.mp4",
-          "similarity_score": 0.48892563581466675,
+          "similarity_score": 0.4811255931854248,
           "is_correct": false
         },
         {
-          "video_id": "v_LFeoVokXAFY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_LFeoVokXAFY.mp4",
-          "similarity_score": 0.3028916120529175,
+          "video_id": "v_rBaR5xF8orE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_rBaR5xF8orE.mp4",
+          "similarity_score": 0.3123144507408142,
           "is_correct": false
         },
         {
           "video_id": "v_4x7HYKV8zkY",
           "video_path": "/hub_data1/seohyun/hub_data/v_4x7HYKV8zkY.mp4",
-          "similarity_score": 0.5059319138526917,
+          "similarity_score": 0.5130065083503723,
           "is_correct": true
         },
         {
           "video_id": "v_Vjsd6Ec6eKA",
           "video_path": "/hub_data1/seohyun/hub_data/v_Vjsd6Ec6eKA.mp4",
-          "similarity_score": 0.4214768409729004,
+          "similarity_score": 0.4322117567062378,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v__Af_9cK5x4E",
-      "caption": "A group of highly skilled men perform impressive stunts and acrobatics on dirt bikes across diverse, scenic landscapes, captured from dynamic camera angles.",
+      "caption": "The video showcases skilled dirt bikers performing acrobatic stunts and jumps across diverse and scenic landscapes, captured from multiple dynamic angles.",
       "videos": [
         {
           "video_id": "v_ogQozSI5V8U",
           "video_path": "/hub_data1/seohyun/hub_data/v_ogQozSI5V8U.mp4",
-          "similarity_score": 0.2094949185848236,
+          "similarity_score": 0.15030254423618317,
           "is_correct": false
         },
         {
           "video_id": "v_Vjsd6Ec6eKA",
           "video_path": "/hub_data1/seohyun/hub_data/v_Vjsd6Ec6eKA.mp4",
-          "similarity_score": 0.3835962116718292,
+          "similarity_score": 0.39053383469581604,
           "is_correct": false
         },
         {
           "video_id": "v__Af_9cK5x4E",
           "video_path": "/hub_data1/seohyun/hub_data/v__Af_9cK5x4E.mp4",
-          "similarity_score": 0.4881380498409271,
+          "similarity_score": 0.48046040534973145,
           "is_correct": true
         },
         {
           "video_id": "v_D18b2IZpxk0",
           "video_path": "/hub_data1/seohyun/hub_data/v_D18b2IZpxk0.mp4",
-          "similarity_score": 0.3753224313259125,
+          "similarity_score": 0.3527424931526184,
           "is_correct": false
         },
         {
-          "video_id": "v_LFeoVokXAFY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_LFeoVokXAFY.mp4",
-          "similarity_score": 0.2996068000793457,
+          "video_id": "v_44BfVJnhBgc",
+          "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
+          "similarity_score": 0.2705957889556885,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_y5j9TqTy9Xw",
-      "caption": "A woman runs along a track and completes a high jump onto a mat.",
+      "caption": "A woman runs along a track and successfully completes a high jump onto a mat.",
       "videos": [
         {
-          "video_id": "v_69IsHpmRyfk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_69IsHpmRyfk.mp4",
-          "similarity_score": 0.2156863808631897,
+          "video_id": "v_lZKrd84QElk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_lZKrd84QElk.mp4",
+          "similarity_score": 0.2376536875963211,
           "is_correct": false
         },
         {
           "video_id": "v_4hmJfJo6UI8",
           "video_path": "/hub_data1/seohyun/hub_data/v_4hmJfJo6UI8.mp4",
-          "similarity_score": 0.3969630002975464,
+          "similarity_score": 0.4259687662124634,
           "is_correct": false
         },
         {
           "video_id": "v_HxJnPUqF9i8",
           "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.4248179495334625,
+          "similarity_score": 0.4546849727630615,
           "is_correct": false
         },
         {
-          "video_id": "v_h8J08sJ2no0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_h8J08sJ2no0.mp4",
-          "similarity_score": 0.2655642628669739,
+          "video_id": "v_g0XO-rWHmzs",
+          "video_path": "/hub_data1/seohyun/hub_data/v_g0XO-rWHmzs.mp4",
+          "similarity_score": 0.283237099647522,
           "is_correct": false
         },
         {
           "video_id": "v_y5j9TqTy9Xw",
           "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
-          "similarity_score": 0.381376713514328,
+          "similarity_score": 0.4018765389919281,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_Kp7pUEKrb8Q",
-      "caption": "A person prepares fresh lime juice by blending sliced limes with sugar, straining the mixture, and serving it in a glass with a straw and lime garnish.",
+      "caption": "A person prepares fresh lime juice by slicing limes, blending them with sugar, straining the mixture, and serving it with a garnish.",
       "videos": [
         {
-          "video_id": "v_xmag8UI8iws",
-          "video_path": "/hub_data1/seohyun/hub_data/v_xmag8UI8iws.mp4",
-          "similarity_score": 0.18162760138511658,
+          "video_id": "v__Af_9cK5x4E",
+          "video_path": "/hub_data1/seohyun/hub_data/v__Af_9cK5x4E.mp4",
+          "similarity_score": 0.18282760679721832,
           "is_correct": false
         },
         {
           "video_id": "v_oP77DgsbhKQ",
           "video_path": "/hub_data1/seohyun/hub_data/v_oP77DgsbhKQ.mp4",
-          "similarity_score": 0.3325415253639221,
+          "similarity_score": 0.34066352248191833,
           "is_correct": false
         },
         {
-          "video_id": "v_Y_dtU10XIsg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Y_dtU10XIsg.mp4",
-          "similarity_score": 0.2460392415523529,
+          "video_id": "v_XD3yFrJHiv8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_XD3yFrJHiv8.mp4",
+          "similarity_score": 0.2503920793533325,
           "is_correct": false
         },
         {
           "video_id": "v_fN2DiOswmOA",
           "video_path": "/hub_data1/seohyun/hub_data/v_fN2DiOswmOA.mp4",
-          "similarity_score": 0.35965612530708313,
+          "similarity_score": 0.38237375020980835,
           "is_correct": false
         },
         {
           "video_id": "v_Kp7pUEKrb8Q",
           "video_path": "/hub_data1/seohyun/hub_data/v_Kp7pUEKrb8Q.mp4",
-          "similarity_score": 0.4190482497215271,
+          "similarity_score": 0.44384244084358215,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_5lre5zbUV1Q",
-      "caption": "A child thoroughly cleans and rinses the kitchen sink using a brush and the faucet nozzle.",
+      "caption": "A child thoroughly cleans the kitchen sink by scrubbing, rinsing, and turning off the faucet when finished.",
       "videos": [
         {
           "video_id": "v_fN2DiOswmOA",
           "video_path": "/hub_data1/seohyun/hub_data/v_fN2DiOswmOA.mp4",
-          "similarity_score": 0.42196977138519287,
+          "similarity_score": 0.38290542364120483,
           "is_correct": false
         },
         {
           "video_id": "v_5lre5zbUV1Q",
           "video_path": "/hub_data1/seohyun/hub_data/v_5lre5zbUV1Q.mp4",
-          "similarity_score": 0.5016446709632874,
+          "similarity_score": 0.4813341498374939,
           "is_correct": true
         },
         {
-          "video_id": "v_0_xap_BBDrw",
-          "video_path": "/hub_data1/seohyun/hub_data/v_0_xap_BBDrw.mp4",
-          "similarity_score": 0.23887580633163452,
+          "video_id": "v_QOlSCBRmfWY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_QOlSCBRmfWY.mp4",
+          "similarity_score": 0.2226455956697464,
           "is_correct": false
         },
         {
-          "video_id": "v_XD3yFrJHiv8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_XD3yFrJHiv8.mp4",
-          "similarity_score": 0.28878262639045715,
+          "video_id": "v_f0CViWbj3V4",
+          "video_path": "/hub_data1/seohyun/hub_data/v_f0CViWbj3V4.mp4",
+          "similarity_score": 0.2617632746696472,
           "is_correct": false
         },
         {
-          "video_id": "v_zzz_3yWpTXo",
-          "video_path": "/hub_data1/seohyun/hub_data/v_zzz_3yWpTXo.mp4",
-          "similarity_score": 0.4044613540172577,
+          "video_id": "v_69IsHpmRyfk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_69IsHpmRyfk.mp4",
+          "similarity_score": 0.3742944002151489,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_huFuRGoZt9I",
-      "caption": "People participate in a card game at a table, dealing cards and placing chips as they play.",
+      "caption": "People participate in a card game as a dealer lays out cards and players place their chips on the table.",
       "videos": [
         {
-          "video_id": "v_UYHgieL5IKM",
-          "video_path": "/hub_data1/seohyun/hub_data/v_UYHgieL5IKM.mp4",
-          "similarity_score": 0.23931339383125305,
+          "video_id": "v_CmEQjszPDrg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_CmEQjszPDrg.mp4",
+          "similarity_score": 0.2371629774570465,
           "is_correct": false
         },
         {
           "video_id": "v_huFuRGoZt9I",
           "video_path": "/hub_data1/seohyun/hub_data/v_huFuRGoZt9I.mp4",
-          "similarity_score": 0.4194532334804535,
+          "similarity_score": 0.4118089973926544,
           "is_correct": true
         },
         {
           "video_id": "v_dAjhBWalWRM",
           "video_path": "/hub_data1/seohyun/hub_data/v_dAjhBWalWRM.mp4",
-          "similarity_score": 0.4220002591609955,
+          "similarity_score": 0.39288467168807983,
           "is_correct": false
         },
         {
-          "video_id": "v_N9LTq3gYmsI",
-          "video_path": "/hub_data1/seohyun/hub_data/v_N9LTq3gYmsI.mp4",
-          "similarity_score": 0.23486758768558502,
+          "video_id": "v_epqnpUCVLK8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_epqnpUCVLK8.mp4",
+          "similarity_score": 0.2313261777162552,
           "is_correct": false
         },
         {
           "video_id": "v_LNKdVrX_0Fg",
           "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
-          "similarity_score": 0.3371374011039734,
+          "similarity_score": 0.33689433336257935,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_CmEQjszPDrg",
-      "caption": "The video captures participants of a marathon or 5k event running and walking through the city, with a particular focus on a woman in black moving slowly, while spectators cheer on the diverse group of entrants.",
+      "caption": "The video shows a diverse group of participants, including runners, a focal woman walking slowly, and wheelchair users, making their way through a city marathon or 5k event while spectators cheer them on.",
       "videos": [
         {
-          "video_id": "v_LNKdVrX_0Fg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
-          "similarity_score": 0.3149653971195221,
+          "video_id": "v_ZKP5J7OKEvI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ZKP5J7OKEvI.mp4",
+          "similarity_score": 0.2902523875236511,
           "is_correct": false
         },
         {
           "video_id": "v_44BfVJnhBgc",
           "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
-          "similarity_score": 0.4498693346977234,
+          "similarity_score": 0.43373364210128784,
           "is_correct": false
         },
         {
-          "video_id": "v_y5j9TqTy9Xw",
-          "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
-          "similarity_score": 0.3791498839855194,
+          "video_id": "v_hoisfXCLJDQ",
+          "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
+          "similarity_score": 0.39215266704559326,
           "is_correct": false
         },
         {
           "video_id": "v_CmEQjszPDrg",
           "video_path": "/hub_data1/seohyun/hub_data/v_CmEQjszPDrg.mp4",
-          "similarity_score": 0.47370314598083496,
+          "similarity_score": 0.49559375643730164,
           "is_correct": true
         },
         {
-          "video_id": "v_g0XO-rWHmzs",
-          "video_path": "/hub_data1/seohyun/hub_data/v_g0XO-rWHmzs.mp4",
-          "similarity_score": 0.2972607910633087,
+          "video_id": "v_IoiDAHNryTk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_IoiDAHNryTk.mp4",
+          "similarity_score": 0.2685563862323761,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_RULNhPrXnfA",
-      "caption": "A man demonstrates and discusses various harmonicas, showcasing their features, playing techniques, and offering instructions throughout the video.",
+      "caption": "A man demonstrates and discusses various harmonicas, highlighting their features, playing techniques, and providing instruction throughout the video.",
       "videos": [
         {
           "video_id": "v_RULNhPrXnfA",
           "video_path": "/hub_data1/seohyun/hub_data/v_RULNhPrXnfA.mp4",
-          "similarity_score": 0.4105287492275238,
+          "similarity_score": 0.40430280566215515,
           "is_correct": true
         },
         {
-          "video_id": "v_TEaugXCX1m4",
-          "video_path": "/hub_data1/seohyun/hub_data/v_TEaugXCX1m4.mp4",
-          "similarity_score": 0.28394466638565063,
+          "video_id": "v_QOlSCBRmfWY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_QOlSCBRmfWY.mp4",
+          "similarity_score": 0.27297985553741455,
           "is_correct": false
         },
         {
-          "video_id": "v_nvsK9ggeics",
-          "video_path": "/hub_data1/seohyun/hub_data/v_nvsK9ggeics.mp4",
-          "similarity_score": 0.2874535620212555,
+          "video_id": "v_LNKdVrX_0Fg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
+          "similarity_score": 0.2735868990421295,
           "is_correct": false
         },
         {
-          "video_id": "v_BB2vrBWgXkU",
-          "video_path": "/hub_data1/seohyun/hub_data/v_BB2vrBWgXkU.mp4",
-          "similarity_score": 0.3788909912109375,
+          "video_id": "v_p9iE8iemCMs",
+          "video_path": "/hub_data1/seohyun/hub_data/v_p9iE8iemCMs.mp4",
+          "similarity_score": 0.3822413980960846,
           "is_correct": false
         },
         {
           "video_id": "v_74EoyLUbtgI",
           "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
-          "similarity_score": 0.398998498916626,
+          "similarity_score": 0.3846116364002228,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_Zd22n1caVgM",
-      "caption": "A boy in white shorts performs a series of movements, including putting something in his mouth, kicking his legs to the side, and kneeling down in a room.",
+      "caption": "A boy in white shorts performs a series of actions in a room, including putting something in his mouth, kicking his legs up, and kneeling down.",
       "videos": [
-        {
-          "video_id": "v_epqnpUCVLK8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_epqnpUCVLK8.mp4",
-          "similarity_score": 0.3541562855243683,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_IoiDAHNryTk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_IoiDAHNryTk.mp4",
-          "similarity_score": 0.21688319742679596,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_XD3yFrJHiv8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_XD3yFrJHiv8.mp4",
-          "similarity_score": 0.2500474750995636,
-          "is_correct": false
-        },
         {
           "video_id": "v_y7WO-8cQfO0",
           "video_path": "/hub_data1/seohyun/hub_data/v_y7WO-8cQfO0.mp4",
-          "similarity_score": 0.3561358153820038,
+          "similarity_score": 0.3480704128742218,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_dAjhBWalWRM",
+          "video_path": "/hub_data1/seohyun/hub_data/v_dAjhBWalWRM.mp4",
+          "similarity_score": 0.21117526292800903,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_aJbl1eVBzk0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_aJbl1eVBzk0.mp4",
+          "similarity_score": 0.2458454817533493,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_epqnpUCVLK8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_epqnpUCVLK8.mp4",
+          "similarity_score": 0.3520929217338562,
           "is_correct": false
         },
         {
           "video_id": "v_Zd22n1caVgM",
           "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
-          "similarity_score": 0.4382472634315491,
+          "similarity_score": 0.41670021414756775,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_ZKP5J7OKEvI",
-      "caption": "A group of people enjoy dancing together and celebrate with applause alongside live music.",
+      "caption": "A small group watches as two people dance together and everyone celebrates with clapping and music.",
       "videos": [
-        {
-          "video_id": "v_CmEQjszPDrg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_CmEQjszPDrg.mp4",
-          "similarity_score": 0.3843424618244171,
-          "is_correct": false
-        },
         {
           "video_id": "v_N-6-MdxRg50",
           "video_path": "/hub_data1/seohyun/hub_data/v_N-6-MdxRg50.mp4",
-          "similarity_score": 0.3507378399372101,
+          "similarity_score": 0.3710933327674866,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_CmEQjszPDrg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_CmEQjszPDrg.mp4",
+          "similarity_score": 0.3705540895462036,
           "is_correct": false
         },
         {
           "video_id": "v_ZKP5J7OKEvI",
           "video_path": "/hub_data1/seohyun/hub_data/v_ZKP5J7OKEvI.mp4",
-          "similarity_score": 0.3709876537322998,
+          "similarity_score": 0.3700145184993744,
           "is_correct": true
         },
         {
-          "video_id": "v_nvsK9ggeics",
-          "video_path": "/hub_data1/seohyun/hub_data/v_nvsK9ggeics.mp4",
-          "similarity_score": 0.2786313593387604,
+          "video_id": "v_69IsHpmRyfk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_69IsHpmRyfk.mp4",
+          "similarity_score": 0.27695605158805847,
           "is_correct": false
         },
         {
-          "video_id": "v_9rW35YTKYq8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_9rW35YTKYq8.mp4",
-          "similarity_score": 0.27882227301597595,
+          "video_id": "v_5lre5zbUV1Q",
+          "video_path": "/hub_data1/seohyun/hub_data/v_5lre5zbUV1Q.mp4",
+          "similarity_score": 0.2799442410469055,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_44BfVJnhBgc",
-      "caption": "A runner tests a prosthetic leg by running both indoors and outdoors over a long distance.",
+      "caption": "A runner tests a prosthetic leg by running both indoors and outdoors during a long distance run.",
       "videos": [
         {
-          "video_id": "v_x4iCAIPRDVQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_x4iCAIPRDVQ.mp4",
-          "similarity_score": 0.4520307779312134,
+          "video_id": "v_HxJnPUqF9i8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
+          "similarity_score": 0.4369072914123535,
           "is_correct": false
         },
         {
           "video_id": "v_44BfVJnhBgc",
           "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
-          "similarity_score": 0.5773990750312805,
+          "similarity_score": 0.5585817098617554,
           "is_correct": true
         },
         {
-          "video_id": "v_UYHgieL5IKM",
-          "video_path": "/hub_data1/seohyun/hub_data/v_UYHgieL5IKM.mp4",
-          "similarity_score": 0.3680674731731415,
+          "video_id": "v_QOlSCBRmfWY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_QOlSCBRmfWY.mp4",
+          "similarity_score": 0.35771673917770386,
           "is_correct": false
         },
         {
-          "video_id": "v_nvsK9ggeics",
-          "video_path": "/hub_data1/seohyun/hub_data/v_nvsK9ggeics.mp4",
-          "similarity_score": 0.3048172891139984,
+          "video_id": "v_lZKrd84QElk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_lZKrd84QElk.mp4",
+          "similarity_score": 0.2891891896724701,
           "is_correct": false
         },
         {
           "video_id": "v_74EoyLUbtgI",
           "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
-          "similarity_score": 0.46075648069381714,
+          "similarity_score": 0.45869678258895874,
           "is_correct": false
         }
       ]
@@ -1556,1728 +1556,1728 @@
     },
     {
       "text_id": "v_O-zE1-Yw3w0",
-      "caption": "A young girl demonstrates an experiment by covering a piece of wood with bubblewrap and walking across it to show the results.",
+      "caption": "A young girl demonstrates a creative activity by covering a piece of wood with bubble wrap and walking across it like a plank, explaining each step as she goes.",
       "videos": [
         {
           "video_id": "v_O-zE1-Yw3w0",
           "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
-          "similarity_score": 0.37324124574661255,
+          "similarity_score": 0.42365744709968567,
           "is_correct": true
         },
         {
-          "video_id": "v_TmI9MxCDBMw",
-          "video_path": "/hub_data1/seohyun/hub_data/v_TmI9MxCDBMw.mp4",
-          "similarity_score": 0.2217092514038086,
+          "video_id": "v_RgzbNJPchqc",
+          "video_path": "/hub_data1/seohyun/hub_data/v_RgzbNJPchqc.mp4",
+          "similarity_score": 0.2405901998281479,
           "is_correct": false
         },
         {
-          "video_id": "v_oP77DgsbhKQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_oP77DgsbhKQ.mp4",
-          "similarity_score": 0.3927159011363983,
+          "video_id": "v_cp52LdlmlUk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_cp52LdlmlUk.mp4",
+          "similarity_score": 0.4225757122039795,
           "is_correct": false
         },
         {
-          "video_id": "v_FeKEqUxiReA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_FeKEqUxiReA.mp4",
-          "similarity_score": 0.3121260404586792,
+          "video_id": "v_0_xap_BBDrw",
+          "video_path": "/hub_data1/seohyun/hub_data/v_0_xap_BBDrw.mp4",
+          "similarity_score": 0.3349544405937195,
           "is_correct": false
         },
         {
           "video_id": "v_pizl41xmw7k",
           "video_path": "/hub_data1/seohyun/hub_data/v_pizl41xmw7k.mp4",
-          "similarity_score": 0.42026588320732117,
+          "similarity_score": 0.43945881724357605,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_LFeoVokXAFY",
-      "caption": "A man repeatedly swings a large blue plastic bat at a SpongeBob SquarePants piñata, attempting to hit it.",
+      "caption": "A man repeatedly attempts to hit a SpongeBob SquarePants piñata with a large blue plastic bat.",
       "videos": [
         {
           "video_id": "v_LFeoVokXAFY",
           "video_path": "/hub_data1/seohyun/hub_data/v_LFeoVokXAFY.mp4",
-          "similarity_score": 0.5127670168876648,
+          "similarity_score": 0.5270990133285522,
           "is_correct": true
         },
         {
-          "video_id": "v_m22TDwfa8go",
-          "video_path": "/hub_data1/seohyun/hub_data/v_m22TDwfa8go.mp4",
-          "similarity_score": 0.2230542004108429,
+          "video_id": "v_Pu92wJ-7UTQ",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Pu92wJ-7UTQ.mp4",
+          "similarity_score": 0.240378275513649,
           "is_correct": false
         },
         {
           "video_id": "v_AGgJVF3nT6I",
           "video_path": "/hub_data1/seohyun/hub_data/v_AGgJVF3nT6I.mp4",
-          "similarity_score": 0.4210030734539032,
+          "similarity_score": 0.42694443464279175,
           "is_correct": false
         },
         {
           "video_id": "v_S6t9Lq1xKJk",
           "video_path": "/hub_data1/seohyun/hub_data/v_S6t9Lq1xKJk.mp4",
-          "similarity_score": 0.3020551800727844,
+          "similarity_score": 0.3203173279762268,
           "is_correct": false
         },
         {
           "video_id": "v_HxJnPUqF9i8",
           "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.41295015811920166,
+          "similarity_score": 0.41465455293655396,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_HxJnPUqF9i8",
-      "caption": "Athletes participate in a track and field training session, practicing javelin throwing, hammer swinging, shot put, and strength exercises to refine their throwing techniques.",
+      "caption": "Athletes practice and compete in various throwing events and exercises, both on the field and in the gym, to improve their performance.",
       "videos": [
         {
-          "video_id": "v_t0ajvfx6dgA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_t0ajvfx6dgA.mp4",
-          "similarity_score": 0.39378318190574646,
+          "video_id": "v_y5j9TqTy9Xw",
+          "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
+          "similarity_score": 0.38399723172187805,
           "is_correct": false
         },
         {
           "video_id": "v_HxJnPUqF9i8",
           "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.45330461859703064,
+          "similarity_score": 0.3733561336994171,
           "is_correct": true
         },
         {
-          "video_id": "v_pYb8jzB5vs0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_pYb8jzB5vs0.mp4",
-          "similarity_score": 0.3127942979335785,
+          "video_id": "v_hoisfXCLJDQ",
+          "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
+          "similarity_score": 0.30534523725509644,
           "is_correct": false
         },
         {
-          "video_id": "v_y5j9TqTy9Xw",
-          "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
-          "similarity_score": 0.40849223732948303,
+          "video_id": "v_WvxwmaDFGqk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_WvxwmaDFGqk.mp4",
+          "similarity_score": 0.4052489995956421,
           "is_correct": false
         },
         {
-          "video_id": "v_O-zE1-Yw3w0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
-          "similarity_score": 0.23859798908233643,
+          "video_id": "v_Y_dtU10XIsg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Y_dtU10XIsg.mp4",
+          "similarity_score": 0.25287842750549316,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_Y_dtU10XIsg",
-      "caption": "A woman shovels snow outside while a dog eagerly tries to help.",
+      "caption": "A woman shovels snow outside while her dog eagerly tries to help, with a close-up view of a crack shown.",
       "videos": [
         {
-          "video_id": "v__yWADgOFxP0",
-          "video_path": "/hub_data1/seohyun/hub_data/v__yWADgOFxP0.mp4",
-          "similarity_score": 0.39087867736816406,
+          "video_id": "v_zihMznAYlV0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_zihMznAYlV0.mp4",
+          "similarity_score": 0.3805672526359558,
           "is_correct": false
         },
         {
-          "video_id": "v_FeKEqUxiReA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_FeKEqUxiReA.mp4",
-          "similarity_score": 0.2647956609725952,
+          "video_id": "v_AGgJVF3nT6I",
+          "video_path": "/hub_data1/seohyun/hub_data/v_AGgJVF3nT6I.mp4",
+          "similarity_score": 0.22954483330249786,
           "is_correct": false
         },
         {
           "video_id": "v_Y_dtU10XIsg",
           "video_path": "/hub_data1/seohyun/hub_data/v_Y_dtU10XIsg.mp4",
-          "similarity_score": 0.5096865892410278,
+          "similarity_score": 0.474447637796402,
           "is_correct": true
         },
         {
-          "video_id": "v_zihMznAYlV0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_zihMznAYlV0.mp4",
-          "similarity_score": 0.39111948013305664,
+          "video_id": "v__yWADgOFxP0",
+          "video_path": "/hub_data1/seohyun/hub_data/v__yWADgOFxP0.mp4",
+          "similarity_score": 0.38080495595932007,
           "is_correct": false
         },
         {
-          "video_id": "v_QOlSCBRmfWY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_QOlSCBRmfWY.mp4",
-          "similarity_score": 0.201055109500885,
+          "video_id": "v_CmEQjszPDrg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_CmEQjszPDrg.mp4",
+          "similarity_score": 0.16128069162368774,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_x4iCAIPRDVQ",
-      "caption": "People exercise on fitness machines while others watch and interact in a gym setting.",
+      "caption": "A group of people exercise on fitness machines while others observe and move around the area.",
       "videos": [
         {
-          "video_id": "v_huFuRGoZt9I",
-          "video_path": "/hub_data1/seohyun/hub_data/v_huFuRGoZt9I.mp4",
-          "similarity_score": 0.28349605202674866,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_cp52LdlmlUk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_cp52LdlmlUk.mp4",
-          "similarity_score": 0.4035968482494354,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_x4iCAIPRDVQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_x4iCAIPRDVQ.mp4",
-          "similarity_score": 0.4448894262313843,
-          "is_correct": true
-        },
-        {
-          "video_id": "v_S6t9Lq1xKJk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_S6t9Lq1xKJk.mp4",
-          "similarity_score": 0.2625024616718292,
+          "video_id": "v_4x7HYKV8zkY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_4x7HYKV8zkY.mp4",
+          "similarity_score": 0.28640860319137573,
           "is_correct": false
         },
         {
           "video_id": "v_HxJnPUqF9i8",
           "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.39841827750205994,
+          "similarity_score": 0.4027143716812134,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_x4iCAIPRDVQ",
+          "video_path": "/hub_data1/seohyun/hub_data/v_x4iCAIPRDVQ.mp4",
+          "similarity_score": 0.42311638593673706,
+          "is_correct": true
+        },
+        {
+          "video_id": "v_pZ8QqpYu-H8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_pZ8QqpYu-H8.mp4",
+          "similarity_score": 0.26348888874053955,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_cp52LdlmlUk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_cp52LdlmlUk.mp4",
+          "similarity_score": 0.4017312228679657,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_NwfS7eZiMLg",
-      "caption": "A man performs a lively bagpipe tune in his living room, tapping his feet to the rhythm and ending with a smile at the camera.",
+      "caption": "A man performs a lively bagpipe tune in his living room, tapping his feet to the rhythm and ending with a smile to the camera.",
       "videos": [
         {
           "video_id": "v_L2oaUDyzWPA",
           "video_path": "/hub_data1/seohyun/hub_data/v_L2oaUDyzWPA.mp4",
-          "similarity_score": 0.3744674026966095,
+          "similarity_score": 0.37710919976234436,
           "is_correct": false
         },
         {
           "video_id": "v_dsVvnFkGAn0",
           "video_path": "/hub_data1/seohyun/hub_data/v_dsVvnFkGAn0.mp4",
-          "similarity_score": 0.3952159285545349,
+          "similarity_score": 0.39725741744041443,
           "is_correct": false
         },
         {
           "video_id": "v_NwfS7eZiMLg",
           "video_path": "/hub_data1/seohyun/hub_data/v_NwfS7eZiMLg.mp4",
-          "similarity_score": 0.4669242799282074,
+          "similarity_score": 0.4728926420211792,
           "is_correct": true
         },
         {
           "video_id": "v_m22TDwfa8go",
           "video_path": "/hub_data1/seohyun/hub_data/v_m22TDwfa8go.mp4",
-          "similarity_score": 0.2710627317428589,
+          "similarity_score": 0.27386558055877686,
           "is_correct": false
         },
         {
-          "video_id": "v_rAuz_Pf3lp8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_rAuz_Pf3lp8.mp4",
-          "similarity_score": 0.25895947217941284,
+          "video_id": "v_zzz_3yWpTXo",
+          "video_path": "/hub_data1/seohyun/hub_data/v_zzz_3yWpTXo.mp4",
+          "similarity_score": 0.2628593146800995,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_aJbl1eVBzk0",
-      "caption": "People work together in a bike shop to assemble and repair a bicycle, putting it back together piece by piece.",
+      "caption": "Several people collaborate to assemble and repair a bike in a shop, working together to put it back together piece by piece.",
       "videos": [
         {
           "video_id": "v_aJbl1eVBzk0",
           "video_path": "/hub_data1/seohyun/hub_data/v_aJbl1eVBzk0.mp4",
-          "similarity_score": 0.5577002763748169,
+          "similarity_score": 0.5050238370895386,
           "is_correct": true
         },
         {
           "video_id": "v_W19-fYOO9sg",
           "video_path": "/hub_data1/seohyun/hub_data/v_W19-fYOO9sg.mp4",
-          "similarity_score": 0.41927066445350647,
+          "similarity_score": 0.377058744430542,
           "is_correct": false
         },
         {
-          "video_id": "v_rBaR5xF8orE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_rBaR5xF8orE.mp4",
-          "similarity_score": 0.290317177772522,
+          "video_id": "v_hoisfXCLJDQ",
+          "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
+          "similarity_score": 0.27162671089172363,
           "is_correct": false
         },
         {
           "video_id": "v_Kp7pUEKrb8Q",
           "video_path": "/hub_data1/seohyun/hub_data/v_Kp7pUEKrb8Q.mp4",
-          "similarity_score": 0.24650844931602478,
+          "similarity_score": 0.22123372554779053,
           "is_correct": false
         },
         {
           "video_id": "v_D9rHZpZoeRA",
           "video_path": "/hub_data1/seohyun/hub_data/v_D9rHZpZoeRA.mp4",
-          "similarity_score": 0.3944903612136841,
+          "similarity_score": 0.35801976919174194,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_UYHgieL5IKM",
-      "caption": "Two men discuss and demonstrate mushroom foraging, including close-up examinations and sharing their experiences.",
+      "caption": "Two men discuss and demonstrate mushroom foraging, including providing advice and sharing their experiences with examining and preparing mushrooms.",
       "videos": [
         {
           "video_id": "v_UYHgieL5IKM",
           "video_path": "/hub_data1/seohyun/hub_data/v_UYHgieL5IKM.mp4",
-          "similarity_score": 0.4770389795303345,
+          "similarity_score": 0.47221639752388,
           "is_correct": true
         },
         {
-          "video_id": "v_RgzbNJPchqc",
-          "video_path": "/hub_data1/seohyun/hub_data/v_RgzbNJPchqc.mp4",
-          "similarity_score": 0.312000036239624,
+          "video_id": "v_WY9zvUkK_4Y",
+          "video_path": "/hub_data1/seohyun/hub_data/v_WY9zvUkK_4Y.mp4",
+          "similarity_score": 0.29833653569221497,
           "is_correct": false
         },
         {
           "video_id": "v_fN2DiOswmOA",
           "video_path": "/hub_data1/seohyun/hub_data/v_fN2DiOswmOA.mp4",
-          "similarity_score": 0.40275460481643677,
+          "similarity_score": 0.39900052547454834,
           "is_correct": false
         },
         {
-          "video_id": "v_37pwbUp8t1I",
-          "video_path": "/hub_data1/seohyun/hub_data/v_37pwbUp8t1I.mp4",
-          "similarity_score": 0.2975558042526245,
+          "video_id": "v_rBaR5xF8orE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_rBaR5xF8orE.mp4",
+          "similarity_score": 0.27815914154052734,
           "is_correct": false
         },
         {
           "video_id": "v__zHSfEhEqkU",
           "video_path": "/hub_data1/seohyun/hub_data/v__zHSfEhEqkU.mp4",
-          "similarity_score": 0.4117976427078247,
+          "similarity_score": 0.40057551860809326,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_f0CViWbj3V4",
-      "caption": "A man and woman sit together on a porch, playing bongo drums with the occasional help from another person.",
+      "caption": "A man and woman sit on a porch playing bongo drums together, with another person joining in from the foreground.",
       "videos": [
         {
           "video_id": "v_DEmArEKL8gc",
           "video_path": "/hub_data1/seohyun/hub_data/v_DEmArEKL8gc.mp4",
-          "similarity_score": 0.14874811470508575,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_epqnpUCVLK8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_epqnpUCVLK8.mp4",
-          "similarity_score": 0.36664092540740967,
+          "similarity_score": 0.1282128095626831,
           "is_correct": false
         },
         {
           "video_id": "v_oP77DgsbhKQ",
           "video_path": "/hub_data1/seohyun/hub_data/v_oP77DgsbhKQ.mp4",
-          "similarity_score": 0.37590479850769043,
+          "similarity_score": 0.36564183235168457,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_lZKrd84QElk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_lZKrd84QElk.mp4",
+          "similarity_score": 0.36879053711891174,
           "is_correct": false
         },
         {
           "video_id": "v_f0CViWbj3V4",
           "video_path": "/hub_data1/seohyun/hub_data/v_f0CViWbj3V4.mp4",
-          "similarity_score": 0.4668653905391693,
+          "similarity_score": 0.43073779344558716,
           "is_correct": true
         },
         {
-          "video_id": "v_6lYTHj9vImo",
-          "video_path": "/hub_data1/seohyun/hub_data/v_6lYTHj9vImo.mp4",
-          "similarity_score": 0.31390947103500366,
+          "video_id": "v_LNKdVrX_0Fg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
+          "similarity_score": 0.29406338930130005,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_h8J08sJ2no0",
-      "caption": "A man demonstrates various climbing and hand-walking techniques on gym equipment, showcasing agility and strength.",
+      "caption": "A man demonstrates impressive climbing and hand-walking skills on specialized equipment, moving from the roof to the floor and performing sideward hand walks.",
       "videos": [
         {
-          "video_id": "v_HxJnPUqF9i8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.41373103857040405,
+          "video_id": "v_y7WO-8cQfO0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_y7WO-8cQfO0.mp4",
+          "similarity_score": 0.4279518127441406,
           "is_correct": false
         },
         {
           "video_id": "v_h8J08sJ2no0",
           "video_path": "/hub_data1/seohyun/hub_data/v_h8J08sJ2no0.mp4",
-          "similarity_score": 0.2908667325973511,
+          "similarity_score": 0.3404882848262787,
           "is_correct": true
         },
         {
-          "video_id": "v_4hmJfJo6UI8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_4hmJfJo6UI8.mp4",
-          "similarity_score": 0.28604501485824585,
+          "video_id": "v_XD3yFrJHiv8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_XD3yFrJHiv8.mp4",
+          "similarity_score": 0.3128470182418823,
           "is_correct": false
         },
         {
-          "video_id": "v_WvxwmaDFGqk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_WvxwmaDFGqk.mp4",
-          "similarity_score": 0.4239269495010376,
+          "video_id": "v_HxJnPUqF9i8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
+          "similarity_score": 0.4358155131340027,
           "is_correct": false
         },
         {
-          "video_id": "v_bdC2YPVHGZM",
-          "video_path": "/hub_data1/seohyun/hub_data/v_bdC2YPVHGZM.mp4",
-          "similarity_score": 0.29666319489479065,
+          "video_id": "v_g0XO-rWHmzs",
+          "video_path": "/hub_data1/seohyun/hub_data/v_g0XO-rWHmzs.mp4",
+          "similarity_score": 0.32518595457077026,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_g0XO-rWHmzs",
-      "caption": "A woman releases her two dogs from their leashes, allowing them to roam and one to relieve itself before running off.",
+      "caption": "A woman releases two dogs from their leashes, allowing them to roam freely, with one dog stopping to relieve itself before running off.",
       "videos": [
         {
-          "video_id": "v_D9rHZpZoeRA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_D9rHZpZoeRA.mp4",
-          "similarity_score": 0.34071722626686096,
+          "video_id": "v_WvxwmaDFGqk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_WvxwmaDFGqk.mp4",
+          "similarity_score": 0.31947702169418335,
           "is_correct": false
         },
         {
           "video_id": "v_fny1HWXezlE",
           "video_path": "/hub_data1/seohyun/hub_data/v_fny1HWXezlE.mp4",
-          "similarity_score": 0.40238508582115173,
+          "similarity_score": 0.40097326040267944,
           "is_correct": false
         },
         {
           "video_id": "v_g0XO-rWHmzs",
           "video_path": "/hub_data1/seohyun/hub_data/v_g0XO-rWHmzs.mp4",
-          "similarity_score": 0.4296943247318268,
+          "similarity_score": 0.426524817943573,
           "is_correct": true
         },
         {
-          "video_id": "v_44BfVJnhBgc",
-          "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
-          "similarity_score": 0.39734095335006714,
+          "video_id": "v_xmag8UI8iws",
+          "video_path": "/hub_data1/seohyun/hub_data/v_xmag8UI8iws.mp4",
+          "similarity_score": 0.36859965324401855,
           "is_correct": false
         },
         {
-          "video_id": "v_uFMDSiHu7g4",
-          "video_path": "/hub_data1/seohyun/hub_data/v_uFMDSiHu7g4.mp4",
-          "similarity_score": 0.2776321470737457,
+          "video_id": "v_IoiDAHNryTk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_IoiDAHNryTk.mp4",
+          "similarity_score": 0.2506386935710907,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_rBaR5xF8orE",
-      "caption": "A man demonstrates kite flying in the center of an auditorium as an audience watches, followed by a woman addressing the crowd.",
+      "caption": "A man demonstrates kite flying to an audience in an auditorium, followed by a woman addressing the crowd.",
       "videos": [
         {
           "video_id": "v_kNkYgYnJTXk",
           "video_path": "/hub_data1/seohyun/hub_data/v_kNkYgYnJTXk.mp4",
-          "similarity_score": 0.3741205334663391,
+          "similarity_score": 0.38118529319763184,
           "is_correct": false
         },
         {
-          "video_id": "v_44BfVJnhBgc",
-          "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
-          "similarity_score": 0.20315802097320557,
+          "video_id": "v_69IsHpmRyfk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_69IsHpmRyfk.mp4",
+          "similarity_score": 0.2223035842180252,
           "is_correct": false
         },
         {
-          "video_id": "v_XnUi1SG9jxA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_XnUi1SG9jxA.mp4",
-          "similarity_score": 0.3646922707557678,
+          "video_id": "v_HxJnPUqF9i8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
+          "similarity_score": 0.34415140748023987,
           "is_correct": false
         },
         {
           "video_id": "v_rBaR5xF8orE",
           "video_path": "/hub_data1/seohyun/hub_data/v_rBaR5xF8orE.mp4",
-          "similarity_score": 0.41145575046539307,
+          "similarity_score": 0.40319371223449707,
           "is_correct": true
         },
         {
-          "video_id": "v_bdC2YPVHGZM",
-          "video_path": "/hub_data1/seohyun/hub_data/v_bdC2YPVHGZM.mp4",
-          "similarity_score": 0.2678495943546295,
+          "video_id": "v_zihMznAYlV0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_zihMznAYlV0.mp4",
+          "similarity_score": 0.27663061022758484,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_WvxwmaDFGqk",
-      "caption": "A man performs a series of slow stretching exercises in a gym.",
+      "caption": "A man performs slow stretching exercises while kneeling in a gym.",
       "videos": [
         {
-          "video_id": "v_fN2DiOswmOA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_fN2DiOswmOA.mp4",
-          "similarity_score": 0.26039838790893555,
+          "video_id": "v_O-zE1-Yw3w0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
+          "similarity_score": 0.26377370953559875,
           "is_correct": false
         },
         {
-          "video_id": "v_iYxj8a1TPYk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_iYxj8a1TPYk.mp4",
-          "similarity_score": 0.3857794404029846,
+          "video_id": "v_y7WO-8cQfO0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_y7WO-8cQfO0.mp4",
+          "similarity_score": 0.35501858592033386,
           "is_correct": false
         },
         {
-          "video_id": "v_hoisfXCLJDQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
-          "similarity_score": 0.1867614984512329,
+          "video_id": "v_fny1HWXezlE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_fny1HWXezlE.mp4",
+          "similarity_score": 0.17729783058166504,
           "is_correct": false
         },
         {
           "video_id": "v_WvxwmaDFGqk",
           "video_path": "/hub_data1/seohyun/hub_data/v_WvxwmaDFGqk.mp4",
-          "similarity_score": 0.4021814167499542,
+          "similarity_score": 0.4200782775878906,
           "is_correct": true
         },
         {
-          "video_id": "v_HxJnPUqF9i8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.38696983456611633,
+          "video_id": "v_iYxj8a1TPYk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_iYxj8a1TPYk.mp4",
+          "similarity_score": 0.3959003984928131,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_xmag8UI8iws",
-      "caption": "A person uses a leaf blower to gather leaves into a pile, causing some to blow onto a hedge, and then walks in front of a tree.",
+      "caption": "A person uses a leaf blower to gather leaves into a pile, blowing them onto a hedge before walking past a tree.",
       "videos": [
         {
-          "video_id": "v_cp52LdlmlUk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_cp52LdlmlUk.mp4",
-          "similarity_score": 0.2052583396434784,
+          "video_id": "v_V_Nj_BhesEY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_V_Nj_BhesEY.mp4",
+          "similarity_score": 0.17854535579681396,
           "is_correct": false
         },
         {
-          "video_id": "v__zHSfEhEqkU",
-          "video_path": "/hub_data1/seohyun/hub_data/v__zHSfEhEqkU.mp4",
-          "similarity_score": 0.33778974413871765,
+          "video_id": "v_rAuz_Pf3lp8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_rAuz_Pf3lp8.mp4",
+          "similarity_score": 0.31929811835289,
           "is_correct": false
         },
         {
           "video_id": "v_LFeoVokXAFY",
           "video_path": "/hub_data1/seohyun/hub_data/v_LFeoVokXAFY.mp4",
-          "similarity_score": 0.36069852113723755,
+          "similarity_score": 0.35050836205482483,
           "is_correct": false
         },
         {
           "video_id": "v_xmag8UI8iws",
           "video_path": "/hub_data1/seohyun/hub_data/v_xmag8UI8iws.mp4",
-          "similarity_score": 0.4252755343914032,
+          "similarity_score": 0.43909111618995667,
           "is_correct": true
         },
         {
-          "video_id": "v_O-zE1-Yw3w0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
-          "similarity_score": 0.2802663743495941,
+          "video_id": "v_37pwbUp8t1I",
+          "video_path": "/hub_data1/seohyun/hub_data/v_37pwbUp8t1I.mp4",
+          "similarity_score": 0.26491478085517883,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_N9LTq3gYmsI",
-      "caption": "A group enjoys tubing down a snowy slide, capturing the thrilling descent and safe landing at the bottom.",
+      "caption": "A group of people enjoy tubing down a snow slide, capturing the experience as they race downhill and come to a stop at the bottom.",
       "videos": [
-        {
-          "video_id": "v_hoisfXCLJDQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
-          "similarity_score": 0.39348429441452026,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_nvsK9ggeics",
-          "video_path": "/hub_data1/seohyun/hub_data/v_nvsK9ggeics.mp4",
-          "similarity_score": 0.16820138692855835,
-          "is_correct": false
-        },
         {
           "video_id": "v_zihMznAYlV0",
           "video_path": "/hub_data1/seohyun/hub_data/v_zihMznAYlV0.mp4",
-          "similarity_score": 0.3767789602279663,
+          "similarity_score": 0.39369791746139526,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_pZ8QqpYu-H8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_pZ8QqpYu-H8.mp4",
+          "similarity_score": 0.1488775908946991,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_hoisfXCLJDQ",
+          "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
+          "similarity_score": 0.3897415101528168,
           "is_correct": false
         },
         {
           "video_id": "v_N9LTq3gYmsI",
           "video_path": "/hub_data1/seohyun/hub_data/v_N9LTq3gYmsI.mp4",
-          "similarity_score": 0.38979536294937134,
+          "similarity_score": 0.43871235847473145,
           "is_correct": true
         },
         {
-          "video_id": "v_mnqSG5o84NE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
-          "similarity_score": 0.26413631439208984,
+          "video_id": "v_xmag8UI8iws",
+          "video_path": "/hub_data1/seohyun/hub_data/v_xmag8UI8iws.mp4",
+          "similarity_score": 0.25442400574684143,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_pZ8QqpYu-H8",
-      "caption": "A man performs a song on the piano, singing and playing before smiling at the end.",
+      "caption": "A man performs a song at the piano, singing into a microphone and ending with a smile.",
       "videos": [
         {
-          "video_id": "v_RULNhPrXnfA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_RULNhPrXnfA.mp4",
-          "similarity_score": 0.2774973213672638,
+          "video_id": "v_zihMznAYlV0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_zihMznAYlV0.mp4",
+          "similarity_score": 0.2787749469280243,
           "is_correct": false
         },
         {
           "video_id": "v_pZ8QqpYu-H8",
           "video_path": "/hub_data1/seohyun/hub_data/v_pZ8QqpYu-H8.mp4",
-          "similarity_score": 0.3891347050666809,
+          "similarity_score": 0.4183092415332794,
           "is_correct": true
         },
         {
           "video_id": "v_g0XO-rWHmzs",
           "video_path": "/hub_data1/seohyun/hub_data/v_g0XO-rWHmzs.mp4",
-          "similarity_score": 0.20923806726932526,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_74EoyLUbtgI",
-          "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
-          "similarity_score": 0.33658498525619507,
+          "similarity_score": 0.2005874365568161,
           "is_correct": false
         },
         {
           "video_id": "v_0_xap_BBDrw",
           "video_path": "/hub_data1/seohyun/hub_data/v_0_xap_BBDrw.mp4",
-          "similarity_score": 0.32556459307670593,
+          "similarity_score": 0.33951258659362793,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_dsVvnFkGAn0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_dsVvnFkGAn0.mp4",
+          "similarity_score": 0.332996666431427,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_4hmJfJo6UI8",
-      "caption": "A female athlete repeatedly sprints down a track, lands in the sand, and celebrates her performance.",
+      "caption": "A female athlete repeatedly sprints down a track, lands in the sand, and celebrates her performance with cheers and applause.",
       "videos": [
         {
           "video_id": "v_y5j9TqTy9Xw",
           "video_path": "/hub_data1/seohyun/hub_data/v_y5j9TqTy9Xw.mp4",
-          "similarity_score": 0.4018707573413849,
+          "similarity_score": 0.3922865092754364,
           "is_correct": false
         },
         {
           "video_id": "v_HxJnPUqF9i8",
           "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.4226419925689697,
+          "similarity_score": 0.4062032401561737,
           "is_correct": false
         },
         {
-          "video_id": "v_mnqSG5o84NE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
-          "similarity_score": 0.29131102561950684,
+          "video_id": "v_Kp7pUEKrb8Q",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Kp7pUEKrb8Q.mp4",
+          "similarity_score": 0.2669771909713745,
           "is_correct": false
         },
         {
-          "video_id": "v_WvxwmaDFGqk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_WvxwmaDFGqk.mp4",
-          "similarity_score": 0.29770103096961975,
+          "video_id": "v_fny1HWXezlE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_fny1HWXezlE.mp4",
+          "similarity_score": 0.275764137506485,
           "is_correct": false
         },
         {
           "video_id": "v_4hmJfJo6UI8",
           "video_path": "/hub_data1/seohyun/hub_data/v_4hmJfJo6UI8.mp4",
-          "similarity_score": 0.4740052819252014,
+          "similarity_score": 0.4541263282299042,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_TEaugXCX1m4",
-      "caption": "A man surfs waves near a beach lighthouse, performing stunts before walking ashore with his board.",
+      "caption": "A man surfs on the ocean, performing stunts with his board before returning to shore on a beach near a lighthouse.",
       "videos": [
         {
-          "video_id": "v_W19-fYOO9sg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_W19-fYOO9sg.mp4",
-          "similarity_score": 0.2272162288427353,
+          "video_id": "v_rBaR5xF8orE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_rBaR5xF8orE.mp4",
+          "similarity_score": 0.21717655658721924,
           "is_correct": false
         },
         {
           "video_id": "v_QdmUojrWdmE",
           "video_path": "/hub_data1/seohyun/hub_data/v_QdmUojrWdmE.mp4",
-          "similarity_score": 0.36723074316978455,
+          "similarity_score": 0.3847710192203522,
           "is_correct": false
         },
         {
-          "video_id": "v_Y_dtU10XIsg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Y_dtU10XIsg.mp4",
-          "similarity_score": 0.25393688678741455,
+          "video_id": "v_O-zE1-Yw3w0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
+          "similarity_score": 0.25300031900405884,
           "is_correct": false
         },
         {
-          "video_id": "v_6lYTHj9vImo",
-          "video_path": "/hub_data1/seohyun/hub_data/v_6lYTHj9vImo.mp4",
-          "similarity_score": 0.3551546633243561,
+          "video_id": "v__yWADgOFxP0",
+          "video_path": "/hub_data1/seohyun/hub_data/v__yWADgOFxP0.mp4",
+          "similarity_score": 0.3593325614929199,
           "is_correct": false
         },
         {
           "video_id": "v_TEaugXCX1m4",
           "video_path": "/hub_data1/seohyun/hub_data/v_TEaugXCX1m4.mp4",
-          "similarity_score": 0.39337247610092163,
+          "similarity_score": 0.42477405071258545,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_9rW35YTKYq8",
-      "caption": "A man skillfully plays a popular song on his violin, with the camera showcasing his performance from multiple angles.",
+      "caption": "A man plays a popular song on his violin with focused concentration, captured from multiple camera angles throughout the performance.",
       "videos": [
         {
-          "video_id": "v_p9iE8iemCMs",
-          "video_path": "/hub_data1/seohyun/hub_data/v_p9iE8iemCMs.mp4",
-          "similarity_score": 0.38950490951538086,
+          "video_id": "v_aJbl1eVBzk0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_aJbl1eVBzk0.mp4",
+          "similarity_score": 0.4076066017150879,
           "is_correct": false
         },
         {
-          "video_id": "v_N-6-MdxRg50",
-          "video_path": "/hub_data1/seohyun/hub_data/v_N-6-MdxRg50.mp4",
-          "similarity_score": 0.27782824635505676,
+          "video_id": "v_Kp7pUEKrb8Q",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Kp7pUEKrb8Q.mp4",
+          "similarity_score": 0.25701963901519775,
           "is_correct": false
         },
         {
           "video_id": "v_9rW35YTKYq8",
           "video_path": "/hub_data1/seohyun/hub_data/v_9rW35YTKYq8.mp4",
-          "similarity_score": 0.42611396312713623,
+          "similarity_score": 0.43340402841567993,
           "is_correct": true
         },
         {
           "video_id": "v_dsVvnFkGAn0",
           "video_path": "/hub_data1/seohyun/hub_data/v_dsVvnFkGAn0.mp4",
-          "similarity_score": 0.41543400287628174,
+          "similarity_score": 0.4208121597766876,
           "is_correct": false
         },
         {
-          "video_id": "v_44BfVJnhBgc",
-          "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
-          "similarity_score": 0.30475056171417236,
+          "video_id": "v_CmEQjszPDrg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_CmEQjszPDrg.mp4",
+          "similarity_score": 0.28390276432037354,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_hoisfXCLJDQ",
-      "caption": "A group of people enjoy riding tubes down a river together.",
+      "caption": "A group of people enjoy riding in tubes together as they float down a river.",
       "videos": [
         {
-          "video_id": "v_UYHgieL5IKM",
-          "video_path": "/hub_data1/seohyun/hub_data/v_UYHgieL5IKM.mp4",
-          "similarity_score": 0.2916441559791565,
+          "video_id": "v_WvxwmaDFGqk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_WvxwmaDFGqk.mp4",
+          "similarity_score": 0.29081112146377563,
           "is_correct": false
         },
         {
           "video_id": "v_rAuz_Pf3lp8",
           "video_path": "/hub_data1/seohyun/hub_data/v_rAuz_Pf3lp8.mp4",
-          "similarity_score": 0.4915996789932251,
+          "similarity_score": 0.4829736649990082,
           "is_correct": false
         },
         {
           "video_id": "v_hoisfXCLJDQ",
           "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
-          "similarity_score": 0.5640634298324585,
+          "similarity_score": 0.5463007688522339,
           "is_correct": true
         },
         {
-          "video_id": "v_---9CpRcKoU",
-          "video_path": "/hub_data1/seohyun/hub_data/v_---9CpRcKoU.mp4",
-          "similarity_score": 0.18883246183395386,
+          "video_id": "v_ogQozSI5V8U",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ogQozSI5V8U.mp4",
+          "similarity_score": 0.1901625394821167,
           "is_correct": false
         },
         {
           "video_id": "v_TmI9MxCDBMw",
           "video_path": "/hub_data1/seohyun/hub_data/v_TmI9MxCDBMw.mp4",
-          "similarity_score": 0.49365901947021484,
+          "similarity_score": 0.4902139902114868,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_mnqSG5o84NE",
-      "caption": "A man leads children in kickboxing training, demonstrating techniques and practicing moves while others observe.",
+      "caption": "A man instructs children in kickboxing while others observe, demonstrating moves, practicing kicks, and encouraging the kids throughout the session.",
       "videos": [
         {
           "video_id": "v_FeKEqUxiReA",
           "video_path": "/hub_data1/seohyun/hub_data/v_FeKEqUxiReA.mp4",
-          "similarity_score": 0.3686639666557312,
+          "similarity_score": 0.37646836042404175,
           "is_correct": false
         },
         {
           "video_id": "v_mnqSG5o84NE",
           "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
-          "similarity_score": 0.4658567011356354,
+          "similarity_score": 0.4712754189968109,
           "is_correct": true
         },
         {
           "video_id": "v_aJbl1eVBzk0",
           "video_path": "/hub_data1/seohyun/hub_data/v_aJbl1eVBzk0.mp4",
-          "similarity_score": 0.23759512603282928,
+          "similarity_score": 0.23747652769088745,
           "is_correct": false
         },
         {
           "video_id": "v_V_Nj_BhesEY",
           "video_path": "/hub_data1/seohyun/hub_data/v_V_Nj_BhesEY.mp4",
-          "similarity_score": 0.3877505660057068,
+          "similarity_score": 0.38395801186561584,
           "is_correct": false
         },
         {
-          "video_id": "v_UYHgieL5IKM",
-          "video_path": "/hub_data1/seohyun/hub_data/v_UYHgieL5IKM.mp4",
-          "similarity_score": 0.21375511586666107,
+          "video_id": "v_xmag8UI8iws",
+          "video_path": "/hub_data1/seohyun/hub_data/v_xmag8UI8iws.mp4",
+          "similarity_score": 0.2113567590713501,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_nvsK9ggeics",
-      "caption": "A young boy enthusiastically plays the drums as the camera focuses on his performance.",
+      "caption": "A young boy plays the drums as the camera focuses on his performance.",
       "videos": [
         {
-          "video_id": "v_L2oaUDyzWPA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_L2oaUDyzWPA.mp4",
-          "similarity_score": 0.29398202896118164,
+          "video_id": "v_WY9zvUkK_4Y",
+          "video_path": "/hub_data1/seohyun/hub_data/v_WY9zvUkK_4Y.mp4",
+          "similarity_score": 0.29005908966064453,
           "is_correct": false
         },
         {
           "video_id": "v_nvsK9ggeics",
           "video_path": "/hub_data1/seohyun/hub_data/v_nvsK9ggeics.mp4",
-          "similarity_score": 0.5034291744232178,
+          "similarity_score": 0.4850897192955017,
           "is_correct": true
-        },
-        {
-          "video_id": "v_f0CViWbj3V4",
-          "video_path": "/hub_data1/seohyun/hub_data/v_f0CViWbj3V4.mp4",
-          "similarity_score": 0.44738101959228516,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_IoiDAHNryTk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_IoiDAHNryTk.mp4",
-          "similarity_score": 0.32398301362991333,
-          "is_correct": false
         },
         {
           "video_id": "v_Zd22n1caVgM",
           "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
-          "similarity_score": 0.44244781136512756,
+          "similarity_score": 0.4543251395225525,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_ogQozSI5V8U",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ogQozSI5V8U.mp4",
+          "similarity_score": 0.3176290988922119,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_f0CViWbj3V4",
+          "video_path": "/hub_data1/seohyun/hub_data/v_f0CViWbj3V4.mp4",
+          "similarity_score": 0.4297456741333008,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_rAuz_Pf3lp8",
-      "caption": "A family enjoys a rainy day together by having a picnic, playing and dancing in the rain, and floating on inflatable tubes along a scenic, tree-lined waterway before heading home.",
+      "caption": "A family enjoys a rainy day together by having a picnic, playing in the rain, and floating down a tree-lined river on inflatable rafts before heading home.",
       "videos": [
         {
-          "video_id": "v_zzz_3yWpTXo",
-          "video_path": "/hub_data1/seohyun/hub_data/v_zzz_3yWpTXo.mp4",
-          "similarity_score": 0.16698773205280304,
+          "video_id": "v_VFOjLDa5VtA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_VFOjLDa5VtA.mp4",
+          "similarity_score": 0.18893252313137054,
           "is_correct": false
         },
         {
-          "video_id": "v_pizl41xmw7k",
-          "video_path": "/hub_data1/seohyun/hub_data/v_pizl41xmw7k.mp4",
-          "similarity_score": 0.2007860690355301,
+          "video_id": "v_D18b2IZpxk0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_D18b2IZpxk0.mp4",
+          "similarity_score": 0.22331896424293518,
           "is_correct": false
         },
         {
           "video_id": "v_rAuz_Pf3lp8",
           "video_path": "/hub_data1/seohyun/hub_data/v_rAuz_Pf3lp8.mp4",
-          "similarity_score": 0.4068073034286499,
+          "similarity_score": 0.43664658069610596,
           "is_correct": true
         },
         {
           "video_id": "v_hoisfXCLJDQ",
           "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
-          "similarity_score": 0.46550679206848145,
+          "similarity_score": 0.482608437538147,
           "is_correct": false
         },
         {
           "video_id": "v_TmI9MxCDBMw",
           "video_path": "/hub_data1/seohyun/hub_data/v_TmI9MxCDBMw.mp4",
-          "similarity_score": 0.3600690960884094,
+          "similarity_score": 0.3843330442905426,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_y7WO-8cQfO0",
-      "caption": "A young man showcases impressive jump rope tricks in a gym, both solo and with assistance from friends, set to music.",
+      "caption": "A young man demonstrates impressive jump rope tricks in a gym, both solo and with friends, accompanied by energetic music.",
       "videos": [
         {
           "video_id": "v_y7WO-8cQfO0",
           "video_path": "/hub_data1/seohyun/hub_data/v_y7WO-8cQfO0.mp4",
-          "similarity_score": 0.46046268939971924,
+          "similarity_score": 0.4768759310245514,
           "is_correct": true
-        },
-        {
-          "video_id": "v_rBaR5xF8orE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_rBaR5xF8orE.mp4",
-          "similarity_score": 0.4554806053638458,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_g0XO-rWHmzs",
-          "video_path": "/hub_data1/seohyun/hub_data/v_g0XO-rWHmzs.mp4",
-          "similarity_score": 0.2879047095775604,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_aJbl1eVBzk0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_aJbl1eVBzk0.mp4",
-          "similarity_score": 0.3404737114906311,
-          "is_correct": false
         },
         {
           "video_id": "v_HxJnPUqF9i8",
           "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.4504173696041107,
+          "similarity_score": 0.4644293189048767,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_m22TDwfa8go",
+          "video_path": "/hub_data1/seohyun/hub_data/v_m22TDwfa8go.mp4",
+          "similarity_score": 0.26563945412635803,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_zihMznAYlV0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_zihMznAYlV0.mp4",
+          "similarity_score": 0.3183245360851288,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_rBaR5xF8orE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_rBaR5xF8orE.mp4",
+          "similarity_score": 0.4442307651042938,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_74EoyLUbtgI",
-      "caption": "A woman shines a man's shoes on a platform, surrounded by various cloths and visual elements like footprints and holographic images.",
+      "caption": "A woman shines a man's shoes on a platform while various cloths and visual elements, including footprints and holographic images, are displayed around them.",
       "videos": [
         {
-          "video_id": "v_nwznKOuZM7w",
-          "video_path": "/hub_data1/seohyun/hub_data/v_nwznKOuZM7w.mp4",
-          "similarity_score": 0.35341763496398926,
+          "video_id": "v_LNKdVrX_0Fg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
+          "similarity_score": 0.35178816318511963,
           "is_correct": false
         },
         {
           "video_id": "v_74EoyLUbtgI",
           "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
-          "similarity_score": 0.38339507579803467,
+          "similarity_score": 0.41067972779273987,
           "is_correct": true
         },
         {
-          "video_id": "v_dsVvnFkGAn0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_dsVvnFkGAn0.mp4",
-          "similarity_score": 0.27758222818374634,
+          "video_id": "v_O-zE1-Yw3w0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
+          "similarity_score": 0.2810842990875244,
           "is_correct": false
         },
         {
-          "video_id": "v_WvxwmaDFGqk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_WvxwmaDFGqk.mp4",
-          "similarity_score": 0.288263738155365,
+          "video_id": "v_ogQozSI5V8U",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ogQozSI5V8U.mp4",
+          "similarity_score": 0.29742157459259033,
           "is_correct": false
         },
         {
-          "video_id": "v_QdmUojrWdmE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_QdmUojrWdmE.mp4",
-          "similarity_score": 0.37136363983154297,
+          "video_id": "v_nwznKOuZM7w",
+          "video_path": "/hub_data1/seohyun/hub_data/v_nwznKOuZM7w.mp4",
+          "similarity_score": 0.3626862168312073,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_D9rHZpZoeRA",
-      "caption": "This video demonstrates how to change a flat tire on a black Audi A3, from activating the emergency lights to replacing the damaged tire with a spare.",
+      "caption": "This video demonstrates how to safely change a flat tire on a black Audi A3, including activating the emergency lights, using the spare tire and jack, and replacing the wheel.",
       "videos": [
         {
           "video_id": "v_D9rHZpZoeRA",
           "video_path": "/hub_data1/seohyun/hub_data/v_D9rHZpZoeRA.mp4",
-          "similarity_score": 0.48326125741004944,
+          "similarity_score": 0.4865931272506714,
           "is_correct": true
         },
         {
           "video_id": "v_W19-fYOO9sg",
           "video_path": "/hub_data1/seohyun/hub_data/v_W19-fYOO9sg.mp4",
-          "similarity_score": 0.4095669984817505,
+          "similarity_score": 0.4106379449367523,
           "is_correct": false
         },
         {
-          "video_id": "v_zzz_3yWpTXo",
-          "video_path": "/hub_data1/seohyun/hub_data/v_zzz_3yWpTXo.mp4",
-          "similarity_score": 0.2829701900482178,
+          "video_id": "v_O-zE1-Yw3w0",
+          "video_path": "/hub_data1/seohyun/hub_data/v_O-zE1-Yw3w0.mp4",
+          "similarity_score": 0.27654561400413513,
           "is_correct": false
         },
         {
           "video_id": "v_S6t9Lq1xKJk",
           "video_path": "/hub_data1/seohyun/hub_data/v_S6t9Lq1xKJk.mp4",
-          "similarity_score": 0.3499608039855957,
+          "similarity_score": 0.3442877531051636,
           "is_correct": false
         },
         {
-          "video_id": "v_mnqSG5o84NE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
-          "similarity_score": 0.22525234520435333,
+          "video_id": "v_---9CpRcKoU",
+          "video_path": "/hub_data1/seohyun/hub_data/v_---9CpRcKoU.mp4",
+          "similarity_score": 0.21765081584453583,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_WY9zvUkK_4Y",
-      "caption": "Two women demonstrate and explain how to create a French braid on a girl's hair in a salon setting.",
+      "caption": "Two women demonstrate how to create a French braid on a girl in a salon, explaining the process and showing the final result to the camera.",
       "videos": [
+        {
+          "video_id": "v_74EoyLUbtgI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
+          "similarity_score": 0.39826279878616333,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_cp52LdlmlUk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_cp52LdlmlUk.mp4",
+          "similarity_score": 0.26959726214408875,
+          "is_correct": false
+        },
         {
           "video_id": "v_69IsHpmRyfk",
           "video_path": "/hub_data1/seohyun/hub_data/v_69IsHpmRyfk.mp4",
-          "similarity_score": 0.4255615770816803,
+          "similarity_score": 0.4269985556602478,
           "is_correct": false
         },
         {
-          "video_id": "v_x4iCAIPRDVQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_x4iCAIPRDVQ.mp4",
-          "similarity_score": 0.2914577126502991,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_p9iE8iemCMs",
-          "video_path": "/hub_data1/seohyun/hub_data/v_p9iE8iemCMs.mp4",
-          "similarity_score": 0.4483414888381958,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_V_Nj_BhesEY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_V_Nj_BhesEY.mp4",
-          "similarity_score": 0.30816715955734253,
+          "video_id": "v_UYHgieL5IKM",
+          "video_path": "/hub_data1/seohyun/hub_data/v_UYHgieL5IKM.mp4",
+          "similarity_score": 0.29335781931877136,
           "is_correct": false
         },
         {
           "video_id": "v_WY9zvUkK_4Y",
           "video_path": "/hub_data1/seohyun/hub_data/v_WY9zvUkK_4Y.mp4",
-          "similarity_score": 0.5422612428665161,
+          "similarity_score": 0.5265505313873291,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_N-6-MdxRg50",
-      "caption": "A group of kids in colorful clothes perform a zumba dance on stage, with some playful mistakes, followed by an ending screen.",
+      "caption": "A group of kids dressed in colorful outfits perform a lively zumba routine on stage, with cheerful dancing and playful moments.",
       "videos": [
         {
-          "video_id": "v_uFMDSiHu7g4",
-          "video_path": "/hub_data1/seohyun/hub_data/v_uFMDSiHu7g4.mp4",
-          "similarity_score": 0.3419862389564514,
+          "video_id": "v_CmEQjszPDrg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_CmEQjszPDrg.mp4",
+          "similarity_score": 0.315716028213501,
           "is_correct": false
         },
         {
-          "video_id": "v_bdC2YPVHGZM",
-          "video_path": "/hub_data1/seohyun/hub_data/v_bdC2YPVHGZM.mp4",
-          "similarity_score": 0.16013552248477936,
+          "video_id": "v_g0XO-rWHmzs",
+          "video_path": "/hub_data1/seohyun/hub_data/v_g0XO-rWHmzs.mp4",
+          "similarity_score": 0.11372107267379761,
           "is_correct": false
         },
         {
           "video_id": "v_AGgJVF3nT6I",
           "video_path": "/hub_data1/seohyun/hub_data/v_AGgJVF3nT6I.mp4",
-          "similarity_score": 0.3532775342464447,
+          "similarity_score": 0.3249196708202362,
           "is_correct": false
         },
         {
-          "video_id": "v_QOlSCBRmfWY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_QOlSCBRmfWY.mp4",
-          "similarity_score": 0.24328938126564026,
+          "video_id": "v_0_xap_BBDrw",
+          "video_path": "/hub_data1/seohyun/hub_data/v_0_xap_BBDrw.mp4",
+          "similarity_score": 0.20548094809055328,
           "is_correct": false
         },
         {
           "video_id": "v_N-6-MdxRg50",
           "video_path": "/hub_data1/seohyun/hub_data/v_N-6-MdxRg50.mp4",
-          "similarity_score": 0.4699557423591614,
+          "similarity_score": 0.41875171661376953,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_uFMDSiHu7g4",
-      "caption": "People dance together in lively street festival scenes as performers play music and onlookers watch the festivities.",
+      "caption": "People dance together in the street while performers entertain at a lively festival, with onlookers passing by and joining the celebration.",
       "videos": [
         {
           "video_id": "v_uFMDSiHu7g4",
           "video_path": "/hub_data1/seohyun/hub_data/v_uFMDSiHu7g4.mp4",
-          "similarity_score": 0.3226461410522461,
+          "similarity_score": 0.300959974527359,
           "is_correct": true
         },
         {
-          "video_id": "v_4x7HYKV8zkY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_4x7HYKV8zkY.mp4",
-          "similarity_score": 0.2116447389125824,
+          "video_id": "v_RULNhPrXnfA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_RULNhPrXnfA.mp4",
+          "similarity_score": 0.20094898343086243,
           "is_correct": false
         },
         {
-          "video_id": "v_44BfVJnhBgc",
-          "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
-          "similarity_score": 0.2817225456237793,
+          "video_id": "v_p9iE8iemCMs",
+          "video_path": "/hub_data1/seohyun/hub_data/v_p9iE8iemCMs.mp4",
+          "similarity_score": 0.2897109091281891,
           "is_correct": false
         },
         {
-          "video_id": "v_IoiDAHNryTk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_IoiDAHNryTk.mp4",
-          "similarity_score": 0.19450333714485168,
+          "video_id": "v_74EoyLUbtgI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
+          "similarity_score": 0.1801779866218567,
           "is_correct": false
         },
         {
           "video_id": "v_CmEQjszPDrg",
           "video_path": "/hub_data1/seohyun/hub_data/v_CmEQjszPDrg.mp4",
-          "similarity_score": 0.3434637784957886,
+          "similarity_score": 0.32310667634010315,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_Pu92wJ-7UTQ",
-      "caption": "A man plays and strums two drums, skillfully incorporating leg movements into his performance.",
+      "caption": "A man demonstrates playing two drums by alternating and combining different drumming techniques.",
       "videos": [
         {
           "video_id": "v_DEmArEKL8gc",
           "video_path": "/hub_data1/seohyun/hub_data/v_DEmArEKL8gc.mp4",
-          "similarity_score": 0.18367764353752136,
+          "similarity_score": 0.12797892093658447,
           "is_correct": false
         },
         {
-          "video_id": "v_QOlSCBRmfWY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_QOlSCBRmfWY.mp4",
-          "similarity_score": 0.31660374999046326,
+          "video_id": "v_FeKEqUxiReA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_FeKEqUxiReA.mp4",
+          "similarity_score": 0.2880968451499939,
           "is_correct": false
         },
         {
-          "video_id": "v_f0CViWbj3V4",
-          "video_path": "/hub_data1/seohyun/hub_data/v_f0CViWbj3V4.mp4",
-          "similarity_score": 0.4099905788898468,
+          "video_id": "v_oP77DgsbhKQ",
+          "video_path": "/hub_data1/seohyun/hub_data/v_oP77DgsbhKQ.mp4",
+          "similarity_score": 0.3782016336917877,
           "is_correct": false
         },
         {
           "video_id": "v_Pu92wJ-7UTQ",
           "video_path": "/hub_data1/seohyun/hub_data/v_Pu92wJ-7UTQ.mp4",
-          "similarity_score": 0.39406660199165344,
+          "similarity_score": 0.4331861734390259,
           "is_correct": true
         },
         {
           "video_id": "v_nvsK9ggeics",
           "video_path": "/hub_data1/seohyun/hub_data/v_nvsK9ggeics.mp4",
-          "similarity_score": 0.4158981144428253,
+          "similarity_score": 0.4044124484062195,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_dsVvnFkGAn0",
-      "caption": "A woman sits by the fireplace, plays the violin, and then pauses to talk.",
+      "caption": "A woman sits by the fireplace, plays the violin briefly, and then talks while holding it on her lap.",
       "videos": [
+        {
+          "video_id": "v_74EoyLUbtgI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
+          "similarity_score": 0.36072975397109985,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_4hmJfJo6UI8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_4hmJfJo6UI8.mp4",
+          "similarity_score": 0.23379725217819214,
+          "is_correct": false
+        },
+        {
+          "video_id": "v_dAjhBWalWRM",
+          "video_path": "/hub_data1/seohyun/hub_data/v_dAjhBWalWRM.mp4",
+          "similarity_score": 0.29564669728279114,
+          "is_correct": false
+        },
         {
           "video_id": "v_9rW35YTKYq8",
           "video_path": "/hub_data1/seohyun/hub_data/v_9rW35YTKYq8.mp4",
-          "similarity_score": 0.36590105295181274,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_RgzbNJPchqc",
-          "video_path": "/hub_data1/seohyun/hub_data/v_RgzbNJPchqc.mp4",
-          "similarity_score": 0.25606051087379456,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_iMiKGoQ7RjE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_iMiKGoQ7RjE.mp4",
-          "similarity_score": 0.3045853078365326,
-          "is_correct": false
-        },
-        {
-          "video_id": "v_6lYTHj9vImo",
-          "video_path": "/hub_data1/seohyun/hub_data/v_6lYTHj9vImo.mp4",
-          "similarity_score": 0.36545807123184204,
+          "similarity_score": 0.3572743535041809,
           "is_correct": false
         },
         {
           "video_id": "v_dsVvnFkGAn0",
           "video_path": "/hub_data1/seohyun/hub_data/v_dsVvnFkGAn0.mp4",
-          "similarity_score": 0.4852975606918335,
+          "similarity_score": 0.4786542057991028,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_JgHQCKz_DRc",
-      "caption": "A man receives a professional haircut and styling while a team assists and prepares for a final pose.",
+      "caption": "A man receives a professional haircut and styling as people work around him, finishing with a styled pose.",
       "videos": [
         {
-          "video_id": "v_mnqSG5o84NE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
-          "similarity_score": 0.38540637493133545,
+          "video_id": "v_WY9zvUkK_4Y",
+          "video_path": "/hub_data1/seohyun/hub_data/v_WY9zvUkK_4Y.mp4",
+          "similarity_score": 0.3588554263114929,
           "is_correct": false
         },
         {
-          "video_id": "v_N-6-MdxRg50",
-          "video_path": "/hub_data1/seohyun/hub_data/v_N-6-MdxRg50.mp4",
-          "similarity_score": 0.2776971757411957,
+          "video_id": "v_Y_dtU10XIsg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Y_dtU10XIsg.mp4",
+          "similarity_score": 0.258852481842041,
           "is_correct": false
         },
         {
           "video_id": "v_JgHQCKz_DRc",
           "video_path": "/hub_data1/seohyun/hub_data/v_JgHQCKz_DRc.mp4",
-          "similarity_score": 0.42482757568359375,
+          "similarity_score": 0.42475566267967224,
           "is_correct": true
         },
         {
-          "video_id": "v_TEaugXCX1m4",
-          "video_path": "/hub_data1/seohyun/hub_data/v_TEaugXCX1m4.mp4",
-          "similarity_score": 0.3013421893119812,
+          "video_id": "v_37pwbUp8t1I",
+          "video_path": "/hub_data1/seohyun/hub_data/v_37pwbUp8t1I.mp4",
+          "similarity_score": 0.3015987277030945,
           "is_correct": false
         },
         {
-          "video_id": "v_HxJnPUqF9i8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.3837989568710327,
+          "video_id": "v_mnqSG5o84NE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_mnqSG5o84NE.mp4",
+          "similarity_score": 0.3536139726638794,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_DEmArEKL8gc",
-      "caption": "A teenage cheerleading squad performs a lively routine featuring flips, jumps, and stunts, finishing with a synchronized split and a group hug.",
+      "caption": "A teenage cheerleading squad performs an energetic routine featuring flips, jumps, impressive stunts, and teamwork, concluding with a celebratory group hug.",
       "videos": [
         {
-          "video_id": "v_LNKdVrX_0Fg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
-          "similarity_score": 0.2783512473106384,
+          "video_id": "v_69IsHpmRyfk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_69IsHpmRyfk.mp4",
+          "similarity_score": 0.27983567118644714,
           "is_correct": false
         },
         {
           "video_id": "v_HxJnPUqF9i8",
           "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.35718247294425964,
+          "similarity_score": 0.35297197103500366,
           "is_correct": false
         },
         {
           "video_id": "v_DEmArEKL8gc",
           "video_path": "/hub_data1/seohyun/hub_data/v_DEmArEKL8gc.mp4",
-          "similarity_score": 0.38184547424316406,
+          "similarity_score": 0.36834731698036194,
           "is_correct": true
         },
         {
-          "video_id": "v_pZ8QqpYu-H8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_pZ8QqpYu-H8.mp4",
-          "similarity_score": 0.19144964218139648,
+          "video_id": "v_Zd22n1caVgM",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
+          "similarity_score": 0.1987585425376892,
           "is_correct": false
         },
         {
           "video_id": "v_N-6-MdxRg50",
           "video_path": "/hub_data1/seohyun/hub_data/v_N-6-MdxRg50.mp4",
-          "similarity_score": 0.3504360616207123,
+          "similarity_score": 0.33339622616767883,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_8ikOQRbeQL8",
-      "caption": "A woman wearing a hood and glasses talks while demonstrating baton twirling.",
+      "caption": "A woman in a hood and glasses talks while twirling a baton in her hands.",
       "videos": [
         {
           "video_id": "v_zzz_3yWpTXo",
           "video_path": "/hub_data1/seohyun/hub_data/v_zzz_3yWpTXo.mp4",
-          "similarity_score": 0.3021862506866455,
+          "similarity_score": 0.3324460983276367,
           "is_correct": false
         },
         {
           "video_id": "v_HxJnPUqF9i8",
           "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.47247686982154846,
+          "similarity_score": 0.4853484034538269,
           "is_correct": false
         },
         {
           "video_id": "v_8ikOQRbeQL8",
           "video_path": "/hub_data1/seohyun/hub_data/v_8ikOQRbeQL8.mp4",
-          "similarity_score": 0.44354870915412903,
+          "similarity_score": 0.46474361419677734,
           "is_correct": true
         },
         {
-          "video_id": "v_iMiKGoQ7RjE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_iMiKGoQ7RjE.mp4",
-          "similarity_score": 0.28444617986679077,
+          "video_id": "v_4x7HYKV8zkY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_4x7HYKV8zkY.mp4",
+          "similarity_score": 0.3127630949020386,
           "is_correct": false
         },
         {
-          "video_id": "v_QOlSCBRmfWY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_QOlSCBRmfWY.mp4",
-          "similarity_score": 0.41624078154563904,
+          "video_id": "v_rAuz_Pf3lp8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_rAuz_Pf3lp8.mp4",
+          "similarity_score": 0.45557862520217896,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_zzz_3yWpTXo",
-      "caption": "A woman washes dishes at a sink while engaging with and smiling at the camera.",
+      "caption": "A woman washes dishes at a sink while engaging with the camera and smiling.",
       "videos": [
         {
           "video_id": "v_zzz_3yWpTXo",
           "video_path": "/hub_data1/seohyun/hub_data/v_zzz_3yWpTXo.mp4",
-          "similarity_score": 0.3881187438964844,
+          "similarity_score": 0.36886346340179443,
           "is_correct": true
         },
         {
-          "video_id": "v_0_xap_BBDrw",
-          "video_path": "/hub_data1/seohyun/hub_data/v_0_xap_BBDrw.mp4",
-          "similarity_score": 0.25053998827934265,
+          "video_id": "v_4x7HYKV8zkY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_4x7HYKV8zkY.mp4",
+          "similarity_score": 0.24950844049453735,
           "is_correct": false
         },
         {
           "video_id": "v_nwznKOuZM7w",
           "video_path": "/hub_data1/seohyun/hub_data/v_nwznKOuZM7w.mp4",
-          "similarity_score": 0.37571045756340027,
+          "similarity_score": 0.37257933616638184,
           "is_correct": false
         },
         {
-          "video_id": "v_QdmUojrWdmE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_QdmUojrWdmE.mp4",
-          "similarity_score": 0.2839473485946655,
+          "video_id": "v_Zd22n1caVgM",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
+          "similarity_score": 0.28089985251426697,
           "is_correct": false
         },
         {
           "video_id": "v_5lre5zbUV1Q",
           "video_path": "/hub_data1/seohyun/hub_data/v_5lre5zbUV1Q.mp4",
-          "similarity_score": 0.39620649814605713,
+          "similarity_score": 0.3826645314693451,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_iMiKGoQ7RjE",
-      "caption": "A man in a black hat plays golf on the grass, talks to the camera, and proudly displays a trophy.",
+      "caption": "A man in a black hat demonstrates hitting a ball on the grass with a club, talks to the camera, and proudly displays a small trophy.",
       "videos": [
         {
           "video_id": "v_xmag8UI8iws",
           "video_path": "/hub_data1/seohyun/hub_data/v_xmag8UI8iws.mp4",
-          "similarity_score": 0.3526996970176697,
+          "similarity_score": 0.35947322845458984,
           "is_correct": false
         },
         {
-          "video_id": "v_Zd22n1caVgM",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Zd22n1caVgM.mp4",
-          "similarity_score": 0.21678397059440613,
+          "video_id": "v_ehGHCYKzyZ8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_ehGHCYKzyZ8.mp4",
+          "similarity_score": 0.2138727903366089,
           "is_correct": false
         },
         {
-          "video_id": "v_XD3yFrJHiv8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_XD3yFrJHiv8.mp4",
-          "similarity_score": 0.2888964116573334,
+          "video_id": "v_FeKEqUxiReA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_FeKEqUxiReA.mp4",
+          "similarity_score": 0.2682657539844513,
           "is_correct": false
         },
         {
-          "video_id": "v_lZKrd84QElk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_lZKrd84QElk.mp4",
-          "similarity_score": 0.3431621491909027,
+          "video_id": "v_9rW35YTKYq8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_9rW35YTKYq8.mp4",
+          "similarity_score": 0.35228538513183594,
           "is_correct": false
         },
         {
           "video_id": "v_iMiKGoQ7RjE",
           "video_path": "/hub_data1/seohyun/hub_data/v_iMiKGoQ7RjE.mp4",
-          "similarity_score": 0.386443167924881,
+          "similarity_score": 0.37873658537864685,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_Vjsd6Ec6eKA",
-      "caption": "A group of people perform cheerleading stunts on a field, capturing the action from a player's head-mounted camera while sharing smiles and laughter.",
+      "caption": "A group of people perform cheerleading stunts on a field, capturing their joyful moments and impressive lifts with a head-mounted camera.",
       "videos": [
         {
           "video_id": "v_Vjsd6Ec6eKA",
           "video_path": "/hub_data1/seohyun/hub_data/v_Vjsd6Ec6eKA.mp4",
-          "similarity_score": 0.3496030569076538,
+          "similarity_score": 0.41851478815078735,
           "is_correct": true
         },
         {
           "video_id": "v_HxJnPUqF9i8",
           "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.37563395500183105,
+          "similarity_score": 0.3863180875778198,
           "is_correct": false
         },
         {
-          "video_id": "v_44BfVJnhBgc",
-          "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
-          "similarity_score": 0.21827878057956696,
+          "video_id": "v_Kp7pUEKrb8Q",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Kp7pUEKrb8Q.mp4",
+          "similarity_score": 0.25979238748550415,
           "is_correct": false
         },
         {
-          "video_id": "v_LNKdVrX_0Fg",
-          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
-          "similarity_score": 0.256753534078598,
+          "video_id": "v_W19-fYOO9sg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_W19-fYOO9sg.mp4",
+          "similarity_score": 0.2913849949836731,
           "is_correct": false
         },
         {
-          "video_id": "v_t0ajvfx6dgA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_t0ajvfx6dgA.mp4",
-          "similarity_score": 0.3535151481628418,
+          "video_id": "v_4hmJfJo6UI8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_4hmJfJo6UI8.mp4",
+          "similarity_score": 0.36595621705055237,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_XnUi1SG9jxA",
-      "caption": "A man repeatedly attempts to jump over a bar in front of a large crowd, succeeding once before struggling with higher jumps and ultimately knocking the bar down.",
+      "caption": "A man repeatedly attempts to jump over a high bar in front of a crowd, eventually succeeding before trying higher jumps and knocking the bar down several times.",
       "videos": [
         {
-          "video_id": "v_4hmJfJo6UI8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_4hmJfJo6UI8.mp4",
-          "similarity_score": 0.3915637731552124,
+          "video_id": "v_iYxj8a1TPYk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_iYxj8a1TPYk.mp4",
+          "similarity_score": 0.4315963089466095,
           "is_correct": false
         },
         {
-          "video_id": "v_4x7HYKV8zkY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_4x7HYKV8zkY.mp4",
-          "similarity_score": 0.2590567469596863,
+          "video_id": "v_69IsHpmRyfk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_69IsHpmRyfk.mp4",
+          "similarity_score": 0.25591397285461426,
           "is_correct": false
         },
         {
           "video_id": "v_XnUi1SG9jxA",
           "video_path": "/hub_data1/seohyun/hub_data/v_XnUi1SG9jxA.mp4",
-          "similarity_score": 0.39149948954582214,
+          "similarity_score": 0.44202351570129395,
           "is_correct": true
         },
         {
-          "video_id": "v_ehGHCYKzyZ8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_ehGHCYKzyZ8.mp4",
-          "similarity_score": 0.32298874855041504,
+          "video_id": "v_N9LTq3gYmsI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_N9LTq3gYmsI.mp4",
+          "similarity_score": 0.3473072946071625,
           "is_correct": false
         },
         {
           "video_id": "v_HxJnPUqF9i8",
           "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.4192826449871063,
+          "similarity_score": 0.45096248388290405,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_FeKEqUxiReA",
-      "caption": "A woman energetically jumps rope in a gym, showcasing her skills for an audience being recorded by cameramen.",
+      "caption": "A woman energetically jumps rope and changes her pace and positions in a gym while being filmed by several men.",
       "videos": [
         {
-          "video_id": "v_pZ8QqpYu-H8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_pZ8QqpYu-H8.mp4",
-          "similarity_score": 0.2998761236667633,
+          "video_id": "v_LNKdVrX_0Fg",
+          "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
+          "similarity_score": 0.32488030195236206,
           "is_correct": false
         },
         {
-          "video_id": "v_Pu92wJ-7UTQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Pu92wJ-7UTQ.mp4",
-          "similarity_score": 0.24286967515945435,
+          "video_id": "v_L2oaUDyzWPA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_L2oaUDyzWPA.mp4",
+          "similarity_score": 0.2942069470882416,
           "is_correct": false
         },
         {
           "video_id": "v_y7WO-8cQfO0",
           "video_path": "/hub_data1/seohyun/hub_data/v_y7WO-8cQfO0.mp4",
-          "similarity_score": 0.4640641212463379,
+          "similarity_score": 0.47507697343826294,
           "is_correct": false
         },
         {
           "video_id": "v_FeKEqUxiReA",
           "video_path": "/hub_data1/seohyun/hub_data/v_FeKEqUxiReA.mp4",
-          "similarity_score": 0.45704033970832825,
+          "similarity_score": 0.45523130893707275,
           "is_correct": true
         },
         {
           "video_id": "v_HxJnPUqF9i8",
           "video_path": "/hub_data1/seohyun/hub_data/v_HxJnPUqF9i8.mp4",
-          "similarity_score": 0.47070878744125366,
+          "similarity_score": 0.5001229047775269,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_BB2vrBWgXkU",
-      "caption": "A woman demonstrates a step-by-step tutorial on applying, shaping, and decorating fake nails using glue and nail polish.",
+      "caption": "A woman gives a step-by-step tutorial on applying, shaping, gluing, and painting fake nails to achieve a polished manicure.",
       "videos": [
         {
           "video_id": "v_LNKdVrX_0Fg",
           "video_path": "/hub_data1/seohyun/hub_data/v_LNKdVrX_0Fg.mp4",
-          "similarity_score": 0.44378265738487244,
+          "similarity_score": 0.4341636598110199,
           "is_correct": false
         },
         {
-          "video_id": "v_VFOjLDa5VtA",
-          "video_path": "/hub_data1/seohyun/hub_data/v_VFOjLDa5VtA.mp4",
-          "similarity_score": 0.17064955830574036,
+          "video_id": "v_fny1HWXezlE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_fny1HWXezlE.mp4",
+          "similarity_score": 0.2048909068107605,
           "is_correct": false
         },
         {
           "video_id": "v_BB2vrBWgXkU",
           "video_path": "/hub_data1/seohyun/hub_data/v_BB2vrBWgXkU.mp4",
-          "similarity_score": 0.49082496762275696,
+          "similarity_score": 0.4916147291660309,
           "is_correct": true
         },
         {
-          "video_id": "v_LFeoVokXAFY",
-          "video_path": "/hub_data1/seohyun/hub_data/v_LFeoVokXAFY.mp4",
-          "similarity_score": 0.25062909722328186,
+          "video_id": "v_N9LTq3gYmsI",
+          "video_path": "/hub_data1/seohyun/hub_data/v_N9LTq3gYmsI.mp4",
+          "similarity_score": 0.2605002522468567,
           "is_correct": false
         },
         {
-          "video_id": "v_WY9zvUkK_4Y",
-          "video_path": "/hub_data1/seohyun/hub_data/v_WY9zvUkK_4Y.mp4",
-          "similarity_score": 0.38227158784866333,
+          "video_id": "v_p9iE8iemCMs",
+          "video_path": "/hub_data1/seohyun/hub_data/v_p9iE8iemCMs.mp4",
+          "similarity_score": 0.4088444411754608,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_S6t9Lq1xKJk",
-      "caption": "A cook prepares a giant omelette on a busy stove and serves it to a customer.",
+      "caption": "A cook prepares a giant omelette in a busy kitchen and serves it to a patron.",
       "videos": [
         {
           "video_id": "v_fN2DiOswmOA",
           "video_path": "/hub_data1/seohyun/hub_data/v_fN2DiOswmOA.mp4",
-          "similarity_score": 0.4312039613723755,
+          "similarity_score": 0.45358628034591675,
           "is_correct": false
         },
         {
-          "video_id": "v_y7WO-8cQfO0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_y7WO-8cQfO0.mp4",
-          "similarity_score": 0.33918166160583496,
+          "video_id": "v_9rW35YTKYq8",
+          "video_path": "/hub_data1/seohyun/hub_data/v_9rW35YTKYq8.mp4",
+          "similarity_score": 0.34216684103012085,
           "is_correct": false
         },
         {
           "video_id": "v_S6t9Lq1xKJk",
           "video_path": "/hub_data1/seohyun/hub_data/v_S6t9Lq1xKJk.mp4",
-          "similarity_score": 0.42672038078308105,
+          "similarity_score": 0.4224013686180115,
           "is_correct": true
         },
         {
-          "video_id": "v_xmag8UI8iws",
-          "video_path": "/hub_data1/seohyun/hub_data/v_xmag8UI8iws.mp4",
-          "similarity_score": 0.3474040627479553,
+          "video_id": "v_WY9zvUkK_4Y",
+          "video_path": "/hub_data1/seohyun/hub_data/v_WY9zvUkK_4Y.mp4",
+          "similarity_score": 0.3534594476222992,
           "is_correct": false
         },
         {
           "video_id": "v_zzz_3yWpTXo",
           "video_path": "/hub_data1/seohyun/hub_data/v_zzz_3yWpTXo.mp4",
-          "similarity_score": 0.42961156368255615,
+          "similarity_score": 0.44166073203086853,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_0_xap_BBDrw",
-      "caption": "An elderly man practices advanced basketball dribbling skills and repeatedly shoots hoops on an indoor court.",
+      "caption": "An elderly man skillfully dribbles and shoots a basketball repeatedly on an indoor court, demonstrating various ball-handling techniques.",
       "videos": [
         {
           "video_id": "v_0_xap_BBDrw",
           "video_path": "/hub_data1/seohyun/hub_data/v_0_xap_BBDrw.mp4",
-          "similarity_score": 0.4466092586517334,
+          "similarity_score": 0.48879534006118774,
           "is_correct": true
         },
         {
-          "video_id": "v_rBaR5xF8orE",
-          "video_path": "/hub_data1/seohyun/hub_data/v_rBaR5xF8orE.mp4",
-          "similarity_score": 0.40671756863594055,
+          "video_id": "v_FeKEqUxiReA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_FeKEqUxiReA.mp4",
+          "similarity_score": 0.3995022177696228,
           "is_correct": false
         },
         {
-          "video_id": "v_Pu92wJ-7UTQ",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Pu92wJ-7UTQ.mp4",
-          "similarity_score": 0.24726632237434387,
+          "video_id": "v_DEmArEKL8gc",
+          "video_path": "/hub_data1/seohyun/hub_data/v_DEmArEKL8gc.mp4",
+          "similarity_score": 0.22672343254089355,
           "is_correct": false
         },
         {
-          "video_id": "v_BB2vrBWgXkU",
-          "video_path": "/hub_data1/seohyun/hub_data/v_BB2vrBWgXkU.mp4",
-          "similarity_score": 0.31271323561668396,
+          "video_id": "v_D9rHZpZoeRA",
+          "video_path": "/hub_data1/seohyun/hub_data/v_D9rHZpZoeRA.mp4",
+          "similarity_score": 0.3027489185333252,
           "is_correct": false
         },
         {
           "video_id": "v_iYxj8a1TPYk",
           "video_path": "/hub_data1/seohyun/hub_data/v_iYxj8a1TPYk.mp4",
-          "similarity_score": 0.4567517042160034,
+          "similarity_score": 0.45001184940338135,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_QdmUojrWdmE",
-      "caption": "The video showcases surfers, including Kelly Slater, preparing for and riding waves as crowds cheer them on, capturing the excitement and camaraderie of a lively beach surfing event.",
+      "caption": "The video showcases surfers, including Kelly Slater, preparing, riding waves, and celebrating their runs with onlookers and friends, all set against a lively beach atmosphere.",
       "videos": [
         {
           "video_id": "v_TEaugXCX1m4",
           "video_path": "/hub_data1/seohyun/hub_data/v_TEaugXCX1m4.mp4",
-          "similarity_score": 0.4347318708896637,
+          "similarity_score": 0.4307262897491455,
           "is_correct": false
         },
         {
           "video_id": "v_QdmUojrWdmE",
           "video_path": "/hub_data1/seohyun/hub_data/v_QdmUojrWdmE.mp4",
-          "similarity_score": 0.43123722076416016,
+          "similarity_score": 0.4264237582683563,
           "is_correct": true
         },
         {
           "video_id": "v__yWADgOFxP0",
           "video_path": "/hub_data1/seohyun/hub_data/v__yWADgOFxP0.mp4",
-          "similarity_score": 0.39204496145248413,
+          "similarity_score": 0.38720226287841797,
           "is_correct": false
         },
         {
-          "video_id": "v_N-6-MdxRg50",
-          "video_path": "/hub_data1/seohyun/hub_data/v_N-6-MdxRg50.mp4",
-          "similarity_score": 0.27498215436935425,
+          "video_id": "v_nvsK9ggeics",
+          "video_path": "/hub_data1/seohyun/hub_data/v_nvsK9ggeics.mp4",
+          "similarity_score": 0.27107784152030945,
           "is_correct": false
         },
         {
           "video_id": "v_NwfS7eZiMLg",
           "video_path": "/hub_data1/seohyun/hub_data/v_NwfS7eZiMLg.mp4",
-          "similarity_score": 0.15401719510555267,
+          "similarity_score": 0.16120316088199615,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_L2oaUDyzWPA",
-      "caption": "A man demonstrates harmonica playing techniques, accompanied by instructional graphics and title screens throughout the video.",
+      "caption": "A man demonstrates harmonica playing techniques with visual cues and titles guiding viewers throughout the video.",
       "videos": [
         {
-          "video_id": "v_IoiDAHNryTk",
-          "video_path": "/hub_data1/seohyun/hub_data/v_IoiDAHNryTk.mp4",
-          "similarity_score": 0.2500791847705841,
+          "video_id": "v_Pu92wJ-7UTQ",
+          "video_path": "/hub_data1/seohyun/hub_data/v_Pu92wJ-7UTQ.mp4",
+          "similarity_score": 0.2667635977268219,
           "is_correct": false
         },
         {
           "video_id": "v_RULNhPrXnfA",
           "video_path": "/hub_data1/seohyun/hub_data/v_RULNhPrXnfA.mp4",
-          "similarity_score": 0.39981693029403687,
+          "similarity_score": 0.42947861552238464,
           "is_correct": false
         },
         {
           "video_id": "v_74EoyLUbtgI",
           "video_path": "/hub_data1/seohyun/hub_data/v_74EoyLUbtgI.mp4",
-          "similarity_score": 0.3721114993095398,
+          "similarity_score": 0.4110742509365082,
           "is_correct": false
         },
         {
-          "video_id": "v_Kp7pUEKrb8Q",
-          "video_path": "/hub_data1/seohyun/hub_data/v_Kp7pUEKrb8Q.mp4",
-          "similarity_score": 0.2617735266685486,
+          "video_id": "v_nvsK9ggeics",
+          "video_path": "/hub_data1/seohyun/hub_data/v_nvsK9ggeics.mp4",
+          "similarity_score": 0.28204649686813354,
           "is_correct": false
         },
         {
           "video_id": "v_L2oaUDyzWPA",
           "video_path": "/hub_data1/seohyun/hub_data/v_L2oaUDyzWPA.mp4",
-          "similarity_score": 0.33126160502433777,
+          "similarity_score": 0.3564269542694092,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_bdC2YPVHGZM",
-      "caption": "A man records his experience playing in a lacrosse match from a first-person perspective, successfully scores a goal, and interacts with his teammates and other participants after the game.",
+      "caption": "A man records his experience playing in a lacrosse match from a first-person perspective, scoring a goal, celebrating with teammates, and interacting with other players after the game.",
       "videos": [
         {
           "video_id": "v_bdC2YPVHGZM",
           "video_path": "/hub_data1/seohyun/hub_data/v_bdC2YPVHGZM.mp4",
-          "similarity_score": 0.3657124638557434,
+          "similarity_score": 0.3639143705368042,
           "is_correct": true
+        },
+        {
+          "video_id": "v_oP77DgsbhKQ",
+          "video_path": "/hub_data1/seohyun/hub_data/v_oP77DgsbhKQ.mp4",
+          "similarity_score": 0.3062276542186737,
+          "is_correct": false
         },
         {
           "video_id": "v_44BfVJnhBgc",
           "video_path": "/hub_data1/seohyun/hub_data/v_44BfVJnhBgc.mp4",
-          "similarity_score": 0.3073952794075012,
-          "is_correct": false
-        },
-        {
-          "video_id": "v__zHSfEhEqkU",
-          "video_path": "/hub_data1/seohyun/hub_data/v__zHSfEhEqkU.mp4",
-          "similarity_score": 0.3096707761287689,
+          "similarity_score": 0.3101758062839508,
           "is_correct": false
         },
         {
           "video_id": "v_CmEQjszPDrg",
           "video_path": "/hub_data1/seohyun/hub_data/v_CmEQjszPDrg.mp4",
-          "similarity_score": 0.41942745447158813,
+          "similarity_score": 0.41451194882392883,
           "is_correct": false
         },
         {
           "video_id": "v_t0ajvfx6dgA",
           "video_path": "/hub_data1/seohyun/hub_data/v_t0ajvfx6dgA.mp4",
-          "similarity_score": 0.39070481061935425,
+          "similarity_score": 0.3882729709148407,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_fny1HWXezlE",
-      "caption": "A child and a woman ride a camel as a man guides it around, while the camera captures their movements.",
+      "caption": "A small child and a woman ride a camel guided by a man as they walk around the area, with the camera following their movements.",
       "videos": [
         {
-          "video_id": "v_xmag8UI8iws",
-          "video_path": "/hub_data1/seohyun/hub_data/v_xmag8UI8iws.mp4",
-          "similarity_score": 0.2401295006275177,
+          "video_id": "v_QOlSCBRmfWY",
+          "video_path": "/hub_data1/seohyun/hub_data/v_QOlSCBRmfWY.mp4",
+          "similarity_score": 0.2263641059398651,
           "is_correct": false
         },
         {
           "video_id": "v_D18b2IZpxk0",
           "video_path": "/hub_data1/seohyun/hub_data/v_D18b2IZpxk0.mp4",
-          "similarity_score": 0.46136337518692017,
+          "similarity_score": 0.4564623236656189,
           "is_correct": false
         },
         {
-          "video_id": "v_ogQozSI5V8U",
-          "video_path": "/hub_data1/seohyun/hub_data/v_ogQozSI5V8U.mp4",
-          "similarity_score": 0.29256677627563477,
+          "video_id": "v_37pwbUp8t1I",
+          "video_path": "/hub_data1/seohyun/hub_data/v_37pwbUp8t1I.mp4",
+          "similarity_score": 0.2759730815887451,
           "is_correct": false
         },
         {
           "video_id": "v_f0CViWbj3V4",
           "video_path": "/hub_data1/seohyun/hub_data/v_f0CViWbj3V4.mp4",
-          "similarity_score": 0.38269874453544617,
+          "similarity_score": 0.3667878210544586,
           "is_correct": false
         },
         {
           "video_id": "v_fny1HWXezlE",
           "video_path": "/hub_data1/seohyun/hub_data/v_fny1HWXezlE.mp4",
-          "similarity_score": 0.43513232469558716,
+          "similarity_score": 0.47034764289855957,
           "is_correct": true
         }
       ]
     },
     {
       "text_id": "v_pYb8jzB5vs0",
-      "caption": "A man and woman relax by a pool before practicing scuba skills underwater and demonstrating hand signals, with explanations provided to the camera.",
+      "caption": "A man and woman relax by a pool, then demonstrate and explain scuba diving hand signals both underwater and on camera.",
       "videos": [
         {
-          "video_id": "v_D18b2IZpxk0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_D18b2IZpxk0.mp4",
-          "similarity_score": 0.2521076500415802,
+          "video_id": "v_0_xap_BBDrw",
+          "video_path": "/hub_data1/seohyun/hub_data/v_0_xap_BBDrw.mp4",
+          "similarity_score": 0.28426316380500793,
           "is_correct": false
         },
         {
-          "video_id": "v_h8J08sJ2no0",
-          "video_path": "/hub_data1/seohyun/hub_data/v_h8J08sJ2no0.mp4",
-          "similarity_score": 0.31390538811683655,
+          "video_id": "v_BB2vrBWgXkU",
+          "video_path": "/hub_data1/seohyun/hub_data/v_BB2vrBWgXkU.mp4",
+          "similarity_score": 0.3410179316997528,
           "is_correct": false
         },
         {
           "video_id": "v_pYb8jzB5vs0",
           "video_path": "/hub_data1/seohyun/hub_data/v_pYb8jzB5vs0.mp4",
-          "similarity_score": 0.49020203948020935,
+          "similarity_score": 0.4969504475593567,
           "is_correct": true
         },
         {
           "video_id": "v_f0CViWbj3V4",
           "video_path": "/hub_data1/seohyun/hub_data/v_f0CViWbj3V4.mp4",
-          "similarity_score": 0.41818416118621826,
+          "similarity_score": 0.44005757570266724,
           "is_correct": false
         },
         {
-          "video_id": "v_rAuz_Pf3lp8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_rAuz_Pf3lp8.mp4",
-          "similarity_score": 0.39746353030204773,
+          "video_id": "v_kNkYgYnJTXk",
+          "video_path": "/hub_data1/seohyun/hub_data/v_kNkYgYnJTXk.mp4",
+          "similarity_score": 0.41483190655708313,
           "is_correct": false
         }
       ]
     },
     {
       "text_id": "v_kNkYgYnJTXk",
-      "caption": "People enjoy canoeing on the water, demonstrating paddling techniques and taking in the scenery.",
+      "caption": "The video showcases people enjoying a canoe ride, demonstrating paddling techniques and turning while exploring the water and taking in the scenery.",
       "videos": [
         {
-          "video_id": "v_rAuz_Pf3lp8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_rAuz_Pf3lp8.mp4",
-          "similarity_score": 0.41173556447029114,
+          "video_id": "v__zHSfEhEqkU",
+          "video_path": "/hub_data1/seohyun/hub_data/v__zHSfEhEqkU.mp4",
+          "similarity_score": 0.4843473434448242,
           "is_correct": false
         },
         {
-          "video_id": "v_nwznKOuZM7w",
-          "video_path": "/hub_data1/seohyun/hub_data/v_nwznKOuZM7w.mp4",
-          "similarity_score": 0.15254180133342743,
+          "video_id": "v_RgzbNJPchqc",
+          "video_path": "/hub_data1/seohyun/hub_data/v_RgzbNJPchqc.mp4",
+          "similarity_score": 0.24204406142234802,
           "is_correct": false
         },
         {
-          "video_id": "v_XD3yFrJHiv8",
-          "video_path": "/hub_data1/seohyun/hub_data/v_XD3yFrJHiv8.mp4",
-          "similarity_score": 0.2657564878463745,
+          "video_id": "v_QdmUojrWdmE",
+          "video_path": "/hub_data1/seohyun/hub_data/v_QdmUojrWdmE.mp4",
+          "similarity_score": 0.33205217123031616,
           "is_correct": false
         },
         {
           "video_id": "v_kNkYgYnJTXk",
           "video_path": "/hub_data1/seohyun/hub_data/v_kNkYgYnJTXk.mp4",
-          "similarity_score": 0.47742021083831787,
+          "similarity_score": 0.5463098287582397,
           "is_correct": true
         },
         {
           "video_id": "v_hoisfXCLJDQ",
           "video_path": "/hub_data1/seohyun/hub_data/v_hoisfXCLJDQ.mp4",
-          "similarity_score": 0.47605469822883606,
+          "similarity_score": 0.5307984352111816,
           "is_correct": false
         }
       ]

@@ -3,3 +3,4 @@ sft_data_generation/preprocess/extract_similarity_matrix/Video-ColBERT
 data/d1
 data/d2_reranked
 data/d3
+SFT/sft_data_generation/preprocess/extract_similarity_matrix/Video-ColBERT/

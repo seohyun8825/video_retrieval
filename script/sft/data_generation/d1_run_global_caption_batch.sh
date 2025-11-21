@@ -2,8 +2,8 @@
 
 set -euo pipefail
 
-REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-DATA_DIR="${DATA_DIR:-${REPO_ROOT}/data}"
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
+DATA_DIR="${DATA_DIR:-${ROOT_DIR}/data}"
 
 if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "video-colbert" ]]; then
   source "$(conda info --base)/etc/profile.d/conda.sh"
@@ -31,8 +31,8 @@ INPUT_BASENAME="$(basename "${INPUT_JSON}" .json)"
 mkdir -p "${DATA_DIR}/d1"
 DEFAULT_OUTPUT_JSON="${DATA_DIR}/d1/${INPUT_BASENAME}_global.json"
 OUTPUT_JSON="${OUTPUT_JSON:-${DEFAULT_OUTPUT_JSON}}"
-PROMPT_FILE="${REPO_ROOT}/sft_data_generation/prompt/global_caption_generate.txt"
-API_KEY_PATH="${REPO_ROOT}/openai"
+PROMPT_FILE="${ROOT_DIR}/SFT/sft_data_generation/prompt/global_caption_generate.txt"
+API_KEY_PATH="${ROOT_DIR}/openai"
 MODEL_NAME="gpt-4.1"
 CHUNK_SIZE=1
 
@@ -40,7 +40,7 @@ CHUNK_SIZE=1
 LIMIT_COUNT=0
 
 # Debugging용
-#RAW_OUTPUT_DIR="${REPO_ROOT}/data/batch_outputs"
+#RAW_OUTPUT_DIR="${ROOT_DIR}/data/batch_outputs"
 RAW_OUTPUT_DIR=
 
 
@@ -50,7 +50,7 @@ BATCH_API="false"
 MAX_WORKERS=50
 
 CMD=(
-  python3 "${REPO_ROOT}/sft_data_generation/preprocess/generate_global_captions_batch.py"
+  python3 "${ROOT_DIR}/SFT/sft_data_generation/preprocess/generate_global_captions_batch.py"
   --input_json "${INPUT_JSON}"
   --output_json "${OUTPUT_JSON}"
   --prompt_file "${PROMPT_FILE}"

@@ -15,7 +15,7 @@ import os
 from typing import Any, Dict, List
 from tqdm import tqdm
 
-from huggingface_hub import HfApi, hf_hub_download
+from huggingface_hub import HfApi, HfFolder, hf_hub_download
 
 from llamafactory.hparams import get_infer_args
 from llamafactory.chat.hf_engine import HuggingfaceEngine
@@ -64,7 +64,7 @@ def build_engine(model_repo: str, template: str, video_fps: float, video_maxlen:
         dict(
             model_name_or_path=model_repo,
             template=template,
-            cutoff_len=2048,
+            cutoff_len=204800,
             default_system=None,
             enable_thinking=True,
             image_max_pixels=8_000_000,
@@ -74,7 +74,7 @@ def build_engine(model_repo: str, template: str, video_fps: float, video_maxlen:
             temperature=0.2,
             top_p=0.9,
             top_k=50,
-            max_new_tokens=512,
+            max_new_tokens=4096,
             repetition_penalty=1.0,
         )
     )
@@ -163,6 +163,35 @@ def main() -> None:
         api = HfApi()
         out_repo = args.hf_out_repo or os.path.splitext(os.path.basename(args.output_json))[0]
         out_file = args.hf_out_file or os.path.basename(args.output_json)
+
+        # If no namespace is provided, prefix with current HF user to avoid 404s
+        if "/" not in out_repo:
+            try:
+                token = HfFolder.get_token()
+                if token:
+                    who = api.whoami(token)
+                    user = who.get("name") or who.get("username")
+                else:
+                    user = None
+            except Exception:
+                user = None
+
+            if not user:
+                print(
+                    "[warn] Could not resolve HF username. "
+                    "Provide --hf_out_repo as 'user/repo' or login via huggingface-cli.",
+                    flush=True,
+                )
+                # Gracefully skip upload instead of hard error to not break the pipeline
+                return
+            # Basic sanitization to keep repo id valid
+            def _sanitize(s: str) -> str:
+                s = "".join(ch for ch in s if ch.isalnum() or ch in "._-")
+                return s.lstrip("-.").rstrip("-.")
+
+            out_repo = f"{_sanitize(user)}/{_sanitize(out_repo)}"
+
+        # Ensure repo exists then upload
         api.create_repo(repo_id=out_repo, repo_type="dataset", exist_ok=True)
         api.upload_file(
             path_or_fileobj=args.output_json,

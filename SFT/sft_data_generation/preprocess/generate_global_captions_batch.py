@@ -22,7 +22,10 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
-from openai import OpenAI
+try:
+    from openai import OpenAI  # type: ignore
+except Exception:
+    OpenAI = None  # type: ignore
 
 
 PLACEHOLDER = "<INSERT CAPTION ARRAY HERE>"
@@ -243,6 +246,11 @@ def parse_args() -> argparse.Namespace:
         help="Optional directory to store raw batch outputs (JSONL).",
     )
     parser.add_argument(
+        "--concat_caption",
+        action="store_true",
+        help="Concatenate the existing 'caption' array into 'global_caption' without calling OpenAI.",
+    )
+    parser.add_argument(
         "--batch_api",
         "--batch-api",
         dest="batch_api",
@@ -263,11 +271,7 @@ def main() -> None:
     args = parse_args()
 
     data = load_json(args.input_json)
-    template = load_prompt_template(args.prompt_file)
-    api_key = read_api_key(args.api_key_path)
-
-    client = OpenAI(api_key=api_key)
-
+    # Fast path: simple concatenation mode, no OpenAI calls
     total_entries = len(data)
     if total_entries == 0:
         raise ValueError("Input JSON is empty.")
@@ -286,6 +290,28 @@ def main() -> None:
 
     if process_total == 0:
         raise ValueError("No entries to process after applying limit.")
+
+    if args.concat_caption:
+        print(f"Concatenation mode: writing global_caption from caption arrays for {process_total} entries.")
+        for idx in range(process_total):
+            captions = data[idx].get("caption", [])
+            if not isinstance(captions, list):
+                raise ValueError(f"Entry {idx} has non-list 'caption' field")
+            joined = " ".join([str(c).strip() for c in captions]).strip()
+            data[idx]["global_caption"] = joined
+
+        args.output_json.parent.mkdir(parents=True, exist_ok=True)
+        with args.output_json.open("w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        print(f"Wrote updated data to {args.output_json}")
+        return
+
+    # Normal path: use OpenAI to synthesize global captions
+    template = load_prompt_template(args.prompt_file)
+    if OpenAI is None:
+        raise ImportError("The 'openai' package is required unless you use --concat_caption.")
+    api_key = read_api_key(args.api_key_path)
+    client = OpenAI(api_key=api_key)
 
     if args.batch_api:
         print("Using OpenAI Batch API mode.")

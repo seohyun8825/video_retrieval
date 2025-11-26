@@ -15,9 +15,9 @@ if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "llama_factory" ]]; 
 fi
 
 # Hard-coded defaults for current workflow
-MODEL_REPO="happy8825/sft-20251121"
-DATASET_REPO="happy8825/anet_sampled_sft_valid"
-OUTPUT_JSON="/home/seohyun/vid_understanding/video_retrieval/output/output_sft-20251121.json"
+MODEL_REPO="Qwen/Qwen3-VL-2B-Thinking"
+DATASET_REPO="happy8825/activitynet_validset_all"
+OUTPUT_JSON="/home/seohyun/vid_understanding/video_retrieval/output_1124/output_sft1124.json"
 
 MEDIA_BASE="/hub_data2/dohwan/data/retrieval"   # joined with sample video paths if not absolute
 TEMPLATE="qwen3_vl"

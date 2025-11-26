@@ -9,7 +9,8 @@ import json
 import os
 import pickle
 import random
-from typing import List, Tuple
+from typing import List, Tuple, Optional
+from concurrent.futures import ThreadPoolExecutor
 
 import numpy as np
 import torch
@@ -44,53 +45,77 @@ def compute_features(
     num_frames: int,
     device: torch.device,
     frame_size: int,
+    batch_size: int = 8,
+    decode_threads: int | None = None,
+    loader_workers: int = 0,
 ) -> Tuple[List[torch.Tensor], List[torch.Tensor], List[torch.Tensor], List[dict], List[dict]]:
-    """Return (query_features_list, frame_features_list, video_features_list, video_data, text_data)."""
+    """Return (query_features_list, frame_features_list, video_features_list, video_data, text_data).
+
+    Batches videos to better utilize GPU and reduce Python overhead.
+    """
     model.eval()
 
-    query_features_list = []
-    frame_features_list = []
-    video_features_list = []
-    video_data = []
-    text_data = []
+    query_features_list: List[torch.Tensor] = []
+    frame_features_list: List[torch.Tensor] = []
+    video_features_list: List[torch.Tensor] = []
+    video_data: List[dict] = []
+    text_data: List[dict] = []
 
-    for entry in tqdm(items, desc="Computing embeddings"):
+    # Optionally control decord threads globally
+    if decode_threads is not None:
+        os.environ["DECORD_THREADS"] = str(int(decode_threads))
+
+    def _load_one(entry: dict) -> Tuple[str, str, str, Optional[torch.Tensor]]:
         video_file = entry["video"]
         caption = entry["global_caption"]
         video_path = os.path.join(video_base, video_file)
         if not os.path.exists(video_path):
             raise FileNotFoundError(f"Video file not found: {video_path}")
-
         try:
-            frames = load_video_frames(video_path, num_frames=num_frames, frame_size=frame_size).to(device)
-            with torch.no_grad():
-                query_feat = model.get_query_representation(caption).detach().cpu()
-                frame_feat, vid_feat = model.get_video_representations(frames)
-                frame_feat = frame_feat.detach().cpu()
-                vid_feat = vid_feat.detach().cpu()
+            frames = load_video_frames(video_path, num_frames=num_frames, frame_size=frame_size)
+            return video_file, caption, video_path, frames
         except Exception as e:
-            print(f"[warn] Skipping video due to frame load/encode failure: {video_path} -> {e}")
+            print(f"[warn] Skipping video due to frame load failure: {video_path} -> {e}")
+            return video_file, caption, video_path, None
+
+    for start in tqdm(range(0, len(items), batch_size), desc="Computing embeddings"):
+        batch = items[start : start + batch_size]
+
+        # Load frames: optionally in parallel across multiple videos
+        if loader_workers and loader_workers > 1:
+            with ThreadPoolExecutor(max_workers=loader_workers) as ex:
+                loaded = list(ex.map(_load_one, batch))
+        else:
+            loaded = [_load_one(entry) for entry in batch]
+
+        # Filter out failures
+        ok_indices: List[int] = [i for i, (_, _, _, fr) in enumerate(loaded) if fr is not None]
+        if not ok_indices:
             continue
 
-        query_features_list.append(query_feat)
-        frame_features_list.append(frame_feat)
-        video_features_list.append(vid_feat)
+        captions: List[str] = [loaded[i][1] for i in ok_indices]
+        video_files: List[str] = [loaded[i][0] for i in ok_indices]
+        video_paths: List[str] = [loaded[i][2] for i in ok_indices]
+        frames_batch: torch.Tensor = torch.stack([loaded[i][3] for i in ok_indices])  # type: ignore[arg-type]
+        frames_batch = frames_batch.to(device, non_blocking=True)
 
-        video_id = os.path.splitext(os.path.basename(video_file))[0]
-        video_data.append(
-            {
-                "video_id": video_id,
-                "video_path": video_path,
-                "split": "train",
-            }
-        )
-        text_data.append(
-            {
-                "video_id": video_id,
-                "caption": caption,
-                "split": "train",
-            }
-        )
+        with torch.no_grad():
+            # Batch text encode
+            q_feats_b = model.encode_query(captions).detach().cpu()  # [B, Q, D]
+            # Batch video encode
+            f_feats_b, v_feats_b = model.encode_video(frames_batch)
+            f_feats_b = f_feats_b.detach().cpu()
+            v_feats_b = v_feats_b.detach().cpu()
+
+        # Split and append per-item
+        for i in range(len(ok_indices)):
+            query_features_list.append(q_feats_b[i])
+            frame_features_list.append(f_feats_b[i])
+            video_features_list.append(v_feats_b[i])
+
+            video_id = os.path.splitext(os.path.basename(video_files[i]))[0]
+            video_data.append({"video_id": video_id, "video_path": video_paths[i], "split": "train"})
+            text_data.append({"video_id": video_id, "caption": captions[i], "split": "train"})
 
     return (
         query_features_list,
@@ -296,6 +321,9 @@ def main():
     parser.add_argument("--num_frames", type=int, default=12, help="Frames to sample per video.")
     parser.add_argument("--frame_size", type=int, default=224, help="Frame resolution for CLIP input (default: 224).")
     parser.add_argument("--chunk_size", type=int, default=16, help="Batch size when building similarity matrix (default: 16).")
+    parser.add_argument("--batch_size", type=int, default=8, help="Batch size for feature extraction (videos per forward).")
+    parser.add_argument("--decode_threads", type=int, default=0, help="Override decord decode threads (0=keep default).")
+    parser.add_argument("--loader_workers", type=int, default=0, help="Parallel video loaders per batch (0/1=off).")
     parser.add_argument("--limit", type=int, default=0, help="If >0, limit number of items processed (for speed/debug).")
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
@@ -309,14 +337,28 @@ def main():
         items = items[: args.limit]
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    model = VideoColBERT(backbone_name="ViT-B/32").to(device)
+    model = VideoColBERT(backbone_name="ViT-B/32", device=str(device))
+    print(f"[video-colbert] device={device} amp={getattr(model, 'use_amp', None)} "
+          f"batch_size={args.batch_size} chunk_size={args.chunk_size} "
+          f"num_frames={args.num_frames} frame_size={args.frame_size} "
+          f"decode_threads={args.decode_threads}")
     (
         query_features_list,
         frame_features_list,
         video_features_list,
         video_data,
         text_data,
-    ) = compute_features(model, items, args.video_base, args.num_frames, device, args.frame_size)
+    ) = compute_features(
+        model,
+        items,
+        args.video_base,
+        args.num_frames,
+        device,
+        args.frame_size,
+        batch_size=max(1, int(args.batch_size)),
+        decode_threads=(None if int(args.decode_threads or 0) <= 0 else int(args.decode_threads)),
+        loader_workers=max(0, int(args.loader_workers or 0)),
+    )
     sim_matrix = compute_similarity_matrix(
         query_features_list, frame_features_list, video_features_list, model, device, chunk_size=args.chunk_size
     )

@@ -11,7 +11,7 @@ if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "video-colbert" ]]; 
   source "$(conda info --base)/etc/profile.d/conda.sh"
   conda activate video-colbert
 fi
-DATA_DIR="${DATA_DIR:-${ROOT_DIR}/data}"
+DATA_DIR="${DATA_DIR:-${ROOT_DIR}/train_data}"
 if [[ -z "${SIMILARITY_PKL:-}" ]]; then
   mapfile -t __pkl_files < <(find "${DATA_DIR}/d2_reranked" -maxdepth 2 -type f -name "similarity_matrix.pkl" | sort)
   if [[ ${#__pkl_files[@]} -eq 0 ]]; then
@@ -24,7 +24,7 @@ fi
 DEFAULT_ANALYSIS_DIR="${DATA_DIR}/d2_reranked/analysis"
 OUTPUT_DIR="${OUTPUT_DIR:-${DEFAULT_ANALYSIS_DIR}}"
 TOPKS="${TOPKS:-1 5 10}"
-HEATMAP_SIZE="${HEATMAP_SIZE:-20}"
+HEATMAP_SIZE="${HEATMAP_SIZE:-4917}"
 
 echo "Similarity PKL : ${SIMILARITY_PKL}"
 echo "Output Dir      : ${OUTPUT_DIR}"

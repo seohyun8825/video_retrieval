@@ -26,5 +26,33 @@
       "user_tag": "user",
       "assistant_tag": "assistant"
     }
+  },
+  "anet_caption_concat_sft": {
+    "hf_hub_url": "happy8825/anet_caption_concat_sft",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "videos": "videos"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "anet_ret_train_global_rzen_sft": {
+    "hf_hub_url": "happy8825/anet_ret_train_global_rzen_sft",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "videos": "videos"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
   }
 }

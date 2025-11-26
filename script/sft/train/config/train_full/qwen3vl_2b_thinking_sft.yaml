@@ -1,9 +1,9 @@
 ### model
 model_name_or_path: Qwen/Qwen3-VL-2B-Thinking
 image_max_pixels: 8000000            
-video_max_pixels: 16384             
+video_max_pixels: 65536      
 trust_remote_code: true
-video_maxlen: 16
+video_maxlen: 64
 #video_fps: 1.0
 
 
@@ -23,7 +23,7 @@ enable_thinking: true
 ### dataset
 dataset: test_mllm_video_demo_hf
 template: qwen3_vl              
-cutoff_len: 20480
+cutoff_len: 2048000000
 max_samples: 40
 overwrite_cache: true
 preprocessing_num_workers: 32

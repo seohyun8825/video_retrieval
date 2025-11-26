@@ -7,12 +7,10 @@ ROOT_DIR="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 SFT_DIR="${ROOT_DIR}/SFT/sft_data_generation"
 PREPROCESS_DIR="${SFT_DIR}/preprocess/extract_similarity_matrix"
 
-if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "video-colbert" ]]; then
-  source "$(conda info --base)/etc/profile.d/conda.sh"
-  conda activate video-colbert
-fi
+# Use current env; if you keep RzenEmbed in a specific env, activate it before running
+
 DATA_DIR="${DATA_DIR:-${ROOT_DIR}/data}"
-D1_DIR="${DATA_DIR}/d1"
+D1_DIR="${D1_DIR:-${DATA_DIR}/d1}"
 
 if [[ ! -d "${D1_DIR}" ]]; then
   echo "❌ d1 directory not found: ${D1_DIR}" >&2
@@ -32,37 +30,37 @@ if [[ -z "${INPUT_JSON:-}" ]]; then
   INPUT_JSON="${__global_files[0]}"
 fi
 
-VIDEO_BASE="${VIDEO_BASE:-/hub_data1/seohyun/hub_data}"
+VIDEO_BASE="${VIDEO_BASE:-/hub_data2/dohwan/data/retrieval/activitynet/videos}"
 INPUT_NAME="$(basename "${INPUT_JSON}" .json)"
 mkdir -p "${DATA_DIR}/d2_reranked"
-DEFAULT_OUTPUT_DIR="${DATA_DIR}/d2_reranked/${INPUT_NAME}"
+DEFAULT_OUTPUT_DIR="${DATA_DIR}/d2_reranked/${INPUT_NAME}_rzen"
 OUTPUT_DIR="${OUTPUT_DIR:-${DEFAULT_OUTPUT_DIR}}"
 
 echo "Input JSON     : ${INPUT_JSON}"
 echo "Video base path: ${VIDEO_BASE}"
 echo "Output dir     : ${OUTPUT_DIR}"
 
-# Performance knobs
-NUM_FRAMES="${NUM_FRAMES:-64}"
-FRAME_SIZE="${FRAME_SIZE:-224}"
-CHUNK_SIZE="${CHUNK_SIZE:-64}"        # similarity build batch size (columns)
-BATCH_SIZE="${BATCH_SIZE:-1}"          # feature extraction batch size (videos per forward)
-DECODE_THREADS="${DECODE_THREADS:-0}"  # 0=default, otherwise override decord threads
-LOADER_WORKERS="${LOADER_WORKERS:-0}"  # parallel video decoders per batch (0=off)
+# Add local RzenEmbed folder to PYTHONPATH if present
+RZEN_LOCAL_DIR="${PREPROCESS_DIR}/RzenEmbed"
+if [[ -d "${RZEN_LOCAL_DIR}" ]]; then
+  export PYTHONPATH="${RZEN_LOCAL_DIR}:${PYTHONPATH:-}"
+fi
+
+# Controls
+NUM_FRAMES="${NUM_FRAMES:-8}"
+QUERY_INSTR="${QUERY_INSTR:-Find the video snippet that corresponds to the given caption:}"
+CAND_INSTR="${CAND_INSTR:-Understand the content of the provided video.}"
 LIMIT_COUNT="${LIMIT_COUNT:-0}"
 SEED="${SEED:-42}"
 
 CMD=(
-  python "${PREPROCESS_DIR}/video_colbert_generate_reranking.py"
+  python "${PREPROCESS_DIR}/video_rzenembed_generate_reranking.py"
   --input_json "${INPUT_JSON}"
   --video_base "${VIDEO_BASE}"
   --output_dir "${OUTPUT_DIR}"
   --num_frames "${NUM_FRAMES}"
-  --frame_size "${FRAME_SIZE}"
-  --chunk_size "${CHUNK_SIZE}"
-  --batch_size "${BATCH_SIZE}"
-  --decode_threads "${DECODE_THREADS}"
-  --loader_workers "${LOADER_WORKERS}"
+  --query_instruction "${QUERY_INSTR}"
+  --candidate_instruction "${CAND_INSTR}"
   --seed "${SEED}"
 )
 
@@ -73,4 +71,5 @@ fi
 "${CMD[@]}"
 
 echo "Generated files:"
-ls -1 "${OUTPUT_DIR}"/reranking_train_*.json
+ls -1 "${OUTPUT_DIR}"/reranking_train_*.json || true
+[[ -f "${OUTPUT_DIR}/similarity_matrix.pkl" ]] && echo "- ${OUTPUT_DIR}/similarity_matrix.pkl" || true

@@ -5,3 +5,5 @@ data/d2_reranked
 data/d3
 SFT/sft_data_generation/preprocess/extract_similarity_matrix/Video-ColBERT/
 output/
+data/
+train_data/

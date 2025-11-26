@@ -86,6 +86,7 @@ for entry in data:
 kept = []
 missing = []
 unreadable = []
+rewritten = []  # (old -> new) when extension fallback works
 
 def can_decode(path: str) -> bool:
     if not validate_decode:
@@ -126,20 +127,46 @@ def can_decode(path: str) -> bool:
         print(f"[fail] decode {path}: {e}", file=sys.stderr)
         return False
 
+def _alt_candidates(v: str):
+    v_lower = v.lower()
+    cands = []
+    # Prefer mp4 <-> mkv swap
+    if v_lower.endswith('.mp4'):
+        cands.append(v[:-4] + '.mkv')
+    elif v_lower.endswith('.mkv'):
+        cands.append(v[:-4] + '.mp4')
+    return cands
+
 def validate_entry(entry):
     video = entry.get('video')
     v = (video or '').strip()
     local_path = os.path.join(video_base, v)
-    if not os.path.exists(local_path):
-        return ('missing', v, entry)
-    if can_decode(local_path):
+
+    exists = os.path.exists(local_path)
+    if exists and can_decode(local_path):
         return ('ok', v, entry)
-    return ('unreadable', v, entry)
+
+    # Try extension fallback (mp4 <-> mkv)
+    for alt in _alt_candidates(v):
+        alt_path = os.path.join(video_base, alt)
+        if os.path.exists(alt_path) and can_decode(alt_path):
+            new_entry = dict(entry)
+            new_entry['video'] = alt
+            return ('ok_rewrite', v + ' -> ' + alt, new_entry)
+
+    # If original exists but cannot decode and no valid fallback
+    if exists:
+        return ('unreadable', v, entry)
+    # Otherwise fully missing
+    return ('missing', v, entry)
 
 with ThreadPoolExecutor(max_workers=max(1, int(workers))) as ex:
     for status, v, entry in ex.map(validate_entry, unique_entries, chunksize=1):
         if status == 'ok':
             kept.append(entry)
+        elif status == 'ok_rewrite':
+            kept.append(entry)
+            rewritten.append(v)
         elif status == 'missing':
             missing.append(v)
         else:
@@ -150,7 +177,7 @@ with open(output_json, 'w', encoding='utf-8') as f:
     json.dump(kept, f, ensure_ascii=False, indent=2)
 
 msg = (
-    f"Total: {len(data)} | Unique: {len(unique_entries)} | Exists+Decodable: {len(kept)} | Missing: {len(missing)} | Unreadable: {len(unreadable)}"
+    f"Total: {len(data)} | Unique: {len(unique_entries)} | Exists+Decodable: {len(kept)} | Missing: {len(missing)} | Unreadable: {len(unreadable)} | Rewritten: {len(rewritten)}"
 )
 print(msg, file=sys.stderr)
 
@@ -162,6 +189,10 @@ if list_missing:
     if unreadable:
         print("\n# Unreadable files:")
         for m in unreadable:
+            print(m)
+    if rewritten:
+        print("\n# Rewritten (mp4<->mkv):")
+        for m in rewritten:
             print(m)
 PY
 

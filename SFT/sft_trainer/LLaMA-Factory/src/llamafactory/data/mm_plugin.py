@@ -1621,14 +1621,12 @@ class Qwen3VLPlugin(Qwen2VLPlugin):
             mm_inputs = self._get_mm_inputs(images, videos, audios, processor)
             image_grid_thw = mm_inputs.get("image_grid_thw", [])
             video_grid_thw = mm_inputs.get("video_grid_thw", [])
-            num_frames = video_grid_thw[0][0] if len(video_grid_thw) > 0 else 0  # hard code for now
-            video_metadata = mm_inputs.get("video_metadata", {})
-
+            # metadata is per-video, not per-message
+            video_metadata = mm_inputs.get("video_metadata", [])
         else:
             image_grid_thw = [None] * len(images)
             video_grid_thw = [None] * len(videos)
-            num_frames = 0
-            timestamps = [0]
+            video_metadata = []
 
         for idx, message in enumerate(messages):
             content = message["content"]
@@ -1645,25 +1643,48 @@ class Qwen3VLPlugin(Qwen2VLPlugin):
 
             while VIDEO_PLACEHOLDER in content:
                 if self.expand_mm_tokens:
-                    metadata = video_metadata[idx]
-                    timestamps = processor._calculate_timestamps(
-                        metadata.frames_indices,
-                        metadata.fps,
-                        video_processor.merge_size,
+                    # Use the correct per-video frame count for this placeholder
+                    try:
+                        frames_for_this_video = int(video_grid_thw[num_video_tokens][0])
+                    except Exception:
+                        frames_for_this_video = 0
+
+                    # Derive per-frame token length from this video's H and W grids
+                    video_seqlen = (
+                        int(video_grid_thw[num_video_tokens][1:].prod() // video_merge_length)
+                        if frames_for_this_video > 0
+                        else 1
                     )
-                    video_structure = ""
-                    for frame_index in range(num_frames):
-                        video_seqlen = (
-                            video_grid_thw[num_video_tokens][1:].prod() // video_merge_length
-                            if self.expand_mm_tokens
-                            else 1
+
+                    # Map timestamps using the same per-video index
+                    timestamps = []
+                    try:
+                        metadata = video_metadata[num_video_tokens]
+                        timestamps = processor._calculate_timestamps(
+                            metadata.frames_indices,
+                            metadata.fps,
+                            video_processor.merge_size,
                         )
-                        timestamp_sec = timestamps[frame_index]
+                    except Exception:
+                        # Fallback: no timestamps available; will emit without timestamp tags
+                        timestamps = []
+
+                    video_structure = ""
+                    for frame_index in range(max(frames_for_this_video, 0)):
+                        # Pick timestamp if available
+                        if frame_index < len(timestamps):
+                            ts_prefix = f"<{timestamps[frame_index]:.1f} seconds>"
+                        else:
+                            ts_prefix = ""
                         frame_structure = (
-                            f"<{timestamp_sec:.1f} seconds>"
-                            f"{self.vision_bos_token}{self.video_token * video_seqlen}{self.vision_eos_token}"
+                            f"{ts_prefix}{self.vision_bos_token}{self.video_token * video_seqlen}{self.vision_eos_token}"
                         )
                         video_structure += frame_structure
+                    # If there are zero frames (shouldn't happen), fall back to a single token span
+                    if frames_for_this_video == 0:
+                        video_structure = (
+                            f"{self.vision_bos_token}{self.video_token * video_seqlen}{self.vision_eos_token}"
+                        )
                 else:
                     video_structure = f"{self.vision_bos_token}{self.video_token}{self.vision_eos_token}"
 

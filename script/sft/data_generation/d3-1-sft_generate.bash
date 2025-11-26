@@ -36,7 +36,7 @@ fi
 VIDEO_BASE="${VIDEO_BASE:-/hub_data1/seohyun/hub_data}"
 PROMPT_FILE="${SFT_DIR}/prompt/sft_ranking_generate.txt"
 API_KEY_FILE="${ROOT_DIR}/openai"
-NUM_SAMPLES="${NUM_SAMPLES:-1000}"
+NUM_SAMPLES="${NUM_SAMPLES:-500}"
 NUM_FRAMES="${NUM_FRAMES:-12}"
 MODEL_NAME="${MODEL_NAME:-gpt-4o}"
 SAVE_FRAMES="${SAVE_FRAMES:-false}"

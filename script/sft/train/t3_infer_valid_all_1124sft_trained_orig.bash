@@ -14,15 +14,16 @@ if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "llama_factory" ]]; 
 fi
 
 # Defaults (override via env)
-: "${MODEL_REPO:=happy8825/sft-20251124}"
-: "${DATASET_REPO:=happy8825/activitynet_validset_all}"
-: "${DATASET_FILE:=anet_val_all_sft_llamafactory_gt.json}"
-: "${OUTPUT_JSON:=${ROOT_DIR}/video_retrieval/output_1124_sft_orig_prompt/output_valid_all_orig_sft1124.json}"
+: "${MODEL_REPO:=/hub_data2/seohyun/saves/qwen3vl-2b-thinking/full/sft}"
+: "${DATASET_REPO:=happy8825/activitynet_validset}"
+: "${DATASET_FILE:=anet_ret_val_1_global_rzen_sft_llamafactory_gt.json}"
+: "${OUTPUT_JSON:=${ROOT_DIR}/video_retrieval/output_1124_sft_orig_prompt/output_valid_all_sft1124.json}"
+
 
 : "${MEDIA_BASE:=/hub_data2/dohwan/data/retrieval}"
 : "${TEMPLATE:=qwen3_vl}"
 : "${VIDEO_FPS:=2.0}"
-: "${VIDEO_MAXLEN:=16}"
+: "${VIDEO_MAXLEN:=48}"
 : "${MAX_SAMPLES:=0}"
 
 # Prompt to prepend before the user Query. Example override:

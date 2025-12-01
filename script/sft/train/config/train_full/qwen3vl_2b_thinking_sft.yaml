@@ -1,9 +1,9 @@
 ### model
 model_name_or_path: Qwen/Qwen3-VL-2B-Thinking
 image_max_pixels: 8000000            
-video_max_pixels: 65536      
+video_max_pixels: 50176      
 trust_remote_code: true
-video_maxlen: 64
+video_maxlen: 48
 #video_fps: 1.0
 
 
@@ -23,11 +23,11 @@ enable_thinking: true
 ### dataset
 dataset: test_mllm_video_demo_hf
 template: qwen3_vl              
-cutoff_len: 2048000000
+cutoff_len: 10000
 max_samples: 40
 overwrite_cache: true
-preprocessing_num_workers: 32
-dataloader_num_workers: 16
+preprocessing_num_workers: 64
+dataloader_num_workers: 64
 dataset_dir: /home/seohyun/vid_understanding/video_retrieval/script/sft/train/data_config
 media_dir: /home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/data
 
@@ -42,7 +42,7 @@ report_to: none
 
 ### train
 per_device_train_batch_size: 1
-gradient_accumulation_steps: 2
+gradient_accumulation_steps: 1
 learning_rate: 1.0e-5
 num_train_epochs: 1.0
 lr_scheduler_type: cosine

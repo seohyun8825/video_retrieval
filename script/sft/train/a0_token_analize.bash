@@ -24,7 +24,7 @@ if [[ -z "${DATASET}" && -n "${HF_HUB_URL}" ]]; then
 fi
 
 # Video processing overrides
-VIDEO_MAXLEN="${VIDEO_MAXLEN:-64}"
+VIDEO_MAXLEN="${VIDEO_MAXLEN:-48}"
 VIDEO_FPS="${VIDEO_FPS:-2.0}"
 
 # Where to write logs

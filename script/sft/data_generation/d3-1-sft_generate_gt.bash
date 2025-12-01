@@ -70,7 +70,7 @@ fi
 # Optional push to Hugging Face
 PUSH_TO_HF="${PUSH_TO_HF:-true}"
 if [[ "${PUSH_TO_HF,,}" == "true" ]]; then
-  HF_REPO_ID="${HF_REPO_ID:-happy8825/activitynet_validset_all}"
+  HF_REPO_ID="${HF_REPO_ID:-happy8825/activitynet_validset}"
   HF_PATH_IN_REPO="${HF_PATH_IN_REPO:-$(basename "${OUT_FILE}")}"
   echo "[gt] Pushing to HF dataset: ${HF_REPO_ID}:${HF_PATH_IN_REPO}"
 

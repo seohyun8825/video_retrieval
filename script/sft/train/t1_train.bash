@@ -13,10 +13,10 @@ DEFAULT_CONFIG_PATH="${ROOT_DIR}/script/sft/train/config/train_full/qwen3vl_2b_t
 CONFIG_PATH="${1:-${DEFAULT_CONFIG_PATH}}"
 
 # GPU selection (comma separated)
-GPU_DEVICES="2,3,4,5,6,7"  # e.g., "4,5"; empty = keep current
+GPU_DEVICES="4,5,6,7"  # e.g., "4,5"; empty = keep current
 
 # Common overrides you asked to manage from bash
-VIDEO_MAXLEN="${VIDEO_MAXLEN:-64}"
+VIDEO_MAXLEN="${VIDEO_MAXLEN:-48}"
 DATASET="${DATASET:-}"
 DATASET_DIR="${DATASET_DIR:-${ROOT_DIR}/script/sft/train/data_config}"
 MEDIA_DIR="/hub_data2/dohwan/data/retrieval"

@@ -2,8 +2,8 @@
 set -euo pipefail
 
 # Edit these defaults if you want to hardcode paths.
-JSON_PATH_DEFAULT="/home/seohyun/video_retrieval/toy.json"
-DEST_DIR_DEFAULT="/hub_data1/seohyun/hub_data"
+JSON_PATH_DEFAULT="/hub_data1/seohyun/anet_ret_val_1.json"
+DEST_DIR_DEFAULT="/hub_data1/seohyun/activitynet/videos"
 
 usage() {
   cat <<'EOF' >&2
@@ -76,6 +76,6 @@ fi
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
-PYTHON_SCRIPT="${PYTHON_SCRIPT:-${ROOT_DIR}/SFT/LLaMA-Factory/util/download_videos_from_json.py}"
+PYTHON_SCRIPT="${PYTHON_SCRIPT:-${ROOT_DIR}/SFT/sft_trainer/LLaMA-Factory/util/download_videos_from_json.py}"
 
 python3 "${PYTHON_SCRIPT}" "$JSON_PATH" "$DEST_DIR" "${EXTRA_ARGS[@]}"

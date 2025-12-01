@@ -4,10 +4,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from typing import Any, Dict, List, Sequence, Set
+from typing import Any, Dict, List, Sequence, Set, Tuple
 
 Entry = Dict[str, Any]
 
@@ -85,6 +86,37 @@ def unique_entries(entries: Sequence[Entry]) -> List[Entry]:
     return unique
 
 
+Variant = Tuple[str, Path, bool]
+
+
+def build_variants(video: str, dest: Path) -> List[Variant]:
+    """Return candidate (remote_rel, local_path, is_primary) tuples."""
+    variants: List[Variant] = []
+    rel = video.strip()
+    primary_local = (dest / rel).resolve()
+    variants.append((rel, primary_local, True))
+    path_obj = Path(rel)
+    if path_obj.suffix.lower() == ".mp4":
+        alt_rel = str(path_obj.with_suffix(".mkv"))
+        alt_local = (dest / alt_rel).resolve()
+        variants.append((alt_rel, alt_local, False))
+    return variants
+
+
+def ensure_primary_alias(primary: Path, actual: Path) -> None:
+    """Create a symlink at primary pointing to actual if needed."""
+    if primary == actual:
+        return
+    if primary.exists() or primary.is_symlink():
+        return
+    try:
+        primary.parent.mkdir(parents=True, exist_ok=True)
+        os.symlink(actual, primary)
+        print(f"[info] Linked {primary} -> {actual}")
+    except OSError as exc:  # pragma: no cover - best effort
+        print(f"[warn] Could not create symlink {primary} -> {actual}: {exc}")
+
+
 def run_downloads(
     entries: Sequence[Entry],
     prefix: str,
@@ -97,7 +129,7 @@ def run_downloads(
     prefix = prefix.rstrip("/")
     successful: List[Entry] = []
     workers = max(1, workers)
-    download_queue: List[tuple[Entry, List[str], str]] = []
+    download_queue: List[tuple[Entry, List[Variant]]] = []
     for entry in entries:
         video = entry.get("video")
         if not isinstance(video, str):
@@ -105,46 +137,75 @@ def run_downloads(
         video = video.strip()
         if not video:
             continue
-        gcs_path = f"{prefix}/{video}"
-        local_path = dest / video
-        if skip_existing and local_path.exists():
-            print(f"[skip] {local_path} already exists")
+        variants = build_variants(video, dest)
+        primary_local = variants[0][1]
+        existing_variant: Variant | None = None
+        if skip_existing:
+            for variant in variants:
+                rel_path, local_path, is_primary_variant = variant
+                if local_path.exists() or local_path.is_symlink():
+                    existing_variant = variant
+                    break
+        if existing_variant:
+            rel_path, local_path, is_primary = existing_variant
+            print(f"[skip] {local_path} already exists (variant: {rel_path})")
+            if not is_primary:
+                ensure_primary_alias(primary_local, local_path)
             successful.append(entry)
             continue
-        cmd: List[str] = [
-            "gcloud",
-            "storage",
-            "cp",
-            gcs_path,
-            str(dest),
-        ]
-        print("Executing:", " ".join(cmd))
+
         if dry_run:
+            for rel_path, local_path, _ in variants:
+                gcs_path = f"{prefix}/{rel_path}"
+                print(
+                    "Executing:",
+                    " ".join(
+                        [
+                            "gcloud",
+                            "storage",
+                            "cp",
+                            gcs_path,
+                            str(local_path),
+                        ]
+                    ),
+                )
             continue
-        download_queue.append((entry, cmd, gcs_path))
+
+        download_queue.append((entry, variants))
 
     if dry_run:
         return successful
 
-    def download_task(entry: Entry, cmd: List[str], gcs_path: str) -> bool:
-        try:
-            subprocess.run(cmd, check=True)
-            return True
-        except subprocess.CalledProcessError as exc:
-            print(f"[warn] Failed to download {gcs_path}: {exc}")
-            return False
+    def download_task(entry: Entry, variants: List[Variant]) -> bool:
+        primary_local = variants[0][1]
+        for rel_path, local_path, is_primary in variants:
+            gcs_path = f"{prefix}/{rel_path}"
+            local_path.parent.mkdir(parents=True, exist_ok=True)
+            cmd: List[str] = [
+                "gcloud",
+                "storage",
+                "cp",
+                gcs_path,
+                str(local_path),
+            ]
+            print("Executing:", " ".join(cmd))
+            try:
+                subprocess.run(cmd, check=True)
+                if not is_primary:
+                    ensure_primary_alias(primary_local, local_path)
+                return True
+            except subprocess.CalledProcessError as exc:
+                print(f"[warn] Failed to download {gcs_path}: {exc}")
+        return False
 
     if workers == 1:
-        for entry, cmd, gcs_path in download_queue:
-            if download_task(entry, cmd, gcs_path):
+        for entry, variants in download_queue:
+            if download_task(entry, variants):
                 successful.append(entry)
     else:
         with ThreadPoolExecutor(max_workers=workers) as executor:
-            futures = [
-                executor.submit(download_task, entry, cmd, gcs_path)
-                for entry, cmd, gcs_path in download_queue
-            ]
-            for (entry, _, _), future in zip(download_queue, futures):
+            futures = [executor.submit(download_task, entry, variants) for entry, variants in download_queue]
+            for (entry, _), future in zip(download_queue, futures):
                 if future.result():
                     successful.append(entry)
 

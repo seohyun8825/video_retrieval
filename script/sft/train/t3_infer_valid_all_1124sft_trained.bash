@@ -14,23 +14,23 @@ if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "llama_factory" ]]; 
 fi
 
 # Defaults (override via env)
-: "${MODEL_REPO:=/hub_data2/seohyun/saves/qwen3vl-2b-thinking/full/sft}"
+: "${MODEL_REPO:=happy8825/sft-20251124}"
 : "${DATASET_REPO:=happy8825/activitynet_validset}"
-: "${DATASET_FILE:=anet_ret_val_1_global_rzen_sft_llamafactory_gt.json}"
+: "${DATASET_FILE:=anet_val_all_sft_llamafactory_gt.json}"
 : "${OUTPUT_JSON:=${ROOT_DIR}/video_retrieval/output_1124_sft_easy_prompt/output_valid_all_sft1124.json}"
 
 : "${MEDIA_BASE:=/hub_data2/dohwan/data/retrieval}"
 : "${TEMPLATE:=qwen3_vl}"
 : "${VIDEO_FPS:=2.0}"
 : "${VIDEO_MAXLEN:=48}"
-: "${MAX_SAMPLES:=4600}"
+: "${MAX_SAMPLES:=5000}"
 
 # Prompt to prepend before the user Query. Example override:
 #   PROMPT=$'System Prompt: ...' bash t3_infer_valid_all.bash
 : "${PROMPT:=You will receive a Query and N candidates. Each candidate is a video. Your task is to identify the most relevant video to the Query. Output only the index of the most relevant video among the candidates. Your answer should be strictly inside <answer></answer> tags. }"
 
 # Concurrency / Streaming
-: "${GPU_DEVICES:=4,5,6,7}"
+: "${GPU_DEVICES:=0}"
 : "${MAX_CONCURRENT:=2}"
 export MAX_CONCURRENT
 

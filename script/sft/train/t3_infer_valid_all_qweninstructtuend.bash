@@ -14,10 +14,10 @@ if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "llama_factory" ]]; 
 fi
 
 # Defaults (override via env)
-: "${MODEL_REPO:=happy8825/sft-20251126}"
+: "${MODEL_REPO:=/hub_data2/seohyun/saves/qwen3vl-2b-instruct_toy/full/sft}"
 : "${DATASET_REPO:=happy8825/activitynet_validset}"
 : "${DATASET_FILE:=anet_ret_val_1_global_rzen_sft_llamafactory_gt.json}"
-: "${OUTPUT_JSON:=${ROOT_DIR}/video_retrieval/output_1126_transformer_version_changed/output_valid_1126_t_4524.json}"
+: "${OUTPUT_JSON:=${ROOT_DIR}/video_retrieval/outputqweninstruct/qweninstruct.json}"
 
 
 : "${MEDIA_BASE:=/hub_data2/dohwan/data/retrieval}"
@@ -38,37 +38,15 @@ Decision rules (concise):
 - Tie-breakers (in order): action visibility/close-up > temporal coherence > low occlusion/clutter > overall coverage.
 
 ABSOLUTE OUTPUT CONTRACT:
-<think>
-<content>
-[1] ...
-[2] ...
-[3] ...
-[4] ...
-[5] ...
-</content>
-
-<contrast>
-...
-</contrast>
-
-<summary>
-1st=[i] ...
-2nd=[j] ...
-3rd=[k] ...
-4th=[m] ...
-5th=[n] ...
-</summary>
-</think>
 
 <answer> [i] > [j] > [k] > [m] > [n] </answer>
 
 Constraints:
-- Inside <think>, use ONLY <content>, <contrast>, <summary>.
 - Do NOT use per-candidate XML tags.
 - Always output a total order in <answer>.}"
 
 # Concurrency / Streaming
-: "${GPU_DEVICES:=3}"
+: "${GPU_DEVICES:=0}"
 : "${MAX_CONCURRENT:=1}"
 export MAX_CONCURRENT
 

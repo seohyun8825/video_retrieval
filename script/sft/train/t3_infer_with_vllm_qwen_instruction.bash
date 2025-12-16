@@ -13,18 +13,18 @@ if [[ -z "${CONDA_PREFIX:-}" || "${CONDA_DEFAULT_ENV:-}" != "llama_factory" ]]; 
   fi
 fi
 
-
+# Ensure we have a writable temp directory (avoid /tmp quota issues)
 if [[ -z "${TMPDIR:-}" ]]; then
-  TMPDIR="/hub_data2/seohyun/tmp"
+  TMPDIR="/hub_data1/seohyun/tmp"
 fi
 mkdir -p "${TMPDIR}"
 export TMPDIR
 
 # Defaults (override via env)
-: "${MODEL_REPO:=happy8825/sft-20251126}"
+: "${MODEL_REPO:=Qwen/Qwen3-VL-2B-Instruct}"
 : "${DATASET_REPO:=happy8825/activitynet_validset}"
 : "${DATASET_FILE:=}"
-: "${OUTPUT_JSON:=${ROOT_DIR}/video_retrieval/output_sft_4571/output_valid_all_sft.json}"
+: "${OUTPUT_JSON:=${ROOT_DIR}/video_retrieval/output_vllm/qweninstruct2b_infer_result.json}"
 OUTPUT_DIR="$(dirname "${OUTPUT_JSON}")"
 
 : "${MEDIA_BASE:=/hub_data3/seohyun}"
@@ -36,76 +36,26 @@ OUTPUT_DIR="$(dirname "${OUTPUT_JSON}")"
 : "${VIDEO_TOTAL_PIXELS:=$((224*224))}"
 : "${VIDEO_MIN_PIXELS:=0}"
 : "${LOG_VIDEO_FRAMES:=false}"
+: "${PREFER_MP4:=true}"
 : "${SYSTEM_PROMPT:=}"
 : "${TMP_VIDEO_DIR:=}"
 
 # Prompt to prepend before the user Query.
-: "${PROMPT:=You will receive a Query and N candidates. Each candidate is a video. Your task is to identify the most relevant video to the Query. Output only the index of the most relevant video among the candidates. Your answer should be strictly inside <answer></answer> tags.
-
-System Prompt: You are RankLLM, a vision-only reranker. You will receive a Query and N candidates. Each candidate is a video described via frames.
-
-Decision rules (concise):
-- Judge relevance ONLY from what is visible in the frames.
-- Down-rank clear mismatches (wrong domain/scene/action). Consider temporal coherence.
-- Tie-breakers (in order): action visibility/close-up > temporal coherence > low occlusion/clutter > overall coverage.
-
-ABSOLUTE OUTPUT CONTRACT:
-<think>
-<content>
-[1] ...
-[2] ...
-[3] ...
-[4] ...
-[5] ...
-</content>
-
-<contrast>
-...
-</contrast>
-
-<summary>
-1st=[a] ...
-2nd=[b] ...
-3rd=[c] ...
-4th=[d] ...
-5th=[e] ...
-</summary>
-</think>
-
-<answer> [a] > [b] > [c] > [d] > [e] </answer>
-
-
-Constraints:
-- Inside <think>, use ONLY <content>, <contrast>, <summary>.
-- Do NOT use per-candidate XML tags.
-- a,b,c,d,e are indices of the candidates. you should output the number in the place of a,b,c,d,e.
-- Always output a total order in <answer>.}"
+: "${PROMPT:=You will receive a Query and N candidates. Each candidate is a video. Your task is to identify the most relevant video to the Query. Output only the index of the most relevant video among the candidates. Your answer should be strictly inside <answer></answer> tags. }"
 
 # API settings
-: "${API_BASE:=http://localhost:8011/v1}"
+: "${API_BASE:=http://localhost:8019/v1}"
 : "${API_KEY:=}"
 : "${REQUEST_TIMEOUT:=240}"
 : "${MAX_RETRIES:=4}"
-
-
-: "${TEMPERATURE:=0.0}"
-: "${TOP_P:=1}"
-: "${TOP_K:=1}"
-: "${MAX_NEW_TOKENS:=4096}"
-: "${REPETITION_PENALTY:=1.0}"
-: "${ENABLE_THINKING:=true}"
-
-# Map to API payload knobs used by the python runner
-# (presence_penalty is used by server as repetition_penalty)
-: "${API_TEMPERATURE:=${TEMPERATURE}}"
-: "${API_TOP_P:=${TOP_P}}"
-: "${API_MAX_NEW_TOKENS:=${MAX_NEW_TOKENS}}"
-: "${API_PRESENCE_PENALTY:=${REPETITION_PENALTY}}"
-: "${API_TOP_K:=${TOP_K}}"
+: "${API_TEMPERATURE:=0.2}"
+: "${API_TOP_P:=0.9}"
+: "${API_MAX_NEW_TOKENS:=2048}"
+: "${API_PRESENCE_PENALTY:=1.0}"
 
 # Concurrency / Streaming
 : "${GPU_DEVICES:=0}"
-: "${MAX_CONCURRENT:=3}"
+: "${MAX_CONCURRENT:=4}"
 export MAX_CONCURRENT
 
 : "${STREAM_JSONL:=true}"
@@ -136,7 +86,6 @@ echo "Media base   : ${MEDIA_BASE}"
 echo "Template     : ${TEMPLATE} | fps=${VIDEO_FPS} | maxlen=${VIDEO_MAXLEN}"
 echo "Max samples  : ${MAX_SAMPLES} | Concurrency=${MAX_CONCURRENT}"
 echo "API base     : ${API_BASE} | timeout=${REQUEST_TIMEOUT}s | retries=${MAX_RETRIES}"
-echo "Sampling     : temp=${API_TEMPERATURE} | top_p=${API_TOP_P} | top_k=${API_TOP_K} | rep_pen=${API_PRESENCE_PENALTY} | max_new_tokens=${API_MAX_NEW_TOKENS}"
 echo "Video frames : request nframes=${VIDEO_NUM_FRAMES}"
 echo "Video pixels : total=${VIDEO_TOTAL_PIXELS} | min=${VIDEO_MIN_PIXELS}"
 echo "Prepend prompt (first 60 chars): ${PROMPT:0:60}"
@@ -164,6 +113,9 @@ fi
 if [[ "${LOG_VIDEO_FRAMES}" == "true" ]]; then
   video_meta_args+=(--log_video_frames)
 fi
+if [[ "${PREFER_MP4}" == "true" ]]; then
+  video_meta_args+=(--prefer_mp4)
+fi
 
 api_common_args=(
   --api_base "${API_BASE}"
@@ -176,14 +128,6 @@ api_common_args=(
 )
 if [[ -n "${API_KEY}" ]]; then
   api_common_args+=(--api_key "${API_KEY}")
-fi
-# Optional knobs forwarded to API runner
-if [[ -n "${API_TOP_K}" ]]; then
-  api_common_args+=(--top_k "${API_TOP_K}")
-fi
-if [[ -n "${ENABLE_THINKING}" ]]; then
-  # pass as explicit true/false to the runner so it can adjust prompts
-  api_common_args+=(--enable_thinking "${ENABLE_THINKING}")
 fi
 
 split_and_run=false

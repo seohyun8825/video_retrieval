@@ -21,13 +21,13 @@ mkdir -p "${TMPDIR}"
 export TMPDIR
 
 # Defaults (override via env)
-: "${MODEL_REPO:=happy8825/sft-20251126}"
+: "${MODEL_REPO:=Qwen/Qwen3-VL-2B-Thinking}"
 : "${DATASET_REPO:=happy8825/activitynet_validset}"
 : "${DATASET_FILE:=}"
 : "${OUTPUT_JSON:=${ROOT_DIR}/video_retrieval/output_vllm/output_valid_all_vllm.json}"
 OUTPUT_DIR="$(dirname "${OUTPUT_JSON}")"
 
-: "${MEDIA_BASE:=/hub_data1/seohyun/clean}"
+: "${MEDIA_BASE:=/hub_data2/dohwan/data/retrieval}"
 : "${TEMPLATE:=qwen3_vl}"
 : "${VIDEO_FPS:=2.0}"
 : "${VIDEO_MAXLEN:=48}"

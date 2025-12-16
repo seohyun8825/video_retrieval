@@ -7,3 +7,5 @@ SFT/sft_data_generation/preprocess/extract_similarity_matrix/Video-ColBERT/
 output/
 data/
 train_data/
+video_retrieval/
+anet_ret_val_1.json

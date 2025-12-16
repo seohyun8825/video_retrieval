@@ -248,13 +248,27 @@ class MMPluginMixin:
     def _get_video_sample_indices(
         self, video_stream: "Stream", video_fps: float, video_maxlen: int, **kwargs
     ) -> list[int]:
-        r"""Compute video sample indices according to fps."""
+        r"""Compute video sample indices.
+
+        When `video_fps` is <= 0, enforce a fixed length of `video_maxlen` frames by sampling
+        uniformly across the entire video (indices may repeat for very short videos).
+        Otherwise, estimate the number of frames from the video's duration and `video_fps`,
+        then cap by `video_maxlen` and the actual number of frames.
+        """
         total_frames = video_stream.frames
         if total_frames == 0:  # infinite video
             return np.linspace(0, video_maxlen - 1, video_maxlen).astype(np.int32)
 
-        sample_frames = max(1, math.floor(float(video_stream.duration * video_stream.time_base) * video_fps))
-        sample_frames = min(total_frames, video_maxlen, sample_frames)
+        # Fixed-length sampling when fps is disabled
+        if video_fps is None or float(video_fps) <= 0:
+            sample_frames = max(1, int(video_maxlen))
+        else:
+            sample_frames = max(
+                1,
+                math.floor(float(video_stream.duration * video_stream.time_base) * float(video_fps)),
+            )
+            sample_frames = min(total_frames, video_maxlen, sample_frames)
+
         return np.linspace(0, total_frames - 1, sample_frames).astype(np.int32)
 
     def _regularize_images(self, images: list["ImageInput"], **kwargs) -> "RegularizedImageOutput":
@@ -282,6 +296,8 @@ class MMPluginMixin:
         r"""Regularizes videos to avoid error. Including reading, resizing and converting."""
         results = []
         durations = []
+        fps_per_video: list[float] = []
+        frames_indices_per_video: list[list[int]] = []
         for video in videos:
             frames: list[ImageObject] = []
             if _check_video_is_nested_images(video):
@@ -289,25 +305,58 @@ class MMPluginMixin:
                     if not is_valid_image(frame) and not isinstance(frame, dict) and not os.path.exists(frame):
                         raise ValueError("Invalid image found in video frames.")
                 frames = video
-                durations.append(len(frames) / kwargs.get("video_fps", 2.0))
+                fps = kwargs.get("video_fps", 2.0)
+                if fps is None or float(fps) <= 0:
+                    durations.append(float(len(frames)))
+                    fps_per_video.append(24.0)
+                else:
+                    durations.append(len(frames) / float(fps))
+                    fps_per_video.append(float(fps))
+                frames_indices_per_video.append(list(range(len(frames))))
             else:
                 container = av.open(video, "r")
                 video_stream = next(stream for stream in container.streams if stream.type == "video")
                 sample_indices = self._get_video_sample_indices(video_stream, **kwargs)
+                # infer source fps if available (may be Fraction)
+                try:
+                    stream_fps = float(video_stream.average_rate) if video_stream.average_rate else None
+                except Exception:
+                    stream_fps = None
                 container.seek(0)
                 for frame_idx, frame in enumerate(container.decode(video_stream)):
                     if frame_idx in sample_indices:
                         frames.append(frame.to_image())
 
                 if video_stream.duration is None:
-                    durations.append(len(frames) / kwargs.get("video_fps", 2.0))
+                    fps = kwargs.get("video_fps", 2.0)
+                    if fps is None or float(fps) <= 0:
+                        durations.append(float(len(frames)))
+                        fps_per_video.append(stream_fps if (stream_fps and stream_fps > 0) else 24.0)
+                    else:
+                        durations.append(len(frames) / float(fps))
+                        fps_per_video.append(float(fps))
                 else:
                     durations.append(float(video_stream.duration * video_stream.time_base))
+                    if stream_fps and stream_fps > 0:
+                        fps_per_video.append(stream_fps)
+                    else:
+                        try:
+                            total_frames = int(video_stream.frames) if video_stream.frames is not None else len(frames)
+                            dur = float(video_stream.duration * video_stream.time_base)
+                            fps_per_video.append(total_frames / max(dur, 1e-6))
+                        except Exception:
+                            fps_per_video.append(24.0)
+                frames_indices_per_video.append(sample_indices.tolist() if hasattr(sample_indices, "tolist") else list(map(int, sample_indices)))
 
             frames = self._regularize_images(frames, **kwargs)["images"]
             results.append(frames)
 
-        return {"videos": results, "durations": durations}
+        return {
+            "videos": results,
+            "durations": durations,
+            "fps_per_video": fps_per_video,
+            "frames_indices_per_video": frames_indices_per_video,
+        }
 
     def _regularize_audios(
         self, audios: list["AudioInput"], sampling_rate: float, **kwargs
@@ -386,7 +435,10 @@ class MMPluginMixin:
                 video_maxlen=getattr(processor, "video_maxlen", 128),
             )["videos"]
             if "videos" in inspect.signature(video_processor.preprocess).parameters:  # for qwen2_vl and video_llava
-                mm_inputs.update(video_processor(images=None, videos=videos, return_tensors="pt"))
+                # We already sampled frames in _regularize_videos. Avoid double-sampling here.
+                mm_inputs.update(
+                    video_processor(images=None, videos=videos, return_tensors="pt", do_sample_frames=False)
+                )
             else:  # for llava_next_video
                 mm_inputs.update(video_processor(videos, return_tensors="pt"))
 
@@ -1447,21 +1499,51 @@ class Qwen2VLPlugin(BasePlugin):
                     if not is_valid_image(frame) and not isinstance(frame, dict) and not os.path.exists(frame):
                         raise ValueError("Invalid image found in video frames.")
 
-                frames = video
-                fps_per_video.append(kwargs.get("video_fps", 2.0))
-                durations.append(len(frames) / kwargs.get("video_fps", 2.0))
+                # If fps<=0, sample exactly `video_maxlen` frames uniformly with possible repeats
+                target_fps = kwargs.get("video_fps", 2.0)
+                video_maxlen = int(kwargs.get("video_maxlen", 128))
+                if target_fps is None or float(target_fps) <= 0:
+                    if len(video) == 0:
+                        frames = []
+                    else:
+                        idx = np.linspace(0, len(video) - 1, max(1, video_maxlen)).round().astype(int).tolist()
+                        frames = [video[i] for i in idx]
+                    # duration unknown when fps disabled for nested images; approximate by number of frames
+                    durations.append(float(len(frames)))
+                    fps_per_video.append(24.0)
+                else:
+                    frames = video
+                    fps_per_video.append(float(target_fps))
+                    durations.append(len(frames) / float(target_fps))
             else:
                 container = av.open(video, "r")
                 video_stream = next(stream for stream in container.streams if stream.type == "video")
                 sample_indices = self._get_video_sample_indices(video_stream, **kwargs)
                 container.seek(0)
+                # Ensure we append duplicate frames when indices repeat to reach desired maxlen
+                # Build counts per index for fast lookup
+                try:
+                    # sample_indices may be numpy array
+                    unique_idx, counts = np.unique(sample_indices, return_counts=True)
+                    counts_map = {int(i): int(c) for i, c in zip(unique_idx.tolist(), counts.tolist())}
+                except Exception:
+                    counts_map = {}
+                    for i in sample_indices:
+                        ii = int(i)
+                        counts_map[ii] = counts_map.get(ii, 0) + 1
                 for frame_idx, frame in enumerate(container.decode(video_stream)):
-                    if frame_idx in sample_indices:
+                    c = counts_map.get(frame_idx, 0)
+                    for _ in range(c):
                         frames.append(frame.to_image())
 
                 if video_stream.duration is None:
-                    fps_per_video.append(kwargs.get("video_fps", 2.0))
-                    durations.append(len(frames) / kwargs.get("video_fps", 2.0))
+                    target_fps = kwargs.get("video_fps", 2.0)
+                    if target_fps is None or float(target_fps) <= 0:
+                        durations.append(float(len(frames)))
+                        fps_per_video.append(24.0)
+                    else:
+                        fps_per_video.append(float(target_fps))
+                        durations.append(len(frames) / float(target_fps))
                 else:
                     fps_per_video.append(len(sample_indices) / float(video_stream.duration * video_stream.time_base))
                     durations.append(float(video_stream.duration * video_stream.time_base))
@@ -1501,9 +1583,37 @@ class Qwen2VLPlugin(BasePlugin):
                 video_fps=getattr(processor, "video_fps", 2.0),
                 video_maxlen=getattr(processor, "video_maxlen", 128),
             )
-            mm_inputs.update(video_processor(videos=video_data["videos"], return_tensors="pt"))
+            # Build per-video metadata for accurate timestamping when processor expands placeholders
+            video_metadata = []
+            for i, (video_frames, duration) in enumerate(zip(video_data["videos"], video_data["durations"])):
+                fps_list = video_data.get("fps_per_video", [])
+                fps_val = fps_list[i] if i < len(fps_list) else None
+                if fps_val is None or fps_val <= 0:
+                    fps_val = 24.0
+                frames_indices_all = video_data.get("frames_indices_per_video", [])
+                if i < len(frames_indices_all):
+                    frames_indices = frames_indices_all[i]
+                else:
+                    frames_indices = list(range(len(video_frames)))
+                video_metadata.append(
+                    {
+                        "fps": float(fps_val),
+                        "duration": float(duration),
+                        "total_num_frames": int(len(video_frames)),
+                        "frames_indices": list(map(int, frames_indices)),
+                    }
+                )
+
+            mm_inputs.update(
+                video_processor(
+                    videos=video_data["videos"],
+                    video_metadata=video_metadata,
+                    return_metadata=True,
+                    do_sample_frames=False,
+                )
+            )
             temporal_patch_size: int = getattr(image_processor, "temporal_patch_size", 2)
-            if "second_per_grid_ts" in processor.model_input_names:
+            if "second_per_grid_ts" in processor.model_input_names and "fps_per_video" in video_data:
                 mm_inputs["second_per_grid_ts"] = [temporal_patch_size / fps for fps in video_data["fps_per_video"]]
 
         return mm_inputs
@@ -1586,12 +1696,28 @@ class Qwen3VLPlugin(Qwen2VLPlugin):
                 video_fps=getattr(processor, "video_fps", 2.0),
                 video_maxlen=getattr(processor, "video_maxlen", 128),
             )
-            video_metadata = [
-                {"fps": getattr(processor, "video_fps", 24.0), "duration": duration, "total_num_frames": len(video)}
-                for video, duration in zip(videos["videos"], videos["durations"])
-            ]
+            # Build accurate per-video metadata for timestamp calculation
+            video_metadata = []
+            for i, (video_frames, duration) in enumerate(zip(videos["videos"], videos["durations"])):
+                fps_val = videos.get("fps_per_video", [None] * len(videos["videos"]))[i]
+                if fps_val is None or fps_val <= 0:
+                    fps_val = 24.0  # safe default to avoid divide-by-zero
+                frames_indices = videos.get("frames_indices_per_video", [list(range(len(video_frames)))] * len(videos["videos"]))[i]
+                video_metadata.append(
+                    {
+                        "fps": float(fps_val),
+                        "duration": float(duration),
+                        "total_num_frames": int(len(video_frames)),
+                        "frames_indices": list(map(int, frames_indices)),
+                    }
+                )
             mm_inputs.update(
-                video_processor(videos=videos["videos"], video_metadata=video_metadata, return_metadata=True)
+                video_processor(
+                    videos=videos["videos"],
+                    video_metadata=video_metadata,
+                    return_metadata=True,
+                    do_sample_frames=False,
+                )
             )
             temporal_patch_size: int = getattr(image_processor, "temporal_patch_size", 2)
             if "second_per_grid_ts" in processor.model_input_names:

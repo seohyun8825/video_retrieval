@@ -2,8 +2,8 @@
 set -euo pipefail
 
 # 입력 / 출력 디렉토리
-IN_DIR="/hub_data1/seohyun/activitynet/videos"
-OUT_DIR="/hub_data1/seohyun/clean/activitynet/videos"
+IN_DIR="/hub_data4/seohyun/ecva/after_incident"
+OUT_DIR="/hub_data3/seohyun/ecva/after_incident"
 
 # 동시에 돌릴 워커 수 (원하면 nproc 사용)
 WORKERS="80"          # 또는 숫자 고정: WORKERS=8

@@ -97,7 +97,12 @@ def fmt_metric(value: Any) -> str:
     return str(value)
 
 
-def build_readme(data: Dict[str, Any], metrics: Dict[str, Any], extra: str) -> str:
+def build_readme(
+    data: Dict[str, Any],
+    metrics: Dict[str, Any],
+    extra: str,
+    run_summary: Optional[str] = None,
+) -> str:
     model = data.get("model") or "Unknown model"
     dataset = data.get("dataset") or "Unknown dataset"
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
@@ -140,9 +145,30 @@ def build_readme(data: Dict[str, Any], metrics: Dict[str, Any], extra: str) -> s
         "The uploaded JSON contains full per-sample predictions produced via `t3_infer_with_vllm.bash`.",
     ]
 
+    # Add EVQA/ECVA metrics when present
+    evqa_total = metrics.get("evqa_total")
+    evqa_with_gt_label = metrics.get("evqa_with_gt_label")
+    evqa_acc = metrics.get("evqa_acc")
+    if any(v is not None for v in (evqa_total, evqa_with_gt_label, evqa_acc)):
+        lines.extend(
+            [
+                "",
+                "### EVQA/ECVA Metrics",
+                "| Metric | Value |",
+                "| --- | --- |",
+                f"| EVQA total | {fmt_metric(evqa_total)} |",
+                f"| EVQA with GT label | {fmt_metric(evqa_with_gt_label)} |",
+                f"| EVQA accuracy | {fmt_metric(evqa_acc)} |",
+            ]
+        )
+
     extra = (extra or "").strip()
     if extra:
         lines.extend(["", extra])
+
+    # Optional run summary block (e.g., Saved N results... Metrics: {...})
+    if run_summary:
+        lines.extend(["", run_summary.strip(), ""])  # already formatted with fencing
 
     lines.append("")
     return "\n".join(lines)
@@ -167,7 +193,18 @@ def main() -> None:
     readme_path = args.readme_path or os.path.join(os.path.dirname(args.input_json), "README.md")
     if readme_path:
         os.makedirs(os.path.dirname(readme_path) or ".", exist_ok=True)
-    readme_body = build_readme(data, metrics, args.readme_extra)
+    # Build a run summary block including the raw metrics JSON and the push target URL
+    n_items = len(data.get("items") or [])
+    repo_url = f"https://huggingface.co/datasets/{repo_id}"
+    summary_block = (
+        "## Run Summary\n\n"  # header
+        "```\n"
+        f"Saved {n_items} results to {args.input_json}\n"
+        f"Metrics: {json.dumps(metrics, indent=2)}\n"
+        f"Pushed {out_file} and README to {repo_url}\n"
+        "```"
+    )
+    readme_body = build_readme(data, metrics, args.readme_extra, run_summary=summary_block)
     with open(readme_path, "w", encoding="utf-8") as f:
         f.write(readme_body)
 

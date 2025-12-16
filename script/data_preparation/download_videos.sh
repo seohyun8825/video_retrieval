@@ -2,8 +2,8 @@
 set -euo pipefail
 
 # Edit these defaults if you want to hardcode paths.
-JSON_PATH_DEFAULT="/hub_data1/seohyun/anet_ret_val_1.json"
-DEST_DIR_DEFAULT="/hub_data1/seohyun/activitynet/videos"
+JSON_PATH_DEFAULT="/hub_data2/dohwan/data/retrieval/activitynet/anet_ret_val_1.json"
+DEST_DIR_DEFAULT="/hub_data3/seohyun/activitynet/videos"
 
 usage() {
   cat <<'EOF' >&2

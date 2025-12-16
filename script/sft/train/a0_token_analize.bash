@@ -25,7 +25,8 @@ fi
 
 # Video processing overrides
 VIDEO_MAXLEN="${VIDEO_MAXLEN:-48}"
-VIDEO_FPS="${VIDEO_FPS:-2.0}"
+# Set VIDEO_FPS to 0 to disable fps-based sampling and rely on VIDEO_MAXLEN only
+VIDEO_FPS="${VIDEO_FPS:-0}"
 
 # Where to write logs
 OUT_DIR="${OUT_DIR:-${ROOT_DIR}/output/token_analysis}"
@@ -35,7 +36,7 @@ echo "Config      : ${CONFIG_PATH}"
 echo "Dataset     : ${DATASET:-<none>} (hf=${HF_HUB_URL:-<n/a>})"
 echo "Dataset dir : ${DATASET_DIR}"
 echo "Media dir   : ${MEDIA_DIR}"
-echo "video_maxlen: ${VIDEO_MAXLEN} | fps=${VIDEO_FPS}"
+echo "video_maxlen: ${VIDEO_MAXLEN} | fps=${VIDEO_FPS} (0 disables fps sampling)"
 echo "Output dir  : ${OUT_DIR}"
 echo "Max samples : ${MAX_SAMPLES}"
 

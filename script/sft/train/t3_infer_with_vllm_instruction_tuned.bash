@@ -21,10 +21,10 @@ mkdir -p "${TMPDIR}"
 export TMPDIR
 
 # Defaults (override via env)
-: "${MODEL_REPO:=happy8825/sft-20251126}"
+: "${MODEL_REPO:=/hub_data2/seohyun/saves/qwen3vl-2b-instruct_tuned/full/sft}"
 : "${DATASET_REPO:=happy8825/activitynet_validset}"
 : "${DATASET_FILE:=}"
-: "${OUTPUT_JSON:=${ROOT_DIR}/video_retrieval/output_sft_4571/output_valid_all_sft.json}"
+: "${OUTPUT_JSON:=${ROOT_DIR}/video_retrieval/qweninstruct_tuned/qweninstruct_tuned.json}"
 OUTPUT_DIR="$(dirname "${OUTPUT_JSON}")"
 
 : "${MEDIA_BASE:=/hub_data3/seohyun}"
@@ -50,33 +50,11 @@ Decision rules (concise):
 - Tie-breakers (in order): action visibility/close-up > temporal coherence > low occlusion/clutter > overall coverage.
 
 ABSOLUTE OUTPUT CONTRACT:
-<think>
-<content>
-[1] ...
-[2] ...
-[3] ...
-[4] ...
-[5] ...
-</content>
-
-<contrast>
-...
-</contrast>
-
-<summary>
-1st=[a] ...
-2nd=[b] ...
-3rd=[c] ...
-4th=[d] ...
-5th=[e] ...
-</summary>
-</think>
 
 <answer> [a] > [b] > [c] > [d] > [e] </answer>
 
 
 Constraints:
-- Inside <think>, use ONLY <content>, <contrast>, <summary>.
 - Do NOT use per-candidate XML tags.
 - a,b,c,d,e are indices of the candidates. you should output the number in the place of a,b,c,d,e.
 - Always output a total order in <answer>.}"

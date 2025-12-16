@@ -34,6 +34,8 @@ class Response:
     response_length: int
     prompt_length: int
     finish_reason: Literal["stop", "length"]
+    # Optional debug payload (timing/memory) when requested by caller.
+    debug: Optional[dict[str, Any]] = None
 
 
 class BaseEngine(ABC):

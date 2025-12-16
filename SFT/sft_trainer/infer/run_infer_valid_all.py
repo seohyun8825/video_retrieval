@@ -20,7 +20,7 @@ import argparse
 import json
 import os
 import re
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 from tqdm import tqdm
 
 from huggingface_hub import HfApi, HfFolder, hf_hub_download
@@ -60,6 +60,16 @@ def parse_args() -> argparse.Namespace:
     # Live echo
     p.add_argument("--echo_ic", action="store_true", help="Print per-sample results using icecream (or simple print fallback)")
     p.add_argument("--ic_prefix", default="ic| ", help="Prefix for icecream print lines")
+    # ECVA/EVQA label-based eval
+    p.add_argument("--gt_is_label", action="store_true", help="Treat sample['gt'] as 'normal'|'abnormal' string and record in 'gt_label'.")
+    p.add_argument("--evqa", action="store_true", help="Enable exact-match eval (pred vs gt_label).")
+    # Parsing modes for pred label
+    g = p.add_mutually_exclusive_group()
+    g.add_argument("--answer_tag_parsing", action="store_true", help="Parse pred label from <answer>...</answer> (default)")
+    g.add_argument("--last_sentence_parsing", action="store_true", help="Parse pred label from the last sentence of the output")
+    # Debug toggles
+    p.add_argument("--debug_time", action="store_true", help="Record timing breakdown (prep/generate/total) per sample")
+    p.add_argument("--debug_memory", action="store_true", help="Record memory usage (CUDA/CPU) per sample")
     return p.parse_args()
 
 
@@ -76,6 +86,32 @@ def load_dataset_from_hf(repo_id: str, filename: str | None) -> List[dict]:
     if not isinstance(data, list):
         raise RuntimeError("Expected dataset JSON as a list of samples")
     return data
+
+
+def _parse_pred_answer(text: str, *, mode: str = "answer_tag") -> Optional[str]:
+    if not isinstance(text, str) or not text:
+        return None
+    t = text
+    if mode == "last_sentence":
+        # Split by sentence terminators; pick the last non-empty segment
+        import re as _re
+        parts = [s.strip() for s in _re.split(r"[\.!?\n]+", t) if s and s.strip()]
+        last = parts[-1].lower() if parts else t.lower()
+        if "abnormal" in last:
+            return "abnormal"
+        if "normal" in last:
+            return "normal"
+        return None
+    # default: answer_tag mode
+    import re as _re
+    m = _re.search(r"<\s*answer[^>]*>(.*?)<\s*/\s*answer\s*>", t, flags=_re.I | _re.S)
+    if m:
+        inner = (m.group(1) or "").strip().lower()
+        if "abnormal" in inner:
+            return "abnormal"
+        if "normal" in inner:
+            return "normal"
+    return None
 
 
 def build_engine(model_repo: str, template: str, video_fps: float, video_maxlen: int):
@@ -163,6 +199,7 @@ def main() -> None:
             pass
 
     results: List[Dict[str, Any]] = [None] * len(samples)
+    parse_mode = "last_sentence" if args.last_sentence_parsing else "answer_tag"
     total = len(samples)
     pbar = tqdm(total=total, desc="Infer valid(all)", unit="sample")
     done = 0
@@ -195,30 +232,59 @@ def main() -> None:
         user_content = (prepend + "\n\n" + original) if prepend else original
         videos_rel = sample.get("videos") or []
         videos_abs = [to_abs(v, args.media_base) for v in videos_rel]
-        gt = int(sample.get("gt") or 0)
+        # GT may be ranking index or label string
+        if args.gt_is_label:
+            val = sample.get("gt")
+            gt_label = val.strip().lower() if isinstance(val, str) else (str(val).strip().lower() if val is not None else None)
+            gt = 0
+        else:
+            gt_label = None
+            gt = int(sample.get("gt") or 0)
 
         async with sem:
             responses = await engine.chat(
                 messages=[{"role": "user", "content": user_content}],
                 videos=videos_abs,
+                debug_time=args.debug_time,
+                debug_memory=args.debug_memory,
             )
             text = responses[0].response_text if responses else ""
-            order = parse_answer_order(text, n_candidates=len(videos_rel) if videos_rel else 5)
-            # Compute evaluation fields
-            top1 = order[0] if order else 0
-            gt_pos = order.index(gt) + 1 if (gt and gt in order) else 0
-            top1_correct = (top1 == gt and gt != 0)
+            if not args.gt_is_label:
+                order = parse_answer_order(text, n_candidates=len(videos_rel) if videos_rel else 5)
+                top1 = order[0] if order else 0
+                gt_pos = order.index(gt) + 1 if (gt and gt in order) else 0
+                top1_correct = (top1 == gt and gt != 0)
+            else:
+                order, top1, gt_pos, top1_correct = [], 0, 0, False
+
+            pred_answer = None
+            if args.evqa and args.gt_is_label:
+                pred_answer = _parse_pred_answer(text, mode=parse_mode)
 
             record = {
                 "user": user_content,
                 "videos": videos_rel,
-                "gt": gt,
+                **({"gt": gt} if not args.gt_is_label else {}),
+                **({"gt_label": gt_label} if args.gt_is_label and gt_label else {}),
                 "predict": text,
+                **({"pred_answer": pred_answer} if pred_answer is not None else {}),
                 "pred_order": order,
                 "top1_correct": top1_correct,
                 "gt_pos": gt_pos,
                 "index": idx,
             }
+            # Attach optional debug info from engine response (if present)
+            if args.debug_time or args.debug_memory:
+                try:
+                    dbg = getattr(responses[0], "debug", None)
+                    if isinstance(dbg, dict):
+                        if args.debug_time and isinstance(dbg.get("time_ms"), dict):
+                            record["timing_ms"] = dbg["time_ms"]
+                        if args.debug_memory and isinstance(dbg.get("memory"), dict):
+                            record["memory"] = dbg["memory"]
+                except Exception:
+                    pass
+
             results[idx] = record
 
             if args.stream_jsonl:
@@ -226,7 +292,17 @@ def main() -> None:
                     jf.write(json.dumps(record, ensure_ascii=False) + "\n")
 
             # Echo to terminal
-            _echo(idx=idx, gt=gt, top1=top1, correct=top1_correct)
+            if not args.gt_is_label:
+                _echo(idx=idx, gt=gt, top1=top1, correct=top1_correct)
+            else:
+                dbg = {"idx": idx}
+                if gt_label:
+                    dbg.update({"gt_label": gt_label})
+                if pred_answer is not None:
+                    dbg.update({"pred_answer": pred_answer})
+                    if gt_label in ("normal","abnormal"):
+                        dbg.update({"em_correct": pred_answer == gt_label})
+                _echo(**dbg)
 
             done += 1
             pbar.set_postfix_str(f"done={done} remaining={total-done}")
@@ -268,6 +344,16 @@ def main() -> None:
         "num_shards": ns,
         "shard_index": si,
     }
+
+    # EVQA/ECVA exact-match metrics (optional)
+    if args.evqa and args.gt_is_label:
+        has_label = [r for r in parsed if r.get("gt_label") in ("normal","abnormal")]
+        n_label = len(has_label)
+        if n_label:
+            em_correct = sum(1 for r in has_label if isinstance(r.get("pred_answer"), str) and r.get("pred_answer").strip().lower() == r.get("gt_label"))
+            metrics["evqa_total"] = n
+            metrics["evqa_with_gt_label"] = n_label
+            metrics["evqa_acc"] = em_correct / n_label if n_label else 0.0
 
     with open(args.output_json, "w", encoding="utf-8") as f:
         json.dump(

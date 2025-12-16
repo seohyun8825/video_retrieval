@@ -58,7 +58,7 @@ OUTPUT_DIR="$(dirname "${OUTPUT_JSON}")"
 : "${TMP_VIDEO_DIR:=}"
 
 # Prompt to prepend before the user Query.
-: "${PROMPT:=You will receive a video, and your task is to decide whether the video is abnormal or normal. Mark it as abnormal only if an abnormal behavior or event is directly shown in the video. if the video shows only the aftermath of an abnormal event or only the cause/lead-up before it happens, you must mark it as normal. Your entire output must be written ONLY inside <answer> </answer> tags. Output exactly ONE word inside the tags: abnormal or normal. Do not output any other words, punctuation, whitespace outside the tags, or additional tags.}"
+: "${PROMPT:=Are any anomalies directly occurring in this clip? If yes, identify them briefly. }"
 # API settings
 : "${API_BASE:=http://localhost:8019/v1}"
 : "${API_KEY:=}"

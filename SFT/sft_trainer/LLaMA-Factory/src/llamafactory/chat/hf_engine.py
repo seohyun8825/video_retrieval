@@ -230,6 +230,12 @@ class HuggingfaceEngine(BaseEngine):
         audios: Optional[list["AudioInput"]] = None,
         input_kwargs: Optional[dict[str, Any]] = {},
     ) -> list["Response"]:
+        import time, psutil
+        import torch
+        measure_time: bool = bool(input_kwargs.get("debug_time"))
+        measure_mem: bool = bool(input_kwargs.get("debug_memory"))
+
+        t0 = time.perf_counter() if measure_time else None
         gen_kwargs, prompt_length = HuggingfaceEngine._process_args(
             model,
             tokenizer,
@@ -244,7 +250,20 @@ class HuggingfaceEngine(BaseEngine):
             audios,
             input_kwargs,
         )
+        t1 = time.perf_counter() if measure_time else None
+
+        # Optional memory snapshot before generate
+        mem_before = {}
+        if measure_mem:
+            try:
+                gpu_mem = torch.cuda.memory_allocated() if torch.cuda.is_available() else 0
+                mem_before = {"cuda_alloc_bytes": int(gpu_mem), "rss_bytes": int(psutil.Process().memory_info().rss)}
+            except Exception:
+                pass
+
+        t_gen_start = time.perf_counter() if measure_time else None
         generate_output = model.generate(**gen_kwargs)
+        t_gen_end = time.perf_counter() if measure_time else None
         if isinstance(generate_output, tuple):
             generate_output = generate_output[1][0]  # post-process the minicpm_o output
 
@@ -258,12 +277,37 @@ class HuggingfaceEngine(BaseEngine):
         for i in range(len(response)):
             eos_index = (response_ids[i] == tokenizer.eos_token_id).nonzero()
             response_length = (eos_index[0].item() + 1) if len(eos_index) else len(response_ids[i])
+            dbg = None
+            if measure_time or measure_mem:
+                dbg = {"time_ms": {}, "memory": {}}
+                if measure_time:
+                    # preparation time: inputs/process args; generate time; total time
+                    t_prep = ((t1 - t0) * 1000.0) if (t0 is not None and t1 is not None) else None
+                    t_gen = ((t_gen_end - t_gen_start) * 1000.0) if (t_gen_start is not None and t_gen_end is not None) else None
+                    t_tot = ((time.perf_counter() - t0) * 1000.0) if t0 is not None else None
+                    dbg["time_ms"].update({k: float(v) for k, v in (("prep", t_prep), ("generate", t_gen), ("total", t_tot)) if v is not None})
+                if measure_mem:
+                    try:
+                        gpu_after = torch.cuda.memory_allocated() if torch.cuda.is_available() else 0
+                        rss_after = psutil.Process().memory_info().rss
+                        dbg["memory"].update({
+                            "cuda_alloc_bytes_before": int(mem_before.get("cuda_alloc_bytes", 0)),
+                            "cuda_alloc_bytes_after": int(gpu_after),
+                            "cuda_alloc_bytes_delta": int(gpu_after - mem_before.get("cuda_alloc_bytes", 0)),
+                            "rss_bytes_before": int(mem_before.get("rss_bytes", 0)),
+                            "rss_bytes_after": int(rss_after),
+                            "rss_bytes_delta": int(rss_after - mem_before.get("rss_bytes", 0)),
+                        })
+                    except Exception:
+                        pass
+
             results.append(
                 Response(
                     response_text=response[i],
                     response_length=response_length,
                     prompt_length=prompt_length,
                     finish_reason="stop" if len(eos_index) else "length",
+                    debug=dbg,
                 )
             )
 

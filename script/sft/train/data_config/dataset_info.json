@@ -124,5 +124,33 @@
       "user_tag": "user",
       "assistant_tag": "assistant"
     }
+  },
+  "train_ecva_clean_no_tag": {
+    "hf_hub_url": "happy8825/train_ecva_clean_no_tag",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "videos": "videos"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "valid_ecva_clean": {
+    "hf_hub_url": "happy8825/valid_ecva_clean",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "videos": "videos"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
   }
 }

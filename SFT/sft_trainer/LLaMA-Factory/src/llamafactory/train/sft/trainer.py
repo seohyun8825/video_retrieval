@@ -19,6 +19,7 @@ import json
 import os
 from types import MethodType
 from typing import TYPE_CHECKING, Any, Optional, Union
+from pathlib import Path
 
 import numpy as np
 import torch
@@ -92,6 +93,10 @@ class CustomSeq2SeqTrainer(Seq2SeqTrainer):
         if model_args is not None and model_args.fp8 and hasattr(self, "accelerator"):
             verify_fp8_status(self.accelerator, model_args)
 
+        # Debug: first-N sample token analyzer (enabled by env LMF_ANALYZE_TOKEN=1)
+        self._debug_token_log_count: int = 0
+        self._debug_token_log_max: int = int(os.environ.get("LMF_ANALYZE_MAX_SAMPLES", 3))
+
     @override
     def create_optimizer(self) -> "torch.optim.Optimizer":
         if self.optimizer is None:
@@ -114,7 +119,128 @@ class CustomSeq2SeqTrainer(Seq2SeqTrainer):
 
     @override
     def compute_loss(self, model, inputs, *args, **kwargs):
+        # Optional lightweight debug logging before forward
+        self._maybe_log_first_samples(inputs)
+        # Strip debug-only keys so model forward doesn't receive them
+        inputs.pop("__debug_vidlens", None)
+        inputs.pop("__debug_video_token_id", None)
+        inputs.pop("__debug_vision_bos_id", None)
+        inputs.pop("__debug_vision_eos_id", None)
         return super().compute_loss(model, inputs, *args, **kwargs)
+
+    def _maybe_log_first_samples(self, inputs: dict[str, Any]) -> None:
+        if self._debug_token_log_count >= self._debug_token_log_max:
+            return
+        if os.environ.get("LMF_ANALYZE_TOKEN", "0") != "1":
+            return
+        if not self.is_world_process_zero():
+            return
+
+        try:
+            input_ids = inputs.get("input_ids")
+            if input_ids is None:
+                return
+            bsz = input_ids.size(0)
+
+            # Prepare output directory
+            out_dir = Path(self.args.output_dir) / "output_debug"
+            out_dir.mkdir(parents=True, exist_ok=True)
+            out_path = out_dir / "first3_from_trainer.jsonl"
+
+            # Resolve video token ids (may be absent)
+            vtok_id = inputs.get("__debug_video_token_id")
+            vbos_id = inputs.get("__debug_vision_bos_id")
+            veos_id = inputs.get("__debug_vision_eos_id")
+            vtok_id = int(vtok_id.item()) if torch.is_tensor(vtok_id) else (int(vtok_id) if vtok_id is not None else None)
+            vbos_id = int(vbos_id.item()) if torch.is_tensor(vbos_id) else (int(vbos_id) if vbos_id is not None else None)
+            veos_id = int(veos_id.item()) if torch.is_tensor(veos_id) else (int(veos_id) if veos_id is not None else None)
+
+            # Video grid per batch (concatenated across samples)
+            vg = inputs.get("video_grid_thw")
+            if vg is not None and torch.is_tensor(vg):
+                vg_list = vg.detach().cpu().tolist()
+            elif isinstance(vg, list):
+                vg_list = vg
+            else:
+                vg_list = []
+
+            # Number of videos per sample to slice vg_list
+            vidlens_t = inputs.get("__debug_vidlens")
+            if vidlens_t is not None and torch.is_tensor(vidlens_t):
+                vidlens = vidlens_t.detach().cpu().tolist()
+            elif isinstance(vidlens_t, list):
+                vidlens = vidlens_t
+            else:
+                vidlens = [0] * bsz
+
+            # Iterate samples in this batch, log until reaching max
+            vpos = 0
+            logs = []
+            for i in range(bsz):
+                if self._debug_token_log_count >= self._debug_token_log_max:
+                    break
+
+                ids_i = input_ids[i].detach().cpu().tolist()
+                total_tokens = int(len(ids_i))
+
+                # Prefer counting by explicit token ids; fallback to grid-based estimate
+                def _count_id(arr, tok):
+                    return int(sum(1 for x in arr if x == tok)) if tok is not None else 0
+
+                video_visual_tokens = _count_id(ids_i, vtok_id)
+                wrap_bos = _count_id(ids_i, vbos_id)
+                wrap_eos = _count_id(ids_i, veos_id)
+                wrap_tokens = wrap_bos + wrap_eos
+
+                # Slice per-sample video grids and derive frames and grid(H,W)
+                nvid = int(vidlens[i]) if i < len(vidlens) else 0
+                sample_vg = vg_list[vpos : vpos + nvid] if nvid > 0 else []
+                vpos += nvid
+                video_frames = [int(t[0]) for t in sample_vg] if sample_vg else []
+                video_grid_hw = [[int(t[1]), int(t[2])] for t in sample_vg] if sample_vg else []
+
+                # Fallback if token IDs are unavailable or zero-count: estimate from grids
+                if (vtok_id is None or video_visual_tokens == 0) and sample_vg:
+                    merge_size = 2  # default for Qwen family
+                    def _per_video_counts(thw):
+                        T, H, W = int(thw[0]), int(thw[1]), int(thw[2])
+                        seqlen_per_frame = (H // merge_size) * (W // merge_size)
+                        visual = T * seqlen_per_frame
+                        wrap = 2 * T
+                        return visual, wrap
+                    visual_sum, wrap_sum = 0, 0
+                    for thw in sample_vg:
+                        v, w = _per_video_counts(thw)
+                        visual_sum += v
+                        wrap_sum += w
+                    video_visual_tokens = int(visual_sum)
+                    wrap_tokens = int(wrap_sum)
+
+                # Estimate text tokens as remainder after removing visual+wrap
+                total_text_tokens = max(0, total_tokens - video_visual_tokens - wrap_tokens)
+
+                logs.append(
+                    {
+                        "batch_index": int(getattr(self.state, "global_step", 0)),
+                        "sample_in_batch": i,
+                        "total_text_tokens": total_text_tokens,
+                        "video_visual_tokens": int(video_visual_tokens),
+                        "wrap_tokens": int(wrap_tokens),
+                        "video_total_tokens_no_timestamps": int(video_visual_tokens + wrap_tokens),
+                        "video_frames": video_frames,
+                        "video_grid_hw": video_grid_hw,
+                        "input_ids_total_len": total_tokens,
+                    }
+                )
+
+                self._debug_token_log_count += 1
+
+            if logs:
+                with open(out_path, "a", encoding="utf-8") as w:
+                    for rec in logs:
+                        w.write(json.dumps(rec, ensure_ascii=False) + "\n")
+        except Exception as e:  # never break training
+            logger.warning_rank0_once(f"[analyze_token] debug logging failed: {e}")
 
     @override
     def prediction_step(

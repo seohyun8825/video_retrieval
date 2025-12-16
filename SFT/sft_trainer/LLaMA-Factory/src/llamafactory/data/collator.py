@@ -16,6 +16,7 @@
 # limitations under the License.
 
 from dataclasses import dataclass
+import os
 from typing import TYPE_CHECKING, Any, Literal, Optional
 
 import numpy as np
@@ -181,6 +182,25 @@ class MultiModalDataCollatorForSeq2Seq(DataCollatorForSeq2Seq):
                 feature["token_type_ids"] = token_type_ids[i]
 
         features: dict[str, torch.Tensor] = super().__call__(features)
+
+        # Attach lightweight debug metadata for token analysis, removed later in trainer.
+        if os.environ.get("LMF_ANALYZE_TOKEN", "0") == "1":
+            try:
+                # Keep as tensors so they survive device moves; trainer will pop them.
+                features["__debug_vidlens"] = torch.tensor(batch_vidlens, dtype=torch.int32)
+                # Special token ids for video span accounting
+                video_tok = getattr(self.template.mm_plugin, "video_token", None)
+                vbos_tok = getattr(self.template.mm_plugin, "vision_bos_token", None)
+                veos_tok = getattr(self.template.mm_plugin, "vision_eos_token", None)
+                if video_tok is not None:
+                    features["__debug_video_token_id"] = torch.tensor(self.tokenizer.convert_tokens_to_ids(video_tok))
+                if vbos_tok is not None:
+                    features["__debug_vision_bos_id"] = torch.tensor(self.tokenizer.convert_tokens_to_ids(vbos_tok))
+                if veos_tok is not None:
+                    features["__debug_vision_eos_id"] = torch.tensor(self.tokenizer.convert_tokens_to_ids(veos_tok))
+            except Exception:
+                # Do not break training if any debug attachment fails
+                pass
 
         if self.get_rope_func is not None:
             rope_index_kwargs = {

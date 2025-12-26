@@ -9,3 +9,5 @@ data/
 train_data/
 video_retrieval/
 anet_ret_val_1.json
+wandb/
+var1_exp/

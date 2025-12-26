@@ -1,0 +1,62 @@
+### model
+model_name_or_path: Qwen/Qwen3-VL-2B-Instruct
+image_max_pixels: 8000000            
+video_max_pixels: 402144   
+trust_remote_code: true
+video_maxlen: 48
+#video_fps: 1.0
+
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 8
+lora_target: all
+deepspeed: /home/seohyun/vid_understanding/video_retrieval/script/sft/train/config/deepspeed/ds_z3_config.json
+
+
+
+
+
+# Thinking 모델 옵션
+enable_thinking: false        
+        
+
+### dataset
+dataset: test_mllm_video_demo_hf
+# Non-reasoning template for non-thinking models
+template: qwen3_vl_nothink              
+cutoff_len: 1000000
+max_samples: 500000
+overwrite_cache: true
+preprocessing_num_workers: 64
+dataloader_num_workers: 64
+dataset_dir: /home/seohyun/vid_understanding/video_retrieval/script/sft/train/data_config
+media_dir: /home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/data
+
+### output
+output_dir: /hub_data2/seohyun/saves/qwen3vl-2b-thinking/full/sft
+logging_steps: 10
+save_steps: 2500000
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: false
+report_to: none
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 1
+learning_rate: 1.0e-5
+num_train_epochs: 1.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null
+
+## eval
+val_size: 0.05
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 500

@@ -1,0 +1,986 @@
+                                                                                                                        
+{'loss': 4.8018, 'grad_norm': 124.45844924327814, 'learning_rate': 0.0, 'epoch': 0.0}
+{'loss': 3.8574, 'grad_norm': 107.44837880547232, 'learning_rate': 1.4492753623188408e-07, 'epoch': 0.0}
+{'loss': 3.5539, 'grad_norm': 65.1036426245866, 'learning_rate': 2.8985507246376816e-07, 'epoch': 0.0}
+{'loss': 4.3275, 'grad_norm': 130.73873022168343, 'learning_rate': 4.347826086956522e-07, 'epoch': 0.01}
+{'loss': 4.4385, 'grad_norm': 125.31393804766154, 'learning_rate': 5.797101449275363e-07, 'epoch': 0.01}
+{'loss': 5.0356, 'grad_norm': 131.63310761192807, 'learning_rate': 7.246376811594204e-07, 'epoch': 0.01}
+{'loss': 4.3195, 'grad_norm': 119.62398204018871, 'learning_rate': 8.695652173913044e-07, 'epoch': 0.01}
+{'loss': 4.5704, 'grad_norm': 85.89793782285537, 'learning_rate': 1.0144927536231885e-06, 'epoch': 0.01}
+{'loss': 4.1716, 'grad_norm': 91.22967117182142, 'learning_rate': 1.1594202898550726e-06, 'epoch': 0.01}
+{'loss': 4.7613, 'grad_norm': 90.05882979699822, 'learning_rate': 1.3043478260869566e-06, 'epoch': 0.01}
+{'loss': 3.7597, 'grad_norm': 104.04894684991535, 'learning_rate': 1.4492753623188408e-06, 'epoch': 0.02}
+{'loss': 3.9701, 'grad_norm': 99.32096037846857, 'learning_rate': 1.5942028985507246e-06, 'epoch': 0.02}
+{'loss': 3.485, 'grad_norm': 111.71303321673898, 'learning_rate': 1.7391304347826088e-06, 'epoch': 0.02}
+{'loss': 3.7349, 'grad_norm': 63.56502592669335, 'learning_rate': 1.884057971014493e-06, 'epoch': 0.02}
+{'loss': 3.2956, 'grad_norm': 61.48540080749068, 'learning_rate': 2.028985507246377e-06, 'epoch': 0.02}
+{'loss': 3.0404, 'grad_norm': 76.05399233496702, 'learning_rate': 2.173913043478261e-06, 'epoch': 0.02}
+{'loss': 2.4785, 'grad_norm': 64.26206281870756, 'learning_rate': 2.3188405797101453e-06, 'epoch': 0.02}
+{'loss': 3.2812, 'grad_norm': 46.00199945683449, 'learning_rate': 2.4637681159420295e-06, 'epoch': 0.03}
+{'loss': 2.9463, 'grad_norm': 58.79656376037299, 'learning_rate': 2.6086956521739132e-06, 'epoch': 0.03}
+{'loss': 2.925, 'grad_norm': 57.005455826528994, 'learning_rate': 2.7536231884057974e-06, 'epoch': 0.03}
+{'loss': 2.5771, 'grad_norm': 50.63935550498301, 'learning_rate': 2.8985507246376816e-06, 'epoch': 0.03}
+{'loss': 2.7998, 'grad_norm': 48.01796624202393, 'learning_rate': 3.043478260869566e-06, 'epoch': 0.03}
+{'loss': 1.7645, 'grad_norm': 38.00036852603127, 'learning_rate': 3.188405797101449e-06, 'epoch': 0.03}
+{'loss': 1.9192, 'grad_norm': 42.322372149006874, 'learning_rate': 3.3333333333333333e-06, 'epoch': 0.04}
+{'loss': 2.184, 'grad_norm': 29.71293845019623, 'learning_rate': 3.4782608695652175e-06, 'epoch': 0.04}
+{'loss': 2.0956, 'grad_norm': 31.99967600122345, 'learning_rate': 3.6231884057971017e-06, 'epoch': 0.04}
+{'loss': 1.9571, 'grad_norm': 37.43291153341711, 'learning_rate': 3.768115942028986e-06, 'epoch': 0.04}
+{'loss': 1.9179, 'grad_norm': 34.188605593021606, 'learning_rate': 3.91304347826087e-06, 'epoch': 0.04}
+{'loss': 2.6442, 'grad_norm': 36.407765756891486, 'learning_rate': 4.057971014492754e-06, 'epoch': 0.04}
+{'loss': 1.5271, 'grad_norm': 39.460444695073626, 'learning_rate': 4.202898550724638e-06, 'epoch': 0.04}
+{'loss': 1.8308, 'grad_norm': 31.02288372550685, 'learning_rate': 4.347826086956522e-06, 'epoch': 0.05}
+{'loss': 2.1851, 'grad_norm': 55.61140743192542, 'learning_rate': 4.492753623188406e-06, 'epoch': 0.05}
+{'loss': 1.3612, 'grad_norm': 31.180182586852535, 'learning_rate': 4.637681159420291e-06, 'epoch': 0.05}
+{'loss': 2.1267, 'grad_norm': 31.836540641596084, 'learning_rate': 4.782608695652174e-06, 'epoch': 0.05}
+{'loss': 2.3147, 'grad_norm': 35.858095846714605, 'learning_rate': 4.927536231884059e-06, 'epoch': 0.05}
+{'loss': 1.89, 'grad_norm': 46.23620469045712, 'learning_rate': 5.072463768115943e-06, 'epoch': 0.05}
+{'loss': 2.0165, 'grad_norm': 25.408696593632435, 'learning_rate': 5.2173913043478265e-06, 'epoch': 0.05}
+{'loss': 1.3997, 'grad_norm': 39.491497384044514, 'learning_rate': 5.362318840579711e-06, 'epoch': 0.06}
+{'loss': 1.7921, 'grad_norm': 31.693511028438046, 'learning_rate': 5.507246376811595e-06, 'epoch': 0.06}
+{'loss': 2.2522, 'grad_norm': 34.70275144785678, 'learning_rate': 5.652173913043479e-06, 'epoch': 0.06}
+{'loss': 1.4506, 'grad_norm': 30.371730193747634, 'learning_rate': 5.797101449275363e-06, 'epoch': 0.06}
+{'loss': 2.2062, 'grad_norm': 27.36784254685352, 'learning_rate': 5.942028985507247e-06, 'epoch': 0.06}
+{'loss': 1.2173, 'grad_norm': 30.001086864380458, 'learning_rate': 6.086956521739132e-06, 'epoch': 0.06}
+{'loss': 1.5191, 'grad_norm': 22.465583159429993, 'learning_rate': 6.2318840579710145e-06, 'epoch': 0.06}
+{'loss': 2.1578, 'grad_norm': 29.62430532893207, 'learning_rate': 6.376811594202898e-06, 'epoch': 0.07}
+{'loss': 1.5093, 'grad_norm': 25.514136953935886, 'learning_rate': 6.521739130434783e-06, 'epoch': 0.07}
+{'loss': 1.6731, 'grad_norm': 29.885353069604886, 'learning_rate': 6.666666666666667e-06, 'epoch': 0.07}
+{'loss': 1.5938, 'grad_norm': 24.354766132130923, 'learning_rate': 6.811594202898551e-06, 'epoch': 0.07}
+{'loss': 1.8101, 'grad_norm': 28.829020240052476, 'learning_rate': 6.956521739130435e-06, 'epoch': 0.07}
+{'loss': 1.941, 'grad_norm': 25.03760825345621, 'learning_rate': 7.10144927536232e-06, 'epoch': 0.07}
+[INFO|configuration_utils.py:491] 2025-12-23 12:44:07,234 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/config.json
+[INFO|configuration_utils.py:757] 2025-12-23 12:44:07,235 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-23 12:44:10,544 >> Model weights saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 12:44:10,546 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 12:44:10,547 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 12:44:10,547 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-23 12:44:10,850] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step50 is about to be saved!
+[2025-12-23 12:44:10,885] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/global_step50/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-23 12:44:10,886] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/global_step50/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-23 12:44:11,160] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/global_step50/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-23 12:44:11,276] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/global_step50/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-23 12:44:22,576] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/global_step50/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-23 12:44:22,577] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/global_step50/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-23 12:44:22,596] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step50 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-23 12:44:22,601 >> Image processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 12:44:22,608 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 12:44:22,609 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 12:44:22,609 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-23 12:44:22,840 >> Video processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-23 12:44:22,861 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-50/chat_template.jinja
+                                                                                                                        
+{'loss': 1.4552, 'grad_norm': 35.09319474158111, 'learning_rate': 7.246376811594203e-06, 'epoch': 0.07}
+{'loss': 1.528, 'grad_norm': 37.03858581073154, 'learning_rate': 7.391304347826087e-06, 'epoch': 0.08}
+{'loss': 1.227, 'grad_norm': 26.407862201600796, 'learning_rate': 7.536231884057972e-06, 'epoch': 0.08}
+{'loss': 1.6035, 'grad_norm': 32.81626024214155, 'learning_rate': 7.681159420289856e-06, 'epoch': 0.08}
+{'loss': 2.0372, 'grad_norm': 32.6749752100231, 'learning_rate': 7.82608695652174e-06, 'epoch': 0.08}
+{'loss': 1.6409, 'grad_norm': 32.48182978570014, 'learning_rate': 7.971014492753623e-06, 'epoch': 0.08}
+{'loss': 1.6176, 'grad_norm': 31.140685454085254, 'learning_rate': 8.115942028985508e-06, 'epoch': 0.08}
+{'loss': 0.9408, 'grad_norm': 26.12080817534664, 'learning_rate': 8.260869565217392e-06, 'epoch': 0.08}
+{'loss': 1.6451, 'grad_norm': 28.54505165044536, 'learning_rate': 8.405797101449275e-06, 'epoch': 0.09}
+{'loss': 1.1509, 'grad_norm': 27.897083119785638, 'learning_rate': 8.55072463768116e-06, 'epoch': 0.09}
+{'loss': 0.9275, 'grad_norm': 25.471127815131766, 'learning_rate': 8.695652173913044e-06, 'epoch': 0.09}
+{'loss': 1.3196, 'grad_norm': 23.99003256276027, 'learning_rate': 8.840579710144929e-06, 'epoch': 0.09}
+{'loss': 1.1348, 'grad_norm': 21.732545421017555, 'learning_rate': 8.985507246376812e-06, 'epoch': 0.09}
+{'loss': 1.1532, 'grad_norm': 23.560899665320896, 'learning_rate': 9.130434782608697e-06, 'epoch': 0.09}
+{'loss': 1.6028, 'grad_norm': 28.223956315676553, 'learning_rate': 9.275362318840581e-06, 'epoch': 0.09}
+{'loss': 1.6298, 'grad_norm': 26.32746628587813, 'learning_rate': 9.420289855072464e-06, 'epoch': 0.1}
+{'loss': 1.2902, 'grad_norm': 23.24480439962453, 'learning_rate': 9.565217391304349e-06, 'epoch': 0.1}
+{'loss': 1.4035, 'grad_norm': 29.139268494557815, 'learning_rate': 9.710144927536233e-06, 'epoch': 0.1}
+{'loss': 0.9082, 'grad_norm': 22.23096095701432, 'learning_rate': 9.855072463768118e-06, 'epoch': 0.1}
+{'loss': 1.0604, 'grad_norm': 32.24931701388511, 'learning_rate': 1e-05, 'epoch': 0.1}
+{'loss': 0.8583, 'grad_norm': 23.11455461094672, 'learning_rate': 9.999934975445053e-06, 'epoch': 0.1}
+{'loss': 1.3843, 'grad_norm': 24.003194053038968, 'learning_rate': 9.999739903471488e-06, 'epoch': 0.11}
+{'loss': 0.8188, 'grad_norm': 16.88256456684821, 'learning_rate': 9.999414789153093e-06, 'epoch': 0.11}
+{'loss': 1.2781, 'grad_norm': 19.066398019779434, 'learning_rate': 9.998959640946033e-06, 'epoch': 0.11}
+{'loss': 0.4843, 'grad_norm': 18.74920654683893, 'learning_rate': 9.998374470688632e-06, 'epoch': 0.11}
+{'loss': 1.6697, 'grad_norm': 28.59748287855368, 'learning_rate': 9.997659293601066e-06, 'epoch': 0.11}
+{'loss': 2.6455, 'grad_norm': 44.66025552812059, 'learning_rate': 9.99681412828496e-06, 'epoch': 0.11}
+{'loss': 1.8288, 'grad_norm': 35.27286376303497, 'learning_rate': 9.995838996722916e-06, 'epoch': 0.11}
+{'loss': 0.9086, 'grad_norm': 28.360273968149272, 'learning_rate': 9.99473392427793e-06, 'epoch': 0.12}
+{'loss': 1.1386, 'grad_norm': 18.472559152362003, 'learning_rate': 9.993498939692744e-06, 'epoch': 0.12}
+{'loss': 1.2575, 'grad_norm': 25.799221976920478, 'learning_rate': 9.992134075089085e-06, 'epoch': 0.12}
+{'loss': 1.743, 'grad_norm': 28.400367769535315, 'learning_rate': 9.990639365966835e-06, 'epoch': 0.12}
+{'loss': 2.058, 'grad_norm': 34.34918224292221, 'learning_rate': 9.989014851203118e-06, 'epoch': 0.12}
+{'loss': 1.2773, 'grad_norm': 24.625554249817906, 'learning_rate': 9.987260573051268e-06, 'epoch': 0.12}
+{'loss': 0.8356, 'grad_norm': 23.911702287261424, 'learning_rate': 9.985376577139753e-06, 'epoch': 0.12}
+{'loss': 1.9282, 'grad_norm': 28.381563456844944, 'learning_rate': 9.983362912470967e-06, 'epoch': 0.13}
+{'loss': 0.9202, 'grad_norm': 20.57178372026836, 'learning_rate': 9.98121963141997e-06, 'epoch': 0.13}
+{'loss': 1.2764, 'grad_norm': 24.561135505179646, 'learning_rate': 9.978946789733126e-06, 'epoch': 0.13}
+{'loss': 1.1908, 'grad_norm': 20.930419611394512, 'learning_rate': 9.976544446526634e-06, 'epoch': 0.13}
+{'loss': 1.4295, 'grad_norm': 22.47758329877506, 'learning_rate': 9.97401266428502e-06, 'epoch': 0.13}
+{'loss': 1.599, 'grad_norm': 23.350040117174544, 'learning_rate': 9.971351508859488e-06, 'epoch': 0.13}
+{'loss': 1.9701, 'grad_norm': 24.01487438875141, 'learning_rate': 9.968561049466214e-06, 'epoch': 0.13}
+{'loss': 0.7588, 'grad_norm': 19.579872383409406, 'learning_rate': 9.965641358684552e-06, 'epoch': 0.14}
+{'loss': 0.6337, 'grad_norm': 21.767245112483547, 'learning_rate': 9.96259251245514e-06, 'epoch': 0.14}
+{'loss': 0.6811, 'grad_norm': 19.295851437540957, 'learning_rate': 9.959414590077925e-06, 'epoch': 0.14}
+{'loss': 1.6318, 'grad_norm': 27.04431100810634, 'learning_rate': 9.9561076742101e-06, 'epoch': 0.14}
+{'loss': 0.5506, 'grad_norm': 15.737119639091437, 'learning_rate': 9.952671850863963e-06, 'epoch': 0.14}
+{'loss': 1.7316, 'grad_norm': 42.63867592531175, 'learning_rate': 9.949107209404664e-06, 'epoch': 0.14}
+{'loss': 0.9539, 'grad_norm': 29.70514863503441, 'learning_rate': 9.945413842547894e-06, 'epoch': 0.14}
+{'loss': 1.095, 'grad_norm': 17.783243066020745, 'learning_rate': 9.941591846357467e-06, 'epoch': 0.15}
+[INFO|configuration_utils.py:491] 2025-12-23 14:12:04,387 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/config.json
+[INFO|configuration_utils.py:757] 2025-12-23 14:12:04,387 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-23 14:12:07,384 >> Model weights saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 14:12:07,386 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 14:12:07,387 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 14:12:07,387 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-23 14:12:07,533] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step100 is about to be saved!
+[2025-12-23 14:12:07,569] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/global_step100/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-23 14:12:07,570] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/global_step100/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-23 14:12:07,844] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/global_step100/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-23 14:12:07,920] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/global_step100/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-23 14:12:14,645] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/global_step100/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-23 14:12:14,646] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/global_step100/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-23 14:12:17,965] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step100 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-23 14:12:17,970 >> Image processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 14:12:17,988 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 14:12:17,988 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 14:12:17,989 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-23 14:12:18,162 >> Video processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-23 14:12:18,188 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-100/chat_template.jinja
+                                                                                                                        
+{'loss': 0.6833, 'grad_norm': 26.086879933531634, 'learning_rate': 9.937641320242823e-06, 'epoch': 0.15}
+{'loss': 1.0824, 'grad_norm': 21.178929615808066, 'learning_rate': 9.933562366956445e-06, 'epoch': 0.15}
+{'loss': 0.7072, 'grad_norm': 23.70049501158621, 'learning_rate': 9.92935509259118e-06, 'epoch': 0.15}
+{'loss': 1.0278, 'grad_norm': 21.299710586330903, 'learning_rate': 9.925019606577486e-06, 'epoch': 0.15}
+{'loss': 1.5827, 'grad_norm': 20.861609245271595, 'learning_rate': 9.92055602168058e-06, 'epoch': 0.15}
+{'loss': 0.3379, 'grad_norm': 11.959562662893084, 'learning_rate': 9.915964453997516e-06, 'epoch': 0.15}
+{'loss': 1.0384, 'grad_norm': 15.808753508968046, 'learning_rate': 9.911245022954146e-06, 'epoch': 0.16}
+{'loss': 1.5628, 'grad_norm': 28.329228666001832, 'learning_rate': 9.906397851302036e-06, 'epoch': 0.16}
+{'loss': 1.2201, 'grad_norm': 18.13410544213211, 'learning_rate': 9.901423065115254e-06, 'epoch': 0.16}
+{'loss': 1.239, 'grad_norm': 18.416739465149057, 'learning_rate': 9.896320793787106e-06, 'epoch': 0.16}
+{'loss': 1.3004, 'grad_norm': 25.067274230486195, 'learning_rate': 9.89109117002676e-06, 'epoch': 0.16}
+{'loss': 1.6225, 'grad_norm': 29.212280838299204, 'learning_rate': 9.885734329855798e-06, 'epoch': 0.16}
+{'loss': 0.8613, 'grad_norm': 20.713304211035506, 'learning_rate': 9.880250412604681e-06, 'epoch': 0.16}
+{'loss': 1.6443, 'grad_norm': 22.920393914609576, 'learning_rate': 9.874639560909118e-06, 'epoch': 0.17}
+{'loss': 0.8905, 'grad_norm': 19.815981321749323, 'learning_rate': 9.868901920706366e-06, 'epoch': 0.17}
+{'loss': 1.1428, 'grad_norm': 22.017438542731362, 'learning_rate': 9.863037641231424e-06, 'epoch': 0.17}
+{'loss': 1.4731, 'grad_norm': 26.148544301332677, 'learning_rate': 9.857046875013154e-06, 'epoch': 0.17}
+{'loss': 0.7107, 'grad_norm': 17.17260564470309, 'learning_rate': 9.850929777870324e-06, 'epoch': 0.17}
+{'loss': 0.4975, 'grad_norm': 19.572579434914942, 'learning_rate': 9.844686508907538e-06, 'epoch': 0.17}
+{'loss': 0.5805, 'grad_norm': 20.130732989105287, 'learning_rate': 9.838317230511111e-06, 'epoch': 0.18}
+{'loss': 0.4896, 'grad_norm': 14.327398601468046, 'learning_rate': 9.831822108344841e-06, 'epoch': 0.18}
+{'loss': 1.343, 'grad_norm': 27.472861423422188, 'learning_rate': 9.8252013113457e-06, 'epoch': 0.18}
+{'loss': 1.4082, 'grad_norm': 24.5808717422688, 'learning_rate': 9.818455011719439e-06, 'epoch': 0.18}
+{'loss': 0.9727, 'grad_norm': 23.268188899673106, 'learning_rate': 9.811583384936108e-06, 'epoch': 0.18}
+{'loss': 1.6202, 'grad_norm': 30.15152879063026, 'learning_rate': 9.804586609725499e-06, 'epoch': 0.18}
+{'loss': 0.5678, 'grad_norm': 17.70176681253179, 'learning_rate': 9.797464868072489e-06, 'epoch': 0.18}
+{'loss': 1.0613, 'grad_norm': 21.967647215418783, 'learning_rate': 9.790218345212309e-06, 'epoch': 0.19}
+{'loss': 2.0654, 'grad_norm': 26.916159785688492, 'learning_rate': 9.782847229625729e-06, 'epoch': 0.19}
+{'loss': 1.2746, 'grad_norm': 18.706510366617216, 'learning_rate': 9.775351713034155e-06, 'epoch': 0.19}
+{'loss': 0.7582, 'grad_norm': 20.34153792414489, 'learning_rate': 9.767731990394638e-06, 'epoch': 0.19}
+{'loss': 0.4303, 'grad_norm': 15.698594792145848, 'learning_rate': 9.759988259894808e-06, 'epoch': 0.19}
+{'loss': 0.8529, 'grad_norm': 20.161483877484358, 'learning_rate': 9.752120722947717e-06, 'epoch': 0.19}
+{'loss': 1.1584, 'grad_norm': 25.421744366498565, 'learning_rate': 9.744129584186599e-06, 'epoch': 0.19}
+{'loss': 0.491, 'grad_norm': 13.20226282643833, 'learning_rate': 9.736015051459551e-06, 'epoch': 0.2}
+{'loss': 1.3547, 'grad_norm': 21.97243094841325, 'learning_rate': 9.727777335824124e-06, 'epoch': 0.2}
+{'loss': 2.5749, 'grad_norm': 34.06605263535618, 'learning_rate': 9.719416651541839e-06, 'epoch': 0.2}
+{'loss': 0.7955, 'grad_norm': 28.688002057069856, 'learning_rate': 9.710933216072602e-06, 'epoch': 0.2}
+{'loss': 0.6826, 'grad_norm': 17.107997840445126, 'learning_rate': 9.702327250069058e-06, 'epoch': 0.2}
+{'loss': 0.4649, 'grad_norm': 16.532769679496017, 'learning_rate': 9.693598977370855e-06, 'epoch': 0.2}
+{'loss': 2.1439, 'grad_norm': 27.521514180319794, 'learning_rate': 9.68474862499881e-06, 'epoch': 0.2}
+{'loss': 1.0491, 'grad_norm': 29.09188719249944, 'learning_rate': 9.675776423149013e-06, 'epoch': 0.21}
+{'loss': 1.0345, 'grad_norm': 22.087955922454306, 'learning_rate': 9.666682605186834e-06, 'epoch': 0.21}
+{'loss': 1.4732, 'grad_norm': 25.11127777839501, 'learning_rate': 9.657467407640864e-06, 'epoch': 0.21}
+{'loss': 1.0516, 'grad_norm': 23.59937799812556, 'learning_rate': 9.648131070196749e-06, 'epoch': 0.21}
+{'loss': 1.4754, 'grad_norm': 20.35302292174374, 'learning_rate': 9.638673835690962e-06, 'epoch': 0.21}
+{'loss': 1.5069, 'grad_norm': 43.98543999294045, 'learning_rate': 9.62909595010449e-06, 'epoch': 0.21}
+{'loss': 1.7576, 'grad_norm': 18.880583227012476, 'learning_rate': 9.619397662556434e-06, 'epoch': 0.21}
+{'loss': 1.2265, 'grad_norm': 23.153005448277103, 'learning_rate': 9.609579225297524e-06, 'epoch': 0.22}
+{'loss': 1.4623, 'grad_norm': 19.355038742612546, 'learning_rate': 9.599640893703568e-06, 'epoch': 0.22}
+{'loss': 2.1964, 'grad_norm': 22.990744014005145, 'learning_rate': 9.589582926268798e-06, 'epoch': 0.22}
+[INFO|configuration_utils.py:491] 2025-12-23 15:40:08,907 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/config.json
+[INFO|configuration_utils.py:757] 2025-12-23 15:40:08,908 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-23 15:40:11,792 >> Model weights saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 15:40:11,794 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 15:40:11,795 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 15:40:11,795 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-23 15:40:11,931] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step150 is about to be saved!
+[2025-12-23 15:40:11,968] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/global_step150/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-23 15:40:11,968] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/global_step150/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-23 15:40:12,230] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/global_step150/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-23 15:40:12,342] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/global_step150/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-23 15:40:19,342] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/global_step150/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-23 15:40:19,343] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/global_step150/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-23 15:40:21,905] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step150 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-23 15:40:21,911 >> Image processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 15:40:21,922 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 15:40:21,923 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 15:40:21,941 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-23 15:40:22,114 >> Video processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-23 15:40:22,136 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-150/chat_template.jinja
+                                                                                                                        
+{'loss': 0.9887, 'grad_norm': 21.372402967023028, 'learning_rate': 9.579405584599157e-06, 'epoch': 0.22}
+{'loss': 0.6532, 'grad_norm': 19.976011295676123, 'learning_rate': 9.569109133405495e-06, 'epoch': 0.22}
+{'loss': 1.3593, 'grad_norm': 21.212214623433614, 'learning_rate': 9.558693840496666e-06, 'epoch': 0.22}
+{'loss': 1.0841, 'grad_norm': 19.74517609166813, 'learning_rate': 9.548159976772593e-06, 'epoch': 0.22}
+{'loss': 1.8073, 'grad_norm': 24.015074688730866, 'learning_rate': 9.537507816217191e-06, 'epoch': 0.23}
+{'loss': 1.9221, 'grad_norm': 26.274030553495614, 'learning_rate': 9.526737635891262e-06, 'epoch': 0.23}
+{'loss': 1.581, 'grad_norm': 22.841683315679823, 'learning_rate': 9.515849715925276e-06, 'epoch': 0.23}
+{'loss': 1.49, 'grad_norm': 23.827753316386126, 'learning_rate': 9.504844339512096e-06, 'epoch': 0.23}
+{'loss': 1.2802, 'grad_norm': 22.973155196574282, 'learning_rate': 9.493721792899605e-06, 'epoch': 0.23}
+{'loss': 0.9306, 'grad_norm': 19.500201632387682, 'learning_rate': 9.482482365383254e-06, 'epoch': 0.23}
+{'loss': 1.6573, 'grad_norm': 28.26080187474412, 'learning_rate': 9.471126349298557e-06, 'epoch': 0.24}
+{'loss': 0.5523, 'grad_norm': 22.37903991535149, 'learning_rate': 9.45965404001347e-06, 'epoch': 0.24}
+{'loss': 1.0859, 'grad_norm': 18.756172842541265, 'learning_rate': 9.448065735920715e-06, 'epoch': 0.24}
+{'loss': 1.2593, 'grad_norm': 22.86908721548427, 'learning_rate': 9.436361738430016e-06, 'epoch': 0.24}
+{'loss': 1.6499, 'grad_norm': 27.97211067916441, 'learning_rate': 9.424542351960268e-06, 'epoch': 0.24}
+{'loss': 0.8389, 'grad_norm': 20.524016436495703, 'learning_rate': 9.412607883931608e-06, 'epoch': 0.24}
+{'loss': 0.9859, 'grad_norm': 24.73803104120405, 'learning_rate': 9.400558644757423e-06, 'epoch': 0.24}
+{'loss': 0.528, 'grad_norm': 16.288023322107524, 'learning_rate': 9.388394947836278e-06, 'epoch': 0.25}
+{'loss': 1.745, 'grad_norm': 25.87779868288093, 'learning_rate': 9.376117109543769e-06, 'epoch': 0.25}
+{'loss': 1.5889, 'grad_norm': 23.55963226243256, 'learning_rate': 9.363725449224281e-06, 'epoch': 0.25}
+{'loss': 1.1013, 'grad_norm': 24.016171623946892, 'learning_rate': 9.351220289182694e-06, 'epoch': 0.25}
+{'loss': 1.1366, 'grad_norm': 19.542008294324805, 'learning_rate': 9.338601954675995e-06, 'epoch': 0.25}
+{'loss': 0.598, 'grad_norm': 15.650347517719133, 'learning_rate': 9.325870773904816e-06, 'epoch': 0.25}
+{'loss': 1.6477, 'grad_norm': 23.991642467132053, 'learning_rate': 9.313027078004903e-06, 'epoch': 0.25}
+{'loss': 1.8809, 'grad_norm': 24.799681926696394, 'learning_rate': 9.300071201038503e-06, 'epoch': 0.26}
+{'loss': 1.0036, 'grad_norm': 16.980522724644945, 'learning_rate': 9.287003479985667e-06, 'epoch': 0.26}
+{'loss': 1.3386, 'grad_norm': 18.720765161575045, 'learning_rate': 9.273824254735492e-06, 'epoch': 0.26}
+{'loss': 0.9826, 'grad_norm': 25.22628340607671, 'learning_rate': 9.260533868077283e-06, 'epoch': 0.26}
+{'loss': 0.6985, 'grad_norm': 17.643340617926594, 'learning_rate': 9.24713266569163e-06, 'epoch': 0.26}
+{'loss': 1.4958, 'grad_norm': 25.970838283584293, 'learning_rate': 9.233620996141421e-06, 'epoch': 0.26}
+{'loss': 1.5507, 'grad_norm': 24.206799634794226, 'learning_rate': 9.219999210862778e-06, 'epoch': 0.26}
+{'loss': 0.6481, 'grad_norm': 22.842837050715975, 'learning_rate': 9.206267664155906e-06, 'epoch': 0.27}
+{'loss': 0.4905, 'grad_norm': 14.12098436336161, 'learning_rate': 9.192426713175897e-06, 'epoch': 0.27}
+{'loss': 1.3551, 'grad_norm': 20.661191662320046, 'learning_rate': 9.178476717923415e-06, 'epoch': 0.27}
+{'loss': 0.8353, 'grad_norm': 19.080926540953744, 'learning_rate': 9.164418041235359e-06, 'epoch': 0.27}
+{'loss': 1.7506, 'grad_norm': 23.56338817390794, 'learning_rate': 9.150251048775403e-06, 'epoch': 0.27}
+{'loss': 1.4025, 'grad_norm': 20.197899709292518, 'learning_rate': 9.135976109024502e-06, 'epoch': 0.27}
+{'loss': 0.7187, 'grad_norm': 18.928320024149183, 'learning_rate': 9.121593593271297e-06, 'epoch': 0.27}
+{'loss': 1.3413, 'grad_norm': 21.08157067286494, 'learning_rate': 9.107103875602458e-06, 'epoch': 0.28}
+{'loss': 2.2357, 'grad_norm': 29.001083462060787, 'learning_rate': 9.092507332892968e-06, 'epoch': 0.28}
+{'loss': 0.3359, 'grad_norm': 11.856948215363273, 'learning_rate': 9.077804344796302e-06, 'epoch': 0.28}
+{'loss': 1.7777, 'grad_norm': 21.069223846141302, 'learning_rate': 9.062995293734562e-06, 'epoch': 0.28}
+{'loss': 1.9963, 'grad_norm': 27.54171509274394, 'learning_rate': 9.04808056488853e-06, 'epoch': 0.28}
+{'loss': 0.4534, 'grad_norm': 16.248407520808154, 'learning_rate': 9.033060546187651e-06, 'epoch': 0.28}
+{'loss': 1.4105, 'grad_norm': 24.54665527327208, 'learning_rate': 9.017935628299934e-06, 'epoch': 0.28}
+{'loss': 1.1223, 'grad_norm': 15.28677151609996, 'learning_rate': 9.002706204621802e-06, 'epoch': 0.29}
+{'loss': 2.3804, 'grad_norm': 32.379376453054455, 'learning_rate': 8.987372671267856e-06, 'epoch': 0.29}
+{'loss': 0.884, 'grad_norm': 17.763694493512318, 'learning_rate': 8.971935427060563e-06, 'epoch': 0.29}
+{'loss': 1.7601, 'grad_norm': 26.392371814384596, 'learning_rate': 8.956394873519903e-06, 'epoch': 0.29}
+{'loss': 1.7122, 'grad_norm': 23.352728816866595, 'learning_rate': 8.940751414852904e-06, 'epoch': 0.29}
+[INFO|configuration_utils.py:491] 2025-12-23 17:08:04,648 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/config.json
+[INFO|configuration_utils.py:757] 2025-12-23 17:08:04,649 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-23 17:08:07,822 >> Model weights saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 17:08:07,823 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 17:08:07,824 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 17:08:07,825 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-23 17:08:07,968] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step200 is about to be saved!
+[2025-12-23 17:08:08,010] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/global_step200/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-23 17:08:08,010] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/global_step200/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-23 17:08:08,290] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/global_step200/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-23 17:08:08,349] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/global_step200/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-23 17:08:14,140] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/global_step200/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-23 17:08:14,140] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/global_step200/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-23 17:08:19,036] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step200 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-23 17:08:19,043 >> Image processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 17:08:19,057 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 17:08:19,083 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 17:08:19,083 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-23 17:08:19,290 >> Video processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-23 17:08:19,315 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-200/chat_template.jinja
+                                                                                                                        
+{'loss': 1.6934, 'grad_norm': 23.74841979524516, 'learning_rate': 8.92500545794314e-06, 'epoch': 0.29}
+{'loss': 1.892, 'grad_norm': 17.187772611967308, 'learning_rate': 8.90915741234015e-06, 'epoch': 0.29}
+{'loss': 1.1566, 'grad_norm': 47.910889706274595, 'learning_rate': 8.893207690248776e-06, 'epoch': 0.3}
+{'loss': 1.2426, 'grad_norm': 22.93946188585086, 'learning_rate': 8.877156706518453e-06, 'epoch': 0.3}
+{'loss': 0.8603, 'grad_norm': 19.49108428171753, 'learning_rate': 8.861004878632409e-06, 'epoch': 0.3}
+{'loss': 1.6884, 'grad_norm': 30.460928431778036, 'learning_rate': 8.84475262669681e-06, 'epoch': 0.3}
+{'loss': 1.289, 'grad_norm': 22.984775394873036, 'learning_rate': 8.82840037342984e-06, 'epoch': 0.3}
+{'loss': 1.3472, 'grad_norm': 25.138780219996775, 'learning_rate': 8.811948544150693e-06, 'epoch': 0.3}
+{'loss': 1.1645, 'grad_norm': 18.346362873626855, 'learning_rate': 8.795397566768518e-06, 'epoch': 0.31}
+{'loss': 1.5403, 'grad_norm': 21.876338807853617, 'learning_rate': 8.778747871771293e-06, 'epoch': 0.31}
+{'loss': 1.2091, 'grad_norm': 19.830226388957723, 'learning_rate': 8.761999892214619e-06, 'epoch': 0.31}
+{'loss': 1.5238, 'grad_norm': 19.33724665023751, 'learning_rate': 8.745154063710464e-06, 'epoch': 0.31}
+{'loss': 0.9704, 'grad_norm': 19.14369219258138, 'learning_rate': 8.728210824415829e-06, 'epoch': 0.31}
+{'loss': 1.3868, 'grad_norm': 21.50470451531586, 'learning_rate': 8.71117061502135e-06, 'epoch': 0.31}
+{'loss': 0.596, 'grad_norm': 16.416198363065707, 'learning_rate': 8.694033878739842e-06, 'epoch': 0.31}
+{'loss': 0.4762, 'grad_norm': 13.952761155416178, 'learning_rate': 8.676801061294764e-06, 'epoch': 0.32}
+{'loss': 2.154, 'grad_norm': 43.78255959032132, 'learning_rate': 8.659472610908628e-06, 'epoch': 0.32}
+{'loss': 0.5752, 'grad_norm': 18.357412803741575, 'learning_rate': 8.642048978291347e-06, 'epoch': 0.32}
+{'loss': 1.0365, 'grad_norm': 13.97631145522621, 'learning_rate': 8.624530616628502e-06, 'epoch': 0.32}
+{'loss': 1.3373, 'grad_norm': 20.554858232769778, 'learning_rate': 8.60691798156956e-06, 'epoch': 0.32}
+{'loss': 1.2566, 'grad_norm': 26.306832318868537, 'learning_rate': 8.589211531216026e-06, 'epoch': 0.32}
+{'loss': 0.7014, 'grad_norm': 17.942685216285973, 'learning_rate': 8.571411726109518e-06, 'epoch': 0.32}
+{'loss': 1.0168, 'grad_norm': 18.823434464774127, 'learning_rate': 8.553519029219803e-06, 'epoch': 0.33}
+{'loss': 1.3786, 'grad_norm': 22.104273760397565, 'learning_rate': 8.535533905932739e-06, 'epoch': 0.33}
+{'loss': 1.7121, 'grad_norm': 24.96525979301189, 'learning_rate': 8.517456824038179e-06, 'epoch': 0.33}
+{'loss': 2.5444, 'grad_norm': 30.56915033047352, 'learning_rate': 8.49928825371781e-06, 'epoch': 0.33}
+{'loss': 0.8452, 'grad_norm': 16.97557614991407, 'learning_rate': 8.481028667532907e-06, 'epoch': 0.33}
+{'loss': 1.4356, 'grad_norm': 19.111906678507598, 'learning_rate': 8.46267854041206e-06, 'epoch': 0.33}
+{'loss': 1.0524, 'grad_norm': 20.95968211142885, 'learning_rate': 8.444238349638804e-06, 'epoch': 0.33}
+{'loss': 1.1589, 'grad_norm': 15.067238709007267, 'learning_rate': 8.425708574839221e-06, 'epoch': 0.34}
+{'loss': 2.0757, 'grad_norm': 26.47397389781155, 'learning_rate': 8.407089697969458e-06, 'epoch': 0.34}
+{'loss': 1.0451, 'grad_norm': 20.495701735473656, 'learning_rate': 8.388382203303181e-06, 'epoch': 0.34}
+{'loss': 1.2832, 'grad_norm': 22.024165070049367, 'learning_rate': 8.369586577419e-06, 'epoch': 0.34}
+{'loss': 0.7574, 'grad_norm': 21.1236007817443, 'learning_rate': 8.3507033091878e-06, 'epoch': 0.34}
+{'loss': 0.8056, 'grad_norm': 13.586918459210962, 'learning_rate': 8.331732889760021e-06, 'epoch': 0.34}
+{'loss': 0.8771, 'grad_norm': 20.66479144008511, 'learning_rate': 8.312675812552898e-06, 'epoch': 0.34}
+{'loss': 0.8941, 'grad_norm': 14.744087574184796, 'learning_rate': 8.293532573237616e-06, 'epoch': 0.35}
+{'loss': 0.6756, 'grad_norm': 17.496969562446992, 'learning_rate': 8.274303669726427e-06, 'epoch': 0.35}
+{'loss': 1.3218, 'grad_norm': 18.822648158240135, 'learning_rate': 8.25498960215968e-06, 'epoch': 0.35}
+{'loss': 1.6133, 'grad_norm': 18.597250563738545, 'learning_rate': 8.235590872892837e-06, 'epoch': 0.35}
+{'loss': 0.3287, 'grad_norm': 12.96856780839055, 'learning_rate': 8.216107986483395e-06, 'epoch': 0.35}
+{'loss': 0.5408, 'grad_norm': 14.013667468300914, 'learning_rate': 8.196541449677758e-06, 'epoch': 0.35}
+{'loss': 1.1052, 'grad_norm': 20.70032746496705, 'learning_rate': 8.176891771398069e-06, 'epoch': 0.35}
+{'loss': 1.1739, 'grad_norm': 16.441127792361588, 'learning_rate': 8.157159462728956e-06, 'epoch': 0.36}
+{'loss': 1.6935, 'grad_norm': 25.785265716394008, 'learning_rate': 8.13734503690426e-06, 'epoch': 0.36}
+{'loss': 1.293, 'grad_norm': 23.601863495149743, 'learning_rate': 8.117449009293668e-06, 'epoch': 0.36}
+{'loss': 0.4462, 'grad_norm': 18.177074921467604, 'learning_rate': 8.097471897389316e-06, 'epoch': 0.36}
+{'loss': 1.215, 'grad_norm': 19.13828730977538, 'learning_rate': 8.077414220792328e-06, 'epoch': 0.36}
+{'loss': 1.4478, 'grad_norm': 37.569815535698346, 'learning_rate': 8.057276501199301e-06, 'epoch': 0.36}
+{'loss': 1.2042, 'grad_norm': 17.15381444158632, 'learning_rate': 8.03705926238874e-06, 'epoch': 0.36}
+[INFO|configuration_utils.py:491] 2025-12-23 18:35:23,433 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/config.json
+[INFO|configuration_utils.py:757] 2025-12-23 18:35:23,433 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-23 18:35:26,485 >> Model weights saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 18:35:26,486 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 18:35:26,487 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 18:35:26,487 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-23 18:35:26,624] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step250 is about to be saved!
+[2025-12-23 18:35:26,667] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/global_step250/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-23 18:35:26,667] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/global_step250/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-23 18:35:26,942] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/global_step250/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-23 18:35:27,045] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-23 18:35:33,877] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-23 18:35:33,878] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-23 18:35:37,388] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step250 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-23 18:35:37,396 >> Image processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 18:35:37,409 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 18:35:37,437 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 18:35:37,437 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-23 18:35:37,639 >> Video processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-23 18:35:37,666 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-250/chat_template.jinja
+                                                                                                                        
+{'loss': 1.5933, 'grad_norm': 20.462403736567943, 'learning_rate': 8.016763030207422e-06, 'epoch': 0.37}
+{'loss': 1.3767, 'grad_norm': 20.92591719431177, 'learning_rate': 7.996388332556735e-06, 'epoch': 0.37}
+{'loss': 1.5581, 'grad_norm': 23.865923983945283, 'learning_rate': 7.97593569937894e-06, 'epoch': 0.37}
+{'loss': 1.8057, 'grad_norm': 23.506811065495377, 'learning_rate': 7.955405662643384e-06, 'epoch': 0.37}
+{'loss': 1.0521, 'grad_norm': 18.710486254291244, 'learning_rate': 7.934798756332666e-06, 'epoch': 0.37}
+{'loss': 1.7845, 'grad_norm': 22.766544714668807, 'learning_rate': 7.914115516428751e-06, 'epoch': 0.37}
+{'loss': 0.4944, 'grad_norm': 14.035032735568208, 'learning_rate': 7.89335648089903e-06, 'epoch': 0.38}
+{'loss': 1.3636, 'grad_norm': 19.815725430243997, 'learning_rate': 7.872522189682318e-06, 'epoch': 0.38}
+{'loss': 0.9383, 'grad_norm': 16.758010891220746, 'learning_rate': 7.851613184674821e-06, 'epoch': 0.38}
+{'loss': 1.4141, 'grad_norm': 19.811803559644815, 'learning_rate': 7.830630009716038e-06, 'epoch': 0.38}
+{'loss': 0.9723, 'grad_norm': 17.495951086688798, 'learning_rate': 7.809573210574615e-06, 'epoch': 0.38}
+{'loss': 0.3947, 'grad_norm': 12.528581232483004, 'learning_rate': 7.788443334934148e-06, 'epoch': 0.38}
+{'loss': 0.8415, 'grad_norm': 14.724566032046686, 'learning_rate': 7.76724093237894e-06, 'epoch': 0.38}
+{'loss': 1.5211, 'grad_norm': 24.599829532271933, 'learning_rate': 7.745966554379708e-06, 'epoch': 0.39}
+{'loss': 1.067, 'grad_norm': 19.322321650742037, 'learning_rate': 7.72462075427924e-06, 'epoch': 0.39}
+{'loss': 1.585, 'grad_norm': 20.60779335609944, 'learning_rate': 7.703204087277989e-06, 'epoch': 0.39}
+{'loss': 0.4185, 'grad_norm': 14.44212095185024, 'learning_rate': 7.681717110419657e-06, 'epoch': 0.39}
+{'loss': 0.9367, 'grad_norm': 18.927404125986147, 'learning_rate': 7.660160382576683e-06, 'epoch': 0.39}
+{'loss': 0.8766, 'grad_norm': 20.792273702995033, 'learning_rate': 7.638534464435725e-06, 'epoch': 0.39}
+{'loss': 0.9161, 'grad_norm': 17.278742447642475, 'learning_rate': 7.616839918483061e-06, 'epoch': 0.39}
+{'loss': 1.1397, 'grad_norm': 17.79503494445292, 'learning_rate': 7.5950773089899695e-06, 'epoch': 0.4}
+{'loss': 0.929, 'grad_norm': 19.200626573645042, 'learning_rate': 7.573247201998051e-06, 'epoch': 0.4}
+{'loss': 0.9192, 'grad_norm': 14.535637742302134, 'learning_rate': 7.5513501653045e-06, 'epoch': 0.4}
+{'loss': 0.887, 'grad_norm': 15.041090726540826, 'learning_rate': 7.529386768447342e-06, 'epoch': 0.4}
+{'loss': 0.3916, 'grad_norm': 14.78100385243183, 'learning_rate': 7.507357582690622e-06, 'epoch': 0.4}
+{'loss': 1.1797, 'grad_norm': 18.67085675974785, 'learning_rate': 7.485263181009539e-06, 'epoch': 0.4}
+{'loss': 0.9907, 'grad_norm': 15.092165255545627, 'learning_rate': 7.463104138075548e-06, 'epoch': 0.4}
+{'loss': 1.3711, 'grad_norm': 20.31589967815843, 'learning_rate': 7.440881030241407e-06, 'epoch': 0.41}
+{'loss': 0.4118, 'grad_norm': 12.744392651986876, 'learning_rate': 7.4185944355261996e-06, 'epoch': 0.41}
+{'loss': 1.7542, 'grad_norm': 25.689756012079418, 'learning_rate': 7.396244933600285e-06, 'epoch': 0.41}
+{'loss': 0.84, 'grad_norm': 22.56137196616803, 'learning_rate': 7.37383310577023e-06, 'epoch': 0.41}
+{'loss': 1.4729, 'grad_norm': 22.524679890771793, 'learning_rate': 7.351359534963684e-06, 'epoch': 0.41}
+{'loss': 1.3665, 'grad_norm': 20.47392493019913, 'learning_rate': 7.328824805714228e-06, 'epoch': 0.41}
+{'loss': 1.2754, 'grad_norm': 17.6783671772907, 'learning_rate': 7.306229504146154e-06, 'epoch': 0.41}
+{'loss': 0.9216, 'grad_norm': 18.318386891732224, 'learning_rate': 7.283574217959234e-06, 'epoch': 0.42}
+{'loss': 0.9796, 'grad_norm': 15.16018730747786, 'learning_rate': 7.260859536413429e-06, 'epoch': 0.42}
+{'loss': 0.9762, 'grad_norm': 18.849304507551853, 'learning_rate': 7.238086050313563e-06, 'epoch': 0.42}
+{'loss': 1.706, 'grad_norm': 28.48471560172771, 'learning_rate': 7.215254351993957e-06, 'epoch': 0.42}
+{'loss': 1.0459, 'grad_norm': 24.637941086885046, 'learning_rate': 7.192365035303014e-06, 'epoch': 0.42}
+{'loss': 1.5558, 'grad_norm': 22.120393831745616, 'learning_rate': 7.169418695587791e-06, 'epoch': 0.42}
+{'loss': 0.8718, 'grad_norm': 21.561181250160022, 'learning_rate': 7.146415929678498e-06, 'epoch': 0.42}
+{'loss': 1.0489, 'grad_norm': 17.002864114903517, 'learning_rate': 7.123357335872982e-06, 'epoch': 0.43}
+{'loss': 0.7406, 'grad_norm': 15.003458514188434, 'learning_rate': 7.100243513921162e-06, 'epoch': 0.43}
+{'loss': 0.9901, 'grad_norm': 17.12425352523972, 'learning_rate': 7.0770750650094335e-06, 'epoch': 0.43}
+{'loss': 1.1492, 'grad_norm': 17.38430557154757, 'learning_rate': 7.053852591745025e-06, 'epoch': 0.43}
+{'loss': 0.2783, 'grad_norm': 8.810497465716766, 'learning_rate': 7.0305766981403365e-06, 'epoch': 0.43}
+{'loss': 0.7611, 'grad_norm': 18.842758201871913, 'learning_rate': 7.007247989597213e-06, 'epoch': 0.43}
+{'loss': 1.6033, 'grad_norm': 20.787734533610948, 'learning_rate': 6.983867072891213e-06, 'epoch': 0.44}
+{'loss': 1.1569, 'grad_norm': 20.081296983237788, 'learning_rate': 6.9604345561558175e-06, 'epoch': 0.44}
+{'loss': 0.9024, 'grad_norm': 21.780478161164734, 'learning_rate': 6.936951048866616e-06, 'epoch': 0.44}
+[INFO|configuration_utils.py:491] 2025-12-23 20:03:33,096 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/config.json
+[INFO|configuration_utils.py:757] 2025-12-23 20:03:33,097 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-23 20:03:36,145 >> Model weights saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 20:03:36,146 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 20:03:36,147 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 20:03:36,148 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-23 20:03:36,301] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step300 is about to be saved!
+[2025-12-23 20:03:36,340] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/global_step300/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-23 20:03:36,340] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/global_step300/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-23 20:03:36,631] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/global_step300/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-23 20:03:36,706] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/global_step300/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-23 20:03:44,123] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/global_step300/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-23 20:03:44,124] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/global_step300/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-23 20:03:47,202] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step300 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-23 20:03:47,211 >> Image processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 20:03:47,233 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 20:03:47,234 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 20:03:47,255 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-23 20:03:47,497 >> Video processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-23 20:03:47,517 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-300/chat_template.jinja
+                                                                                                                        
+{'loss': 0.4015, 'grad_norm': 11.74970618650408, 'learning_rate': 6.913417161825449e-06, 'epoch': 0.44}
+{'loss': 1.2066, 'grad_norm': 19.007185752636722, 'learning_rate': 6.889833507144534e-06, 'epoch': 0.44}
+{'loss': 1.4041, 'grad_norm': 20.35770931749002, 'learning_rate': 6.866200698230527e-06, 'epoch': 0.44}
+{'loss': 1.4935, 'grad_norm': 23.95682657365227, 'learning_rate': 6.842519349768582e-06, 'epoch': 0.44}
+{'loss': 1.1247, 'grad_norm': 18.282408665833923, 'learning_rate': 6.818790077706358e-06, 'epoch': 0.45}
+{'loss': 1.0846, 'grad_norm': 18.08235551586518, 'learning_rate': 6.7950134992379935e-06, 'epoch': 0.45}
+{'loss': 1.1241, 'grad_norm': 20.486581454982513, 'learning_rate': 6.7711902327880665e-06, 'epoch': 0.45}
+{'loss': 1.899, 'grad_norm': 19.62209663156652, 'learning_rate': 6.747320897995493e-06, 'epoch': 0.45}
+{'loss': 1.2897, 'grad_norm': 21.10457903492764, 'learning_rate': 6.723406115697422e-06, 'epoch': 0.45}
+{'loss': 1.4715, 'grad_norm': 18.95647280560765, 'learning_rate': 6.699446507913083e-06, 'epoch': 0.45}
+{'loss': 1.7077, 'grad_norm': 22.898018190996126, 'learning_rate': 6.6754426978276146e-06, 'epoch': 0.45}
+{'loss': 1.5167, 'grad_norm': 18.399631565412562, 'learning_rate': 6.651395309775837e-06, 'epoch': 0.46}
+{'loss': 0.3702, 'grad_norm': 14.007598519526503, 'learning_rate': 6.627304969226034e-06, 'epoch': 0.46}
+{'loss': 1.0036, 'grad_norm': 18.071787108206717, 'learning_rate': 6.6031723027636775e-06, 'epoch': 0.46}
+{'loss': 2.3374, 'grad_norm': 25.73620239889881, 'learning_rate': 6.578997938075126e-06, 'epoch': 0.46}
+{'loss': 1.1442, 'grad_norm': 19.77452557489411, 'learning_rate': 6.554782503931298e-06, 'epoch': 0.46}
+{'loss': 1.2764, 'grad_norm': 16.182226938109967, 'learning_rate': 6.5305266301713275e-06, 'epoch': 0.46}
+{'loss': 1.2615, 'grad_norm': 21.381529736890847, 'learning_rate': 6.5062309476861714e-06, 'epoch': 0.46}
+{'loss': 1.4282, 'grad_norm': 16.887432820604747, 'learning_rate': 6.4818960884022084e-06, 'epoch': 0.47}
+{'loss': 0.4485, 'grad_norm': 14.630039271515718, 'learning_rate': 6.457522685264793e-06, 'epoch': 0.47}
+{'loss': 1.038, 'grad_norm': 18.074621904867495, 'learning_rate': 6.433111372221805e-06, 'epoch': 0.47}
+{'loss': 1.4653, 'grad_norm': 20.255492164649397, 'learning_rate': 6.408662784207149e-06, 'epoch': 0.47}
+{'loss': 0.6566, 'grad_norm': 16.658343886243216, 'learning_rate': 6.384177557124247e-06, 'epoch': 0.47}
+{'loss': 1.3753, 'grad_norm': 22.360740870549755, 'learning_rate': 6.359656327829498e-06, 'epoch': 0.47}
+{'loss': 0.6955, 'grad_norm': 21.08834836657591, 'learning_rate': 6.335099734115709e-06, 'epoch': 0.47}
+{'loss': 1.25, 'grad_norm': 18.563394144847663, 'learning_rate': 6.310508414695511e-06, 'epoch': 0.48}
+{'loss': 0.7329, 'grad_norm': 15.86664103832158, 'learning_rate': 6.285883009184745e-06, 'epoch': 0.48}
+{'loss': 1.4006, 'grad_norm': 18.89774365674253, 'learning_rate': 6.261224158085826e-06, 'epoch': 0.48}
+{'loss': 0.931, 'grad_norm': 17.96455213917061, 'learning_rate': 6.236532502771078e-06, 'epoch': 0.48}
+{'loss': 0.3622, 'grad_norm': 11.921486110430768, 'learning_rate': 6.211808685466063e-06, 'epoch': 0.48}
+{'loss': 1.4884, 'grad_norm': 20.907799730975423, 'learning_rate': 6.187053349232865e-06, 'epoch': 0.48}
+{'loss': 1.1153, 'grad_norm': 21.114583021320282, 'learning_rate': 6.162267137953374e-06, 'epoch': 0.48}
+{'loss': 1.1174, 'grad_norm': 18.983546229216127, 'learning_rate': 6.137450696312534e-06, 'epoch': 0.49}
+{'loss': 1.0031, 'grad_norm': 17.87118013920015, 'learning_rate': 6.112604669781572e-06, 'epoch': 0.49}
+{'loss': 1.865, 'grad_norm': 22.30129389150602, 'learning_rate': 6.0877297046012176e-06, 'epoch': 0.49}
+{'loss': 1.2703, 'grad_norm': 22.90742272041172, 'learning_rate': 6.062826447764883e-06, 'epoch': 0.49}
+{'loss': 1.8756, 'grad_norm': 28.585459707517987, 'learning_rate': 6.037895547001851e-06, 'epoch': 0.49}
+{'loss': 1.2608, 'grad_norm': 19.164345430160413, 'learning_rate': 6.012937650760406e-06, 'epoch': 0.49}
+{'loss': 0.71, 'grad_norm': 15.03261531880242, 'learning_rate': 5.987953408190989e-06, 'epoch': 0.49}
+{'loss': 0.8662, 'grad_norm': 16.81709025302186, 'learning_rate': 5.962943469129303e-06, 'epoch': 0.5}
+{'loss': 0.8807, 'grad_norm': 20.901971627790992, 'learning_rate': 5.937908484079408e-06, 'epoch': 0.5}
+{'loss': 2.4151, 'grad_norm': 21.55295589265341, 'learning_rate': 5.91284910419681e-06, 'epoch': 0.5}
+{'loss': 1.4428, 'grad_norm': 21.605741191394234, 'learning_rate': 5.887765981271518e-06, 'epoch': 0.5}
+{'loss': 0.3743, 'grad_norm': 12.51626765931346, 'learning_rate': 5.862659767711094e-06, 'epoch': 0.5}
+{'loss': 1.2062, 'grad_norm': 23.520333486336277, 'learning_rate': 5.837531116523683e-06, 'epoch': 0.5}
+{'loss': 0.9796, 'grad_norm': 22.608841388081714, 'learning_rate': 5.812380681301031e-06, 'epoch': 0.51}
+{'loss': 2.1141, 'grad_norm': 27.017883571884433, 'learning_rate': 5.787209116201478e-06, 'epoch': 0.51}
+{'loss': 1.6141, 'grad_norm': 20.736117373931148, 'learning_rate': 5.762017075932952e-06, 'epoch': 0.51}
+{'loss': 0.8849, 'grad_norm': 18.85775668318551, 'learning_rate': 5.736805215735937e-06, 'epoch': 0.51}
+{'loss': 1.8825, 'grad_norm': 24.14208666131152, 'learning_rate': 5.711574191366427e-06, 'epoch': 0.51}
+[INFO|configuration_utils.py:491] 2025-12-23 21:36:15,167 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/config.json
+[INFO|configuration_utils.py:757] 2025-12-23 21:36:15,168 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-23 21:36:18,235 >> Model weights saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 21:36:18,236 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 21:36:18,236 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 21:36:18,237 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-23 21:36:18,376] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step350 is about to be saved!
+[2025-12-23 21:36:18,413] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/global_step350/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-23 21:36:18,414] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/global_step350/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-23 21:36:18,682] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/global_step350/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-23 21:36:18,772] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/global_step350/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-23 21:36:25,827] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/global_step350/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-23 21:36:25,827] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/global_step350/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-23 21:36:28,856] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step350 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-23 21:36:28,866 >> Image processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 21:36:28,872 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 21:36:28,895 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 21:36:28,895 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-23 21:36:29,083 >> Video processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-23 21:36:29,106 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-350/chat_template.jinja
+                                                                                            
+{'loss': 0.8245, 'grad_norm': 15.075835263585846, 'learning_rate': 5.686324659078875e-06, 'epoch': 0.51}
+{'loss': 1.0174, 'grad_norm': 20.494554342941715, 'learning_rate': 5.66105727560912e-06, 'epoch': 0.51}
+{'loss': 1.6546, 'grad_norm': 22.59896200298136, 'learning_rate': 5.63577269815731e-06, 'epoch': 0.52}
+{'loss': 0.8701, 'grad_norm': 14.863080396309249, 'learning_rate': 5.6104715843708e-06, 'epoch': 0.52}
+{'loss': 0.3198, 'grad_norm': 10.923867159521045, 'learning_rate': 5.585154592327059e-06, 'epoch': 0.52}
+{'loss': 1.4082, 'grad_norm': 18.169282359180297, 'learning_rate': 5.559822380516539e-06, 'epoch': 0.52}
+{'loss': 0.6941, 'grad_norm': 23.375453334633065, 'learning_rate': 5.534475607825566e-06, 'epoch': 0.52}
+{'loss': 1.3922, 'grad_norm': 23.23525540349795, 'learning_rate': 5.509114933519179e-06, 'epoch': 0.52}
+{'loss': 1.4156, 'grad_norm': 24.599901588944213, 'learning_rate': 5.4837410172240035e-06, 'epoch': 0.52}
+{'loss': 1.4053, 'grad_norm': 23.953280917149172, 'learning_rate': 5.458354518911086e-06, 'epoch': 0.53}
+{'loss': 1.4617, 'grad_norm': 18.82622491267111, 'learning_rate': 5.43295609887873e-06, 'epoch': 0.53}
+{'loss': 0.9523, 'grad_norm': 16.850973692438515, 'learning_rate': 5.4075464177353165e-06, 'epoch': 0.53}
+{'loss': 0.521, 'grad_norm': 16.449760594148547, 'learning_rate': 5.38212613638213e-06, 'epoch': 0.53}
+{'loss': 1.4135, 'grad_norm': 21.909410454255653, 'learning_rate': 5.356695915996162e-06, 'epoch': 0.53}
+{'loss': 0.8403, 'grad_norm': 11.656617612043616, 'learning_rate': 5.33125641801292e-06, 'epoch': 0.53}
+{'loss': 0.347, 'grad_norm': 12.619816716879264, 'learning_rate': 5.3058083041092145e-06, 'epoch': 0.53}
+{'loss': 1.1901, 'grad_norm': 17.280714215439197, 'learning_rate': 5.2803522361859596e-06, 'epoch': 0.54}
+{'loss': 1.3528, 'grad_norm': 16.765275634912786, 'learning_rate': 5.25488887635095e-06, 'epoch': 0.54}
+{'loss': 1.2944, 'grad_norm': 15.38018593748601, 'learning_rate': 5.229418886901644e-06, 'epoch': 0.54}
+{'loss': 1.0919, 'grad_norm': 16.822715288558356, 'learning_rate': 5.2039429303079294e-06, 'epoch': 0.54}
+{'loss': 0.5432, 'grad_norm': 14.101341820748512, 'learning_rate': 5.178461669194903e-06, 'epoch': 0.54}
+{'loss': 1.0426, 'grad_norm': 15.419680620080621, 'learning_rate': 5.152975766325631e-06, 'epoch': 0.54}
+{'loss': 0.3882, 'grad_norm': 9.884123752548179, 'learning_rate': 5.127485884583911e-06, 'epoch': 0.54}
+{'loss': 1.6639, 'grad_norm': 23.55707276796114, 'learning_rate': 5.101992686957028e-06, 'epoch': 0.55}
+{'loss': 1.1331, 'grad_norm': 15.00737197479113, 'learning_rate': 5.076496836518513e-06, 'epoch': 0.55}
+{'loss': 1.6765, 'grad_norm': 22.223115023687708, 'learning_rate': 5.050998996410899e-06, 'epoch': 0.55}
+{'loss': 0.36, 'grad_norm': 15.097629472437145, 'learning_rate': 5.025499829828467e-06, 'epoch': 0.55}
+{'loss': 0.5572, 'grad_norm': 13.699565076911748, 'learning_rate': 5e-06, 'epoch': 0.55}
+{'loss': 0.8354, 'grad_norm': 16.5250398488786, 'learning_rate': 4.974500170171534e-06, 'epoch': 0.55}
+{'loss': 1.1476, 'grad_norm': 25.41337917551828, 'learning_rate': 4.949001003589102e-06, 'epoch': 0.55}
+{'loss': 0.9345, 'grad_norm': 14.89367799331785, 'learning_rate': 4.9235031634814875e-06, 'epoch': 0.56}
+{'loss': 0.6035, 'grad_norm': 14.250016444635719, 'learning_rate': 4.898007313042975e-06, 'epoch': 0.56}
+{'loss': 1.3323, 'grad_norm': 20.079372928426352, 'learning_rate': 4.872514115416091e-06, 'epoch': 0.56}
+{'loss': 1.4653, 'grad_norm': 18.956017923480392, 'learning_rate': 4.84702423367437e-06, 'epoch': 0.56}
+{'loss': 2.0389, 'grad_norm': 22.575927171529827, 'learning_rate': 4.821538330805098e-06, 'epoch': 0.56}
+{'loss': 0.7574, 'grad_norm': 15.464234212894223, 'learning_rate': 4.796057069692073e-06, 'epoch': 0.56}
+{'loss': 1.5724, 'grad_norm': 20.122287303559308, 'learning_rate': 4.770581113098358e-06, 'epoch': 0.56}
+{'loss': 0.578, 'grad_norm': 15.36057123502163, 'learning_rate': 4.74511112364905e-06, 'epoch': 0.57}
+{'loss': 0.9699, 'grad_norm': 16.319886416746375, 'learning_rate': 4.719647763814041e-06, 'epoch': 0.57}
+{'loss': 1.5168, 'grad_norm': 26.250862575742023, 'learning_rate': 4.694191695890788e-06, 'epoch': 0.57}
+{'loss': 0.7956, 'grad_norm': 12.356627537217145, 'learning_rate': 4.6687435819870825e-06, 'epoch': 0.57}
+{'loss': 1.2136, 'grad_norm': 22.717751422651784, 'learning_rate': 4.643304084003839e-06, 'epoch': 0.57}
+{'loss': 0.7676, 'grad_norm': 17.125959977641646, 'learning_rate': 4.617873863617872e-06, 'epoch': 0.57}
+{'loss': 1.9661, 'grad_norm': 29.52488356663615, 'learning_rate': 4.592453582264684e-06, 'epoch': 0.58}
+{'loss': 0.6574, 'grad_norm': 16.11709918616626, 'learning_rate': 4.567043901121271e-06, 'epoch': 0.58}
+{'loss': 1.7277, 'grad_norm': 22.36304836839024, 'learning_rate': 4.541645481088914e-06, 'epoch': 0.58}
+{'loss': 1.4322, 'grad_norm': 16.906526177705462, 'learning_rate': 4.516258982775997e-06, 'epoch': 0.58}
+{'loss': 0.2552, 'grad_norm': 11.729998075046822, 'learning_rate': 4.4908850664808245e-06, 'epoch': 0.58}
+{'loss': 0.438, 'grad_norm': 15.811731210953267, 'learning_rate': 4.465524392174437e-06, 'epoch': 0.58}
+{'loss': 1.1322, 'grad_norm': 18.10859111472733, 'learning_rate': 4.4401776194834615e-06, 'epoch': 0.58}
+[INFO|configuration_utils.py:491] 2025-12-23 23:04:17,968 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/config.json
+[INFO|configuration_utils.py:757] 2025-12-23 23:04:17,969 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-23 23:04:20,993 >> Model weights saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 23:04:20,995 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 23:04:20,995 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 23:04:20,996 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-23 23:04:21,137] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step400 is about to be saved!
+[2025-12-23 23:04:21,177] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/global_step400/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-23 23:04:21,177] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/global_step400/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-23 23:04:21,478] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/global_step400/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-23 23:04:21,546] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/global_step400/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-23 23:04:28,713] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/global_step400/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-23 23:04:28,714] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/global_step400/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-23 23:04:32,121] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step400 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-23 23:04:32,132 >> Image processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-23 23:04:32,133 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-23 23:04:32,153 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-23 23:04:32,154 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-23 23:04:32,318 >> Video processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-23 23:04:32,340 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-400/chat_template.jinja
+                                                                                         
+{'loss': 0.361, 'grad_norm': 11.920368403050688, 'learning_rate': 4.414845407672943e-06, 'epoch': 0.59}
+{'loss': 1.6883, 'grad_norm': 18.323241791240633, 'learning_rate': 4.389528415629201e-06, 'epoch': 0.59}
+{'loss': 1.4962, 'grad_norm': 21.48608605249697, 'learning_rate': 4.364227301842691e-06, 'epoch': 0.59}
+{'loss': 0.4535, 'grad_norm': 13.894604866673667, 'learning_rate': 4.33894272439088e-06, 'epoch': 0.59}
+{'loss': 0.5623, 'grad_norm': 15.929825183682073, 'learning_rate': 4.313675340921128e-06, 'epoch': 0.59}
+{'loss': 2.1154, 'grad_norm': 34.823664226538504, 'learning_rate': 4.2884258086335755e-06, 'epoch': 0.59}
+{'loss': 0.9909, 'grad_norm': 17.094551528630365, 'learning_rate': 4.263194784264065e-06, 'epoch': 0.59}
+{'loss': 0.7395, 'grad_norm': 12.079509675828543, 'learning_rate': 4.23798292406705e-06, 'epoch': 0.6}
+{'loss': 1.0615, 'grad_norm': 16.52354114083569, 'learning_rate': 4.212790883798524e-06, 'epoch': 0.6}
+{'loss': 0.5558, 'grad_norm': 15.894601155269118, 'learning_rate': 4.187619318698971e-06, 'epoch': 0.6}
+{'loss': 2.1656, 'grad_norm': 28.722075959514303, 'learning_rate': 4.162468883476319e-06, 'epoch': 0.6}
+{'loss': 1.4998, 'grad_norm': 21.531802857589735, 'learning_rate': 4.137340232288908e-06, 'epoch': 0.6}
+{'loss': 1.3555, 'grad_norm': 23.51273381500195, 'learning_rate': 4.1122340187284845e-06, 'epoch': 0.6}
+{'loss': 1.8914, 'grad_norm': 28.308150577372984, 'learning_rate': 4.087150895803192e-06, 'epoch': 0.6}
+{'loss': 1.5189, 'grad_norm': 24.207166366332576, 'learning_rate': 4.062091515920595e-06, 'epoch': 0.61}
+{'loss': 1.0753, 'grad_norm': 20.18098342866628, 'learning_rate': 4.0370565308706986e-06, 'epoch': 0.61}
+{'loss': 1.3304, 'grad_norm': 23.171719286169836, 'learning_rate': 4.012046591809012e-06, 'epoch': 0.61}
+{'loss': 1.3776, 'grad_norm': 19.90128307065258, 'learning_rate': 3.987062349239596e-06, 'epoch': 0.61}
+{'loss': 1.3664, 'grad_norm': 19.34424301678399, 'learning_rate': 3.9621044529981515e-06, 'epoch': 0.61}
+{'loss': 0.9739, 'grad_norm': 22.04260141951804, 'learning_rate': 3.937173552235117e-06, 'epoch': 0.61}
+{'loss': 1.0261, 'grad_norm': 14.714926990881617, 'learning_rate': 3.912270295398785e-06, 'epoch': 0.61}
+{'loss': 0.8835, 'grad_norm': 14.050317854217562, 'learning_rate': 3.887395330218429e-06, 'epoch': 0.62}
+{'loss': 0.8267, 'grad_norm': 13.585046488908917, 'learning_rate': 3.862549303687468e-06, 'epoch': 0.62}
+{'loss': 1.5482, 'grad_norm': 19.895730110963356, 'learning_rate': 3.837732862046627e-06, 'epoch': 0.62}
+{'loss': 0.2299, 'grad_norm': 8.973098976080088, 'learning_rate': 3.8129466507671365e-06, 'epoch': 0.62}
+{'loss': 1.4053, 'grad_norm': 23.378608847388584, 'learning_rate': 3.7881913145339387e-06, 'epoch': 0.62}
+{'loss': 0.341, 'grad_norm': 10.431278210542107, 'learning_rate': 3.7634674972289227e-06, 'epoch': 0.62}
+{'loss': 0.6155, 'grad_norm': 14.514631952823688, 'learning_rate': 3.738775841914175e-06, 'epoch': 0.62}
+{'loss': 0.9028, 'grad_norm': 14.750751473476052, 'learning_rate': 3.7141169908152562e-06, 'epoch': 0.63}
+{'loss': 1.6674, 'grad_norm': 23.778336689204465, 'learning_rate': 3.689491585304491e-06, 'epoch': 0.63}
+{'loss': 1.3267, 'grad_norm': 19.379941199973977, 'learning_rate': 3.6649002658842925e-06, 'epoch': 0.63}
+{'loss': 0.6919, 'grad_norm': 16.461162005919537, 'learning_rate': 3.640343672170503e-06, 'epoch': 0.63}
+{'loss': 1.2788, 'grad_norm': 17.48831162649141, 'learning_rate': 3.6158224428757538e-06, 'epoch': 0.63}
+{'loss': 1.3558, 'grad_norm': 17.295786132839215, 'learning_rate': 3.5913372157928515e-06, 'epoch': 0.63}
+{'loss': 0.305, 'grad_norm': 13.048300555669334, 'learning_rate': 3.5668886277781955e-06, 'epoch': 0.64}
+{'loss': 0.8827, 'grad_norm': 18.311222134627034, 'learning_rate': 3.5424773147352085e-06, 'epoch': 0.64}
+{'loss': 1.0538, 'grad_norm': 23.157753630396755, 'learning_rate': 3.5181039115977945e-06, 'epoch': 0.64}
+{'loss': 0.3343, 'grad_norm': 9.7590705034953, 'learning_rate': 3.4937690523138302e-06, 'epoch': 0.64}
+{'loss': 1.0626, 'grad_norm': 19.69525392984489, 'learning_rate': 3.469473369828674e-06, 'epoch': 0.64}
+{'loss': 0.3243, 'grad_norm': 13.410758150815235, 'learning_rate': 3.4452174960687033e-06, 'epoch': 0.64}
+{'loss': 0.278, 'grad_norm': 11.175958189257457, 'learning_rate': 3.4210020619248762e-06, 'epoch': 0.64}
+{'loss': 0.3165, 'grad_norm': 11.88769210178212, 'learning_rate': 3.3968276972363224e-06, 'epoch': 0.65}
+{'loss': 0.3543, 'grad_norm': 11.912458341318013, 'learning_rate': 3.372695030773966e-06, 'epoch': 0.65}
+{'loss': 0.2612, 'grad_norm': 14.064649486528285, 'learning_rate': 3.3486046902241663e-06, 'epoch': 0.65}
+{'loss': 1.1547, 'grad_norm': 18.987860649428047, 'learning_rate': 3.324557302172389e-06, 'epoch': 0.65}
+{'loss': 0.3593, 'grad_norm': 11.07507429385574, 'learning_rate': 3.3005534920869175e-06, 'epoch': 0.65}
+{'loss': 1.5131, 'grad_norm': 18.273709826970325, 'learning_rate': 3.27659388430258e-06, 'epoch': 0.65}
+{'loss': 0.8005, 'grad_norm': 16.236332683465225, 'learning_rate': 3.252679102004509e-06, 'epoch': 0.65}
+{'loss': 1.8198, 'grad_norm': 21.770554382558636, 'learning_rate': 3.2288097672119347e-06, 'epoch': 0.66}
+{'loss': 0.9899, 'grad_norm': 16.41272823801352, 'learning_rate': 3.204986500762006e-06, 'epoch': 0.66}
+[INFO|configuration_utils.py:491] 2025-12-24 00:31:51,120 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/config.json
+[INFO|configuration_utils.py:757] 2025-12-24 00:31:51,121 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-24 00:31:54,072 >> Model weights saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-24 00:31:54,074 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-24 00:31:54,075 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-24 00:31:54,075 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-24 00:31:54,210] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step450 is about to be saved!
+[2025-12-24 00:31:54,249] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/global_step450/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-24 00:31:54,249] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/global_step450/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-24 00:31:54,520] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/global_step450/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-24 00:31:54,603] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/global_step450/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-24 00:32:01,566] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/global_step450/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-24 00:32:01,567] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/global_step450/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-24 00:32:05,038] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step450 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-24 00:32:05,050 >> Image processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-24 00:32:05,055 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-24 00:32:05,080 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-24 00:32:05,081 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-24 00:32:05,234 >> Video processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-24 00:32:05,257 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-450/chat_template.jinja
+                                                                           
+{'loss': 1.3312, 'grad_norm': 20.75511297032381, 'learning_rate': 3.1812099222936434e-06, 'epoch': 0.66}
+{'loss': 1.1843, 'grad_norm': 18.897571634345496, 'learning_rate': 3.1574806502314206e-06, 'epoch': 0.66}
+{'loss': 0.5586, 'grad_norm': 16.65575853236119, 'learning_rate': 3.133799301769475e-06, 'epoch': 0.66}
+{'loss': 1.6647, 'grad_norm': 22.19766788039849, 'learning_rate': 3.110166492855468e-06, 'epoch': 0.66}
+{'loss': 0.8699, 'grad_norm': 12.713477002260499, 'learning_rate': 3.0865828381745515e-06, 'epoch': 0.66}
+{'loss': 0.8277, 'grad_norm': 16.80918959091119, 'learning_rate': 3.063048951133386e-06, 'epoch': 0.67}
+{'loss': 0.7053, 'grad_norm': 15.355157362541929, 'learning_rate': 3.0395654438441833e-06, 'epoch': 0.67}
+{'loss': 1.7425, 'grad_norm': 20.20834424060124, 'learning_rate': 3.016132927108787e-06, 'epoch': 0.67}
+{'loss': 0.8983, 'grad_norm': 15.340793979098631, 'learning_rate': 2.992752010402789e-06, 'epoch': 0.67}
+{'loss': 1.7419, 'grad_norm': 24.993029280918517, 'learning_rate': 2.9694233018596665e-06, 'epoch': 0.67}
+{'loss': 0.6942, 'grad_norm': 15.245877457931165, 'learning_rate': 2.946147408254976e-06, 'epoch': 0.67}
+{'loss': 1.5922, 'grad_norm': 21.82759636463955, 'learning_rate': 2.9229249349905686e-06, 'epoch': 0.67}
+{'loss': 0.313, 'grad_norm': 11.23232939257659, 'learning_rate': 2.8997564860788385e-06, 'epoch': 0.68}
+{'loss': 0.8592, 'grad_norm': 16.213475404006978, 'learning_rate': 2.8766426641270197e-06, 'epoch': 0.68}
+{'loss': 0.3191, 'grad_norm': 11.293216033706639, 'learning_rate': 2.8535840703215016e-06, 'epoch': 0.68}
+{'loss': 0.3279, 'grad_norm': 11.829109317564376, 'learning_rate': 2.83058130441221e-06, 'epoch': 0.68}
+{'loss': 0.9033, 'grad_norm': 16.13616118194154, 'learning_rate': 2.807634964696988e-06, 'epoch': 0.68}
+{'loss': 1.9325, 'grad_norm': 33.958737405481166, 'learning_rate': 2.7847456480060476e-06, 'epoch': 0.68}
+{'loss': 0.8764, 'grad_norm': 17.310608993965456, 'learning_rate': 2.761913949686438e-06, 'epoch': 0.68}
+{'loss': 0.6582, 'grad_norm': 12.993908785706628, 'learning_rate': 2.7391404635865725e-06, 'epoch': 0.69}
+{'loss': 1.4519, 'grad_norm': 21.682970014087978, 'learning_rate': 2.716425782040767e-06, 'epoch': 0.69}
+{'loss': 0.6052, 'grad_norm': 16.437254968276896, 'learning_rate': 2.6937704958538483e-06, 'epoch': 0.69}
+{'loss': 1.1255, 'grad_norm': 22.474138961824895, 'learning_rate': 2.671175194285773e-06, 'epoch': 0.69}
+{'loss': 0.906, 'grad_norm': 16.74624610385799, 'learning_rate': 2.648640465036316e-06, 'epoch': 0.69}
+{'loss': 1.4234, 'grad_norm': 17.741168376286563, 'learning_rate': 2.6261668942297724e-06, 'epoch': 0.69}
+{'loss': 0.3485, 'grad_norm': 15.09994725658089, 'learning_rate': 2.603755066399718e-06, 'epoch': 0.69}
+{'loss': 0.9506, 'grad_norm': 20.736588674082913, 'learning_rate': 2.5814055644738013e-06, 'epoch': 0.7}
+{'loss': 0.3617, 'grad_norm': 12.169804623702788, 'learning_rate': 2.559118969758595e-06, 'epoch': 0.7}
+{'loss': 1.4434, 'grad_norm': 26.504559401643206, 'learning_rate': 2.5368958619244542e-06, 'epoch': 0.7}
+{'loss': 1.4029, 'grad_norm': 22.442728595175335, 'learning_rate': 2.514736818990463e-06, 'epoch': 0.7}
+{'loss': 0.7955, 'grad_norm': 15.809803501731242, 'learning_rate': 2.4926424173093785e-06, 'epoch': 0.7}
+{'loss': 0.902, 'grad_norm': 18.45681825950431, 'learning_rate': 2.470613231552661e-06, 'epoch': 0.7}
+{'loss': 0.7875, 'grad_norm': 13.606488027575804, 'learning_rate': 2.448649834695503e-06, 'epoch': 0.71}
+{'loss': 1.9164, 'grad_norm': 22.369412578211588, 'learning_rate': 2.4267527980019523e-06, 'epoch': 0.71}
+{'loss': 1.3701, 'grad_norm': 16.89836591717143, 'learning_rate': 2.4049226910100317e-06, 'epoch': 0.71}
+{'loss': 0.7446, 'grad_norm': 17.251446812485952, 'learning_rate': 2.383160081516941e-06, 'epoch': 0.71}
+{'loss': 1.0398, 'grad_norm': 10.514428327707966, 'learning_rate': 2.3614655355642758e-06, 'epoch': 0.71}
+{'loss': 1.7399, 'grad_norm': 18.562647171638375, 'learning_rate': 2.339839617423318e-06, 'epoch': 0.71}
+{'loss': 0.678, 'grad_norm': 18.343345902458918, 'learning_rate': 2.3182828895803438e-06, 'epoch': 0.71}
+{'loss': 1.0378, 'grad_norm': 15.657711967844687, 'learning_rate': 2.296795912722014e-06, 'epoch': 0.72}
+{'loss': 1.6399, 'grad_norm': 25.056810524665163, 'learning_rate': 2.275379245720763e-06, 'epoch': 0.72}
+{'loss': 0.2867, 'grad_norm': 11.974361393527063, 'learning_rate': 2.254033445620293e-06, 'epoch': 0.72}
+{'loss': 0.5471, 'grad_norm': 15.832682725959987, 'learning_rate': 2.23275906762106e-06, 'epoch': 0.72}
+{'loss': 1.3659, 'grad_norm': 19.10502715622721, 'learning_rate': 2.211556665065854e-06, 'epoch': 0.72}
+{'loss': 1.2527, 'grad_norm': 17.835054206737276, 'learning_rate': 2.1904267894253854e-06, 'epoch': 0.72}
+{'loss': 1.0831, 'grad_norm': 14.88859298180727, 'learning_rate': 2.169369990283963e-06, 'epoch': 0.72}
+{'loss': 1.4863, 'grad_norm': 26.662718198452442, 'learning_rate': 2.148386815325179e-06, 'epoch': 0.73}
+{'loss': 1.1932, 'grad_norm': 25.243091308664237, 'learning_rate': 2.1274778103176854e-06, 'epoch': 0.73}
+{'loss': 1.0467, 'grad_norm': 16.813789262338716, 'learning_rate': 2.1066435191009717e-06, 'epoch': 0.73}
+{'loss': 0.713, 'grad_norm': 15.187468955353456, 'learning_rate': 2.08588448357125e-06, 'epoch': 0.73}
+***** Running Evaluation *****
+[INFO|trainer.py:4645] 2025-12-24 01:59:28,138 >>   Num examples = 109
+[INFO|trainer.py:4648] 2025-12-24 01:59:28,138 >>   Batch size = 1
+ 73%|█████████████████████▉        | 500/685 [15:48:06<5:27:23, 106.18s/it][INFO|trainer.py:4309] 2025-12-24 03:01:18,445 >> Saving model checkpoint to /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500
+[INFO|configuration_utils.py:491] 2025-12-24 03:01:18,451 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/config.json
+{'eval_loss': 0.9902176856994629, 'eval_runtime': 3706.0664, 'eval_samples_per_second': 0.029, 'eval_steps_per_second': 0.01, 'epoch': 0.73}
+[INFO|configuration_utils.py:757] 2025-12-24 03:01:18,452 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-24 03:01:21,475 >> Model weights saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-24 03:01:21,476 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-24 03:01:21,477 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-24 03:01:21,478 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-24 03:01:21,617] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step500 is about to be saved!
+[2025-12-24 03:01:21,661] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/global_step500/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-24 03:01:21,661] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/global_step500/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-24 03:01:22,142] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/global_step500/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-24 03:01:22,144] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-24 03:01:28,933] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-24 03:01:28,934] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-24 03:01:32,594] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step500 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-24 03:01:32,606 >> Image processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-24 03:01:32,624 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-24 03:01:32,625 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-24 03:01:32,626 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-24 03:01:32,865 >> Video processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-24 03:01:32,882 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-500/chat_template.jinja
+                                                                           
+{'loss': 0.2833, 'grad_norm': 10.080877916712966, 'learning_rate': 2.065201243667335e-06, 'epoch': 0.73}
+{'loss': 0.7407, 'grad_norm': 16.35347254300698, 'learning_rate': 2.0445943373566178e-06, 'epoch': 0.73}
+{'loss': 1.2846, 'grad_norm': 18.02356693765592, 'learning_rate': 2.02406430062106e-06, 'epoch': 0.73}
+{'loss': 0.7402, 'grad_norm': 19.564238988874884, 'learning_rate': 2.0036116674432653e-06, 'epoch': 0.74}
+{'loss': 1.4524, 'grad_norm': 25.13369121897762, 'learning_rate': 1.9832369697925786e-06, 'epoch': 0.74}
+{'loss': 1.1368, 'grad_norm': 17.529759680894, 'learning_rate': 1.962940737611264e-06, 'epoch': 0.74}
+{'loss': 0.9657, 'grad_norm': 17.01377218343279, 'learning_rate': 1.9427234988006998e-06, 'epoch': 0.74}
+{'loss': 1.1027, 'grad_norm': 18.757295797298976, 'learning_rate': 1.922585779207674e-06, 'epoch': 0.74}
+{'loss': 0.3834, 'grad_norm': 14.986384062915688, 'learning_rate': 1.9025281026106846e-06, 'epoch': 0.74}
+{'loss': 0.8972, 'grad_norm': 16.4640728809631, 'learning_rate': 1.8825509907063328e-06, 'epoch': 0.74}
+{'loss': 1.6037, 'grad_norm': 20.77189248914928, 'learning_rate': 1.8626549630957397e-06, 'epoch': 0.75}
+{'loss': 2.1065, 'grad_norm': 21.59451710920292, 'learning_rate': 1.8428405372710446e-06, 'epoch': 0.75}
+{'loss': 1.0459, 'grad_norm': 17.7200130049342, 'learning_rate': 1.8231082286019342e-06, 'epoch': 0.75}
+{'loss': 1.4509, 'grad_norm': 21.100518154033054, 'learning_rate': 1.8034585503222441e-06, 'epoch': 0.75}
+{'loss': 0.992, 'grad_norm': 12.757368931078748, 'learning_rate': 1.7838920135166066e-06, 'epoch': 0.75}
+{'loss': 1.4184, 'grad_norm': 21.017190687095255, 'learning_rate': 1.7644091271071645e-06, 'epoch': 0.75}
+{'loss': 1.0485, 'grad_norm': 18.10479915337063, 'learning_rate': 1.745010397840321e-06, 'epoch': 0.75}
+{'loss': 0.2249, 'grad_norm': 10.00014404607322, 'learning_rate': 1.7256963302735752e-06, 'epoch': 0.76}
+{'loss': 1.6633, 'grad_norm': 25.308432345133962, 'learning_rate': 1.706467426762382e-06, 'epoch': 0.76}
+{'loss': 0.3007, 'grad_norm': 8.967686501324405, 'learning_rate': 1.687324187447102e-06, 'epoch': 0.76}
+{'loss': 0.6368, 'grad_norm': 14.3800139981805, 'learning_rate': 1.6682671102399806e-06, 'epoch': 0.76}
+{'loss': 0.734, 'grad_norm': 13.122393304219763, 'learning_rate': 1.6492966908122033e-06, 'epoch': 0.76}
+{'loss': 1.8823, 'grad_norm': 19.668468381381825, 'learning_rate': 1.630413422581001e-06, 'epoch': 0.76}
+{'loss': 0.9601, 'grad_norm': 18.063106408780648, 'learning_rate': 1.611617796696821e-06, 'epoch': 0.76}
+{'loss': 1.5654, 'grad_norm': 18.181488094703777, 'learning_rate': 1.5929103020305441e-06, 'epoch': 0.77}
+{'loss': 1.9437, 'grad_norm': 21.62755240792129, 'learning_rate': 1.5742914251607794e-06, 'epoch': 0.77}
+{'loss': 0.8785, 'grad_norm': 17.415073839675532, 'learning_rate': 1.5557616503611977e-06, 'epoch': 0.77}
+{'loss': 1.0675, 'grad_norm': 17.096100399246488, 'learning_rate': 1.5373214595879416e-06, 'epoch': 0.77}
+{'loss': 1.171, 'grad_norm': 19.641026256079588, 'learning_rate': 1.5189713324670935e-06, 'epoch': 0.77}
+{'loss': 1.4924, 'grad_norm': 19.990112841407885, 'learning_rate': 1.500711746282192e-06, 'epoch': 0.77}
+{'loss': 1.1303, 'grad_norm': 17.503137044871437, 'learning_rate': 1.4825431759618208e-06, 'epoch': 0.78}
+{'loss': 1.9165, 'grad_norm': 26.60375424455159, 'learning_rate': 1.4644660940672628e-06, 'epoch': 0.78}
+{'loss': 0.7987, 'grad_norm': 12.531087677571733, 'learning_rate': 1.4464809707801985e-06, 'epoch': 0.78}
+{'loss': 0.7508, 'grad_norm': 15.222038652072778, 'learning_rate': 1.4285882738904822e-06, 'epoch': 0.78}
+{'loss': 0.8755, 'grad_norm': 16.84164544955678, 'learning_rate': 1.4107884687839762e-06, 'epoch': 0.78}
+{'loss': 0.2367, 'grad_norm': 7.853914801180324, 'learning_rate': 1.3930820184304423e-06, 'epoch': 0.78}
+{'loss': 0.8946, 'grad_norm': 16.74518694665175, 'learning_rate': 1.3754693833715e-06, 'epoch': 0.78}
+{'loss': 0.8216, 'grad_norm': 15.623752015782634, 'learning_rate': 1.357951021708655e-06, 'epoch': 0.79}
+{'loss': 1.2784, 'grad_norm': 20.265829694059825, 'learning_rate': 1.340527389091374e-06, 'epoch': 0.79}
+{'loss': 1.6499, 'grad_norm': 22.74734243798209, 'learning_rate': 1.323198938705238e-06, 'epoch': 0.79}
+{'loss': 0.7531, 'grad_norm': 15.217749426819575, 'learning_rate': 1.30596612126016e-06, 'epoch': 0.79}
+{'loss': 1.1674, 'grad_norm': 30.777113086418943, 'learning_rate': 1.2888293849786503e-06, 'epoch': 0.79}
+{'loss': 0.2228, 'grad_norm': 10.391870616298437, 'learning_rate': 1.2717891755841722e-06, 'epoch': 0.79}
+{'loss': 1.1854, 'grad_norm': 18.913275592228345, 'learning_rate': 1.2548459362895377e-06, 'epoch': 0.79}
+{'loss': 1.1508, 'grad_norm': 16.37091484225955, 'learning_rate': 1.2380001077853833e-06, 'epoch': 0.8}
+{'loss': 0.3554, 'grad_norm': 11.281349513067463, 'learning_rate': 1.2212521282287093e-06, 'epoch': 0.8}
+{'loss': 1.1075, 'grad_norm': 17.37119687923995, 'learning_rate': 1.2046024332314843e-06, 'epoch': 0.8}
+{'loss': 1.745, 'grad_norm': 15.963604085177357, 'learning_rate': 1.188051455849309e-06, 'epoch': 0.8}
+{'loss': 0.8466, 'grad_norm': 17.961638598633535, 'learning_rate': 1.1715996265701619e-06, 'epoch': 0.8}
+{'loss': 0.3108, 'grad_norm': 11.14702486170499, 'learning_rate': 1.1552473733031893e-06, 'epoch': 0.8}
+[INFO|configuration_utils.py:491] 2025-12-24 04:27:57,760 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/config.json
+[INFO|configuration_utils.py:757] 2025-12-24 04:27:57,760 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-24 04:28:00,927 >> Model weights saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-24 04:28:00,928 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-24 04:28:00,929 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-24 04:28:00,929 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-24 04:28:01,067] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step550 is about to be saved!
+[2025-12-24 04:28:01,109] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/global_step550/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-24 04:28:01,109] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/global_step550/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-24 04:28:01,381] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/global_step550/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-24 04:28:01,496] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/global_step550/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-24 04:28:09,169] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/global_step550/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-24 04:28:09,169] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/global_step550/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-24 04:28:12,184] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step550 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-24 04:28:12,197 >> Image processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-24 04:28:12,199 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-24 04:28:12,227 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-24 04:28:12,236 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-24 04:28:12,415 >> Video processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-24 04:28:12,437 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-550/chat_template.jinja
+                                                                           
+{'loss': 1.0966, 'grad_norm': 18.51880636258404, 'learning_rate': 1.1389951213675926e-06, 'epoch': 0.8}
+{'loss': 1.025, 'grad_norm': 14.890408816939145, 'learning_rate': 1.1228432934815487e-06, 'epoch': 0.81}
+{'loss': 0.7736, 'grad_norm': 15.170053984809565, 'learning_rate': 1.1067923097512256e-06, 'epoch': 0.81}
+{'loss': 1.4173, 'grad_norm': 20.2770124778366, 'learning_rate': 1.0908425876598512e-06, 'epoch': 0.81}
+{'loss': 0.6599, 'grad_norm': 11.477851763538077, 'learning_rate': 1.0749945420568613e-06, 'epoch': 0.81}
+{'loss': 1.3784, 'grad_norm': 23.314017269720527, 'learning_rate': 1.0592485851470973e-06, 'epoch': 0.81}
+{'loss': 1.4332, 'grad_norm': 22.819752754136474, 'learning_rate': 1.0436051264800983e-06, 'epoch': 0.81}
+{'loss': 1.4428, 'grad_norm': 18.201574409640845, 'learning_rate': 1.0280645729394368e-06, 'epoch': 0.81}
+{'loss': 1.2187, 'grad_norm': 21.519381039254863, 'learning_rate': 1.0126273287321476e-06, 'epoch': 0.82}
+{'loss': 1.1833, 'grad_norm': 12.379005766817533, 'learning_rate': 9.972937953781985e-07, 'epoch': 0.82}
+{'loss': 0.5791, 'grad_norm': 17.251919335684953, 'learning_rate': 9.820643717000678e-07, 'epoch': 0.82}
+{'loss': 1.368, 'grad_norm': 18.310097156774454, 'learning_rate': 9.6693945381235e-07, 'epoch': 0.82}
+{'loss': 1.1612, 'grad_norm': 26.35946865957489, 'learning_rate': 9.519194351114702e-07, 'epoch': 0.82}
+{'loss': 0.9178, 'grad_norm': 17.777910432166838, 'learning_rate': 9.370047062654386e-07, 'epoch': 0.82}
+{'loss': 1.7061, 'grad_norm': 18.90360624809645, 'learning_rate': 9.221956552036992e-07, 'epoch': 0.82}
+{'loss': 0.8997, 'grad_norm': 18.181413914606363, 'learning_rate': 9.074926671070322e-07, 'epoch': 0.83}
+{'loss': 0.7576, 'grad_norm': 16.362176665898208, 'learning_rate': 8.928961243975437e-07, 'epoch': 0.83}
+{'loss': 1.121, 'grad_norm': 25.326888309163987, 'learning_rate': 8.784064067287057e-07, 'epoch': 0.83}
+{'loss': 0.841, 'grad_norm': 15.784955137086872, 'learning_rate': 8.640238909754994e-07, 'epoch': 0.83}
+{'loss': 0.7817, 'grad_norm': 13.413188786411316, 'learning_rate': 8.497489512245971e-07, 'epoch': 0.83}
+{'loss': 0.9225, 'grad_norm': 21.509346540512478, 'learning_rate': 8.355819587646425e-07, 'epoch': 0.83}
+{'loss': 1.6367, 'grad_norm': 18.99209861471192, 'learning_rate': 8.215232820765851e-07, 'epoch': 0.84}
+{'loss': 0.5728, 'grad_norm': 13.968380002290711, 'learning_rate': 8.075732868241054e-07, 'epoch': 0.84}
+{'loss': 1.5559, 'grad_norm': 18.572825932509026, 'learning_rate': 7.937323358440935e-07, 'epoch': 0.84}
+{'loss': 0.9599, 'grad_norm': 19.60979290715272, 'learning_rate': 7.800007891372247e-07, 'epoch': 0.84}
+{'loss': 1.0288, 'grad_norm': 20.725910274564473, 'learning_rate': 7.663790038585794e-07, 'epoch': 0.84}
+{'loss': 0.7164, 'grad_norm': 18.26680102551537, 'learning_rate': 7.528673343083715e-07, 'epoch': 0.84}
+{'loss': 0.8616, 'grad_norm': 17.832544873491663, 'learning_rate': 7.394661319227175e-07, 'epoch': 0.84}
+{'loss': 1.2051, 'grad_norm': 19.5048350703934, 'learning_rate': 7.261757452645085e-07, 'epoch': 0.85}
+{'loss': 0.3509, 'grad_norm': 10.720735518647993, 'learning_rate': 7.129965200143335e-07, 'epoch': 0.85}
+{'loss': 1.1678, 'grad_norm': 19.934093244647517, 'learning_rate': 6.999287989614972e-07, 'epoch': 0.85}
+{'loss': 0.5913, 'grad_norm': 18.428523040974614, 'learning_rate': 6.86972921995096e-07, 'epoch': 0.85}
+{'loss': 0.3316, 'grad_norm': 14.373958686890163, 'learning_rate': 6.741292260951859e-07, 'epoch': 0.85}
+{'loss': 1.0374, 'grad_norm': 14.149172484195528, 'learning_rate': 6.613980453240065e-07, 'epoch': 0.85}
+{'loss': 2.1743, 'grad_norm': 26.6926227837112, 'learning_rate': 6.487797108173072e-07, 'epoch': 0.85}
+{'loss': 0.6269, 'grad_norm': 16.67640156927098, 'learning_rate': 6.36274550775719e-07, 'epoch': 0.86}
+{'loss': 0.6611, 'grad_norm': 14.275338556477838, 'learning_rate': 6.238828904562316e-07, 'epoch': 0.86}
+{'loss': 0.885, 'grad_norm': 13.086211176300953, 'learning_rate': 6.116050521637218e-07, 'epoch': 0.86}
+{'loss': 0.6679, 'grad_norm': 16.566291007571948, 'learning_rate': 5.994413552425787e-07, 'epoch': 0.86}
+{'loss': 0.3202, 'grad_norm': 13.736458576272915, 'learning_rate': 5.873921160683943e-07, 'epoch': 0.86}
+{'loss': 0.5183, 'grad_norm': 13.54311556708113, 'learning_rate': 5.754576480397334e-07, 'epoch': 0.86}
+{'loss': 1.0143, 'grad_norm': 21.677868366138956, 'learning_rate': 5.636382615699842e-07, 'epoch': 0.86}
+{'loss': 1.5518, 'grad_norm': 21.912391979576874, 'learning_rate': 5.519342640792869e-07, 'epoch': 0.87}
+{'loss': 1.2515, 'grad_norm': 18.4020175416858, 'learning_rate': 5.403459599865307e-07, 'epoch': 0.87}
+{'loss': 0.7886, 'grad_norm': 19.726988698836468, 'learning_rate': 5.288736507014436e-07, 'epoch': 0.87}
+{'loss': 0.7712, 'grad_norm': 16.203088111984755, 'learning_rate': 5.175176346167465e-07, 'epoch': 0.87}
+{'loss': 0.5171, 'grad_norm': 13.860450655326584, 'learning_rate': 5.062782071003974e-07, 'epoch': 0.87}
+{'loss': 1.2955, 'grad_norm': 19.774100961282915, 'learning_rate': 4.951556604879049e-07, 'epoch': 0.87}
+{'loss': 1.1099, 'grad_norm': 10.709267314953308, 'learning_rate': 4.841502840747253e-07, 'epoch': 0.87}
+{'loss': 1.0708, 'grad_norm': 19.552854389510177, 'learning_rate': 4.732623641087403e-07, 'epoch': 0.88}
+[INFO|configuration_utils.py:491] 2025-12-24 05:55:58,915 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/config.json
+[INFO|configuration_utils.py:757] 2025-12-24 05:55:58,915 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-24 05:56:01,954 >> Model weights saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-24 05:56:01,956 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-24 05:56:01,957 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-24 05:56:01,958 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-24 05:56:02,088] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step600 is about to be saved!
+[2025-12-24 05:56:02,129] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/global_step600/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-24 05:56:02,129] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/global_step600/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-24 05:56:02,449] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/global_step600/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-24 05:56:02,566] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/global_step600/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-24 05:56:09,715] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/global_step600/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-24 05:56:09,716] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/global_step600/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-24 05:56:13,033] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step600 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-24 05:56:13,047 >> Image processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-24 05:56:13,071 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-24 05:56:13,096 >> tokenizer config file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-24 05:56:13,097 >> Special tokens file saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-24 05:56:13,286 >> Video processor saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-24 05:56:13,305 >> chat template saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-600/chat_template.jinja
+                                                                           
+{'loss': 1.2828, 'grad_norm': 19.94973671792486, 'learning_rate': 4.624921837828106e-07, 'epoch': 0.88}
+{'loss': 1.4883, 'grad_norm': 16.679481626182763, 'learning_rate': 4.5184002322740784e-07, 'epoch': 0.88}
+{'loss': 0.2843, 'grad_norm': 11.217704226563356, 'learning_rate': 4.4130615950333357e-07, 'epoch': 0.88}
+{'loss': 1.0449, 'grad_norm': 18.313786774349435, 'learning_rate': 4.3089086659450774e-07, 'epoch': 0.88}
+{'loss': 1.0539, 'grad_norm': 13.576763174804206, 'learning_rate': 4.205944154008423e-07, 'epoch': 0.88}
+{'loss': 0.3838, 'grad_norm': 17.658338293975874, 'learning_rate': 4.1041707373120354e-07, 'epoch': 0.88}
+{'loss': 1.6571, 'grad_norm': 22.10726579861937, 'learning_rate': 4.0035910629643406e-07, 'epoch': 0.89}
+{'loss': 1.5971, 'grad_norm': 17.625230766001998, 'learning_rate': 3.9042077470247574e-07, 'epoch': 0.89}
+{'loss': 2.156, 'grad_norm': 27.072776574247843, 'learning_rate': 3.8060233744356634e-07, 'epoch': 0.89}
+{'loss': 0.8894, 'grad_norm': 17.08549435324387, 'learning_rate': 3.709040498955102e-07, 'epoch': 0.89}
+{'loss': 0.2945, 'grad_norm': 10.811714646296952, 'learning_rate': 3.613261643090388e-07, 'epoch': 0.89}
+{'loss': 1.4036, 'grad_norm': 22.268694264319535, 'learning_rate': 3.518689298032524e-07, 'epoch': 0.89}
+{'loss': 0.3313, 'grad_norm': 11.357952757646672, 'learning_rate': 3.4253259235913717e-07, 'epoch': 0.89}
+{'loss': 1.2451, 'grad_norm': 21.966065477025353, 'learning_rate': 3.333173948131663e-07, 'epoch': 0.9}
+{'loss': 1.1837, 'grad_norm': 19.490708528223205, 'learning_rate': 3.2422357685098936e-07, 'epoch': 0.9}
+{'loss': 1.3496, 'grad_norm': 24.854103753429282, 'learning_rate': 3.1525137500119207e-07, 'epoch': 0.9}
+{'loss': 1.1751, 'grad_norm': 16.334377377932025, 'learning_rate': 3.0640102262914584e-07, 'epoch': 0.9}
+{'loss': 0.8984, 'grad_norm': 19.446625225007597, 'learning_rate': 2.9767274993094285e-07, 'epoch': 0.9}
+{'loss': 0.2369, 'grad_norm': 8.260405876403642, 'learning_rate': 2.890667839273997e-07, 'epoch': 0.9}
+{'loss': 0.2892, 'grad_norm': 10.125650860794117, 'learning_rate': 2.8058334845816214e-07, 'epoch': 0.91}
+{'loss': 0.8198, 'grad_norm': 15.787007564971084, 'learning_rate': 2.722226641758757e-07, 'epoch': 0.91}
+{'loss': 0.7666, 'grad_norm': 12.610933796750604, 'learning_rate': 2.6398494854045055e-07, 'epoch': 0.91}
+{'loss': 0.2776, 'grad_norm': 9.311921396016094, 'learning_rate': 2.5587041581340235e-07, 'epoch': 0.91}
+{'loss': 0.8952, 'grad_norm': 16.123707490945446, 'learning_rate': 2.478792770522842e-07, 'epoch': 0.91}
+{'loss': 1.8523, 'grad_norm': 22.3500391784435, 'learning_rate': 2.400117401051921e-07, 'epoch': 0.91}
+{'loss': 0.7701, 'grad_norm': 12.902240437117255, 'learning_rate': 2.32268009605362e-07, 'epoch': 0.91}
+{'loss': 1.1392, 'grad_norm': 16.26679889289371, 'learning_rate': 2.2464828696584506e-07, 'epoch': 0.92}
+{'loss': 0.3031, 'grad_norm': 10.659808491281703, 'learning_rate': 2.171527703742715e-07, 'epoch': 0.92}
+{'loss': 0.2874, 'grad_norm': 14.35409296367307, 'learning_rate': 2.0978165478769298e-07, 'epoch': 0.92}
+{'loss': 0.9144, 'grad_norm': 18.55997933692116, 'learning_rate': 2.0253513192751374e-07, 'epoch': 0.92}
+{'loss': 2.5241, 'grad_norm': 20.453046568999792, 'learning_rate': 1.9541339027450256e-07, 'epoch': 0.92}
+{'loss': 1.6955, 'grad_norm': 23.30638448053026, 'learning_rate': 1.884166150638933e-07, 'epoch': 0.92}
+{'loss': 0.9811, 'grad_norm': 20.075336859900336, 'learning_rate': 1.8154498828056255e-07, 'epoch': 0.92}
+{'loss': 0.7683, 'grad_norm': 14.750764772007477, 'learning_rate': 1.7479868865430072e-07, 'epoch': 0.93}
+{'loss': 0.627, 'grad_norm': 15.07058891891056, 'learning_rate': 1.681778916551591e-07, 'epoch': 0.93}
+{'loss': 1.7183, 'grad_norm': 21.99814379937125, 'learning_rate': 1.6168276948889007e-07, 'epoch': 0.93}
+{'loss': 0.3262, 'grad_norm': 14.1824768719258, 'learning_rate': 1.5531349109246364e-07, 'epoch': 0.93}
+{'loss': 0.8958, 'grad_norm': 14.8219856190374, 'learning_rate': 1.4907022212967803e-07, 'epoch': 0.93}
+{'loss': 0.6028, 'grad_norm': 12.924588136739956, 'learning_rate': 1.4295312498684656e-07, 'epoch': 0.93}
+{'loss': 0.8748, 'grad_norm': 15.619969553362731, 'learning_rate': 1.3696235876857812e-07, 'epoch': 0.93}
+{'loss': 1.5341, 'grad_norm': 22.930035387331873, 'learning_rate': 1.310980792936345e-07, 'epoch': 0.94}
+{'loss': 0.4496, 'grad_norm': 14.263065257018901, 'learning_rate': 1.253604390908819e-07, 'epoch': 0.94}
+{'loss': 0.8638, 'grad_norm': 19.919356173469335, 'learning_rate': 1.1974958739531973e-07, 'epoch': 0.94}
+{'loss': 0.9702, 'grad_norm': 22.005313280957488, 'learning_rate': 1.1426567014420297e-07, 'epoch': 0.94}
+{'loss': 1.5663, 'grad_norm': 22.20674857631259, 'learning_rate': 1.0890882997324104e-07, 'epoch': 0.94}
+{'loss': 1.4536, 'grad_norm': 21.20892300316245, 'learning_rate': 1.0367920621289496e-07, 'epoch': 0.94}
+{'loss': 0.3013, 'grad_norm': 11.010460693316979, 'learning_rate': 9.857693488474596e-08, 'epoch': 0.94}
+{'loss': 0.3281, 'grad_norm': 14.171636224892953, 'learning_rate': 9.360214869796492e-08, 'epoch': 0.95}
+{'loss': 1.742, 'grad_norm': 23.459868921054053, 'learning_rate': 8.875497704585401e-08, 'epoch': 0.95}
+{'loss': 1.7686, 'grad_norm': 20.55184199719345, 'learning_rate': 8.403554600248498e-08, 'epoch': 0.95}
+[INFO|configuration_utils.py:491] 2025-12-24 07:24:21,483 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-650/config.json
+[INFO|configuration_utils.py:757] 2025-12-24 07:24:21,483 >> Configuration saved in /hub_data4/seohyun/saves/ecva_instruct_1223/full/sft/checkpoint-650/generation_config.json
+Traceback (most recent call last):
+  File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/launcher.py", line 167, in <module>
+    run_exp()
+  File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/tuner.py", line 132, in run_exp
+    _training_function(config={"args": args, "callbacks": callbacks})
+  File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/tuner.py", line 93, in _training_function
+    run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+  File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/sft/workflow.py", line 96, in run_sft
+    train_result = trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 2325, in train
+    return inner_training_loop(
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 2756, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 3228, in _maybe_log_save_evaluate
+    self._save_checkpoint(model, trial)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 3325, in _save_checkpoint
+    self.save_model(output_dir, _internal_call=True)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 4214, in save_model
+    self._save(output_dir, state_dict=state_dict)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 4331, in _save
+    self.model.save_pretrained(
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4173, in save_pretrained
+    safe_save_file(shard, os.path.join(save_directory, shard_file), metadata=metadata)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/safetensors/torch.py", line 286, in save_file
+    serialize_file(_flatten(tensors), filename, metadata=metadata)
+safetensors_rust.SafetensorError: Error while serializing: IoError(Os { code: 122, kind: QuotaExceeded, message: "Disk quota exceeded" })
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/launcher.py", line 167, in <module>
+[rank0]:     run_exp()
+[rank0]:   File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/tuner.py", line 132, in run_exp
+[rank0]:     _training_function(config={"args": args, "callbacks": callbacks})
+[rank0]:   File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/tuner.py", line 93, in _training_function
+[rank0]:     run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+[rank0]:   File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/sft/workflow.py", line 96, in run_sft
+[rank0]:     train_result = trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 2325, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 2756, in _inner_training_loop
+[rank0]:     self._maybe_log_save_evaluate(
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 3228, in _maybe_log_save_evaluate
+[rank0]:     self._save_checkpoint(model, trial)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 3325, in _save_checkpoint
+[rank0]:     self.save_model(output_dir, _internal_call=True)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 4214, in save_model
+[rank0]:     self._save(output_dir, state_dict=state_dict)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 4331, in _save
+[rank0]:     self.model.save_pretrained(
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4173, in save_pretrained
+[rank0]:     safe_save_file(shard, os.path.join(save_directory, shard_file), metadata=metadata)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/safetensors/torch.py", line 286, in save_file
+[rank0]:     serialize_file(_flatten(tensors), filename, metadata=metadata)
+[rank0]: safetensors_rust.SafetensorError: Error while serializing: IoError(Os { code: 122, kind: QuotaExceeded, message: "Disk quota exceeded" })

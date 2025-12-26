@@ -24,31 +24,31 @@ CONFIG_PATH="${CONFIG_PATH:-${DEFAULT_CONFIG_PATH}}"
 
 # User toggles (edit values; env can override via VAR=...)
 ANALYZE_TOKEN="${ANALYZE_TOKEN:-0}"                 # 1=첫 3개 샘플 토큰 디버깅
-MID_EVAL_ON_SAVE="${MID_EVAL_ON_SAVE:-1}"           # 1=중간평가 활성화
-MID_EVAL_FRACTION="${MID_EVAL_FRACTION:-1.0}"       # 0.5=전체 step의 절반 지점에서 1회 평가
+MID_EVAL_ON_SAVE="${MID_EVAL_ON_SAVE:-0}"           # 1=중간평가 활성화
+MID_EVAL_FRACTION="${MID_EVAL_FRACTION:-1}"       # 0.5=전체 step의 절반 지점에서 1회 평가
 EVAL_RESULT_PUSH="${EVAL_RESULT_PUSH:-1}"            # 1=중간평가 결과 HF push
 EVAL_PARSE_MODE="${EVAL_PARSE_MODE:-answer_tag}"    # answer_tag | last_sentence
 EVAL_METHOD="${EVAL_METHOD:-exact_match}"           # 현재 exact_match만 사용
 EVAL_DATASET_REPO="${EVAL_DATASET_REPO:-happy8825/valid_ecva_clean}"
 EVAL_PROMPT="${EVAL_PROMPT:-Are any anomalies directly occurring in this clip? If yes, identify them briefly. }"
-EVAL_MAX_SAMPLES="${EVAL_MAX_SAMPLES:-10000}"
-EVAL_GPU_DEVICES="${EVAL_GPU_DEVICES:-}"            # 예: "3" 또는 "2,3" (빈 값이면 학습 GPU 마지막 사용)
+EVAL_MAX_SAMPLES="${EVAL_MAX_SAMPLES:-10}"
+EVAL_GPU_DEVICES="${EVAL_GPU_DEVICES:-3}"            # 예: "3" 또는 "2,3" (빈 값이면 학습 GPU 마지막 사용)
 EVAL_DEBUG_TIME="${EVAL_DEBUG_TIME:-0}"              # 1=prep/generate/total 시간(ms) 기록
 EVAL_DEBUG_MEMORY="${EVAL_DEBUG_MEMORY:-0}"          # 1=CUDA/CPU 메모리(before/after/delta) 기록
 # GPU selection (comma separated)
 GPU_DEVICES="0,1,2"  # e.g., "4,5"; empty = keep current
 
 # Common overrides you asked to manage from bash
-VIDEO_MAXLEN="${VIDEO_MAXLEN:-30}"
+VIDEO_MAXLEN="${VIDEO_MAXLEN:-36}"
 DATASET="${DATASET:-}"
 DATASET_DIR="${DATASET_DIR:-${ROOT_DIR}/script/sft/train/data_config}"
 MEDIA_DIR="/hub_data3/seohyun"
 
 LOGGING_STEPS="${LOGGING_STEPS:-1}"
-SAVE_STEPS="${SAVE_STEPS:-50000}"
+SAVE_STEPS="${SAVE_STEPS:-50}"
 REPORT_TO="${REPORT_TO:-wandb}"
 
-OUTPUT_DIR="${OUTPUT_DIR:-/hub_data3/seohyun/saves/ecva_instruct/full/sft}"
+OUTPUT_DIR="${OUTPUT_DIR:-/hub_data4/seohyun/saves/ecva_instruct_1223/full/sft}"
 OUTPUT_DEBUG_DIR="${OUTPUT_DIR}/output_debug"
 
 # Optional: register/override a dataset entry by only specifying HF_HUB_URL
@@ -82,7 +82,7 @@ if [[ ! -f "${CONFIG_PATH}" ]]; then
 fi
 
 if [[ -z "${DATASET}" ]]; then
-  echo "❌ DATASET is empty and HF_HUB_URL not provided to infer from. Set DATASET=... or HF_HUB_URL=org/repo." >&2
+  echo "DATASET is empty and HF_HUB_URL not provided to infer from. Set DATASET=... or HF_HUB_URL=org/repo." >&2
   exit 1
 fi
 
@@ -217,6 +217,25 @@ run_eval_for_ckpt() {
       --output "${OUT_JSON}" \
       --model_repo "${ckpt_dir}" \
       --dataset_repo "${EVAL_DATASET_REPO}"
+    # Optional: write per-sample predictions as JSONL next to OUT_JSON
+    if [[ "${EVAL_SAVE_PREDS_JSONL:-1}" == "1" ]]; then
+      python3 - << 'PY' "${OUT_JSON}"
+import json, os, sys
+inp = sys.argv[1]
+out = os.path.splitext(inp)[0] + ".jsonl"
+try:
+    with open(inp, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    items = data.get('items') or []
+    # each item is expected to contain fields like: id, video(s), prompt, pred, gt, correct, etc.
+    with open(out, 'w', encoding='utf-8') as w:
+        for it in items:
+            w.write(json.dumps(it, ensure_ascii=False) + "\n")
+    print(f"[mid-eval] wrote per-sample JSONL: {out} ({len(items)} records)")
+except Exception as e:
+    print(f"[mid-eval][warn] jsonl write failed: {e}")
+PY
+    fi
   else
     (
       export CUDA_VISIBLE_DEVICES="${eval_cuda}"
@@ -234,6 +253,24 @@ run_eval_for_ckpt() {
         "${extra_parse[@]}" \
         "${debug_flags[@]}"
     ) || echo "[mid-eval][warn] eval failed for ${ckpt_dir}"
+    # Optional: write per-sample predictions as JSONL next to OUT_JSON
+    if [[ "${EVAL_SAVE_PREDS_JSONL:-1}" == "1" && -s "${OUT_JSON}" ]]; then
+      python3 - << 'PY' "${OUT_JSON}"
+import json, os, sys
+inp = sys.argv[1]
+out = os.path.splitext(inp)[0] + ".jsonl"
+try:
+    with open(inp, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    items = data.get('items') or []
+    with open(out, 'w', encoding='utf-8') as w:
+        for it in items:
+            w.write(json.dumps(it, ensure_ascii=False) + "\n")
+    print(f"[mid-eval] wrote per-sample JSONL: {out} ({len(items)} records)")
+except Exception as e:
+    print(f"[mid-eval][warn] jsonl write failed: {e}")
+PY
+    fi
   fi
 
   if [[ "${EVAL_RESULT_PUSH}" == "1" ]]; then
@@ -272,68 +309,13 @@ PY
 start_eval_watcher() {
   # disable xtrace for background watcher to avoid noisy logs
   set +x 2>/dev/null || true
-  echo "[mid-eval] watcher enabled; dataset=${EVAL_DATASET_REPO} parse=${EVAL_PARSE_MODE} push=${EVAL_RESULT_PUSH}"
+  echo "[mid-eval] watcher enabled (evaluate every new checkpoint); dataset=${EVAL_DATASET_REPO} parse=${EVAL_PARSE_MODE} push=${EVAL_RESULT_PUSH}"
   mkdir -p "${OUTPUT_DIR}/eval"
-  local TARGET_FILE="${OUTPUT_DIR}/eval/.target_step"
-  local DONE_FILE="${OUTPUT_DIR}/eval/.mid_eval_done"
-  # Compute target step once when trainer_state.json reveals max_steps
-  while [[ ! -f "${TARGET_FILE}" ]]; do
-    if [[ -f "${OUTPUT_DIR}/trainer_state.json" ]]; then
-      python3 - "$OUTPUT_DIR" "$MID_EVAL_FRACTION" "$SAVE_STEPS" << 'PY'
-import json, math, os, sys
-out_dir, frac, save_steps = sys.argv[1], float(sys.argv[2]), int(sys.argv[3])
-st_path = os.path.join(out_dir, 'trainer_state.json')
-try:
-    with open(st_path, 'r', encoding='utf-8') as f:
-        st = json.load(f)
-    max_steps = int(st.get('max_steps') or 0)
-except Exception:
-    max_steps = 0
-if max_steps > 0:
-    tgt = int(math.ceil(max_steps * frac))
-    # align to nearest checkpoint boundary (ceil to save_steps)
-    if save_steps > 0:
-        tgt = int(math.ceil(tgt / float(save_steps)) * save_steps)
-    open(os.path.join(out_dir, 'eval', '.target_step'), 'w').write(str(tgt))
-    print(f"[mid-eval] target step computed: {tgt}")
-else:
-    # not ready yet
-    pass
-PY
-    fi
-    [[ -f "${TARGET_FILE}" ]] || sleep 10
-    # if training ended early, break to allow final fallback below
-    if ! kill -0 "${TRAIN_PID}" 2>/dev/null; then
-      break
-    fi
-  done
+  # Evaluate each newly detected checkpoint. run_eval_for_ckpt skips if output JSON exists.
   while kill -0 "${TRAIN_PID}" 2>/dev/null; do
-    # If already done, stop watcher
-    if [[ -f "${DONE_FILE}" ]]; then
-      break
-    fi
-    # Read target step if available
-    local TGT
-    TGT=""
-    if [[ -f "${TARGET_FILE}" ]]; then
-      TGT="$(cat "${TARGET_FILE}" 2>/dev/null || true)"
-    fi
     for d in "${OUTPUT_DIR}"/checkpoint-*; do
       [[ -d "${d}" ]] || continue
-      [[ -d "${d}" ]] || continue
-      local tag
-      tag="$(basename "${d}")"
-      # step number from tag
-      local stp
-      stp="${tag#checkpoint-}"
-      # If target known: only run when stp >= target, once
-      if [[ -n "${TGT}" ]]; then
-        if (( stp >= TGT )); then
-          run_eval_for_ckpt "${d}"
-          : > "${DONE_FILE}"
-          break
-        fi
-      fi
+      run_eval_for_ckpt "${d}"
     done
     sleep 60
   done
@@ -365,6 +347,8 @@ TRAIN_PID=$!
 set +x
 
 if [[ "${MID_EVAL_ON_SAVE}" == "1" ]]; then
+  # Ensure eval log dir exists before redirect (redirection opens file before function runs)
+  mkdir -p "${OUTPUT_DIR}/eval"
   # Route watcher chatter into a log file to keep terminal clean
   start_eval_watcher >"${OUTPUT_DIR}/eval/watcher.log" 2>&1 &
   WATCHER_PID=$!

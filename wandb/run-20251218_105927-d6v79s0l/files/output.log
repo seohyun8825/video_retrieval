@@ -1,0 +1,102 @@
+ 54%|███████████████████████████████████████▊                                  | 7/13 [16:39<14:06, 141.05s/it][INFO|trainer.py:4309] 2025-12-18 11:16:11,738 >> Saving model checkpoint to /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7
+{'loss': 4.5296, 'grad_norm': 100.69992280429406, 'learning_rate': 0.0, 'epoch': 0.08}
+{'loss': 3.6108, 'grad_norm': 75.86996378336528, 'learning_rate': 5e-06, 'epoch': 0.15}
+{'loss': 3.967, 'grad_norm': 96.24703602956909, 'learning_rate': 1e-05, 'epoch': 0.23}
+{'loss': 3.336, 'grad_norm': 54.891316394056986, 'learning_rate': 9.797464868072489e-06, 'epoch': 0.31}
+{'loss': 2.2614, 'grad_norm': 48.060326555220556, 'learning_rate': 9.206267664155906e-06, 'epoch': 0.38}
+{'loss': 2.4703, 'grad_norm': 43.69163558599838, 'learning_rate': 8.274303669726427e-06, 'epoch': 0.46}
+{'loss': 2.1071, 'grad_norm': 37.63852155745631, 'learning_rate': 7.0770750650094335e-06, 'epoch': 0.54}
+[INFO|configuration_utils.py:491] 2025-12-18 11:16:11,744 >> Configuration saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/config.json
+[INFO|configuration_utils.py:757] 2025-12-18 11:16:11,744 >> Configuration saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-18 11:16:14,627 >> Model weights saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-18 11:16:14,629 >> chat template saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-18 11:16:14,630 >> tokenizer config file saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-18 11:16:14,631 >> Special tokens file saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-18 11:16:14,773] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step7 is about to be saved!
+[2025-12-18 11:16:14,859] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/global_step7/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-18 11:16:14,859] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/global_step7/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-18 11:16:15,155] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/global_step7/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-18 11:16:15,188] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/global_step7/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-18 11:16:25,163] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/global_step7/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-18 11:16:25,165] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/global_step7/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-18 11:16:25,622] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step7 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-18 11:16:25,626 >> Image processor saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-18 11:16:25,650 >> chat template saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-18 11:16:25,652 >> tokenizer config file saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-18 11:16:25,652 >> Special tokens file saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-18 11:16:25,839 >> Video processor saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-18 11:16:25,863 >> chat template saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-7/chat_template.jinja
+100%|██████████████████████████████████████████████████████████████| 13/13 [29:47<00:00, 128.37s/it][INFO|trainer.py:4309] 2025-12-18 11:29:20,286 >> Saving model checkpoint to /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13
+{'loss': 2.2698, 'grad_norm': 31.910519034930804, 'learning_rate': 5.711574191366427e-06, 'epoch': 0.62}
+{'loss': 1.8094, 'grad_norm': 34.2626750745529, 'learning_rate': 4.2884258086335755e-06, 'epoch': 0.69}
+{'loss': 2.0183, 'grad_norm': 32.32405150741088, 'learning_rate': 2.9229249349905686e-06, 'epoch': 0.77}
+{'loss': 1.4916, 'grad_norm': 29.09537761253095, 'learning_rate': 1.7256963302735752e-06, 'epoch': 0.85}
+{'loss': 2.4133, 'grad_norm': 35.32194639374563, 'learning_rate': 7.937323358440935e-07, 'epoch': 0.92}
+{'loss': 1.6708, 'grad_norm': 26.997659147959457, 'learning_rate': 2.0253513192751374e-07, 'epoch': 1.0}
+[INFO|configuration_utils.py:491] 2025-12-18 11:29:20,291 >> Configuration saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/config.json
+[INFO|configuration_utils.py:757] 2025-12-18 11:29:20,292 >> Configuration saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-18 11:29:23,089 >> Model weights saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-18 11:29:23,090 >> chat template saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-18 11:29:23,091 >> tokenizer config file saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-18 11:29:23,091 >> Special tokens file saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/special_tokens_map.json
+/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[2025-12-18 11:29:23,227] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step13 is about to be saved!
+[2025-12-18 11:29:23,260] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/global_step13/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-12-18 11:29:23,260] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/global_step13/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-12-18 11:29:23,536] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/global_step13/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-12-18 11:29:23,622] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/global_step13/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-12-18 11:29:33,880] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/global_step13/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-12-18 11:29:33,881] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/global_step13/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-12-18 11:29:33,910] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step13 is ready now!
+[INFO|image_processing_base.py:253] 2025-12-18 11:29:33,914 >> Image processor saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-18 11:29:33,915 >> chat template saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-18 11:29:33,918 >> tokenizer config file saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-18 11:29:33,918 >> Special tokens file saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-18 11:29:34,100 >> Video processor saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-18 11:29:34,111 >> chat template saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/checkpoint-13/chat_template.jinja
+[INFO|trainer.py:2810] 2025-12-18 11:29:34,392 >>
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100%|██████████████████████████████████████████████████████████████| 13/13 [30:06<00:00, 138.94s/it]
+{'train_runtime': 1807.7592, 'train_samples_per_second': 0.021, 'train_steps_per_second': 0.007, 'train_loss': 2.611953689501836, 'epoch': 1.0}
+[INFO|image_processing_base.py:253] 2025-12-18 11:29:34,398 >> Image processor saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2421] 2025-12-18 11:29:34,399 >> chat template saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-18 11:29:34,399 >> tokenizer config file saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-18 11:29:34,400 >> Special tokens file saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/special_tokens_map.json
+[INFO|video_processing_utils.py:600] 2025-12-18 11:29:34,504 >> Video processor saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/video_preprocessor_config.json
+[INFO|processing_utils.py:814] 2025-12-18 11:29:34,526 >> chat template saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/chat_template.jinja
+[INFO|trainer.py:4309] 2025-12-18 11:29:38,255 >> Saving model checkpoint to /hub_data3/seohyun/saves/ecva_instruct/full/sft
+[INFO|configuration_utils.py:491] 2025-12-18 11:29:38,259 >> Configuration saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/config.json
+[INFO|configuration_utils.py:757] 2025-12-18 11:29:38,260 >> Configuration saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/generation_config.json
+[INFO|modeling_utils.py:4181] 2025-12-18 11:29:41,044 >> Model weights saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/model.safetensors
+[INFO|tokenization_utils_base.py:2421] 2025-12-18 11:29:41,062 >> chat template saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/chat_template.jinja
+[INFO|tokenization_utils_base.py:2590] 2025-12-18 11:29:41,063 >> tokenizer config file saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2599] 2025-12-18 11:29:41,075 >> Special tokens file saved in /hub_data3/seohyun/saves/ecva_instruct/full/sft/special_tokens_map.json
+***** train metrics *****
+  epoch                    =        1.0
+  total_flos               =      531GF
+  train_loss               =      2.612
+  train_runtime            = 0:30:07.75
+  train_samples_per_second =      0.021
+  train_steps_per_second   =      0.007
+Figure saved at: /hub_data3/seohyun/saves/ecva_instruct/full/sft/training_loss.png
+[WARNING|2025-12-18 11:29:41] llamafactory.extras.ploting:148 >> No metric eval_loss to plot.
+[WARNING|2025-12-18 11:29:41] llamafactory.extras.ploting:148 >> No metric eval_accuracy to plot.
+[INFO|trainer.py:4643] 2025-12-18 11:29:41,334 >>
+***** Running Evaluation *****
+[INFO|trainer.py:4645] 2025-12-18 11:29:41,334 >>   Num examples = 2
+[INFO|trainer.py:4648] 2025-12-18 11:29:41,335 >>   Batch size = 1
+100%|████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 294.71it/s]
+***** eval metrics *****
+  epoch                   =        1.0
+  eval_loss               =     2.0667
+  eval_runtime            = 0:02:18.01
+  eval_samples_per_second =      0.014
+  eval_steps_per_second   =      0.007
+[INFO|modelcard.py:456] 2025-12-18 11:31:59,346 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}

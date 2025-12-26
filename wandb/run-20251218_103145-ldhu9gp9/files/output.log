@@ -1,0 +1,162 @@
+ 60%|██████████████████████████████████▏                      | 6/10 [14:58<09:51, 147.97s/it]Traceback (most recent call last):             
+{'loss': 4.0441, 'grad_norm': 88.23562596780056, 'learning_rate': 0.0, 'epoch': 0.1}
+{'loss': 4.1058, 'grad_norm': 83.82281450748953, 'learning_rate': 1e-05, 'epoch': 0.2}
+{'loss': 3.4367, 'grad_norm': 60.29762911656229, 'learning_rate': 9.698463103929542e-06, 'epoch': 0.3}
+{'loss': 2.5951, 'grad_norm': 46.645804440534434, 'learning_rate': 8.83022221559489e-06, 'epoch': 0.4}
+{'loss': 2.4224, 'grad_norm': 41.641136218883815, 'learning_rate': 7.500000000000001e-06, 'epoch': 0.5}
+{'loss': 2.2928, 'grad_norm': 42.89349892939208, 'learning_rate': 5.8682408883346535e-06, 'epoch': 0.6}
+  File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/launcher.py", line 167, in <module>
+    run_exp()
+  File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/tuner.py", line 132, in run_exp
+    _training_function(config={"args": args, "callbacks": callbacks})
+  File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/tuner.py", line 93, in _training_function
+    run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+  File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/sft/workflow.py", line 96, in run_sft
+    train_result = trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 2325, in train
+    return inner_training_loop(
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 2674, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 4020, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/sft/trainer.py", line 129, in compute_loss
+    return super().compute_loss(model, inputs, *args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 4110, in compute_loss
+    outputs = model(**inputs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 2054, in forward
+    loss = self.module(*inputs, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1881, in _call_impl
+    return inner()
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1829, in inner
+    result = forward_call(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/utils/generic.py", line 1064, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1344, in forward
+    outputs = self.model(
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1881, in _call_impl
+    return inner()
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1829, in inner
+    result = forward_call(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/utils/generic.py", line 1064, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1146, in forward
+    video_embeds, deepstack_video_embeds = self.get_video_features(pixel_values_videos, video_grid_thw)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1048, in get_video_features
+    return self.get_image_features(pixel_values_videos, video_grid_thw)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1061, in get_image_features
+    image_embeds, deepstack_image_embeds = self.visual(pixel_values, grid_thw=image_grid_thw)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1881, in _call_impl
+    return inner()
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1829, in inner
+    result = forward_call(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 714, in forward
+    hidden_states = self.patch_embed(hidden_states)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1881, in _call_impl
+    return inner()
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1829, in inner
+    result = forward_call(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 75, in forward
+    hidden_states = self.proj(hidden_states.to(dtype=target_dtype)).view(-1, self.embed_dim)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1881, in _call_impl
+    return inner()
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1829, in inner
+    result = forward_call(*args, **kwargs)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 717, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 712, in _conv_forward
+    return F.conv3d(
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/launcher.py", line 167, in <module>
+[rank0]:     run_exp()
+[rank0]:   File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/tuner.py", line 132, in run_exp
+[rank0]:     _training_function(config={"args": args, "callbacks": callbacks})
+[rank0]:   File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/tuner.py", line 93, in _training_function
+[rank0]:     run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+[rank0]:   File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/sft/workflow.py", line 96, in run_sft
+[rank0]:     train_result = trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 2325, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 2674, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 4020, in training_step
+[rank0]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank0]:   File "/home/seohyun/vid_understanding/video_retrieval/SFT/sft_trainer/LLaMA-Factory/src/llamafactory/train/sft/trainer.py", line 129, in compute_loss
+[rank0]:     return super().compute_loss(model, inputs, *args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/trainer.py", line 4110, in compute_loss
+[rank0]:     outputs = model(**inputs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 20, in wrapped_fn
+[rank0]:     ret_val = func(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 2054, in forward
+[rank0]:     loss = self.module(*inputs, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1881, in _call_impl
+[rank0]:     return inner()
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1829, in inner
+[rank0]:     result = forward_call(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/utils/generic.py", line 1064, in wrapper
+[rank0]:     outputs = func(self, *args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1344, in forward
+[rank0]:     outputs = self.model(
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1881, in _call_impl
+[rank0]:     return inner()
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1829, in inner
+[rank0]:     result = forward_call(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/utils/generic.py", line 1064, in wrapper
+[rank0]:     outputs = func(self, *args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1146, in forward
+[rank0]:     video_embeds, deepstack_video_embeds = self.get_video_features(pixel_values_videos, video_grid_thw)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1048, in get_video_features
+[rank0]:     return self.get_image_features(pixel_values_videos, video_grid_thw)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1061, in get_image_features
+[rank0]:     image_embeds, deepstack_image_embeds = self.visual(pixel_values, grid_thw=image_grid_thw)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1881, in _call_impl
+[rank0]:     return inner()
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1829, in inner
+[rank0]:     result = forward_call(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 714, in forward
+[rank0]:     hidden_states = self.patch_embed(hidden_states)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1881, in _call_impl
+[rank0]:     return inner()
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1829, in inner
+[rank0]:     result = forward_call(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 75, in forward
+[rank0]:     hidden_states = self.proj(hidden_states.to(dtype=target_dtype)).view(-1, self.embed_dim)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1881, in _call_impl
+[rank0]:     return inner()
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1829, in inner
+[rank0]:     result = forward_call(*args, **kwargs)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 717, in forward
+[rank0]:     return self._conv_forward(input, self.weight, self.bias)
+[rank0]:   File "/home/seohyun/.conda/envs/llama_factory/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 712, in _conv_forward
+[rank0]:     return F.conv3d(
+[rank0]: KeyboardInterrupt

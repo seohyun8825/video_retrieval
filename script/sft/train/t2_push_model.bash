@@ -22,7 +22,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 
-MODEL_DIR="${1:-${MODEL_DIR:-/hub_data3/seohyun/saves/ecva_instruct/full/sft}}"
+MODEL_DIR="${1:-${MODEL_DIR:-/hub_data4/seohyun/saves/ecva_instruct/full/sft/checkpoint-350}}"
 
 # Defaults
 HF_USER="${HF_USER:-}"
@@ -34,7 +34,7 @@ EXCLUDE="${EXCLUDE:-}"
 DRY_RUN="${DRY_RUN:-false}"
 
 if [[ -z "${HF_REPO}" ]]; then
-  HF_REPO="ecva_instruction_tuned-$(date +%Y%m%d)"
+  HF_REPO="best77ecva_tuned-$(date +%Y%m%d)"
 fi
 
 if [[ -z "${HF_USER}" ]]; then

@@ -20,6 +20,8 @@ import argparse
 import json
 import os
 import re
+import statistics
+import time
 from typing import Any, Dict, List, Optional
 from tqdm import tqdm
 
@@ -38,6 +40,9 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--template", default="qwen3_vl")
     p.add_argument("--video_fps", type=float, default=2.0)
     p.add_argument("--video_maxlen", type=int, default=16)
+    p.add_argument("--quantization_bit", type=int, choices=[4, 8], default=None, help="Bitsandbytes quantization (4 or 8).")
+    p.add_argument("--video_max_pixels", type=int, default=16_384, help="Max pixels for video preprocessing (passed to engine)")
+    p.add_argument("--image_max_pixels", type=int, default=8_000_000, help="Max pixels for images (passed to engine)")
     p.add_argument("--max_samples", type=int, default=50)
     p.add_argument("--concurrency", type=int, default=1)
     # Sharding
@@ -114,7 +119,16 @@ def _parse_pred_answer(text: str, *, mode: str = "answer_tag") -> Optional[str]:
     return None
 
 
-def build_engine(model_repo: str, template: str, video_fps: float, video_maxlen: int):
+def build_engine(
+    model_repo: str,
+    template: str,
+    video_fps: float,
+    video_maxlen: int,
+    *,
+    video_max_pixels: int,
+    image_max_pixels: int,
+    quantization_bit: Optional[int],
+):
     model_args, data_args, finetuning_args, generating_args = get_infer_args(
         dict(
             model_name_or_path=model_repo,
@@ -122,8 +136,8 @@ def build_engine(model_repo: str, template: str, video_fps: float, video_maxlen:
             cutoff_len=204800,
             default_system=None,
             enable_thinking=True,
-            image_max_pixels=8_000_000,
-            video_max_pixels=16_384,
+            image_max_pixels=image_max_pixels,
+            video_max_pixels=video_max_pixels,
             video_fps=video_fps,
             video_maxlen=video_maxlen,
             temperature=0.2,
@@ -131,6 +145,7 @@ def build_engine(model_repo: str, template: str, video_fps: float, video_maxlen:
             top_k=50,
             max_new_tokens=1024,
             repetition_penalty=1.0,
+            quantization_bit=quantization_bit,
         )
     )
     return HuggingfaceEngine(model_args, data_args, finetuning_args, generating_args)
@@ -175,6 +190,7 @@ def parse_answer_order(text: str, n_candidates: int = 5) -> List[int]:
 
 
 def main() -> None:
+    t_start = time.perf_counter()
     args = parse_args()
 
     os.makedirs(os.path.dirname(args.output_json), exist_ok=True)
@@ -189,7 +205,16 @@ def main() -> None:
 
     # Concurrency hint for engine
     os.environ.setdefault("MAX_CONCURRENT", str(max(1, args.concurrency)))
-    engine = build_engine(args.model_repo, args.template, args.video_fps, args.video_maxlen)
+    engine = build_engine(
+        args.model_repo,
+        args.template,
+        args.video_fps,
+        args.video_maxlen,
+        video_max_pixels=args.video_max_pixels,
+        image_max_pixels=args.image_max_pixels,
+        quantization_bit=args.quantization_bit,
+    )
+    t_engine_ready = time.perf_counter()
 
     # Prepare JSONL streaming
     stream_path = args.jsonl_path or os.path.splitext(args.output_json)[0] + ".jsonl"
@@ -242,13 +267,17 @@ def main() -> None:
             gt = int(sample.get("gt") or 0)
 
         async with sem:
+            t_one_start = time.perf_counter()
+            if args.echo_ic:
+                _echo(event="start", idx=idx, vids=len(videos_rel))
             responses = await engine.chat(
                 messages=[{"role": "user", "content": user_content}],
                 videos=videos_abs,
                 debug_time=args.debug_time,
                 debug_memory=args.debug_memory,
             )
-            text = responses[0].response_text if responses else ""
+            resp0 = responses[0] if responses else None
+            text = resp0.response_text if resp0 else ""
             if not args.gt_is_label:
                 order = parse_answer_order(text, n_candidates=len(videos_rel) if videos_rel else 5)
                 top1 = order[0] if order else 0
@@ -273,10 +302,14 @@ def main() -> None:
                 "gt_pos": gt_pos,
                 "index": idx,
             }
+            if resp0 is not None:
+                record["prompt_tokens"] = int(getattr(resp0, "prompt_length", 0) or 0)
+                record["output_tokens"] = int(getattr(resp0, "response_length", 0) or 0)
+                record["finish_reason"] = getattr(resp0, "finish_reason", "")
             # Attach optional debug info from engine response (if present)
             if args.debug_time or args.debug_memory:
                 try:
-                    dbg = getattr(responses[0], "debug", None)
+                    dbg = getattr(resp0, "debug", None)
                     if isinstance(dbg, dict):
                         if args.debug_time and isinstance(dbg.get("time_ms"), dict):
                             record["timing_ms"] = dbg["time_ms"]
@@ -303,6 +336,8 @@ def main() -> None:
                     if gt_label in ("normal","abnormal"):
                         dbg.update({"em_correct": pred_answer == gt_label})
                 _echo(**dbg)
+            if args.echo_ic:
+                _echo(event="done", idx=idx, elapsed_ms=int((time.perf_counter() - t_one_start) * 1000))
 
             done += 1
             pbar.set_postfix_str(f"done={done} remaining={total-done}")
@@ -312,7 +347,9 @@ def main() -> None:
         tasks = [run_one(i, s) for i, s in enumerate(samples)]
         await asyncio.gather(*tasks)
 
+    t_infer_start = time.perf_counter()
     asyncio.run(run_all())
+    t_infer_end = time.perf_counter()
     pbar.close()
 
     # Aggregate metrics
@@ -343,6 +380,9 @@ def main() -> None:
         "mrr": mrr,
         "num_shards": ns,
         "shard_index": si,
+        "wall_clock_s": float(time.perf_counter() - t_start),
+        "engine_load_s": float(t_engine_ready - t_start),
+        "infer_wall_clock_s": float(t_infer_end - t_infer_start),
     }
 
     # EVQA/ECVA exact-match metrics (optional)
@@ -354,6 +394,34 @@ def main() -> None:
             metrics["evqa_total"] = n
             metrics["evqa_with_gt_label"] = n_label
             metrics["evqa_acc"] = em_correct / n_label if n_label else 0.0
+
+    # Timing/memory/token aggregates (only if present)
+    time_totals = [float(r.get("timing_ms", {}).get("total")) for r in parsed if isinstance(r.get("timing_ms"), dict) and r["timing_ms"].get("total") is not None]
+    if time_totals:
+        metrics["sample_time_ms"] = {
+            "avg": float(statistics.mean(time_totals)),
+            "max": float(max(time_totals)),
+            "p95": float(statistics.quantiles(time_totals, n=20, method="inclusive")[-1]) if len(time_totals) > 1 else float(time_totals[0]),
+        }
+
+    prompt_tokens = [int(r.get("prompt_tokens", 0)) for r in parsed if r.get("prompt_tokens") is not None]
+    output_tokens = [int(r.get("output_tokens", 0)) for r in parsed if r.get("output_tokens") is not None]
+    if prompt_tokens:
+        metrics["prompt_tokens"] = {"avg": float(statistics.mean(prompt_tokens)), "max": int(max(prompt_tokens))}
+    if output_tokens:
+        metrics["output_tokens"] = {"avg": float(statistics.mean(output_tokens)), "max": int(max(output_tokens))}
+
+    mem_after = [int(r.get("memory", {}).get("cuda_alloc_bytes_after", 0)) for r in parsed if isinstance(r.get("memory"), dict)]
+    mem_delta = [int(r.get("memory", {}).get("cuda_alloc_bytes_delta", 0)) for r in parsed if isinstance(r.get("memory"), dict)]
+    rss_after = [int(r.get("memory", {}).get("rss_bytes_after", 0)) for r in parsed if isinstance(r.get("memory"), dict)]
+    if mem_after or mem_delta or rss_after:
+        metrics["memory_peaks"] = {}
+        if mem_after:
+            metrics["memory_peaks"]["cuda_alloc_bytes_after_max"] = int(max(mem_after))
+        if mem_delta:
+            metrics["memory_peaks"]["cuda_alloc_bytes_delta_max"] = int(max(mem_delta))
+        if rss_after:
+            metrics["memory_peaks"]["rss_bytes_after_max"] = int(max(rss_after))
 
     with open(args.output_json, "w", encoding="utf-8") as f:
         json.dump(

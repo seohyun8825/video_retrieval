@@ -256,13 +256,29 @@ class HuggingfaceEngine(BaseEngine):
         mem_before = {}
         if measure_mem:
             try:
-                gpu_mem = torch.cuda.memory_allocated() if torch.cuda.is_available() else 0
-                mem_before = {"cuda_alloc_bytes": int(gpu_mem), "rss_bytes": int(psutil.Process().memory_info().rss)}
+                if torch.cuda.is_available():
+                    # Reset peak stats for this generate call and sync to stabilize measurement
+                    torch.cuda.reset_peak_memory_stats()
+                    torch.cuda.synchronize()
+                    gpu_alloc = torch.cuda.memory_allocated()
+                    gpu_reserved = torch.cuda.memory_reserved()
+                    mem_free, mem_total = torch.cuda.mem_get_info()
+                else:
+                    gpu_alloc = gpu_reserved = mem_free = mem_total = 0
+                mem_before = {
+                    "cuda_alloc_bytes": int(gpu_alloc),
+                    "cuda_reserved_bytes": int(gpu_reserved),
+                    "cuda_mem_free_bytes": int(mem_free),
+                    "cuda_mem_total_bytes": int(mem_total),
+                    "rss_bytes": int(psutil.Process().memory_info().rss),
+                }
             except Exception:
                 pass
 
         t_gen_start = time.perf_counter() if measure_time else None
         generate_output = model.generate(**gen_kwargs)
+        if measure_mem and torch.cuda.is_available():
+            torch.cuda.synchronize()
         t_gen_end = time.perf_counter() if measure_time else None
         if isinstance(generate_output, tuple):
             generate_output = generate_output[1][0]  # post-process the minicpm_o output
@@ -288,16 +304,35 @@ class HuggingfaceEngine(BaseEngine):
                     dbg["time_ms"].update({k: float(v) for k, v in (("prep", t_prep), ("generate", t_gen), ("total", t_tot)) if v is not None})
                 if measure_mem:
                     try:
-                        gpu_after = torch.cuda.memory_allocated() if torch.cuda.is_available() else 0
+                        if torch.cuda.is_available():
+                            gpu_after = torch.cuda.memory_allocated()
+                            gpu_reserved_after = torch.cuda.memory_reserved()
+                            mem_free_after, mem_total_after = torch.cuda.mem_get_info()
+                            peak_alloc = torch.cuda.max_memory_allocated()
+                            peak_reserved = torch.cuda.max_memory_reserved()
+                        else:
+                            gpu_after = gpu_reserved_after = mem_free_after = mem_total_after = 0
+                            peak_alloc = peak_reserved = 0
                         rss_after = psutil.Process().memory_info().rss
-                        dbg["memory"].update({
-                            "cuda_alloc_bytes_before": int(mem_before.get("cuda_alloc_bytes", 0)),
-                            "cuda_alloc_bytes_after": int(gpu_after),
-                            "cuda_alloc_bytes_delta": int(gpu_after - mem_before.get("cuda_alloc_bytes", 0)),
-                            "rss_bytes_before": int(mem_before.get("rss_bytes", 0)),
-                            "rss_bytes_after": int(rss_after),
-                            "rss_bytes_delta": int(rss_after - mem_before.get("rss_bytes", 0)),
-                        })
+                        dbg["memory"].update(
+                            {
+                                "cuda_alloc_bytes_before": int(mem_before.get("cuda_alloc_bytes", 0)),
+                                "cuda_alloc_bytes_after": int(gpu_after),
+                                "cuda_alloc_bytes_delta": int(gpu_after - mem_before.get("cuda_alloc_bytes", 0)),
+                                "cuda_reserved_bytes_before": int(mem_before.get("cuda_reserved_bytes", 0)),
+                                "cuda_reserved_bytes_after": int(gpu_reserved_after),
+                                "cuda_reserved_bytes_delta": int(gpu_reserved_after - mem_before.get("cuda_reserved_bytes", 0)),
+                                "cuda_peak_alloc_bytes": int(peak_alloc),
+                                "cuda_peak_reserved_bytes": int(peak_reserved),
+                                "cuda_mem_free_bytes_before": int(mem_before.get("cuda_mem_free_bytes", 0)),
+                                "cuda_mem_free_bytes_after": int(mem_free_after),
+                                "cuda_mem_total_bytes_before": int(mem_before.get("cuda_mem_total_bytes", 0)),
+                                "cuda_mem_total_bytes_after": int(mem_total_after),
+                                "rss_bytes_before": int(mem_before.get("rss_bytes", 0)),
+                                "rss_bytes_after": int(rss_after),
+                                "rss_bytes_delta": int(rss_after - mem_before.get("rss_bytes", 0)),
+                            }
+                        )
                     except Exception:
                         pass
 

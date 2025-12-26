@@ -35,7 +35,7 @@ done
 : "${MODEL_REPO:=Qwen/Qwen3-VL-2B-Instruct}"
 : "${DATASET_REPO:=happy8825/valid_ecva_clean}"
 : "${DATASET_FILE:=}"
-: "${OUTPUT_JSON:=${ROOT_DIR}/video_retrieval/output_ecva_instruct/ecva_instruct.json}"
+: "${OUTPUT_JSON:=${ROOT_DIR}/video_retrieval/output_ecva_instruct/ecva_instruct_1223.json}"
 OUTPUT_DIR="$(dirname "${OUTPUT_JSON}")"
 
 : "${MEDIA_BASE:=/hub_data3/seohyun}"
@@ -60,7 +60,7 @@ OUTPUT_DIR="$(dirname "${OUTPUT_JSON}")"
 # Prompt to prepend before the user Query.
 : "${PROMPT:=Are any anomalies directly occurring in this clip? If yes, identify them briefly. }"
 # API settings
-: "${API_BASE:=http://localhost:8019/v1}"
+: "${API_BASE:=http://localhost:8099/v1}"
 : "${API_KEY:=}"
 : "${REQUEST_TIMEOUT:=240}"
 : "${MAX_RETRIES:=4}"

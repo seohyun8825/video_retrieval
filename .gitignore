@@ -11,7 +11,7 @@ video_retrieval/
 anet_ret_val_1.json
 wandb/
 var1_exp/agent_outputs/
-var1_exp/retriever_outputs/
+var1_exp/agent_outputs/
 var1_exp/retriever_outputs/activitynet_fig_val_2_rzen/
 /var1_exp/retriever_outputs/
 *.jsonl
